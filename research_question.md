@@ -12,7 +12,9 @@ The point is not to assume that normalization is harmful. The point is to test w
 
 ## Working hypothesis
 
-If absolute or relative amplitude carries more useful information for some diagnostic tasks than others, a normalization procedure that changes amplitude relationships should affect those tasks differently.
+If amplitude carries more useful information for some diagnostic tasks than others, a normalization procedure that changes amplitude relationships may affect those tasks differently.
+
+The first candidate comparison uses hypertrophy and myocardial infarction because they are established PTB-XL diagnostic superclasses and because the clinical basis for hypertrophy includes voltage-related ECG criteria. The study will not assume that one task is independent of amplitude. That will be treated as an empirical question.
 
 ## Alternative possibilities
 
@@ -22,11 +24,11 @@ The effect may depend more on the model than on the diagnostic task.
 
 The effect may disappear under a different but still defensible evaluation setup.
 
-Any of these outcomes would be useful because they would narrow the claim that can be made about preprocessing.
+Any of these outcomes would narrow the claim that can be made about preprocessing.
 
 ## Scope
 
-The first analysis will use PTB-XL and will focus on a small number of binary diagnostic tasks that can be defined clearly from the dataset labels. The final task definitions will be frozen in `analysis_plan.md` before the primary comparison is run.
+The first analysis will use PTB-XL version 1.0.3 and a small number of binary diagnostic tasks that can be defined clearly from the dataset labels. The final task definitions and inclusion rules will be frozen in analysis_plan.md before the primary comparison is run.
 
 ## What this study will not claim
 
