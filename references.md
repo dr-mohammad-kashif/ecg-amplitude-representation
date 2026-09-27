@@ -12,6 +12,8 @@ Bickmann L, Plagwitz L, Büscher A, Varghese J. 2026. Architecture-Specific Impa
 
 Jin M, Tang X, Lei Y, et al. 2026. Machine-learning classification of myocardial infarction and ST/T-change ECG phenotypes across complementary evaluation settings. Scientific Reports. DOI 10.1038/s41598-026-68967-9
 
+Interpretable detection of left ventricular hypertrophy using commercial ECG features and machine learning. 2026. Frontiers in Cardiovascular Medicine. DOI 10.3389/fcvm.2026.1825829
+
 Jia Y, Pei H, Liang J, Zhou Y, Yang Y, Cui Y, Xiang M. 2024. Preprocessing and Denoising Techniques for Electrocardiography and Magnetocardiography  A Review. Bioengineering 11, 1109. DOI 10.3390/bioengineering11111109
 
 Salimi A, Kalmady SV, Hindle A, Zaiane O, Kaul P. 2025. Exploring Best Practices for ECG Pre-Processing in Machine Learning. Preprint. DOI 10.48550/arXiv.2311.04229
