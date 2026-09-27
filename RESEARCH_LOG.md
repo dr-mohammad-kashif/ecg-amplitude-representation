@@ -9,11 +9,9 @@ Each entry should answer four questions
 3. What did we observe?
 4. What changed as a result?
 
-## 27 September 2026
+## September 2026
 
 Created the repository and wrote the first version of the research question and analysis plan.
-
-## 27 September 2026
 
 Completed the first focused literature pass.
 
