@@ -8,7 +8,7 @@ The core sources are peer-reviewed journal articles, major clinical consensus wo
 
 I have not used blogs, vendor pages, generic tutorial sites, or papers with weak relevance just to increase the reference count.
 
-The first working set contains eight sources.
+The first working set contains nine sources. Seven are core sources. One is a supplemental preprint and one is an additional review used for context.
 
 ## 1. PTB-XL dataset
 
@@ -70,11 +70,13 @@ That distinction is useful for the present study. Any later result here will be 
 
 ## 7. Recent evidence on amplitude related features in LVH
 
-A 2026 study using PTB-XL+ evaluated several machine learning models for LVH and included R-wave, S-wave, QRS amplitude and voltage-time features among the predictors. The study is useful as a recent example that amplitude-related features remain part of computational LVH analysis.
+Interpretable detection of left ventricular hypertrophy using commercial ECG features and machine learning 2026
+Frontiers in Cardiovascular Medicine
+DOI 10.3389/fcvm.2026.1825829
+
+This study used PTB-XL+ and evaluated several machine learning models using ECG features that included R-wave, S-wave, QRS amplitude and voltage-time measures. It is useful as a recent example that amplitude-related features remain part of computational LVH analysis.
 
 This paper is supporting evidence for the HYP rationale rather than evidence about normalization itself.
-
-DOI 10.3389/fcvm.2026.1825829
 
 ## 8. Supplemental evidence on preprocessing practice
 
