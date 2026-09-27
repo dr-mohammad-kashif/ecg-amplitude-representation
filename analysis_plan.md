@@ -79,7 +79,7 @@ I will record why I chose the check rather than adding variations without a reas
 
 ## Interpretation
 
-If the two representations perform differently, I will treat that as a finding about the representation and model within this study setup.
+If the two representations perform differently, I will treat that as a finding about the representation and model under the evaluation I actually used.
 
 A performance change on its own will not be described as proof that clinical information has been lost.
 

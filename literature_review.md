@@ -82,7 +82,7 @@ Zhou, Luo and Du 2026
 Frontiers in Cardiovascular Medicine  
 DOI 10.3389/fcvm.2026.1825829
 
-This study used PTB-XL+ and included R-wave, S-wave, QRS amplitude and voltage-time features among the predictors used for LVH detection.
+The authors used PTB-XL+ and included R-wave, S-wave, QRS amplitude and voltage-time features among the predictors used for LVH detection.
 
 I am using it only to support the clinical and computational rationale for keeping HYP as a candidate task. It does not answer my normalization question.
 

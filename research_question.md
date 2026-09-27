@@ -29,4 +29,4 @@ I will freeze the exact label construction and exclusions after the data audit.
 
 ## What this will not show
 
-This study will not establish clinical utility or clinical superiority. It will not show a causal effect in patients. It will only tell me what happens within the PTB-XL data and the analysis I actually run.
+I am not using this analysis to make claims about clinical utility or superiority, and it cannot establish a causal effect in patients. The conclusions will be limited to the PTB-XL data and the analysis I actually run.
