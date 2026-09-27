@@ -1,35 +1,32 @@
 # Research question
 
-## Primary question
+## What I am asking
 
 Does ECG amplitude normalization remove or alter information relevant to some diagnostic tasks, and is that effect different across tasks?
 
-## Why this is worth testing
+## Why I am asking it
 
-Amplitude normalization is often treated as a routine preprocessing choice. This study asks whether that choice can change the information available to a model in a way that matters differently for different diagnostic tasks.
+Normalization is easy to think of as a harmless preparation step. I am less interested in whether it is commonly used than in whether the assumption behind it holds for the task I am studying.
 
-The point is not to assume that normalization is harmful. The point is to test whether treating it as neutral is justified.
+If amplitude contains information that is useful for one diagnosis and less useful for another, changing amplitude relationships could affect those tasks differently.
 
 ## Working hypothesis
 
-If amplitude carries more useful information for some diagnostic tasks than others, a normalization procedure that changes amplitude relationships may affect those tasks differently.
+My working hypothesis is that the effect of normalization will not be identical across diagnostic tasks.
 
-The first candidate comparison uses hypertrophy and myocardial infarction because they are established PTB-XL diagnostic superclasses and because the clinical basis for hypertrophy includes voltage-related ECG criteria. The study will not assume that one task is independent of amplitude. That will be treated as an empirical question.
+I am treating that as a hypothesis rather than a conclusion. The effect could be small, could depend more on the model than the task, or could disappear under a reasonable change in the analysis.
 
-## Alternative possibilities
+## The first comparison
 
-The observed effect may be small.
+I am starting with two candidate binary tasks from PTB-XL
 
-The effect may depend more on the model than on the diagnostic task.
+- hypertrophy versus normal
+- myocardial infarction versus normal
 
-The effect may disappear under a different but still defensible evaluation setup.
+I chose these because they are established PTB-XL diagnostic superclasses and because there is a clear clinical reason to pay attention to amplitude when thinking about hypertrophy.
 
-Any of these outcomes would narrow the claim that can be made about preprocessing.
+I will freeze the exact label construction and exclusions after the data audit.
 
-## Scope
+## What this will not show
 
-The first analysis will use PTB-XL version 1.0.3 and a small number of binary diagnostic tasks that can be defined clearly from the dataset labels. The final task definitions and inclusion rules will be frozen in analysis_plan.md before the primary comparison is run.
-
-## What this study will not claim
-
-It will not establish clinical utility, clinical superiority, causal effects in patients, or a universally correct ECG preprocessing method.
+This study will not establish clinical utility or clinical superiority. It will not show a causal effect in patients. It will only tell me what happens within the PTB-XL data and the analysis I actually run.

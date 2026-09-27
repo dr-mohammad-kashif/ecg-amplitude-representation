@@ -1,117 +1,117 @@
 # Literature review
 
-I am keeping the first literature review deliberately small. The aim is to establish the dataset, the normal PTB-XL benchmarking practice, the clinical reason for paying attention to ECG amplitude, and the current evidence on preprocessing. I do not want a long list of papers that does not change the study design.
+I started with a small set of papers rather than trying to collect everything written about ECG machine learning. I wanted the reading to answer a few practical questions before I touched the data.
 
-## How sources were selected
+I wanted to know what PTB-XL actually contains and how it is normally evaluated, why amplitude is relevant to the HYP task, what recent work has found about preprocessing, and where my question still has room to be tested.
 
-The core sources are peer-reviewed journal articles, major clinical consensus work, and the primary PTB-XL dataset paper. A recent study that directly tests ECG preprocessing on PTB-XL is included because it is unusually close to the present question. A preprint is included only as supplemental context and is clearly marked as such.
+## How I chose the papers
 
-I have not used blogs, vendor pages, generic tutorial sites, or papers with weak relevance just to increase the reference count.
+Most of the papers below are peer-reviewed research articles. I also used the main PTB-XL dataset paper and an international clinical consensus statement because they answer questions that a machine learning paper alone cannot.
 
-The first working set contains nine sources. Seven are core sources. One is a supplemental preprint and one is an additional review used for context.
+I included one preprint because it deals directly with ECG preprocessing and raises the same methodological concern from other datasets. I am keeping it separate from the peer-reviewed evidence.
 
-## 1. PTB-XL dataset
+I kept the first pass small and stopped when the papers were no longer changing the way I was thinking about the experiment.
+
+## PTB-XL dataset
 
 Wagner et al. 2020  
 Scientific Data  
 DOI 10.1038/s41597-020-0495-6
 
-PTB-XL provides the dataset used for this study. The published dataset paper describes the original dataset and its patient-aware fold assignments. The version used for this project is version 1.0.3, documented separately in DATA_PROVENANCE.md.
+This is the main source I am using for the dataset itself. The published paper describes the PTB-XL records, annotations and the recommended way of splitting the data for machine learning.
 
-This is the primary source for what the dataset is and how its recommended splits were constructed.
+I am also recording version 1.0.3 separately because that is the version I will actually use.
 
-## 2. PTB-XL benchmarking
+## PTB-XL benchmarking
 
 Strodthoff et al. 2021  
 IEEE Journal of Biomedical and Health Informatics  
 DOI 10.1109/JBHI.2020.3022989
 
-This paper established early benchmark results for PTB-XL and compared several deep learning approaches across multiple tasks. It is useful here because it treats PTB-XL as a benchmark rather than as an arbitrary ECG collection and emphasizes evaluation quality, uncertainty and interpretability alongside predictive performance.
+I used this paper to understand how PTB-XL has been used as a benchmark rather than simply as a large ECG collection. It is also useful for thinking about evaluation and comparability between models.
 
-This is one of the main reasons the study uses the dataset's suggested evaluation structure rather than inventing a random split.
+It reinforced my decision to use the dataset's own patient-aware folds rather than making up a random split.
 
-## 3. ECG preprocessing review
+## ECG preprocessing review
 
 Safdar et al. 2024  
 Computers in Biology and Medicine  
 DOI 10.1016/j.compbiomed.2023.107908
 
-This review covers ECG preprocessing and AI methods across a broad literature base. It is used for landscape context. It shows how varied preprocessing practice is across ECG machine learning and helps define what belongs in the preprocessing discussion without treating the review itself as evidence for a particular normalization effect.
+I used this as a broad map of ECG preprocessing and machine learning methods. It helped me see how varied preprocessing practice is and where normalization sits in the larger pipeline.
 
-## 4. Clinical grounding for amplitude and hypertrophy
+I am not using this review to support a specific claim about whether normalization helps or hurts.
+
+## Clinical reason to care about amplitude
 
 Bacharova et al. 2023  
-Annals of Noninvasive Electrocardiology  
-DOI 10.1111/anec.12963
+Journal of Electrocardiology  
+DOI 10.1016/j.jelectrocard.2023.08.005
 
-The international consensus statement explains that ECG diagnosis of left ventricular hypertrophy has traditionally relied heavily on QRS voltage criteria. It also emphasizes the limitations of voltage-only criteria and the number of factors that affect measured QRS amplitude.
+This consensus statement is useful for one very specific reason. Traditional ECG diagnosis of left ventricular hypertrophy relies heavily on QRS voltage criteria, while the clinical literature also points out that voltage is influenced by many factors and that voltage criteria are not especially sensitive on their own.
 
-This is important for the study because it gives the HYP task a clinical reason for taking amplitude changes seriously. It does not imply that amplitude alone defines hypertrophy.
+That gives me a real clinical reason to ask what happens when amplitude is changed before a model sees the signal. It does not mean that amplitude alone defines hypertrophy.
 
-## 5. Direct evidence on preprocessing and PTB-XL
+## Recent PTB-XL preprocessing work
 
 Bickmann et al. 2026  
 Studies in Health Technology and Informatics  
 DOI 10.3233/SHTI260227
 
-This is the most important recent paper for the present question. The authors tested signal cleaning, trend removal and normalization across six deep learning architectures on PTB-XL, with 24 preprocessing and model combinations repeated ten times. Their results showed that the effect of preprocessing depended strongly on architecture. Some convolutional networks performed best with raw, unnormalized ECGs, while other architectures responded differently.
+This is the paper that most changed my framing.
 
-This changes how the present study should be framed. It would be too broad to ask only whether normalization changes model performance. The present study therefore focuses on whether the effect also differs across diagnostic tasks.
+The authors compared several preprocessing choices across six deep learning architectures on PTB-XL. They tested 24 preprocessing and model combinations and repeated the experiments ten times. The results showed that preprocessing effects depended on the architecture. Some convolutional models did better with raw, unnormalized ECGs while other models behaved differently.
 
-## 6. Recent PTB-XL work on MI and ST/T phenotypes
+That means my original question was too broad. It is already known that preprocessing can interact with the model. I therefore narrowed my question to whether the same preprocessing choice can also have different consequences across diagnostic tasks when the model and evaluation setup are held constant.
+
+## Recent PTB-XL work on MI and ST/T phenotypes
 
 Jin et al. 2026  
 Scientific Reports  
 DOI 10.1038/s41598-026-68967-9
 
-This recent PTB-XL study uses patient-disjoint partitions to examine machine learning for MI and ST/T-change ECG phenotypes across several model families and evaluation settings. The authors are careful to describe the PTB-XL labels as operational ECG phenotypes rather than adjudicated active ischemia.
+I included this paper because it is very recent and uses patient-disjoint evaluation on PTB-XL for MI and ST/T-change phenotypes.
 
-That distinction is useful for the present study. Any later result here will be interpreted as a finding about the dataset labels and the evaluation setup, not as proof of clinical diagnosis.
+One detail I want to carry into my own work is the authors' treatment of the PTB-XL labels. They describe the primary outcome as an operational ECG phenotype based on the dataset labels rather than as adjudicated active ischemia.
 
-## 7. Recent evidence on amplitude related features in LVH
+That is a useful reminder for my own interpretation. If I find a difference in an MI task, I will be describing a model's behavior on the PTB-XL label, not claiming that I have built a clinical MI diagnostic test.
 
-Interpretable detection of left ventricular hypertrophy using commercial ECG features and machine learning 2026
-Frontiers in Cardiovascular Medicine
+## Recent PTB-XL+ work on LVH
+
+Zhou, Luo and Du 2026  
+Frontiers in Cardiovascular Medicine  
 DOI 10.3389/fcvm.2026.1825829
 
-This study used PTB-XL+ and evaluated several machine learning models using ECG features that included R-wave, S-wave, QRS amplitude and voltage-time measures. It is useful as a recent example that amplitude-related features remain part of computational LVH analysis.
+This study used PTB-XL+ and included R-wave, S-wave, QRS amplitude and voltage-time features among the predictors used for LVH detection.
 
-This paper is supporting evidence for the HYP rationale rather than evidence about normalization itself.
+I am using it only to support the clinical and computational rationale for keeping HYP as a candidate task. It does not answer my normalization question.
 
-## 8. Supplemental evidence on preprocessing practice
+## Supplemental preprocessing evidence
 
-Salimi et al. 2025  
+Salimi et al. 2023  
 Preprint  
 DOI 10.48550/arXiv.2311.04229
 
-This work tests downsampling, normalization and filtering across several ECG datasets and classifiers. The authors report that min-max normalization was slightly detrimental overall and argue against applying preprocessing blindly.
+This paper directly compares several ECG preprocessing choices, including normalization, across multiple datasets and classifiers. The authors report that min-max normalization was slightly detrimental overall and argue against applying preprocessing blindly.
 
-I am treating this as supplemental evidence rather than a foundation for the study because it is a preprint rather than a peer-reviewed journal article. Its value here is that it independently raises the same methodological issue from a different set of datasets and models.
+I am keeping this as supplemental evidence because it is a preprint rather than a peer-reviewed paper. It is still useful because it shows that the concern behind my question is not limited to PTB-XL.
 
-## Additional review used for preprocessing context
+## Additional preprocessing review
 
 Jia et al. 2024  
 Bioengineering  
 DOI 10.3390/bioengineering11111109
 
-This review focuses on preprocessing and denoising of ECG and related biosignals. It is useful for the broader preprocessing context but is not used to support a specific claim about amplitude normalization.
+I used this review to get a second view of the broader ECG preprocessing literature, particularly denoising and signal quality issues.
 
-## What the literature currently says
+It is background for the methods section rather than evidence for a particular normalization effect.
 
-The literature does not support treating ECG preprocessing as universally neutral or universally beneficial.
+## Where this leaves the study
 
-The PTB-XL dataset and benchmark papers establish a strong basis for reproducible evaluation.
+After this first pass, I am not comfortable treating ECG preprocessing as universally helpful or neutral.
 
-The clinical literature gives a specific reason to care about amplitude in hypertrophy-related ECG interpretation.
+The reading gave me a more specific question.
 
-Recent preprocessing work shows that the effect of normalization can depend on the model architecture.
+Recent work has shown that preprocessing can interact with model architecture. Clinical literature gives me a reason to think carefully about amplitude for hypertrophy. What I now want to test is whether the same preprocessing choice behaves differently across diagnostic tasks when I hold the model and evaluation setup constant.
 
-The remaining question for this project is narrower. It is whether the same preprocessing choice can have different consequences across diagnostic tasks, even when the evaluation setup and model are held constant.
-
-That is the question the first experiment will test.
-
-## Sources that were considered but not promoted to the core set
-
-I found several additional ECG machine learning papers that mainly reported predictive performance without changing the methodological question or adding a clear reason to include another task. I am not using them simply to make the reference list look larger.
-
-The review will expand only when a new source changes the study design, interpretation, or a specific robustness check.
+That is the question I am taking into the data audit.

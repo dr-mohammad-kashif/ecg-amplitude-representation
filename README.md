@@ -1,64 +1,66 @@
 # ECG amplitude representation
 
-This study looks at a simple question in ECG machine learning. When amplitude normalization is treated as a routine preprocessing step, does it actually leave the information used for diagnosis unchanged?
+I started this study because I became interested in a small assumption that is easy to leave unquestioned in ECG machine learning. Amplitude normalization is often treated as a routine preprocessing step. I want to know whether it is actually neutral.
 
-The work uses the PTB-XL dataset and compares raw and normalized ECG representations across selected diagnostic tasks. The main interest is not to find a preprocessing method that gives the highest score. It is to test whether a preprocessing choice changes what the model can use, and whether that change depends on the task.
+I am using the PTB-XL dataset and comparing an original ECG representation with a defined amplitude-normalized representation across a small number of diagnostic tasks. The main question is not which version gives the better score. I want to see whether changing the representation changes the information available to a model, and whether that changes from one task to another.
 
-## Status
+## Where I am now
 
-The initial literature review and study design are in place. Data auditing and implementation have not yet begun. No study results are reported.
+I have finished the first literature pass and written the initial analysis plan. I have not run the data audit or the main analysis yet, so there are no results here.
 
-## Study team
+## Who is working on it
 
-Mohammad Kashif, study lead and primary researcher  
-Zaid Wani, research collaborator
+I am leading the study.
 
-## Current question
+Zaid Wani is joining me as a research collaborator and will independently reproduce the primary analysis once the first version is stable.
+
+## The question
 
 Does ECG amplitude normalization remove or alter information relevant to some diagnostic tasks, and is that effect different across tasks?
 
-## Why this question
+## Why I chose it
 
-Preprocessing choices are often treated as technical steps that can be applied before the actual analysis. That makes sense when a transformation removes nuisance variation without changing information relevant to the task. It becomes less straightforward when the quantity being changed may itself carry useful signal.
+I do not want to assume that normalization is good or bad. I want to check what the transformation changes and then see whether those changes matter for the task being studied.
 
-This study starts from that distinction and tests it rather than assuming it.
+That distinction is what led me to the current study design.
 
-## Study plan
+## What I plan to do
 
-The current plan is to
+I will
 
-- compare an original signal representation with a defined amplitude-normalized representation
-- evaluate the same diagnostic tasks under the same patient-level split and model settings
-- examine discrimination and calibration rather than relying on accuracy alone
-- inspect errors and test whether the main result is stable under a limited set of robustness checks
-- have a second researcher reproduce the primary analysis from the repository
+- compare an original signal representation with one defined amplitude-normalized representation
+- keep the diagnostic task, model and evaluation setup fixed when comparing the two representations
+- use patient-aware train, validation and test splits
+- look at AUROC, AUPRC and calibration rather than relying on accuracy alone
+- inspect errors and run a small number of robustness checks
+- have Zaid reproduce the main comparison from the repository
 
-The exact task definitions and normalization rule will be frozen before the primary comparison is run.
+I am freezing the task definitions and normalization rule before running the primary comparison.
 
-## Repository
+## Files
 
-research_question.md records the question and working hypotheses.
+[research_question.md](research_question.md) contains the question and the working hypotheses.
 
-analysis_plan.md contains the planned preprocessing, splitting, models, metrics and robustness checks.
+[analysis_plan.md](analysis_plan.md) contains the current experimental plan.
 
-literature_review.md records the sources used to shape the question and the reasons they were selected.
+[literature_review.md](literature_review.md) records what I read before settling on the study design and why each source was useful.
 
-DATA_PROVENANCE.md records the PTB-XL version, source, access information and data handling decisions.
+[references.md](references.md) contains the citations.
 
-RESEARCH_LOG.md records decisions, failed approaches and changes made during the study.
+[data_provenance.md](data_provenance.md) records where the PTB-XL data come from and how I am handling the dataset.
 
-AI_USE.md records where AI tools were used during research and coding and what was independently checked.
+[research_log.md](research_log.md) is where I am recording decisions and changes as the work develops.
 
-The code, notebooks and results folders will be populated as the analysis progresses.
+[ai_notes.md](ai_notes.md) records where I use AI tools and what I check myself.
 
-## Evidence boundary
+## Current evidence boundary
 
-This repository is an ongoing study. It does not currently establish that normalization improves or harms diagnostic performance, that any representation is clinically superior, or that a particular finding generalizes beyond the data and evaluation used here.
+This is an ongoing study. I have not established that normalization improves or harms diagnostic performance, that one representation is clinically better, or that any future finding will generalize beyond the dataset and evaluation used here.
 
 ## Data
 
-The PTB-XL data are not stored in this repository. The study uses version 1.0.3 from PhysioNet and keeps source and handling information in DATA_PROVENANCE.md.
+I am not storing the PTB-XL data in this repository. The dataset comes from PhysioNet. The version and source information are recorded in data_provenance.md.
 
 ## Reproducibility
 
-The goal is to keep the analysis reproducible from the documented environment and code. Later releases will preserve the state of the work at major stages of the study.
+I am keeping the analysis in small steps so that I can rerun it from the repository rather than relying on a single notebook or an undocumented sequence of commands.

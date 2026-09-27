@@ -1,86 +1,94 @@
 # Analysis plan
 
-This plan is written before the primary model comparison.
+I am writing this before I run the primary comparison. I want the main choices to be decided before I see the result.
 
-## 1. Dataset
+## Dataset
 
-The study will use PTB-XL version 1.0.3 from PhysioNet. The current release contains 21799 clinical 12-lead ECG records from 18869 patients. The waveforms are available at 500 Hz and in a 100 Hz version, and diagnostic statements are organized into superclasses and subclasses.
+I will use PTB-XL version 1.0.3 from PhysioNet.
 
-The unit of analysis will be an ECG record, with patient identity retained so that repeated records from one patient are not separated across evaluation sets.
+The version I am using contains 21799 clinical 12-lead ECG records from 18869 patients. The recordings are 10 seconds long. PTB-XL provides the waveforms at 500 Hz and in a 100 Hz version and includes 71 ECG statements organised into diagnostic, form and rhythm categories.
 
-## 2. Diagnostic tasks
+I will keep patient identity throughout the data preparation so that repeated records from one patient do not end up across different evaluation sets.
 
-The initial candidates are
+## Diagnostic tasks
+
+My initial candidates are
 
 - HYP versus NORM
 - MI versus NORM
 
-These are candidate tasks, not yet frozen labels. The data audit will confirm the exact label construction and exclusion rules before analysis.
+These are still candidates. I will check the actual PTB-XL label structure, overlaps and exclusions before I freeze them.
 
-The choice is not based on which task is expected to produce a stronger score. HYP gives a clinically grounded case in which QRS voltage has a direct role in traditional ECG criteria, while MI provides a second diagnostic phenotype with a different clinical basis. The study will test whether the preprocessing effect actually differs rather than assuming that it will.
+I chose HYP because amplitude has a direct role in traditional ECG criteria for hypertrophy, and MI gives me a second diagnostic phenotype with a different clinical basis. The comparison is only useful if I am willing to let the data disagree with that expectation.
 
-## 3. Signal representations
+## Signal representations
 
-The primary comparison will use
+I will compare
 
-1. the original signal representation
-2. one explicitly defined amplitude-normalized representation
+1. the original ECG signal
+2. one clearly defined amplitude-normalized version
 
-The normalization rule will be written in plain mathematical terms and implemented once in a shared preprocessing function.
+I will write the exact normalization rule down before running the main comparison and implement it once in a shared preprocessing function.
 
-No alternative normalization will be added until the primary analysis is complete unless a methodological problem requires it.
+I will not keep adding different normalization methods just because one produces a more interesting result.
 
-## 4. Evaluation split
+## Evaluation
 
-Patient identity will be respected throughout evaluation.
+I will use the patient-aware PTB-XL fold structure if it fits the final label definitions.
 
-The PTB-XL recommended patient-aware folds will be used where they fit the final task definition. Fold 10 is intended for held-out testing and fold 9 for validation in the dataset documentation.
+The dataset documentation recommends folds 1 to 8 for training, fold 9 for validation and fold 10 for testing. The folds were created while keeping records from the same patient together.
 
-A row-level random split will not be used as the primary estimate because repeated recordings from the same patient can otherwise leak across evaluation sets.
+I will not use a random row-level split as the primary result.
 
-## 5. Models
+## Models
 
-The initial models will be deliberately simple
+I am starting with
 
 - logistic regression
 - random forest
 
-A more complex model may be added later if it answers a defined methodological question. It will not be added simply to improve the headline score.
+I want the first comparison to be simple enough that I can see the effect of the representation without introducing unnecessary model complexity.
 
-## 6. Metrics
+I may add one more model later if there is a clear methodological reason to do so. I will not add a more complex model just to improve the headline number.
 
-Primary reporting will include AUROC and AUPRC where appropriate.
+## Metrics
 
-Calibration will be examined with a calibration curve and Brier score where the sample size and class balance make this meaningful.
+I will report AUROC and AUPRC where appropriate.
 
-The final report will include uncertainty or variability measures appropriate to the final evaluation design.
+I will also look at calibration using calibration curves and the Brier score when the final class balance and sample size make that useful.
 
-## 7. Error analysis
+The final report will include an uncertainty or variability measure that fits the final evaluation design.
 
-The analysis will inspect
+## Error analysis
 
-- class distribution
+I want to know whether any observed difference comes from a small group of records or a broader pattern. I will therefore inspect
+
+- class balance
 - signal quality
-- difficult or misclassified records
-- whether errors cluster around particular patient or recording characteristics
-- whether the representation comparison is driven by a small subset of observations
+- difficult and misclassified records
+- patient or recording characteristics around errors
+- whether the representation comparison is being driven by a small part of the dataset
 
-## 8. Robustness
+## Robustness
 
-At least one sensitivity analysis will test whether the main qualitative conclusion changes under a reasonable methodological variation.
+I will run at least one sensitivity analysis after the primary comparison.
 
-Potential variations include a second simple classifier or a clearly justified alternative normalization definition.
+The exact check will depend on what I see in the data and the first result. It may involve a second simple classifier or a defensible alternative normalization definition.
 
-## 9. Interpretation
+I will record why I chose the check rather than adding variations without a reason.
 
-The main comparison will be interpreted as an investigation of representation and model behavior within the PTB-XL study design.
+## Interpretation
 
-A change in predictive performance will not, by itself, be described as proof that clinical information has been lost.
+If the two representations perform differently, I will treat that as a finding about the representation and model within this study setup.
 
-## 10. Reproduction
+A performance change on its own will not be described as proof that clinical information has been lost.
 
-Once the main analysis is stable, Zaid Wani will reproduce the primary comparison from the repository without being given the expected result in advance. Any discrepancy will be logged and investigated.
+## Independent reproduction
 
-## 11. Stopping rule
+Once the primary comparison is stable, Zaid will work from a clean copy of the repository and reproduce the main result without being given the expected value in advance.
 
-No new preprocessing variants, models or diagnostic tasks will be added simply because the first result is uninteresting. Extensions must answer a defined methodological question.
+Any difference between our results will be recorded and investigated.
+
+## Stopping rule
+
+I am not planning to add new tasks, models or preprocessing variants simply because the first result is weak or uninteresting. An extension needs a methodological reason.
