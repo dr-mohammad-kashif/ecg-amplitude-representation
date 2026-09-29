@@ -95,3 +95,16 @@ The remaining high-impact question is not another general literature search. It 
 Those decisions should be resolved through the data audit and then written into the protocol.
 
 I am using publication years in the reference list for normal citation purposes. The project log itself uses only a month-level heading.
+
+
+### Version-specific waveform search
+
+I also checked whether the waveform representation needed to be rediscovered locally or whether the current PTB-XL literature already establishes it.
+
+The official v1.0.3 documentation specifies the supplied 100 Hz records100 representation and its WFDB structure. Recent PTB-XL studies provide contemporary examples using 100 Hz, 10-second, 12-lead inputs, including a 2025 PTB-XL v1.0.3 MI study and a 2026 study using a 12 x 1000 neural-network input after conversion to 100 Hz.
+
+This search changed the practical scope of the local waveform audit. I do not need to inspect the entire 3 GB release to establish the basic representation. I only need to verify that the actual files used locally conform to the documented format and then handle any record-level exclusions transparently if implementation reveals them.
+
+The version comparison also matters. Several older PTB-XL papers and codebases used earlier releases, so their sample counts should not be used as evidence that they operated on the current 1.0.3 record set without checking the version.
+
+The search therefore supports using the native 100 Hz waveform representation and keeping the local waveform audit focused on implementation integrity rather than duplicating the dataset authors' full technical validation.
