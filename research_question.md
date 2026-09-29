@@ -14,7 +14,7 @@ If amplitude contains information that is useful for one diagnosis and less usef
 
 My working hypothesis is that the effect of normalization will not be identical across diagnostic tasks.
 
-I am treating that as a hypothesis rather than a conclusion. The effect could be small, could depend more on the model than the task, or could disappear under a reasonable change in the analysis.
+I am treating that as a hypothesis for now, not a conclusion. The effect could be small, could depend more on the model than the task, or could disappear under a reasonable change in the analysis.
 
 ## The first comparison
 
