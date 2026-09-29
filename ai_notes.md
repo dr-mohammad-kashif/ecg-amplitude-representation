@@ -8,6 +8,6 @@ I keep AI assistance separate from the evidence. An AI response is not a scienti
 
 For code, I rerun and test what I keep.
 
-When an AI suggestion changes the direction of the work, I record the decision in the relevant research log or study document rather than treating the suggestion itself as evidence.
+When an AI suggestion changes the direction of the work, I record the resulting decision in the relevant research log or study document rather than treating the suggestion itself as evidence. The project log carries the time context for substantive decisions, so this file is not intended to be a separate timestamped interaction record.
 
 I also keep useful mistakes visible when they materially change the study. I would rather show where a suggestion was rejected than make the research record look cleaner than it actually was.
