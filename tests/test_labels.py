@@ -38,8 +38,20 @@ def test_primary_label_rule(tmp_path):
     hyp = build_binary_labels(metadata, scp_path, "HYP", threshold=50)
     mi = build_binary_labels(metadata, scp_path, "MI", threshold=50)
 
-    assert hyp.tolist() == [1.0, 0.0, 1.0, 0.0, np.nan, np.nan, np.nan]
-    assert mi.tolist() == [np.nan, 0.0, 0.0, 0.0, 1.0, 0.0, np.nan]
+    assert hyp.iloc[0] == 1.0
+    assert hyp.iloc[1] == 0.0
+    assert hyp.iloc[2] == 1.0
+    assert hyp.iloc[3] == 0.0
+    assert np.isnan(hyp.iloc[4])
+    assert hyp.iloc[5] == 0.0
+    assert np.isnan(hyp.iloc[6])
+    assert np.isnan(mi.iloc[0])
+    assert mi.iloc[1] == 0.0
+    assert mi.iloc[2] == 0.0
+    assert mi.iloc[3] == 0.0
+    assert mi.iloc[4] == 1.0
+    assert mi.iloc[5] == 0.0
+    assert np.isnan(mi.iloc[6])
 
 
 def test_records100_validation():
