@@ -77,6 +77,10 @@ I am not storing the PTB-XL data in this repository. The study uses PTB-XL versi
 
 The version, source files and provenance details are recorded in data_provenance.md.
 
+## Citation
+
+This repository includes a CITATION.cff file for machine-readable citation metadata. Formal study documents use numbered Vancouver-style references following biomedical citation conventions.
+
 ## Reproducibility
 
 I am keeping the analysis in small steps so I can rerun it from the repository instead of relying on a single notebook or an undocumented sequence of commands.
