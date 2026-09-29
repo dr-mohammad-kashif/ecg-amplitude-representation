@@ -39,16 +39,23 @@ def main() -> None:
     parser.add_argument("--database", type=Path, required=True)
     parser.add_argument("--scp-statements", type=Path, required=True)
     parser.add_argument("--threshold", type=float, default=50.0)
+    parser.add_argument(
+        "--unthresholded",
+        action="store_true",
+        help="Use superclass presence regardless of SCP likelihood.",
+    )
     args = parser.parse_args()
 
     metadata = pd.read_csv(args.database, index_col=0)
+
+    threshold = None if args.unthresholded else args.threshold
 
     for target in ("HYP", "MI"):
         labels = build_binary_labels(
             metadata,
             args.scp_statements,
             target,
-            threshold=args.threshold,
+            threshold=threshold,
         )
         summarize_task(metadata, labels, target)
 
