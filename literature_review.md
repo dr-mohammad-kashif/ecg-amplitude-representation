@@ -28,9 +28,9 @@ Strodthoff et al. 2021
 IEEE Journal of Biomedical and Health Informatics  
 DOI 10.1109/JBHI.2020.3022989
 
-I used this paper to understand how PTB-XL has been used as a benchmark rather than simply as a large ECG collection. It is also useful for thinking about evaluation and comparability between models.
+I used this paper to understand how PTB-XL has been used as a benchmark and how model comparisons on the dataset are usually evaluated. It also helped me think about comparability between models.
 
-It reinforced my decision to use the dataset's own patient-aware folds rather than making up a random split.
+It reinforced my decision to use the dataset's own patient-aware folds instead of making up a random split.
 
 ## ECG preprocessing review
 
