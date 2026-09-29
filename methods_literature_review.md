@@ -246,7 +246,7 @@ The evidence currently supports the following principles
 
 The major scientific design is now frozen.
 
-The remaining work is implementation verification. The frozen label rule, waveform representation, model structure, normalization and primary estimand now need unit tests, a train-and-validation smoke test and resource checks before the formal protocol and statistical analysis plan are written.
+The remaining work is implementation verification and preregistration. The frozen label rule, waveform representation, model structure, normalization and primary estimand are now written into PROTOCOL.md and STATISTICAL_ANALYSIS_PLAN.md.
 
 ## References
 
