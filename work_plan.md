@@ -51,75 +51,42 @@ This remains a hypothesis. I will let the data and the planned analysis determin
 - Have Zaid independently reproduce the primary analysis from a clean repository state.
 ## Next research phase
 
-### A. Freeze the primary task construction
+### A. Verify the implementation
 
-- confirm the target-present versus NORM-present rule
-- confirm the handling of target plus NORM overlap
-- record exclusions for records with neither label
-- record the final record and patient counts
+- run the repository unit tests
+- run the waveform smoke test on a supplied records100 file
+- verify the metadata audit script reproduces the frozen cohort counts
+- verify runtime and memory use on the available hardware
 
-### B. Freeze the CNN implementation
+### B. Register and freeze the study record
 
-- choose the smallest architecture that can learn the direct waveform representation without introducing engineered features
-- fix optimizer, learning-rate schedule, batch size, epochs and early-stopping rule
-- fix random seeds and model-selection rule
-- confirm that the same configuration is used for raw and normalized conditions
+- review PROTOCOL.md
+- review STATISTICAL_ANALYSIS_PLAN.md
+- record the final environment specification
+- create the preregistration record before inspecting the primary test result
 
-### C. Freeze the statistical target
+### C. Run the primary analysis
 
-- choose the primary estimand
-- define the AUROC difference precisely
-- define the patient-level paired bootstrap and interval method
-- decide how AUPRC uncertainty will be reported
-- define the calibration summary
-- define what is primary versus secondary versus exploratory
+- prepare the full PTB-XL v1.0.3 records100 data locally
+- verify all required waveform reads before training
+- train the four primary task-condition models with seed 1
+- save validation checkpoints and test predictions
+- run the primary patient-level bootstrap
+- report the prespecified secondary metrics
 
-### D. Write the protocol and SAP
+### D. Run prespecified sensitivity analyses
 
-Only after A-C are complete
+- per-lead record-wise z-score
+- unthresholded superclass labels
+- training seeds 1, 2 and 3
 
-- PROTOCOL.md
-- STATISTICAL_ANALYSIS_PLAN.md
-- preregistration record
+### E. Reproduce and report
 
-### E. Then code and analyse
-
-- reusable preprocessing functions
-- validation tests
-- primary training and evaluation
-- results
-- error analysis
-- reasoned robustness checks
-- Zaid independent reproduction
+- independent Zaid reproduction
+- reconcile any discrepancies
+- final results
 - final report
-
-- choose the primary task
-- choose the primary model
-- choose the primary outcome
-- define the AUROC difference precisely
-- define the patient-level bootstrap and interval method
-- decide how AUPRC uncertainty will be reported
-- define the calibration summary
-- define what is primary versus secondary versus exploratory
-
-### F. Write the protocol and SAP
-
-Only after A-E are complete
-
-- PROTOCOL.md
-- STATISTICAL_ANALYSIS_PLAN.md
-- preregistration record
-
-### G. Then code and analyse
-
-- reusable preprocessing functions
-- validation tests
-- primary analysis
-- results
-- error analysis
-- reasoned robustness checks
-- Zaid independent reproduction
-- final report
+- release metadata when there is a meaningful citable version
 
 ## Current documents
 
