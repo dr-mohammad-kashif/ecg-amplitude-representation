@@ -48,7 +48,7 @@ The raw and normalized representations use the same underlying held-out records,
 
 A patient-level paired percentile bootstrap is the primary inferential procedure because PTB-XL can contain multiple records for one patient. DeLong is not used as the primary procedure because its standard formulation does not account for repeated records within patients.
 
-The current primary estimand candidate is the difference in AUROC between the raw and normalized representations for a predefined task on the same held-out evaluation population.
+The primary estimand is the cross-task representation-effect contrast. For task t, Delta_t is AUROC_normalized,t minus AUROC_raw,t, and the primary contrast is Delta_HYP minus Delta_MI.
 
 A final statistical analysis plan should define the interval construction before the result is inspected.
 
