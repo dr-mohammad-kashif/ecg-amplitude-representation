@@ -8,7 +8,7 @@ I am using the PTB-XL dataset and comparing an original ECG representation with 
 
 I have finished the first scientific literature pass and the main methodological literature reconnaissance. I have not run the data audit or the main analysis yet, so there are no results here.
 
-I have completed the PTB-XL metadata and label audit and a targeted waveform integrity audit. The primary input representation is now fixed as the native 100 Hz, 12-lead waveform. The remaining work before the formal protocol is to freeze the CNN configuration and statistical estimand.
+I have completed the PTB-XL metadata and label audit and a targeted waveform integrity audit. The primary input representation, label rule, model structure and statistical estimand are now frozen. The remaining work is implementation verification and formal protocol registration.
 
 ## Who is working on it
 
