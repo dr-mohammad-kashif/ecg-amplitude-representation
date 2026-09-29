@@ -42,7 +42,7 @@ The exclusion rules should be fixed before the primary result is interpreted.
 
 The patient-aware folds prevent the most obvious patient overlap between training and test sets, but repeated records from the same patient are still not independent observations for uncertainty estimation.
 
-Rutter describes a bootstrap approach for diagnostic accuracy measures when observations are clustered by patient. This makes patient-level resampling a strong candidate for this study. (10)
+Rutter describes a bootstrap approach for diagnostic accuracy measures when observations are clustered by patient. This makes patient-level resampling a strong candidate for this study. (12)
 
 ## Defining normalization precisely
 
@@ -86,7 +86,7 @@ The operational rule for this study is that any transformation that learns popul
 
 Patient splitting therefore needs to occur before any learned population-level transformation, feature selection or model fitting that could transfer information across records.
 
-TRIPOD+AI also emphasises clear reporting of predictors, outcomes, model development and performance evaluation in prediction-model studies. PROBAST+AI provides a complementary framework for considering bias and applicability across participants or data sources, predictors, outcomes and analysis. (14,15)
+TRIPOD+AI also emphasises clear reporting of predictors, outcomes, model development and performance evaluation in prediction-model studies. PROBAST+AI provides a complementary framework for considering bias and applicability across participants or data sources, predictors, outcomes and analysis. (16,17)
 
 ## Model input representation
 
@@ -108,7 +108,7 @@ The important control is unchanged. Whatever model is selected, the architecture
 
 The raw and normalized conditions use the same underlying ECG records. Predictions on the held-out set are therefore paired.
 
-DeLong's method provides a standard comparison for correlated ROC curves. (16)
+DeLong's method provides a standard comparison for correlated ROC curves. (18)
 
 A patient-level paired bootstrap is also attractive because it can estimate the distribution of the performance difference while respecting the fact that several records may belong to one patient. I currently prefer this as the main uncertainty candidate, with DeLong considered as a complementary AUROC comparison if appropriate for the final design.
 
@@ -118,7 +118,7 @@ The current primary estimand candidate is the difference in AUROC between the ra
 
 AUROC measures discrimination across thresholds but does not directly reflect the prevalence of the positive class.
 
-Precision-recall analysis is particularly informative when the positive class is uncommon because precision depends on prevalence. (17)
+Precision-recall analysis is particularly informative when the positive class is uncommon because precision depends on prevalence. (19)
 
 The primary performance report should therefore include AUROC, AUPRC and the positive-class prevalence for each task, along with uncertainty for the paired raw versus normalized difference.
 
@@ -126,7 +126,7 @@ The primary performance report should therefore include AUROC, AUPRC and the pos
 
 Calibration is distinct from discrimination.
 
-TRIPOD+AI recommends assessment of calibration in prediction-model studies, and the broader calibration literature distinguishes calibration-in-the-large and calibration slope from discrimination measures. The Brier score provides a summary based on squared probability error. (14,18)
+TRIPOD+AI recommends assessment of calibration in prediction-model studies, and the broader calibration literature distinguishes calibration-in-the-large and calibration slope from discrimination measures. The Brier score provides a summary based on squared probability error. (16,20)
 
 For this study, calibration is currently secondary. The planned display is a calibration plot with Brier score as a summary measure. I will only consider calibration slope and intercept if the final model and evaluation sample make them informative.
 
@@ -150,13 +150,13 @@ A useful sensitivity analysis should answer a specific methodological concern ra
 
 The most relevant candidates are a prespecified alternative normalization definition, a prespecified alternative label rule, or a second simple model if the primary model depends on a methodological assumption.
 
-Because recent PTB-XL work shows that preprocessing can interact with architecture, changing model architecture and preprocessing at the same time would answer a different question. (13)
+Because recent PTB-XL work shows that preprocessing can interact with architecture, changing model architecture and preprocessing at the same time would answer a different question. (15)
 
 ## Reproducibility
 
 For a computational study, reproducibility requires more than publishing the final code.
 
-Sandve et al. describe practical rules for reproducible computational research, including recording software, parameters, inputs and the path used to obtain each result. The FAIR principles extend this idea to data, algorithms, tools and workflows by emphasising findability, accessibility, interoperability and reusability. FAIR4RS further adapts the FAIR approach specifically to research software. (19-21)
+Sandve et al. describe practical rules for reproducible computational research, including recording software, parameters, inputs and the path used to obtain each result. The FAIR principles extend this idea to data, algorithms, tools and workflows by emphasising findability, accessibility, interoperability and reusability. FAIR4RS further adapts the FAIR approach specifically to research software. (21-23)
 
 For this study I therefore need to record
 
@@ -185,7 +185,7 @@ A mismatch should trigger a trace through the data, code, environment and interp
 
 Generative AI can assist with literature discovery, search-term generation, code drafting, debugging and documentation, but the output itself is not evidence.
 
-A 2025 systematic review of generative AI in evidence synthesis found substantial task-dependent errors and missed studies in several evidence-synthesis tasks. The authors concluded that current evidence does not justify unsupervised use for high-stakes evidence synthesis. (22)
+A 2025 systematic review of generative AI in evidence synthesis found substantial task-dependent errors and missed studies in several evidence-synthesis tasks. The authors concluded that current evidence does not justify unsupervised use for high-stakes evidence synthesis. (24)
 
 For this project I therefore keep the model in an accelerator role. Scientific claims are checked against the original paper, dataset documentation or the project's own outputs.
 
@@ -195,11 +195,11 @@ I will use reporting frameworks according to study type rather than claiming tha
 
 **TRIPOD+AI**
 
-Relevant to prediction-model development and evaluation. (14)
+Relevant to prediction-model development and evaluation. (16)
 
 **PROBAST+AI**
 
-Relevant as a risk-of-bias and applicability self-audit for prediction-model work. (15)
+Relevant as a risk-of-bias and applicability self-audit for prediction-model work. (17)
 
 **STROBE**
 
@@ -211,19 +211,19 @@ Relevant to the secondary-data structure of this study. (2-4)
 
 **SPIRIT 2025**
 
-Useful only for transferable protocol-discipline ideas because it is principally a randomised-trial protocol framework. (23)
+Useful only for transferable protocol-discipline ideas because it is principally a randomised-trial protocol framework. (25)
 
 **PRISMA 2020 and PRISMA-S**
 
-Applicable only if this literature search becomes a true systematic review. The current literature review is not described as one. (24,25)
+Applicable only if this literature search becomes a true systematic review. The current literature review is not described as one. (26,27)
 
 **FAIR and FAIR4RS**
 
-Relevant to provenance, research objects and research software. (19,20)
+Relevant to provenance, research objects and research software. (22,23)
 
 **NeurIPS checklist**
 
-Useful as a secondary transparency check for the machine-learning component, not as a claim about submission to NeurIPS. The checklist explicitly focuses on reproducibility, transparency, research ethics and societal impact. (26)
+Useful as a secondary transparency check for the machine-learning component, not as a claim about submission to NeurIPS. The checklist explicitly focuses on reproducibility, transparency, research ethics and societal impact. (28)
 
 ## Current design conclusions
 
