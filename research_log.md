@@ -74,3 +74,25 @@ The frozen design was then implemented as a testable pipeline. The label rule, g
 The full design audit found one implementation-level issue in the unthresholded label-definition sensitivity. A numeric threshold of zero would incorrectly treat an absent superclass as present because the helper used zero as the default maximum likelihood. I replaced that shortcut with an explicit superclass-presence mode and added a unit test for the sensitivity rule.
 
 The protocol, statistical analysis plan and preregistration draft are now aligned with the corrected implementation. The next work is environment verification, preregistration submission, full records100 ingestion and the primary analysis.
+
+The final design decisions need to be recorded explicitly because several of them changed during the audit rather than being present from the beginning.
+
+I first treated the HYP and MI tasks, the normalization rule and the simple model choice as candidates. The PTB-XL audit showed that the label likelihood values materially change the cohort definitions, and the current PTB-XL literature showed that preprocessing effects can depend on model architecture. I therefore narrowed the question before the primary analysis rather than carrying the earlier broad framing forward.
+
+I froze the two phenotype tasks as HYP versus NORM-labelled records and MI versus NORM-labelled records. I use the same 50% SCP likelihood threshold for both the target and NORM labels. Target-plus-NORM is retained as target-positive. The unthresholded superclass-presence definition is now the sensitivity analysis. I kept the earlier research-log entry that described the opposite ordering because it records what I was considering at the time. This entry is the subsequent correction.
+
+I also changed the model plan. I had initially considered logistic regression and random forest because I wanted simple baselines. Once I defined the input as the full 12-lead waveform, those models would require flattening or feature engineering and would introduce another representation choice into a study that is specifically about representation. I therefore selected a compact direct-waveform 1D CNN and froze its architecture before the primary comparison. I am keeping the model fixed between raw and normalized inputs so that the representation is the intended difference.
+
+The waveform audit then gave me enough evidence to select the native 100 Hz, 12-lead records100 representation. I am not adding an independent resampling step. The audit checked paired waveform files directly, while the full ingestion pass will still verify every file actually used in the analysis.
+
+The uncertainty method also moved from a candidate list to a fixed procedure. Because the raw and normalized conditions use the same held-out records and some patients contribute more than one ECG, I selected a patient-level paired percentile bootstrap with 5,000 resamples. The same patient resample will be used for the HYP and MI calculations because the two held-out task populations share patients. I did not keep DeLong as the primary procedure because the standard formulation does not account for the repeated-record structure.
+
+The primary estimand is now fixed as the difference between the normalized-versus-raw AUROC change for HYP and the corresponding change for MI. I am treating this as a descriptive representation-effect contrast within PTB-XL, not as a causal effect.
+
+I also fixed the sensitivity conditions before looking at the primary test result. These are per-lead record-wise z-scoring, the unthresholded label definition, and training stability across seeds 1, 2 and 3. The per-lead sensitivity has its own zero-variance exclusion rule and does not change the primary cohort.
+
+The preregistration timing is also part of the study record. The existing PTB-XL data have already been accessed and audited, so I will describe the registration honestly as occurring after data-preparation and exploratory audit work but before the primary held-out test analysis is interpreted. I will not rewrite the history to imply that the dataset had not been inspected.
+
+One implementation audit then found a real error in the unthresholded label sensitivity. Using a numeric threshold of zero would treat an absent superclass as present because the helper's default maximum likelihood was zero. I replaced that shortcut with an explicit superclass-presence mode and added a unit test for the case. This correction did not change the primary >=50% label rule, but it did matter for the prespecified sensitivity analysis.
+
+At this point the protocol, statistical analysis plan, label specification and preregistration draft are intended to describe the same frozen design. The remaining work is implementation verification, environment capture, registration, full records100 ingestion and the primary analysis.
