@@ -2,9 +2,25 @@
 
 I am using PTB-XL version 1.0.3 from PhysioNet.
 
-The version I am working with contains 21799 clinical 12-lead ECG records from 18869 patients. Each recording is 10 seconds long. The dataset contains 71 ECG statements and provides mappings into diagnostic classes and subclasses.
+The official dataset page currently lists version 1.0.3 as the latest released version. The version contains 21799 clinical 12-lead ECG records from 18869 patients. Each recording is 10 seconds long. The dataset contains 71 ECG statements and provides mappings into diagnostic classes and subclasses.
 
 The waveform data are available at 500 Hz and in a 100 Hz version.
+
+## Official access
+
+Dataset page
+
+https://physionet.org/content/ptb-xl/1.0.3/
+
+Download page for the version 1.0.3 ZIP
+
+https://physionet.org/content/ptb-xl/get-zip/1.0.3/
+
+Version DOI
+
+https://doi.org/10.13026/kfzx-aw45
+
+The current study uses the 1.0.3 release because that is the latest listed version on the official PhysioNet record at the time of this research.
 
 ## Diagnostic labels
 
@@ -26,22 +42,23 @@ The dataset documentation recommends folds 1 to 8 for training, fold 9 for valid
 
 I will keep the exact fold use in the research log once I have frozen the final task definitions.
 
-## Source
+## Source files
 
-The dataset paper is Wagner et al. 2020.
+The minimum metadata files needed for the initial data audit are
 
-The specific PhysioNet version I am using is 1.0.3.
+- `ptbxl_database.csv`
+- `scp_statements.csv`
 
-Version DOI 10.13026/kfzx-aw45
+The primary waveform analysis will use the corresponding PTB-XL waveform records after the model input representation has been frozen.
 
 ## What I will record as the analysis develops
 
-- the date I accessed the dataset
 - the files I actually used
 - the final inclusion and exclusion rules
 - how I constructed the labels
 - which folds were used
 - how many records and patients remained after filtering
 - any derived data I created locally
+- the dataset checksum or other integrity check where practical
 
 I am not committing the raw PTB-XL data to GitHub.
