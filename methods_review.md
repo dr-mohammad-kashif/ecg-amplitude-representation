@@ -10,7 +10,7 @@ The study is a secondary-data computational study using the PTB-XL research data
 
 The current methodological evidence also changes how I think about normalization. Normalization is not one operation. Record-local global z-score, record-local per-lead z-score, min-max transformations and population-fitted transformations answer different questions.
 
-The primary representation comparison is now fixed as the original 100 Hz waveform versus a global record-wise z-score applied across all retained leads and time points within each record. A record-wise per-lead z-score is the prespecified sensitivity condition because it removes lead-specific scale as well as overall record scale.
+The primary representation comparison is fixed as the original 100 Hz waveform versus a global record-wise z-score applied across all retained leads and time points within each record. This transformation changes both location and scale. The record-wise per-lead z-score is the prespecified sensitivity condition because it additionally removes lead-specific scale.
 
 ## Secondary-data design
 
@@ -28,9 +28,11 @@ I will use these as transferable guidance rather than claim direct compliance wi
 
 ## Label construction
 
-PTB-XL is multilabel. HYP, MI, NORM and other diagnostic superclasses can overlap.
+PTB-XL is multilabel. HYP, MI, NORM and other diagnostic superclasses can overlap, and diagnostic statements carry likelihood information.
 
-The data audit therefore has to quantify label combinations before the binary tasks are frozen. I do not want to define the positive and negative groups after seeing model performance.
+The primary rule is frozen at a common >=50% likelihood threshold for both target and NORM labels. Target-plus-NORM records remain target-positive. Records reaching neither threshold are excluded.
+
+The unthresholded superclass-presence rule is the prespecified label-definition sensitivity analysis.
 
 ## Leakage and data splitting
 
@@ -66,15 +68,15 @@ The primary result should therefore be described as a change in predictive behav
 
 ## Model input
 
-The primary input representation is now fixed as the native PTB-XL v1.0.3 records100 waveform.
+The primary input representation is fixed as the native PTB-XL v1.0.3 records100 waveform.
 
-Each record will enter the model as a 12-lead, 1,000-sample waveform at 100 Hz. I selected this because the representation is supplied directly by the dataset, the actual waveform headers and binary files I inspected match that specification, and contemporary PTB-XL work uses the same 100 Hz, 10-second representation.
+Each record enters the model as a 12-lead, 1,000-sample waveform at 100 Hz. I selected this because the representation is supplied directly by the dataset, the actual waveform headers and binary files inspected match that specification, and contemporary PTB-XL work uses the same 100 Hz representation.
 
 No additional resampling will be performed for the primary analysis.
 
-The primary model family remains a small fixed 1D convolutional model. The exact architecture will be frozen during the pilot implementation before the main comparison. The same architecture, input handling and training procedure will be used for the raw and normalized conditions.
+The primary model is a compact three-block 1D convolutional network with max pooling, dropout, global average pooling and a single-logit output. No BatchNorm, LayerNorm or other internal normalization layer is used because the study is testing the effect of an input representation change.
 
-I am dropping logistic regression and random forest as planned baselines for now. Applying them directly to the full waveform would require an additional feature or dimensionality-reduction representation that would introduce another transformation into a study specifically about signal representation.
+I am not using logistic regression or random forest as primary baselines. Applying them to the full waveform would require flattening or feature engineering and would add another representation decision.
 
 ## Robustness
 
