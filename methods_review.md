@@ -111,8 +111,9 @@ The current evidence on AI-assisted evidence synthesis supports keeping human ve
 
 ## Remaining work before the formal protocol
 
-1. Freeze the exact task construction and exclusions in the primary analysis plan.
-2. Freeze the final CNN architecture and its training configuration in a small pilot without interpreting the primary result.
-3. Define the primary statistical estimand and patient-level uncertainty procedure.
+1. Implement and unit-test the frozen label and preprocessing functions.
+2. Run a pipeline smoke test on training data and a validation pass without using test performance for selection.
+3. Confirm the runtime and memory footprint on the available hardware.
 4. Write the formal protocol and statistical analysis plan.
-5. Register the study before the primary result is inspected.
+5. Register the study before the primary test result is interpreted.
+
