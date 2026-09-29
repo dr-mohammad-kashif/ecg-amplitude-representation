@@ -66,3 +66,6 @@ The literature search also showed that version 1.0.3 has already been used in st
 I therefore selected the native 100 Hz, 12-lead waveform as the primary input representation. I am not adding an independent resampling step and I am no longer treating logistic regression or random forest as necessary baselines for the main representation question.
 
 The primary normalized condition is now a global record-wise z-score across all leads and time points within each record. Per-lead record-wise z-score is the main sensitivity condition. The remaining major design work is the exact CNN training configuration and the statistical estimand, after which I can write the formal protocol and statistical analysis plan.
+
+
+The frozen design was then implemented as a testable pipeline. The label rule, global and per-lead standardization functions, input-shape checks and compact CNN forward/backward pass were exercised with a synthetic label fixture and a supplied PTB-XL waveform record. The checks confirmed the expected transformations and the 12 by 1,000 model input. No held-out test performance was used.
