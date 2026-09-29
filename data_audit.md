@@ -170,7 +170,7 @@ The HYP task contains four target-plus-NORM records at the threshold. The MI tas
 
 A recent PTB-XL+ LVH study used the same 50% likelihood threshold and retained co-occurring LVH-plus-NORM records as LVH. A recent PTB-XL MI benchmark used the unthresholded superclass-presence rule instead. I will use that unthresholded rule as a prespecified label-definition sensitivity analysis.
 
-Using a common likelihood threshold for both tasks avoids making annotation certainty itself a different treatment between the HYP and MI comparisons.
+Using a common likelihood threshold for both tasks avoids making the label-definition rule itself different between the HYP and MI comparisons.
 
 ## Likelihood scores
 
@@ -185,7 +185,7 @@ The 50% likelihood threshold is the primary annotation rule; the any-statement d
 
 At the 50% threshold, four records carry both HYP and NORM at or above the threshold. There are no MI+NORM overlaps at or above 50%.
 
-This is important because published PTB-XL studies do not all use the same certainty threshold. I will therefore keep likelihood thresholding as a prespecified sensitivity decision rather than silently mixing thresholded and unthresholded labels.
+This is important because published PTB-XL studies do not all use the same statement-likelihood threshold. I therefore keep the threshold choice explicit rather than silently mixing thresholded and unthresholded labels.
 
 ## Patient-level dependence
 
