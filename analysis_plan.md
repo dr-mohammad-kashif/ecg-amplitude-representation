@@ -47,7 +47,7 @@ I am starting with
 - logistic regression
 - random forest
 
-I want the first comparison to be simple enough that I can see the effect of the representation without introducing unnecessary model complexity.
+I want the first comparison to be simple enough that I can see the representation effect without adding unnecessary model complexity.
 
 I may add one more model later if there is a clear methodological reason to do so. I will not add a more complex model just to improve the headline number.
 
@@ -75,7 +75,7 @@ I will run at least one sensitivity analysis after the primary comparison.
 
 The exact check will depend on what I see in the data and the first result. It may involve a second simple classifier or a defensible alternative normalization definition.
 
-I will record why I chose the check rather than adding variations without a reason.
+I will record why I chose the check instead of adding variations without a reason.
 
 ## Interpretation
 
