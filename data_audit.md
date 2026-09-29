@@ -193,7 +193,7 @@ The primary scientific unit remains the ECG record.
 
 However, 2,111 patients contribute multiple ECG records. Some patients also contribute records that receive different binary labels at different examinations.
 
-Among the current candidate binary datasets, the number of patients with both positive and negative task records is
+Among the primary binary task datasets, the number of patients with both positive and negative task records is
 
 | Task | Patients with conflicting task labels |
 | --- | ---: |
