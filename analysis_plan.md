@@ -201,7 +201,7 @@ The following sensitivity analyses are fixed before the primary test result
 2. the primary >=50% likelihood label rule versus the unthresholded superclass-presence rule
 3. training stability across seeds 1, 2 and 3 using the frozen pipeline
 
-These address normalization scope, annotation certainty, and optimization variability.
+These address normalization scope, label-definition sensitivity, and optimization variability.
 
 I will not add further robustness analyses because one produces a more favourable result. Any analysis that becomes relevant only after seeing the primary result will be labelled exploratory.
 
