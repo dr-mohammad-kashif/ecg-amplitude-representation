@@ -131,7 +131,7 @@ This is now the main unresolved methodological issue.
 
 ### F. Write the protocol and SAP
 
-Only after A-D are complete
+Only after A-E are complete
 
 - PROTOCOL.md
 - STATISTICAL_ANALYSIS_PLAN.md
