@@ -2,7 +2,7 @@
 
 ## What I am asking
 
-Does ECG amplitude normalization remove or alter information relevant to some diagnostic tasks, and is that effect different across tasks?
+Under a fixed direct-waveform model, does global record-wise z-score standardization change ECG classification performance differently for PTB-XL hypertrophy and myocardial infarction phenotypes?
 
 ## Why I am asking it
 
@@ -12,20 +12,22 @@ If amplitude contains information that is useful for one diagnosis and less usef
 
 ## Working hypothesis
 
-My working hypothesis is that the effect of normalization will not be identical across diagnostic tasks.
+My working hypothesis is that the change in AUROC under global record-wise z-score standardization will not be identical for the HYP and MI tasks.
 
-I am treating that as a hypothesis for now, not a conclusion. The effect could be small, could depend more on the model than the task, or could disappear under a reasonable change in the analysis.
+This remains a hypothesis. The effect could be small, could be dominated by model variability, or could disappear under the prespecified sensitivity analyses.
 
-## The first comparison
+## Prespecified tasks
 
-I am starting with two candidate binary tasks from PTB-XL
+I will study two binary PTB-XL phenotype comparisons
 
-- hypertrophy versus normal
-- myocardial infarction versus normal
+- HYP versus NORM-labelled records
+- MI versus NORM-labelled records
 
-I chose these because they are established PTB-XL diagnostic superclasses and because there is a clear clinical reason to pay attention to amplitude when thinking about hypertrophy.
+The primary label definition uses a 50% or higher SCP diagnostic likelihood for both the target superclass and NORM. A target-plus-NORM record is assigned to the target class. A record with neither target nor NORM at that threshold is excluded.
 
-I will freeze the exact label construction and exclusions after the data audit.
+The unthresholded superclass-presence rule is a prespecified label-definition sensitivity analysis.
+
+I use NORM-labelled rather than healthy when describing the study population because the PTB-XL NORM label is an ECG phenotype, not an independent adjudication of overall patient health.
 
 ## What this will not show
 
