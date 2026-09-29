@@ -8,7 +8,7 @@ I am using the PTB-XL dataset to compare the native ECG representation with a de
 
 I have finished the main scientific and methodological literature passes. The metadata and waveform integrity audits are complete. The primary analysis has not been run, so there are no model results here.
 
-I have completed the PTB-XL metadata and label audit and a targeted waveform integrity audit. The primary input representation, label rule, model structure and statistical estimand are now frozen. The remaining work is implementation verification and formal protocol registration.
+I have completed the PTB-XL metadata and label audit and a targeted waveform integrity audit. The primary input representation, label rule, model structure and statistical estimand are now frozen. The remaining work is implementation verification and preregistration.
 
 ## Who is working on it
 
