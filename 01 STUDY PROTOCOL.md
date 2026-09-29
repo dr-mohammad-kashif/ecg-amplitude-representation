@@ -40,7 +40,7 @@ The dataset contains 21,799 ten-second clinical 12-lead ECG records from 18,869 
 
 Raw PTB-XL data are not stored in this repository.
 
-Dataset provenance, local metadata hashes, fold structure and the metadata audit are recorded in [data_provenance.md](data_provenance.md) and [data_audit.md](data_audit.md).
+Dataset provenance, local metadata hashes, fold structure and the metadata audit are recorded in [07 DATA PROVENANCE.md](07%20DATA%20PROVENANCE.md) and [08 DATA AUDIT.md](08%20DATA%20AUDIT.md).
 
 ## Unit of analysis
 
@@ -306,9 +306,9 @@ This repository does not contain the raw PTB-XL waveform collection.
 
 ## Relationship to other study documents
 
-- [research_question.md](research_question.md) states the research question and hypothesis.
-- [analysis_plan.md](analysis_plan.md) contains the operational analysis specification.
-- [data_audit.md](data_audit.md) records the data and waveform integrity audits.
-- [methods_literature_review.md](methods_literature_review.md) records methodological evidence.
-- [research_log.md](research_log.md) records design changes and deviations.
-- [STATISTICAL_ANALYSIS_PLAN.md](STATISTICAL_ANALYSIS_PLAN.md) contains the statistical analysis details.
+- [02 RESEARCH QUESTION.md](02%20RESEARCH%20QUESTION.md) states the research question and hypothesis.
+- [10 ANALYSIS PLAN.md](10%20ANALYSIS%20PLAN.md) contains the operational analysis specification.
+- [08 DATA AUDIT.md](08%20DATA%20AUDIT.md) records the data and waveform integrity audits.
+- [05 METHODS LITERATURE REVIEW.md](05%20METHODS%20LITERATURE%20REVIEW.md) records methodological evidence.
+- [13 RESEARCH LOG.md](13%20RESEARCH%20LOG.md) records design changes and deviations.
+- [11 STATISTICAL ANALYSIS PLAN.md](11%20STATISTICAL%20ANALYSIS%20PLAN.md) contains the statistical analysis details.

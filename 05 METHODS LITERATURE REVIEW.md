@@ -100,7 +100,7 @@ The primary input is the native 100 Hz PTB-XL waveform because it reduces each 1
 
 The primary model is a compact three-block 1D convolutional model. This is not because convolutional models are universally best for ECGs. It is because they can take the multilead waveform directly and allow the representation comparison to be made without first replacing the waveform with handcrafted features.
 
-The model choice and training configuration are fixed in analysis_plan.md. I am not using logistic regression or random forest as primary baselines because applying them to the full waveform would require another representation choice.
+The model choice and training configuration are fixed in 10 ANALYSIS PLAN.md. I am not using logistic regression or random forest as primary baselines because applying them to the full waveform would require another representation choice.
 
 The important control is unchanged. Whatever model is selected, the architecture and all training settings must be identical between raw and normalized conditions.
 
@@ -246,7 +246,7 @@ The evidence currently supports the following principles
 
 The major scientific design is now frozen.
 
-The remaining work is implementation verification and preregistration. The frozen label rule, waveform representation, model structure, normalization and primary estimand are now written into PROTOCOL.md and STATISTICAL_ANALYSIS_PLAN.md.
+The remaining work is implementation verification and preregistration. The frozen label rule, waveform representation, model structure, normalization and primary estimand are now written into 01 STUDY PROTOCOL.md and 11 STATISTICAL ANALYSIS PLAN.md.
 
 ## References
 

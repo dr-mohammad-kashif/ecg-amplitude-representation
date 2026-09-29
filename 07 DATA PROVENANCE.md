@@ -36,7 +36,7 @@ These groups are not mutually exclusive because one record can have more than on
 
 ## Primary binary labels
 
-The primary binary task rule uses a common SCP likelihood threshold of >=50% for both target and NORM labels. Target-plus-NORM is retained as target-positive and records reaching neither threshold are excluded. The unthresholded superclass-presence rule is retained as a prespecified sensitivity analysis. Full counts are recorded in data_audit.md.
+The primary binary task rule uses a common SCP likelihood threshold of >=50% for both target and NORM labels. Target-plus-NORM is retained as target-positive and records reaching neither threshold are excluded. The unthresholded superclass-presence rule is retained as a prespecified sensitivity analysis. Full counts are recorded in 08 DATA AUDIT.md.
 
 ## Folds
 

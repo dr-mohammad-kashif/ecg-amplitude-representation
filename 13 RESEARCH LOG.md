@@ -49,7 +49,7 @@ The current primary normalization candidate is a global record-wise z-score acro
 
 The largest remaining methodological gap is the model input representation. Logistic regression and random forest were chosen as simple starting models, but I have not yet specified how the full multilead waveform enters them. That choice changes the experiment enough that it needs to be resolved before the formal protocol.
 
-I created methods_literature_review.md to keep the detailed methodological evidence separate from the shorter decision-focused methods_review.md.
+I created 05 METHODS LITERATURE REVIEW.md to keep the detailed methodological evidence separate from the shorter decision-focused 06 METHODS REVIEW.md.
 
 I am keeping the research record month-level rather than using exact day stamps. The publication years in the reference list are bibliographic information and are kept separately from the project log.
 The PTB-XL metadata audit is now complete. The uploaded v1.0.3 files reproduce the published superclass counts and show that all patients remain within one stratified fold. The candidate HYP versus NORM and MI versus NORM cohorts are now defined from the actual multilabel structure rather than from assumed mutually exclusive classes.

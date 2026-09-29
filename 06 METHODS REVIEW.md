@@ -2,7 +2,7 @@
 
 I am using this document to collect the methodological decisions that can change the design of the ECG study. It is a synthesis of the evidence, not the full literature record.
 
-The detailed evidence is now recorded in [methods_literature_review.md](methods_literature_review.md).
+The detailed evidence is now recorded in [05 METHODS LITERATURE REVIEW.md](05%20METHODS%20LITERATURE%20REVIEW.md).
 
 ## Current methodological position
 

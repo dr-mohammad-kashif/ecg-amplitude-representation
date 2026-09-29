@@ -2,7 +2,7 @@
 
 I began with the literature that could change the question itself, rather than trying to collect every paper on ECG machine learning. The review focuses on the parts of the literature that matter directly to this study: the PTB-XL dataset and its version history, waveform representation, ECG preprocessing, the clinical relevance of amplitude for hypertrophy, and operational label construction.
 
-The detailed methodological evidence is kept separately in [methods_literature_review.md](methods_literature_review.md). I did this deliberately so that the scientific rationale for the study is not buried inside a long discussion of reporting standards and statistical methods.
+The detailed methodological evidence is kept separately in [05 METHODS LITERATURE REVIEW.md](05%20METHODS%20LITERATURE%20REVIEW.md). I did this deliberately so that the scientific rationale for the study is not buried inside a long discussion of reporting standards and statistical methods.
 
 The citations in this document use a numbered Vancouver-style system. References are listed at the end in the order in which they are first cited.
 
@@ -66,7 +66,7 @@ That distinction matters for interpretation. A result on the MI task will descri
 
 ## Methodological foundation for the study
 
-The study design is also informed by a separate body of methodological research. The detailed rationale is documented in [methods_literature_review.md](methods_literature_review.md).
+The study design is also informed by a separate body of methodological research. The detailed rationale is documented in [05 METHODS LITERATURE REVIEW.md](05%20METHODS%20LITERATURE%20REVIEW.md).
 
 The study is based on secondary data, so I am using secondary-data reporting guidance alongside broader observational reporting guidance. STROSA identified aspects of secondary-data research that require more explicit reporting than STROBE alone, while later guidance has expanded recommendations around registration, data dictionaries and documentation. (15-18)
 

@@ -42,35 +42,35 @@ The label rule, normalization, waveform representation, model structure and prim
 
 ## Files
 
-[research_question.md](research_question.md) contains the question and the working hypotheses.
+[02 RESEARCH QUESTION.md](02%20RESEARCH%20QUESTION.md) contains the question and the working hypotheses.
 
-[data_audit.md](data_audit.md) records the PTB-XL metadata and label audit performed before the primary analysis.
-[LABEL_SPECIFICATION.md](LABEL_SPECIFICATION.md) contains the frozen binary task definitions.
-
-
-[analysis_plan.md](analysis_plan.md) contains the current experimental plan.
-[PROTOCOL.md](PROTOCOL.md) contains the prespecified study protocol.
-
-[STATISTICAL_ANALYSIS_PLAN.md](STATISTICAL_ANALYSIS_PLAN.md) contains the statistical analysis specification.
+[08 DATA AUDIT.md](08%20DATA%20AUDIT.md) records the PTB-XL metadata and label audit performed before the primary analysis.
+[09 LABEL SPECIFICATION.md](09%20LABEL%20SPECIFICATION.md) contains the frozen binary task definitions.
 
 
-[literature_review.md](literature_review.md) records the scientific and clinical literature that shaped the research question.
+[10 ANALYSIS PLAN.md](10%20ANALYSIS%20PLAN.md) contains the current experimental plan.
+[01 STUDY PROTOCOL.md](01%20STUDY%20PROTOCOL.md) contains the prespecified study protocol.
 
-[methods_literature_review.md](methods_literature_review.md) records the evidence used to design the study and justify methodological choices.
+[11 STATISTICAL ANALYSIS PLAN.md](11%20STATISTICAL%20ANALYSIS%20PLAN.md) contains the statistical analysis specification.
 
-[methods_review.md](methods_review.md) records the current methodological synthesis and final design choices.
 
-[literature_search.md](literature_search.md) records the current search process and what changed because of it.
+[03 LITERATURE REVIEW.md](03%20LITERATURE%20REVIEW.md) records the scientific and clinical literature that shaped the research question.
 
-[work_plan.md](work_plan.md) is my running map of decisions, open questions and next steps.
+[05 METHODS LITERATURE REVIEW.md](05%20METHODS%20LITERATURE%20REVIEW.md) records the evidence used to design the study and justify methodological choices.
 
-[references.md](references.md) contains the citations.
+[06 METHODS REVIEW.md](06%20METHODS%20REVIEW.md) records the current methodological synthesis and final design choices.
 
-[data_provenance.md](data_provenance.md) records where the PTB-XL data come from and how I am handling the dataset.
+[04 LITERATURE SEARCH.md](04%20LITERATURE%20SEARCH.md) records the current search process and what changed because of it.
 
-[research_log.md](research_log.md) is where I am recording decisions and changes as the work develops.
+[14 WORK PLAN.md](14%20WORK%20PLAN.md) is my running map of decisions, open questions and next steps.
 
-[ai_notes.md](ai_notes.md) records where I use AI tools and what I check myself.
+[15 REFERENCES.md](15%20REFERENCES.md) contains the citations.
+
+[07 DATA PROVENANCE.md](07%20DATA%20PROVENANCE.md) records where the PTB-XL data come from and how I am handling the dataset.
+
+[13 RESEARCH LOG.md](13%20RESEARCH%20LOG.md) is where I am recording decisions and changes as the work develops.
+
+[16 AI NOTES.md](16%20AI%20NOTES.md) records where I use AI tools and what I check myself.
 
 ## Current evidence boundary
 
@@ -84,7 +84,7 @@ I am not storing the PTB-XL data in this repository. The study uses PTB-XL versi
 
 [Download the version 1.0.3 ZIP](https://physionet.org/content/ptb-xl/get-zip/1.0.3/)
 
-The version, source files and provenance details are recorded in data_provenance.md.
+The version, source files and provenance details are recorded in 07 DATA PROVENANCE.md.
 
 ## Citation
 

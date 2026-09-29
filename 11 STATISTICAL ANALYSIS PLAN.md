@@ -1,6 +1,6 @@
 # Statistical analysis plan
 
-This plan is aligned with PROTOCOL.md and analysis_plan.md.
+This plan is aligned with 01 STUDY PROTOCOL.md and 10 ANALYSIS PLAN.md.
 
 ## Primary estimand
 

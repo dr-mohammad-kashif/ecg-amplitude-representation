@@ -4,7 +4,7 @@
 
 I am using this file as the running map for the study. I want one place that tells me what has already been decided, what is still open, and what I need to do next.
 
-This is not the study protocol. The protocol is now written in PROTOCOL.md. This file tracks implementation and execution work.
+This is not the study protocol. The protocol is now written in 01 STUDY PROTOCOL.md. This file tracks implementation and execution work.
 
 ## Current state
 
@@ -60,8 +60,8 @@ This remains a hypothesis. I will let the data and the planned analysis determin
 
 ### B. Register and freeze the study record
 
-- review PROTOCOL.md
-- review STATISTICAL_ANALYSIS_PLAN.md
+- review 01 STUDY PROTOCOL.md
+- review 11 STATISTICAL ANALYSIS PLAN.md
 - record the final environment specification
 - create the preregistration record before inspecting the primary test result
 
@@ -91,20 +91,22 @@ This remains a hypothesis. I will let the data and the planned analysis determin
 ## Current documents
 
 - README.md
-- data_audit.md
-- research_question.md
-- analysis_plan.md
-- literature_review.md
-- methods_literature_review.md
-- methods_review.md
-- literature_search.md
-- references.md
-- data_provenance.md
-- research_log.md
-- ai_notes.md
-- PROTOCOL.md
-- STATISTICAL_ANALYSIS_PLAN.md
-- LABEL_SPECIFICATION.md
+- 01 STUDY PROTOCOL.md
+- 02 RESEARCH QUESTION.md
+- 03 LITERATURE REVIEW.md
+- 04 LITERATURE SEARCH.md
+- 05 METHODS LITERATURE REVIEW.md
+- 06 METHODS REVIEW.md
+- 07 DATA PROVENANCE.md
+- 08 DATA AUDIT.md
+- 09 LABEL SPECIFICATION.md
+- 10 ANALYSIS PLAN.md
+- 11 STATISTICAL ANALYSIS PLAN.md
+- 12 PREREGISTRATION DRAFT.md
+- 13 RESEARCH LOG.md
+- 14 WORK PLAN.md
+- 15 REFERENCES.md
+- 16 AI NOTES.md
 - requirements.txt
 - .gitignore
 - src/
@@ -151,11 +153,9 @@ AI-use documentation stays brief and factual. It should record real assistance a
 
 ## Context recovery rule
 
-Before continuing the study in a new session, I should read this file, README.md, research_question.md, analysis_plan.md, literature_review.md, methods_literature_review.md, methods_review.md, literature_search.md, data_provenance.md, data_audit.md, research_log.md and ai_notes.md.
+Before continuing the study in a new session, I should read README.md for the current overview, then read the numbered study documents from 01 through 16 in order. After that I should check the latest git commit and the current file tree.
 
-Then I should check the latest git commit and the current file tree.
-
-No methodological decision from an earlier session should be silently dropped. If a later decision changes an earlier one, record the change in research_log.md.
+No methodological decision from an earlier session should be silently dropped. If a later decision changes an earlier one, record the change in 13 RESEARCH LOG.md.
 
 ## Immediate next task
 
