@@ -43,6 +43,8 @@ I am freezing the task definitions, normalization rule and model input represent
 
 [research_question.md](research_question.md) contains the question and the working hypotheses.
 
+[data_audit.md](data_audit.md) records the PTB-XL metadata and label audit performed before the primary analysis.
+
 [analysis_plan.md](analysis_plan.md) contains the current experimental plan.
 
 [literature_review.md](literature_review.md) records the scientific and clinical literature that shaped the research question.
