@@ -6,3 +6,4 @@ scipy
 jupyter
 wfdb
 torch
+pytest
