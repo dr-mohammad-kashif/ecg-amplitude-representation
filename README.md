@@ -46,6 +46,10 @@ The label rule, normalization, waveform representation, model structure and prim
 [data_audit.md](data_audit.md) records the PTB-XL metadata and label audit performed before the primary analysis.
 
 [analysis_plan.md](analysis_plan.md) contains the current experimental plan.
+[PROTOCOL.md](PROTOCOL.md) contains the prespecified study protocol.
+
+[STATISTICAL_ANALYSIS_PLAN.md](STATISTICAL_ANALYSIS_PLAN.md) contains the statistical analysis specification.
+
 
 [literature_review.md](literature_review.md) records the scientific and clinical literature that shaped the research question.
 
@@ -85,4 +89,4 @@ This repository includes a CITATION.cff file for machine-readable citation metad
 
 ## Reproducibility
 
-I am keeping the analysis in small steps so I can rerun it from the repository instead of relying on a single notebook or an undocumented sequence of commands.
+I am keeping the analysis in small steps so I can rerun it from the repository instead of relying on a single notebook or an undocumented sequence of commands. The current implementation includes reusable label and preprocessing functions, a fixed CNN definition, unit tests and a waveform smoke test.
