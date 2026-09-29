@@ -24,7 +24,7 @@ Under a fixed direct-waveform model, does global record-wise z-score standardiza
 
 The change in AUROC under global record-wise z-score standardization will not be identical for the HYP and MI tasks.
 
-This is a directional research hypothesis about task-dependent representation effects, not a hypothesis that standardization will improve or worsen performance overall.
+This is a non-directional research hypothesis about task-dependent representation effects, not a hypothesis that standardization will improve or worsen performance overall.
 
 ## Dataset
 
