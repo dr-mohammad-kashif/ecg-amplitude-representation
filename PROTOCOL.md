@@ -30,7 +30,7 @@ Compare raw and normalized representations using average precision and Brier sco
 
 Describe calibration behaviour with reliability plots.
 
-Examine whether the main result is stable to the prespecified normalization, label-certainty and random-seed sensitivity analyses.
+Examine whether the main result is stable to the prespecified normalization, label-definition and random-seed sensitivity analyses.
 
 ## Dataset and provenance
 
