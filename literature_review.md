@@ -18,7 +18,7 @@ The PTB-XL benchmark paper provides a reference point for how the dataset has be
 
 ## Waveform representation
 
-The official v1.0.3 release supplies the waveform data directly in WFDB format at 500 Hz and as a 100 Hz version in records100. The supplied 100 Hz representation is therefore not a custom resampling step that I need to reproduce. Contemporary PTB-XL work includes a study explicitly using version 1.0.3 at 100 Hz for 12-lead recordings, while another recent study demonstrates a 12 x 1000 neural-network input after conversion to 100 Hz. (1,13,14)
+The official v1.0.3 release supplies the waveform data directly in WFDB format at 500 Hz and as a 100 Hz version in records100. The supplied 100 Hz representation is therefore not a custom resampling step that I need to reproduce. Contemporary PTB-XL work includes a 2026 Nature study using the current 21,799-record release as 10-second, 12-lead, 100 Hz inputs for convolutional models, while another recent study demonstrates a 12 x 1000 neural-network input after conversion to 100 Hz. (1,13,14)
 
 This supports using the native 100 Hz waveform for the primary comparison. It also keeps the experiment focused on the representation supplied by the dataset rather than introducing a separate resampling decision. I still checked representative waveform records directly to verify the header structure, sample count, channel order, binary dimensions and signal scaling before selecting this representation for the study.
 
@@ -38,13 +38,13 @@ For the primary experiment, I am selecting a global record-wise z-score, calcula
 
 ## Why amplitude matters for the hypertrophy task
 
-The reason HYP remains a candidate task is not that hypertrophy can be reduced to amplitude.
+The reason HYP is included is not that hypertrophy can be reduced to amplitude.
 
 The ISE/ISHNE expert consensus statement on ECG diagnosis of left ventricular hypertrophy describes the historical role of QRS voltage criteria and also emphasises their limitations and the influence of factors other than ventricular mass on ECG voltage. (9)
 
 That gives the representation question a concrete clinical basis. If a preprocessing operation changes amplitude relationships before a model sees the ECG, it is reasonable to ask whether the consequences are the same for a hypertrophy-related phenotype as for a phenotype with a different diagnostic basis.
 
-Recent PTB-XL+ work also shows that QRS amplitude and related ECG features can contribute to machine-learning detection of LVH. I use this as supporting evidence for keeping HYP as a candidate task, not as evidence that amplitude alone determines the label. (10)
+Recent PTB-XL+ work also shows that QRS amplitude and related ECG features can contribute to machine-learning detection of LVH. I use this as supporting evidence for retaining HYP as a task, not as evidence that amplitude alone determines the label. (10)
 
 ## Label construction and phenotype definition
 
@@ -61,8 +61,6 @@ These are not interchangeable label conventions. They show why the label rule ne
 I am retaining MI as a comparator phenotype because its clinical and electrocardiographic basis is not identical to hypertrophy.
 
 Recent PTB-XL work on myocardial infarction and ST/T-change phenotypes used patient-disjoint evaluation and treated the target as an operational ECG phenotype derived from PTB-XL labels rather than as adjudicated active ischemia in individual patients. (11)
-
-A separate PTB-XL v1.0.3 study using 100 Hz data also demonstrates that dataset-defined MI cohorts can be built for controlled machine-learning experiments while using explicit preprocessing and cohort rules. (13)
 
 That distinction matters for interpretation. A result on the MI task will describe the effect of the representation on classification of the PTB-XL phenotype I define. It will not, by itself, establish that normalization changes the clinical diagnosis of myocardial infarction.
 
@@ -96,7 +94,7 @@ The recent waveform literature supports a direct 12-lead, 100 Hz representation,
 
 The methodological literature gives me a framework for handling the study as secondary-data computational research, including explicit label construction, prespecified analysis, model-reporting checks, provenance and reproducibility. (15-27)
 
-What remains open is not the basic waveform format. The remaining decisions are the exact CNN configuration, the final statistical target and the details of the primary and sensitivity normalization implementations.
+What remains open is implementation verification. The waveform representation, task definitions, normalization conditions, primary model structure and primary estimand are now fixed. The next step is to test that the implementation reproduces these specifications before the formal protocol and primary analysis.
 
 ## References
 
@@ -112,7 +110,7 @@ What remains open is not the basic waveform format. The remaining decisions are 
 10. Zhou Q, Luo X, Du K. Interpretable detection of left ventricular hypertrophy using commercial ECG features and machine learning: a study based on the PTB-XL+ dataset. Front Cardiovasc Med. 2026;13:1825829. doi:10.3389/fcvm.2026.1825829.
 11. Jin M, Tang X, Lei Y, et al. Machine-learning classification of myocardial infarction and ST/T-change ECG phenotypes across complementary evaluation settings. Sci Rep. 2026. doi:10.1038/s41598-026-68967-9.
 12. Aydin F, Usta S, Kalaycioglu E, Aydemir O. Source-only transportability of engineered ECG features for healthy-versus-myocardial infarction classification. Diagnostics (Basel). 2026;16(13):2061. doi:10.3390/diagnostics16132061.
-13. Tanyel T, Atmaca S, Gökçe K, Balık MY, Güler A, Aslanger E, Öksüz İ. Interpretable ECG analysis for myocardial infarction detection through counterfactuals. Biomed Signal Process Control. 2025;102:107227. doi:10.1016/j.bspc.2024.107227.
+13. Knolle MA, Menten MJ, Jungmann F, Meissen F, Glocker B, Rueckert D, Kaissis G. Disparate privacy risks from medical AI. Nature. 2026;656:192-198. doi:10.1038/s41586-026-10688-0.
 14. Zeng L, Pan J, Lu Y, Pan X. Stabilizing extreme few-shot ECG classification via self-supervised contrastive pretraining. Ann Noninvasive Electrocardiol. 2026;31(3):e70188. doi:10.1111/anec.70188.
 15. von Elm E, Altman DG, Egger M, Pocock SJ, Gøtzsche PC, Vandenbroucke JP; STROBE Initiative. The Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) statement: guidelines for reporting observational studies. Epidemiology. 2007;18(6):800-804. doi:10.1097/EDE.0b013e3181577654.
 16. Swart E, Schmitt J. STandardized Reporting Of Secondary data Analyses, a recommendation. Z Evid Fortbild Qual Gesundhwes. 2014;108(9):511-516. doi:10.1016/j.zefq.2014.08.022.
