@@ -8,15 +8,17 @@ This is not the study protocol. The protocol will be written only after the desi
 
 ## Current state
 
-The repository is public and contains the first research question, analysis plan, literature review, methodological review, literature search record, data provenance note, research log, AI-use note, requirements file, and gitignore.
+The repository is public and now contains separate scientific and methodological literature records.
 
-The first literature pass is complete.
+The first scientific literature pass is complete.
+
+The methodological literature reconnaissance is substantially complete for the major design questions.
 
 The main analysis has not started.
 
 No model result has been produced.
 
-The next phase is methodological groundwork.
+The next phase is the PTB-XL data audit and the final model input decision.
 
 ## Current research question
 
@@ -34,7 +36,7 @@ This remains a hypothesis. I will let the data and the planned analysis determin
 - Keep patient identity through data preparation.
 - Use patient-aware evaluation.
 - Start with raw versus one clearly defined normalized representation.
-- Start with simple models before considering more complex models.
+- Keep the model and evaluation procedure fixed when comparing representations.
 - Treat HYP versus NORM and MI versus NORM as candidate tasks until the data audit is complete.
 - Record label construction and exclusion rules before the primary comparison.
 - Evaluate with AUROC, AUPRC and calibration where appropriate.
@@ -43,105 +45,86 @@ This remains a hypothesis. I will let the data and the planned analysis determin
 - Have Zaid independently reproduce the primary comparison after the first analysis is stable.
 - Keep AI use documented, but do not treat AI output as scientific evidence.
 
+## Evidence-supported candidates
+
+These are not yet frozen protocol decisions.
+
+### Normalization
+
+A global record-wise z-score across retained leads and time points is currently the clearest primary candidate.
+
+A record-wise per-lead z-score is currently the clearest sensitivity candidate.
+
+### Uncertainty
+
+A patient-level paired bootstrap is currently the strongest candidate because multiple ECG records can belong to one patient.
+
+DeLong remains a candidate for the correlated AUROC comparison.
+
+### Calibration
+
+Calibration plot plus Brier score is the current simple secondary plan.
+
 ## Next research phase
 
-Before I lock the protocol, I need to investigate the study design itself.
+### A. Audit the actual PTB-XL task structure
 
-### A. Define the scientific target
+- inspect all label combinations
+- quantify target and NORM overlaps
+- count records and patients under candidate task definitions
+- test the effect of reasonable pre-specified exclusion rules
+- document unusable waveform cases
+- check class balance
+- decide the scientific unit of observation
 
-- What exactly should count as information preservation?
-- Is the study about numerical signal preservation, morphological preservation, task-relevant information, or several of these?
-- What can be measured without making the study much larger than it needs to be?
-- What claims would each measure support?
+### B. Decide the model input representation
 
-### B. Define the preprocessing question
+This is now the main unresolved methodological issue.
 
-- Which normalization method is most defensible for the primary comparison?
-- Should normalization be record-wise, lead-wise, or use another scheme?
-- Which properties of the original signal change under each option?
-- Which choices can cause leakage?
-- Which normalization choices are common enough in ECG machine learning to make the study useful?
+- determine whether the waveform will be used directly or through a defined feature representation
+- check computational feasibility of each option
+- keep the same input construction for raw and normalized conditions
+- avoid adding dimensionality reduction solely to make one representation work better
+- decide whether logistic regression and random forest remain appropriate after the input is defined
+- record the reason for the final choice
 
-### C. Define the diagnostic tasks
+### C. Freeze preprocessing
 
-- What exactly do the PTB-XL HYP and NORM labels mean?
-- What exactly do the MI and NORM labels mean?
-- How should overlapping diagnostic labels be handled?
-- What records should be excluded?
-- Do the candidate tasks have enough usable data after the label rules are applied?
-- Are there task definitions that are cleaner than the current candidates?
+- write the exact normalization formula
+- specify record-local versus population-fitted parameters
+- specify whether the transform is applied independently within each split
+- define any handling of missing or unusable signal
+- define the sensitivity normalization before the primary analysis
 
-### D. Define the experimental design
+### D. Freeze the statistical target
 
-- What is the unit of observation?
-- What stays fixed across raw and normalized comparisons?
-- What is the primary model?
-- What is the primary outcome?
-- What is the primary estimand?
-- What uncertainty method is appropriate?
-- What should be pre-specified and what can remain exploratory?
-- What is the minimum robustness analysis that would materially improve the study?
+- choose the primary task
+- choose the primary model
+- choose the primary outcome
+- define the AUROC difference precisely
+- define the patient-level bootstrap and interval method
+- decide how AUPRC uncertainty will be reported
+- define the calibration summary
+- define what is primary versus secondary versus exploratory
 
-### E. Check research quality and reporting standards
+### E. Write the protocol and SAP
 
-Review the parts of the following that actually fit this study
+Only after A-D are complete
 
-- TRIPOD+AI
-- PROBAST+AI
-- STROBE
-- SPIRIT 2025 where its protocol principles are relevant
-- NeurIPS research checklist for machine learning reproducibility and transparency
-- FAIR principles for data and research objects
-- published guidance for statistical analysis plans in observational and secondary-data work
+- PROTOCOL.md
+- STATISTICAL_ANALYSIS_PLAN.md
+- preregistration record
 
-I will not claim compliance with a guideline that was designed for a different study type. I will use relevant items as design and reporting checks.
+### F. Then code and analyse
 
-### F. Literature search method
-
-Build a transparent record of
-
-- databases and search engines used
-- search dates
-- exact search strings
-- inclusion rules
-- exclusion rules
-- citation chaining
-- papers added after the first pass
-- why a paper changed the design or was not needed
-
-Do not call this a systematic review unless the search and screening process actually meets the requirements for one.
-
-### G. AI-assisted research
-
-Review evidence on
-
-- AI-assisted literature discovery
-- screening
-- extraction
-- citation checking
-- coding
-- analysis support
-- hallucination and citation errors
-- human verification
-- audit trails
-- speed versus accuracy
-
-The goal is a fast workflow with human control and source verification. The study should not assume that AI is more accurate than a human across the whole research process.
-
-### H. Reproducibility
-
-Plan
-
-- exact environment capture
-- package versions
-- random seeds where relevant
-- reusable preprocessing code
-- tests
-- raw versus derived data boundaries
-- repository versioning
-- preregistration
-- independent reproduction
-- later archival release
+- reusable preprocessing functions
+- validation tests
+- primary analysis
+- results
+- error analysis
+- reasoned robustness checks
+- Zaid independent reproduction
+- final report
 
 ## Current documents
 
@@ -149,6 +132,7 @@ Plan
 - research_question.md
 - analysis_plan.md
 - literature_review.md
+- methods_literature_review.md
 - methods_review.md
 - literature_search.md
 - references.md
@@ -166,9 +150,8 @@ I expect the research record to grow as real work is completed.
 - statistical analysis plan
 - label specification
 - data dictionary
-- evidence extraction matrix
-- bias and leakage register
-- reporting standards matrix
+- evidence extraction matrix if it becomes useful
+- bias and leakage register if the design becomes complex enough to warrant it
 - replication note
 - tests
 - results
@@ -203,7 +186,7 @@ AI-use documentation stays brief and factual. It should record real assistance a
 
 ## Context recovery rule
 
-Before continuing the study in a new session, I should read this file, README.md, research_question.md, analysis_plan.md, literature_review.md, methods_review.md, literature_search.md, data_provenance.md, research_log.md and ai_notes.md.
+Before continuing the study in a new session, I should read this file, README.md, research_question.md, analysis_plan.md, literature_review.md, methods_literature_review.md, methods_review.md, literature_search.md, data_provenance.md, research_log.md and ai_notes.md.
 
 Then I should check the latest git commit and the current file tree.
 
@@ -211,6 +194,6 @@ No methodological decision from an earlier session should be silently dropped. I
 
 ## Immediate next task
 
-Finish the methodological literature reconnaissance before writing the formal study protocol.
+Audit PTB-XL version 1.0.3 and resolve the model input representation.
 
-The protocol should be a result of that work, not a template written first and justified later.
+The formal protocol should be written only after those decisions are supported by the actual dataset and the literature.
