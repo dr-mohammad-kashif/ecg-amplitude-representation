@@ -37,7 +37,7 @@ I will
 - inspect errors and run a small number of reasoned robustness checks
 - have Zaid reproduce the main comparison from the repository
 
-I am freezing the task definitions, normalization rule and model input representation before running the primary comparison.
+The label rule, normalization, waveform representation, model structure and primary estimand are now frozen before the primary comparison.
 
 ## Files
 
@@ -51,7 +51,7 @@ I am freezing the task definitions, normalization rule and model input represent
 
 [methods_literature_review.md](methods_literature_review.md) records the evidence used to design the study and justify methodological choices.
 
-[methods_review.md](methods_review.md) records the current methodological synthesis and unresolved decisions.
+[methods_review.md](methods_review.md) records the current methodological synthesis and final design choices.
 
 [literature_search.md](literature_search.md) records the current search process and what changed because of it.
 
