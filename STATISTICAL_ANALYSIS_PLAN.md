@@ -71,7 +71,7 @@ Exploratory analyses are reported separately.
 
 ## Missing and technical failures
 
-Technical waveform failures are excluded before model fitting and recorded by task and fold.
+Technical waveform failures are excluded before model fitting and recorded by task and fold. A record with a zero-variance lead is excluded only from the per-lead normalization sensitivity analysis.
 
 No waveform imputation is performed.
 
