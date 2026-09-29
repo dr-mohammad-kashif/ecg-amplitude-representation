@@ -46,7 +46,7 @@ The study should distinguish this from preprocessing that shares information acr
 
 The raw and normalized representations use the same underlying held-out records, so the performance comparison is paired.
 
-DeLong is a candidate method for the correlated AUROC comparison. A patient-level bootstrap is also a strong candidate because PTB-XL can contain multiple records for one patient.
+A patient-level paired percentile bootstrap is the primary inferential procedure because PTB-XL can contain multiple records for one patient. DeLong is not used as the primary procedure because its standard formulation does not account for repeated records within patients.
 
 The current primary estimand candidate is the difference in AUROC between the raw and normalized representations for a predefined task on the same held-out evaluation population.
 
