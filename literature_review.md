@@ -94,7 +94,7 @@ The recent waveform literature supports a direct 12-lead, 100 Hz representation,
 
 The methodological literature gives me a framework for handling the study as secondary-data computational research, including explicit label construction, prespecified analysis, model-reporting checks, provenance and reproducibility. (15-27)
 
-What remains open is implementation verification. The waveform representation, task definitions, normalization conditions, primary model structure and primary estimand are now fixed. The next step is to test that the implementation reproduces these specifications before the formal protocol and primary analysis.
+What remains open is implementation verification and preregistration. The waveform representation, task definitions, normalization conditions, primary model structure and primary estimand are now fixed and documented in the protocol and analysis plan.
 
 ## References
 
