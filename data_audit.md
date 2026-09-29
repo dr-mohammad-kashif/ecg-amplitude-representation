@@ -1,8 +1,8 @@
 # Data audit
 
-I audited the uploaded PTB-XL version 1.0.3 metadata files before freezing the binary task definitions.
+I audited the uploaded PTB-XL version 1.0.3 metadata files and then performed a targeted integrity check of representative `records100` waveform files before freezing the primary waveform representation and task definitions.
 
-The audit covered `ptbxl_database.csv` and `scp_statements.csv`. No waveform files were used in this audit.
+The metadata audit covered `ptbxl_database.csv` and `scp_statements.csv`. The waveform integrity audit was performed separately on paired WFDB waveform files.
 
 ## Files checked
 
@@ -139,36 +139,38 @@ Among MI-positive records that do not carry NORM, other diagnostic superclasses 
 
 Again, this is a multilabel phenotype comparison rather than a clean clinical case-control definition.
 
-## Candidate binary label rule
+## Primary binary label rule
 
-The data audit and recent PTB-XL literature support a simple candidate rule for the primary binary tasks
+The primary binary tasks use a common SCP likelihood threshold of at least 50% for both the target superclass and NORM.
 
 **Positive**
 
-The target superclass is present.
+The target superclass is present at likelihood >= 50%.
 
 **Negative**
 
-NORM is present and the target superclass is absent.
+NORM is present at likelihood >= 50% and the target superclass is absent at likelihood >= 50%.
 
 **Excluded**
 
-Neither the target superclass nor NORM is present.
+Neither the target superclass nor NORM reaches 50%.
+
+**Overlap rule**
+
+If target and NORM both reach 50%, the record is retained as target-positive.
 
 Under this rule
 
 | Task | Positive | Negative | Excluded |
 | --- | ---: | ---: | ---: |
-| HYP vs NORM | 2,649 | 9,509 | 9,641 |
-| MI vs NORM | 5,469 | 9,513 | 6,817 |
+| HYP vs NORM | 2,258 | 9,434 | 10,107 |
+| MI vs NORM | 4,134 | 9,438 | 8,227 |
 
-For HYP, the five HYP+NORM records would remain positive. For MI, the single MI+NORM record would remain positive.
+The HYP task contains four target-plus-NORM records at the threshold. The MI task contains no target-plus-NORM record at the threshold.
 
-This rule matches the structure of a recent PTB-XL binary MI benchmark in which MI was assigned when an MI-superclass code was present, the Healthy class required NORM with no MI code, and records containing neither were excluded. The authors reported a 14,982-record PTB-XL subset with 5,469 MI and 9,513 Healthy records.
+A recent PTB-XL+ LVH study used the same 50% likelihood threshold and retained co-occurring LVH-plus-NORM records as LVH. A recent PTB-XL MI benchmark used the unthresholded superclass-presence rule instead. I will use that unthresholded rule as a prespecified label-definition sensitivity analysis.
 
-For HYP, a recent PTB-XL+ LVH study used a 50% likelihood threshold and explicitly classified records with co-occurring LVH and NORM as LVH. That study obtained 2,258 LVH and 9,434 normal records before its feature analysis.
-
-I therefore do not want to invent a new label convention without acknowledging these precedents.
+Using a common likelihood threshold for both tasks avoids making annotation certainty itself a different treatment between the HYP and MI comparisons.
 
 ## Likelihood scores
 
@@ -224,22 +226,13 @@ Second, I do not need to invent an elaborate mutually exclusive diagnostic cohor
 
 Third, patient clustering is not a theoretical concern. It is present in the actual task cohorts, so the patient-level uncertainty plan should be implemented rather than left as a general methodological note.
 
-## What the audit does not answer
+## What the audit establishes and does not establish
 
-This audit does not inspect the waveform values.
+The targeted waveform integrity check establishes that the paired waveform files inspected conform to the documented 100 Hz WFDB representation and can be decoded correctly. It does not establish that every waveform file in the full release is present or technically error-free.
 
-I have not yet checked
+The full ingestion pipeline will therefore include a deterministic waveform existence and read check before model fitting. Any technical failure will be logged by record identifier and reported by task and fold. It will not be selected or excluded because of model performance.
 
-- waveform readability
-- actual sample counts
-- missing or corrupted waveform files
-- channel ordering in the downloaded waveform files
-- signal amplitude ranges
-- baseline offsets
-- whether any records require waveform-level exclusion
-- the practical memory and compute cost of the 500 Hz and 100 Hz versions
-
-Those checks require access to the waveform files.
+The metadata and waveform audits also do not establish clinical validity of the PTB-XL annotations. The primary tasks remain operational phenotype definitions derived from the dataset's diagnostic statements.
 
 ## References
 
