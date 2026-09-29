@@ -30,6 +30,8 @@ Zhou Q, Luo X, Du K. Interpretable detection of left ventricular hypertrophy usi
 
 Jin M, Tang X, Lei Y, et al. Machine-learning classification of myocardial infarction and ST/T-change ECG phenotypes across complementary evaluation settings. Sci Rep. 2026. doi:10.1038/s41598-026-68967-9.
 
+Knolle MA, Menten MJ, Jungmann F, Meissen F, Glocker B, Rueckert D, Kaissis G. Disparate privacy risks from medical AI. Nature. 2026;656:192-198. doi:10.1038/s41586-026-10688-0.
+
 Salimi A, Kalmady SV, Hindle A, Zaiane O, Kaul P. Exploring best practices for ECG signal processing in machine learning. Preprint. 2023. doi:10.48550/arXiv.2311.04229.
 
 ## Methods and reporting
