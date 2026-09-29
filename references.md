@@ -68,9 +68,15 @@ Rethlefsen ML, Kirtley S, Waffenschmidt S, Ayala AP, Moher D, Page MJ, et al. PR
 
 Wilkinson MD, Dumontier M, Aalbersberg I, Appleton G, Axton M, Baak A, et al. The FAIR Guiding Principles for scientific data management and stewardship. Sci Data. 2016;3:160018. doi:10.1038/sdata.2016.18.
 
+Barker M, Chue Hong NP, Katz DS, Lamprecht A-L, Martinez-Ortiz C, Psomopoulos F, et al. Introducing the FAIR Principles for research software. Sci Data. 2022;9:622. doi:10.1038/s41597-022-01710-x.
+
 Sandve GK, Nekrutenko A, Taylor J, Hovig E. Ten simple rules for reproducible computational research. PLoS Comput Biol. 2013;9(10):e1003285. doi:10.1371/journal.pcbi.1003285.
 
 Clark J, Barton B, Albarqouni L, et al. Generative artificial intelligence use in evidence synthesis: a systematic review. Res Synth Methods. 2025;16:601-619. doi:10.1017/rsm.2025.16.
+
+Open Science Framework. Welcome to Registrations & Preregistrations. OSF Support. Available from: https://help.osf.io/article/330-welcome-to-registrations.
+
+NeurIPS. Paper Checklist Guidelines. NeurIPS. Available from: https://neurips.cc/public/guides/PaperChecklist.
 
 ## Citation standards
 
