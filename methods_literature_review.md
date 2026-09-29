@@ -236,7 +236,7 @@ The evidence currently supports the following principles
 5. Use an explicitly defined normalization formula rather than the generic term normalization.
 6. Fit population-level preprocessing parameters on training data only.
 7. Report AUROC and AUPRC together with positive-class prevalence.
-8. Use a patient-level bootstrap as the leading uncertainty candidate for paired performance differences.
+8. Use a patient-level paired percentile bootstrap as the primary uncertainty procedure for paired performance differences.
 9. Keep calibration secondary unless the research question changes.
 10. Interpret the main finding as a representation effect under the defined evaluation rather than proof of clinical information loss.
 11. Prespecify robustness analyses.
