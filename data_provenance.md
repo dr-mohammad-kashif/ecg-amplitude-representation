@@ -44,7 +44,7 @@ PTB-XL provides a patient-aware fold assignment for machine learning. Records fr
 
 The dataset documentation recommends folds 1 to 8 for training, fold 9 for validation and fold 10 for testing.
 
-I will keep the exact fold use in the research log once I have frozen the final task definitions.
+The exact fold use is fixed at folds 1 to 8 for training, fold 9 for validation and fold 10 for held-out testing.
 
 ## Source files
 
