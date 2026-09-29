@@ -79,6 +79,16 @@ Before waveform-level technical exclusions, the expected primary cohorts are
 
 Any technical waveform exclusions will be applied identically to both representation conditions and reported before the final analysis.
 
+The metadata audit gives the following held-out test population before any technical waveform exclusions
+
+| Task | Test records | Unique patients | Positive records | Negative records |
+| --- | ---: | ---: | ---: | ---: |
+| HYP vs NORM | 1,174 | 1,074 | 222 | 952 |
+| MI vs NORM | 1,369 | 1,227 | 415 | 954 |
+
+The two task-specific test populations share 939 patients. The same patient-level bootstrap index will therefore be used across both tasks when a patient contributes eligible records to both populations.
+
+
 ## Model
 
 The primary model is a compact 1D convolutional network operating directly on the native 100 Hz, 12-lead waveform.
@@ -102,6 +112,7 @@ The architecture is
 The model contains no BatchNorm, LayerNorm or other internal normalization layer. This is deliberate because the study is testing an input representation change.
 
 The same architecture and parameterisation will be used for raw and normalized conditions.
+Within each task and seed, the raw and normalized models will use the same initialization seed, training-record ordering and optimizer settings. Only the input representation will differ.
 
 ## Training
 
