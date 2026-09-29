@@ -28,8 +28,8 @@ def test_primary_label_rule(tmp_path):
                 "{'NORM': 100}",
                 "{'LVH': 100, 'NORM': 100}",
                 "{'LVH': 35, 'NORM': 100}",
-                "{'MI': 50}",
-                "{'MI': 35, 'NORM': 50}",
+                "{'IMI': 50}",
+                "{'IMI': 35, 'NORM': 50}",
                 "{'STTC': 100}",
             ]
         }
