@@ -49,6 +49,8 @@ I am freezing the task definitions and normalization rule before running the pri
 
 [methods_review.md](methods_review.md) records the methodological guidance I am checking before I write the formal protocol.
 
+[literature_search.md](literature_search.md) records the current methodological search and what changed because of it.
+
 [work_plan.md](work_plan.md) is my running map of decisions, open questions and next steps.
 
 [references.md](references.md) contains the citations.
