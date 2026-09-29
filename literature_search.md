@@ -90,9 +90,9 @@ The purpose of this search is methodological decision support for one computatio
 
 ## Next
 
-The remaining high-impact question is not another general literature search. It is how the PTB-XL waveform will be represented for the primary model and how the final label construction behaves in the actual v1.0.3 data.
+The high-impact literature questions are now sufficiently resolved for the study design. The next work is implementation verification, followed by the formal protocol and statistical analysis plan.
 
-Those decisions should be resolved through the data audit and then written into the protocol.
+I will use the literature search again only if an unresolved implementation or analysis question requires a new source.
 
 I am using publication years in the reference list for normal citation purposes. The project log itself uses only a month-level heading.
 
