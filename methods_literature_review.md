@@ -96,11 +96,11 @@ The representation question in this study is about amplitude normalization. I th
 
 A direct waveform model keeps the comparison cleaner. The same lead order, sample rate, signal length, model architecture, training procedure and evaluation data can be used for the raw and normalized conditions.
 
-The main candidate is the 100 Hz PTB-XL waveform because it reduces each 10-second record to 1,000 samples per lead while retaining the full 12-lead structure. This makes the direct waveform experiment more computationally manageable without introducing a second resampling rule of my own. Recent PTB-XL work has used 100 Hz signals for raw ECG learning, while other studies have used the 500 Hz release. (10,11)
+The primary input is the native 100 Hz PTB-XL waveform because it reduces each 10-second record to 1,000 samples per lead while retaining the full 12-lead structure. This makes the direct waveform experiment more computationally manageable without introducing a second resampling rule of my own. Recent PTB-XL work has used 100 Hz signals for raw ECG learning, while other studies have used the 500 Hz release. (10,11)
 
 A small 1D convolutional model is therefore the current candidate for the primary model. This is not because convolutional models are universally best for ECGs. It is because they can take the multilead waveform directly and allow the representation comparison to be made without first replacing the waveform with handcrafted features.
 
-The model choice is still a candidate until the waveform files are inspected and the computational cost is measured. Logistic regression and random forest remain possible secondary baselines if I later define a principled compact feature representation, but they should not be forced onto a 12,000-feature flattened waveform simply because they were named earlier in the project.
+The model choice is now fixed in analysis_plan.md. I am not using logistic regression or random forest as primary baselines because applying them to the full waveform would require another representation choice.
 
 The important control is unchanged. Whatever model is selected, the architecture and all training settings must be identical between raw and normalized conditions.
 
