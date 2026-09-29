@@ -8,7 +8,7 @@ This is not the study protocol. The protocol will be written only after the desi
 
 ## Current state
 
-The repository is public and contains the first research question, analysis plan, literature review, data provenance note, research log, AI-use note, requirements file, and gitignore.
+The repository is public and contains the first research question, analysis plan, literature review, methodological review, literature search record, data provenance note, research log, AI-use note, requirements file, and gitignore.
 
 The first literature pass is complete.
 
@@ -92,6 +92,7 @@ Review the parts of the following that actually fit this study
 - SPIRIT 2025 where its protocol principles are relevant
 - NeurIPS research checklist for machine learning reproducibility and transparency
 - FAIR principles for data and research objects
+- published guidance for statistical analysis plans in observational and secondary-data work
 
 I will not claim compliance with a guideline that was designed for a different study type. I will use relevant items as design and reporting checks.
 
@@ -142,32 +143,37 @@ Plan
 - independent reproduction
 - later archival release
 
-## Planned study documents
-
-I expect the research record to grow as real work is completed.
-
-Current documents
+## Current documents
 
 - README.md
 - research_question.md
 - analysis_plan.md
 - literature_review.md
+- methods_review.md
+- literature_search.md
 - references.md
 - data_provenance.md
 - research_log.md
 - ai_notes.md
+- requirements.txt
+- .gitignore
 
-Planned documents
+## Future study documents
+
+I expect the research record to grow as real work is completed.
 
 - study protocol
 - statistical analysis plan
 - label specification
 - data dictionary
-- literature search record
 - evidence extraction matrix
 - bias and leakage register
 - reporting standards matrix
 - replication note
+- tests
+- results
+- report
+- release metadata when there is a meaningful citable version
 
 I will add a document only when it has real content and a clear role.
 
@@ -187,7 +193,7 @@ I do not use em dashes.
 
 I keep punctuation simple and avoid colon-heavy prose.
 
-I avoid stock contrasts and neat wrap-up sentences when a direct statement is clearer.
+I avoid stock contrasts and neat wrap-up sentences when a direct sentence is clearer.
 
 I do not turn ordinary decisions into dramatic methodological claims.
 
@@ -197,7 +203,7 @@ AI-use documentation stays brief and factual. It should record real assistance a
 
 ## Context recovery rule
 
-Before continuing the study in a new session, I should read this file, README.md, research_question.md, analysis_plan.md, literature_review.md, data_provenance.md, research_log.md and ai_notes.md.
+Before continuing the study in a new session, I should read this file, README.md, research_question.md, analysis_plan.md, literature_review.md, methods_review.md, literature_search.md, data_provenance.md, research_log.md and ai_notes.md.
 
 Then I should check the latest git commit and the current file tree.
 
