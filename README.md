@@ -6,9 +6,9 @@ I am using the PTB-XL dataset and comparing an original ECG representation with 
 
 ## Where I am now
 
-I have finished the first literature pass and written the initial analysis plan. I have not run the data audit or the main analysis yet, so there are no results here.
+I have finished the first scientific literature pass and the main methodological literature reconnaissance. I have not run the data audit or the main analysis yet, so there are no results here.
 
-I am now checking the study design itself before I lock the formal protocol.
+I am now checking the actual PTB-XL label structure and the model input representation before I lock the formal protocol.
 
 ## Who is working on it
 
@@ -31,13 +31,13 @@ That question led me to the current study design.
 I will
 
 - compare an original signal representation with one defined amplitude-normalized representation
-- keep the diagnostic task, model and evaluation setup fixed when comparing the two representations
+- keep the diagnostic task, model, input handling and evaluation setup fixed when comparing the two representations
 - use patient-aware train, validation and test splits
 - look at AUROC, AUPRC and calibration instead of relying on accuracy alone
 - inspect errors and run a small number of reasoned robustness checks
 - have Zaid reproduce the main comparison from the repository
 
-I am freezing the task definitions and normalization rule before running the primary comparison.
+I am freezing the task definitions, normalization rule and model input representation before running the primary comparison.
 
 ## Files
 
@@ -45,11 +45,13 @@ I am freezing the task definitions and normalization rule before running the pri
 
 [analysis_plan.md](analysis_plan.md) contains the current experimental plan.
 
-[literature_review.md](literature_review.md) records what I read before settling on the study design and why each source was useful.
+[literature_review.md](literature_review.md) records the scientific and clinical literature that shaped the research question.
 
-[methods_review.md](methods_review.md) records the methodological guidance I am checking before I write the formal protocol.
+[methods_literature_review.md](methods_literature_review.md) records the evidence used to design the study and justify methodological choices.
 
-[literature_search.md](literature_search.md) records the current methodological search and what changed because of it.
+[methods_review.md](methods_review.md) records the current methodological synthesis and unresolved decisions.
+
+[literature_search.md](literature_search.md) records the current search process and what changed because of it.
 
 [work_plan.md](work_plan.md) is my running map of decisions, open questions and next steps.
 
