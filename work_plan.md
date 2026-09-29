@@ -209,7 +209,7 @@ AI-use documentation stays brief and factual. It should record real assistance a
 
 ## Context recovery rule
 
-Before continuing the study in a new session, I should read this file, README.md, research_question.md, analysis_plan.md, literature_review.md, methods_literature_review.md, methods_review.md, literature_search.md, data_provenance.md, research_log.md and ai_notes.md.
+Before continuing the study in a new session, I should read this file, README.md, research_question.md, analysis_plan.md, literature_review.md, methods_literature_review.md, methods_review.md, literature_search.md, data_provenance.md, data_audit.md, research_log.md and ai_notes.md.
 
 Then I should check the latest git commit and the current file tree.
 
@@ -217,6 +217,6 @@ No methodological decision from an earlier session should be silently dropped. I
 
 ## Immediate next task
 
-Audit PTB-XL version 1.0.3 and resolve the model input representation.
+Inspect the waveform files and resolve the model input representation.
 
-The formal protocol should be written only after those decisions are supported by the actual dataset and the literature.
+The formal protocol should be written only after the waveform audit, label rule, normalization definition and statistical target are sufficiently stable.
