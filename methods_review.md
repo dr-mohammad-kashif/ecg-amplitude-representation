@@ -109,10 +109,19 @@ The current evidence on AI-assisted evidence synthesis supports keeping human ve
 - FAIR for research objects and provenance
 - the NeurIPS checklist as a secondary transparency check
 
-## Remaining implementation work
+## Current implementation status
 
-1. Implement and unit-test the frozen label and preprocessing functions.
-2. Run a pipeline smoke test on training data and a validation pass without using test performance for selection.
-3. Confirm the runtime and memory footprint on the available hardware.
-4. Review and preregister the protocol and statistical analysis plan before the primary test result is interpreted.
+The protocol and statistical analysis plan are now written, and the preregistration draft reflects the frozen design. The study has not yet produced a primary test result.
 
+The next implementation work is
+
+1. run the repository unit tests
+2. run the waveform smoke test on a supplied records100 file
+3. verify that the metadata audit script reproduces the frozen cohort counts
+4. capture the exact software environment and run configuration
+5. complete full records100 ingestion and log technical exclusions
+6. submit the preregistration before the primary held-out test result is interpreted
+7. run the four primary task-condition fits and the prespecified sensitivity analyses
+8. complete the independent Zaid reproduction and final report
+
+The repository should not be presented as if the primary model training or statistical analysis has already been completed.
