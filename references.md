@@ -35,3 +35,14 @@ Wilkinson MD, Dumontier M, Aalbersberg I, et al. 2016. The FAIR Guiding Principl
 SPIRIT 2025. 2025. SPIRIT 2025 statement. BMJ 389, e081477. DOI 10.1136/bmj-2024-081477
 
 DeLong ER, DeLong DM, Clarke-Pearson DL. 1988. Comparing the areas under two or more correlated receiver operating characteristic curves. Biometrics 44, 837-845. PMID 3203132
+
+
+Watson HJ. 2025. A Statistical Analysis Plan Template for Observational Studies. Journal of Statistical Theory and Practice 19. DOI 10.1007/s42519-025-00504-9
+
+Thor M, Oh JH, Apte AP, Deasy JO. 2020. Registering Study Analysis Plans Before Dissecting Your Data. Frontiers in Oncology 10, 978. DOI 10.3389/fonc.2020.00978
+
+Liu W, Wu Z, Yuan Z. 2026. ACL-ECG: Anatomy-Aware Contrastive Learning for Multi-Lead Electrocardiograms. Sensors 26, 1080. DOI 10.3390/s26031080
+
+Su H, Wang S, Wang H, Qiu K. 2026. An Edge-Cloud Collaborative ECG-Assisted Diagnostic System Leveraging Cross-Lead Knowledge Distillation and Large Language Models. Sensors 26, 3753. DOI 10.3390/s26123753
+
+Clark J, Barton B, Albarqouni L, et al. 2025. Generative artificial intelligence use in evidence synthesis. A systematic review. Research Synthesis Methods 16, 601-619. DOI 10.1017/rsm.2025.16
