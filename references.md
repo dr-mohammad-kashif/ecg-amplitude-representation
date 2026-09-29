@@ -1,65 +1,79 @@
 # References
 
-Wagner P, Strodthoff N, Bousseljot R-D, Kreiseler D, Lunze FI, Samek W, Schaeffter T. 2020. PTB-XL, a large publicly available electrocardiography dataset. Scientific Data 7, 154. DOI 10.1038/s41597-020-0495-6
+This is the repository's master bibliography. Formal literature documents use their own numbered reference lists in Vancouver style because citation numbering depends on the order in which sources are first cited in that document.
 
-Wagner P, Strodthoff N, Bousseljot R-D, Samek W, Schaeffter T. 2022. PTB-XL, a large publicly available electrocardiography dataset (version 1.0.3). PhysioNet. DOI 10.13026/kfzx-aw45
+## Dataset
 
-Strodthoff N, Wagner P, Schaeffter T, Samek W. 2021. Deep Learning for ECG Analysis. Benchmarks and Insights from PTB-XL. IEEE Journal of Biomedical and Health Informatics 25, 1519-1528. DOI 10.1109/JBHI.2020.3022989
+Wagner P, Strodthoff N, Bousseljot R-D, Samek W, Schaeffter T. PTB-XL, a large publicly available electrocardiography dataset (version 1.0.3). PhysioNet. 2022. doi:10.13026/kfzx-aw45.
 
-Safdar MF, Nowak RM, Pałka P. 2024. Pre-Processing techniques and artificial intelligence algorithms for electrocardiogram signals analysis. A comprehensive review. Computers in Biology and Medicine 170, 107908. DOI 10.1016/j.compbiomed.2023.107908
+Wagner P, Strodthoff N, Bousseljot R-D, Kreiseler D, Lunze FI, Samek W, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154. doi:10.1038/s41597-020-0495-6.
 
-Bacharova L, Chevalier P, Gorenek B, Jons C, Li Y-G, Locati ET, Maanja M, Pérez-Riera AR, Platonov PG, Ribeiro ALP, Schocken D, Soliman EZ, Svehlikova J, Tereshchenko LG, Ugander M, Varma N, Zaklyazminskaya E, Ikeda T. 2023. ISE/ISHNE Expert Consensus Statement on ECG Diagnosis of Left Ventricular Hypertrophy. The Change of the Paradigm. Journal of Electrocardiology 81, 85-93. DOI 10.1016/j.jelectrocard.2023.08.005
+Strodthoff N, Wagner P, Schaeffter T, Samek W. Deep learning for ECG analysis: benchmarks and insights from PTB-XL. IEEE J Biomed Health Inform. 2021;25(5):1519-1528. doi:10.1109/JBHI.2020.3022989.
 
-Bickmann L, Plagwitz L, Büscher A, Varghese J. 2026. Architecture-Specific Impact of Preprocessing on Machine Learning Models for ECG Classification. Studies in Health Technology and Informatics 336, 529-533. DOI 10.3233/SHTI260227
+Pollard T, Moody BE, Lehman L, Gow B, Fernandes C, Xie C, et al. PhysioNet as a global platform for biomedical research. Nat Health. 2026. doi:10.1038/s44360-026-00096-z.
 
-Jin M, Tang X, Lei Y, et al. 2026. Machine-learning classification of myocardial infarction and ST/T-change ECG phenotypes across complementary evaluation settings. Scientific Reports. DOI 10.1038/s41598-026-68967-9
+## ECG preprocessing and clinical context
 
-Zhou Q, Luo X, Du K. 2026. Interpretable detection of left ventricular hypertrophy using commercial ECG features and machine learning. A study based on the PTB-XL+ dataset. Frontiers in Cardiovascular Medicine 13, 1825829. DOI 10.3389/fcvm.2026.1825829
+Safdar MF, Nowak RM, Pałka P. Pre-processing techniques and artificial intelligence algorithms for electrocardiogram (ECG) signals analysis: a comprehensive review. Comput Biol Med. 2024;170:107908. doi:10.1016/j.compbiomed.2023.107908.
 
-Jia Y, Pei H, Liang J, Zhou Y, Yang Y, Cui Y, Xiang M. 2024. Preprocessing and Denoising Techniques for Electrocardiography and Magnetocardiography. A Review. Bioengineering 11, 1109. DOI 10.3390/bioengineering11111109
+Jia Y, Pei H, Liang J, Zhou Y, Yang Y, Cui Y, Xiang M. Preprocessing and denoising techniques for electrocardiography and magnetocardiography: a review. Bioengineering. 2024;11(11):1109. doi:10.3390/bioengineering11111109.
 
-Salimi A, Kalmady SV, Hindle A, Zaiane O, Kaul P. 2023. Exploring Best Practices for ECG Signal Processing in Machine Learning. Preprint. DOI 10.48550/arXiv.2311.04229
+Bickmann L, Plagwitz L, Büscher A, Varghese J. Architecture-specific impact of preprocessing on machine learning models for ECG classification. Stud Health Technol Inform. 2026;336:529-533. doi:10.3233/SHTI260227.
 
-## Methods and reporting references
+Liu W, Wu Z, Yuan Z. ACL-ECG: anatomy-aware contrastive learning for multi-lead electrocardiograms. Sensors (Basel). 2026;26(3):1080. doi:10.3390/s26031080.
 
-Collins GS, Moons KGM, Dhiman P, et al. 2024. TRIPOD+AI statement. BMJ 385, e078378. DOI 10.1136/bmj-2023-078378
+Su H, Wang S, Wang H, Qiu K. An edge-cloud collaborative ECG-assisted diagnostic system leveraging cross-lead knowledge distillation and large language models. Sensors (Basel). 2026;26(12):3753. doi:10.3390/s26123753.
 
-Moons KGM, Damen JA, Kaul T, et al. 2025. PROBAST+AI. BMJ 388, e082505. DOI 10.1136/bmj-2024-082505
+Bacharova L, Chevalier P, Gorenek B, Jons C, Li Y-G, Locati ET, Maanja M, Pérez-Riera AR, Platonov PG, Ribeiro ALP, Schocken D, Soliman EZ, Svehlikova J, Tereshchenko LG, Ugander M, Varma N, Zaklyazminskaya E, Ikeda T. ISE/ISHNE expert consensus statement on ECG diagnosis of left ventricular hypertrophy: the change of the paradigm. J Electrocardiol. 2023;81:85-93. doi:10.1016/j.jelectrocard.2023.08.005.
 
-von Elm E, Altman DG, Egger M, et al. 2007. The STROBE Statement. Epidemiology 18, 805-835. DOI 10.1097/EDE.0b013e3181577654
+Zhou Q, Luo X, Du K. Interpretable detection of left ventricular hypertrophy using commercial ECG features and machine learning: a study based on the PTB-XL+ dataset. Front Cardiovasc Med. 2026;13:1825829. doi:10.3389/fcvm.2026.1825829.
 
-Page MJ, McKenzie JE, Bossuyt PM, et al. 2021. PRISMA 2020 statement. BMJ 372, n71. DOI 10.1136/bmj.n71
+Jin M, Tang X, Lei Y, et al. Machine-learning classification of myocardial infarction and ST/T-change ECG phenotypes across complementary evaluation settings. Sci Rep. 2026. doi:10.1038/s41598-026-68967-9.
 
-Rethlefsen ML, Kirtley S, Waffenschmidt S, et al. 2021. PRISMA-S. Systematic Reviews 10, 39. DOI 10.1186/s13643-020-01542-z
+Salimi A, Kalmady SV, Hindle A, Zaiane O, Kaul P. Exploring best practices for ECG signal processing in machine learning. Preprint. 2023. doi:10.48550/arXiv.2311.04229.
 
-Wilkinson MD, Dumontier M, Aalbersberg I, et al. 2016. The FAIR Guiding Principles for scientific data management and stewardship. Scientific Data 3, 160018. DOI 10.1038/sdata.2016.18
+## Methods and reporting
 
-SPIRIT 2025. 2025. SPIRIT 2025 statement. BMJ 389, e081477. DOI 10.1136/bmj-2024-081477
+Collins GS, Moons KGM, Dhiman P, Riley RD, Beam AL, Van Calster B, et al. TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods. BMJ. 2024;385:e078378. doi:10.1136/bmj-2023-078378.
 
-DeLong ER, DeLong DM, Clarke-Pearson DL. 1988. Comparing the areas under two or more correlated receiver operating characteristic curves. Biometrics 44, 837-845. PMID 3203132
+Moons KGM, Damen JAA, Kaul T, et al. PROBAST+AI: an updated quality, risk of bias, and applicability assessment tool for prediction models using regression or artificial intelligence methods. BMJ. 2025;388:e082505. doi:10.1136/bmj-2024-082505.
 
-Watson HJ. 2025. A Statistical Analysis Plan Template for Observational Studies. Journal of Statistical Theory and Practice 19, 91. DOI 10.1007/s42519-025-00504-9
+von Elm E, Altman DG, Egger M, Pocock SJ, Gotzsche PC, Vandenbroucke JP; STROBE Initiative. The Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) statement. Epidemiology. 2007;18(6):800-804. doi:10.1097/EDE.0b013e3181577654.
 
-Thor M, Oh JH, Apte AP, Deasy JO. 2020. Registering Study Analysis Plans Before Dissecting Your Data. Frontiers in Oncology 10, 978. DOI 10.3389/fonc.2020.00978
+Swart E, Schmitt J. STandardized Reporting Of Secondary data Analyses, a recommendation. Z Evid Fortbild Qual Gesundhwes. 2014;108(9):511-516. doi:10.1016/j.zefq.2014.08.022.
 
-Stevens RJ, Poppe KK. 2019. Validation of clinical prediction models. What does the calibration slope really measure? Journal of Clinical Epidemiology 110, 7-12. DOI 10.1016/j.jclinepi.2019.09.016
+Swart E, et al. A consensus German reporting standard for secondary data analyses, version 2 (STROSA-2). Gesundheitswesen. 2016;78(Suppl 1):e145-e160. doi:10.1055/s-0042-108647.
 
-Liu W, Wu Z, Yuan Z. 2026. ACL-ECG: Anatomy-Aware Contrastive Learning for Multi-Lead Electrocardiograms. Sensors 26, 1080. DOI 10.3390/s26031080
+Swart E, Alibone M, Epping J, Grobe TG, Hoffmann F, Horenkamp-Sonntag D, Ihle P, March S, Rommel A, Stallmann C, Tesch F. Good Practice Secondary Data Analysis: Guidelines and Recommendations, Version 4. Gesundheitswesen. 2026. doi:10.1055/a-2904-1788.
 
-Su H, Wang S, Wang H, Qiu K. 2026. An Edge-Cloud Collaborative ECG-Assisted Diagnostic System Leveraging Cross-Lead Knowledge Distillation and Large Language Models. Sensors 26, 3753. DOI 10.3390/s26123753
+Benchimol EI, Smeeth L, Guttmann A, Harron K, Moher D, Petersen I, et al. The REporting of studies Conducted using Observational Routinely-collected health Data (RECORD) statement. PLoS Med. 2015;12(10):e1001885. doi:10.1371/journal.pmed.1001885.
 
-Clark J, Barton B, Albarqouni L, et al. 2025. Generative artificial intelligence use in evidence synthesis. A systematic review. Research Synthesis Methods 16, 601-619. DOI 10.1017/rsm.2025.16
+Watson HJ. A statistical analysis plan template for observational studies: promoting quality and rigor in research. J Stat Theory Pract. 2025;19:91. doi:10.1007/s42519-025-00504-9.
 
-Swart E, Schmitt J. 2014. STandardized Reporting Of Secondary data Analyses, a recommendation. Zeitschrift für Evidenz, Fortbildung und Qualität im Gesundheitswesen 108, 511-516. DOI 10.1016/j.zefq.2014.08.022
+Thor M, Oh JH, Apte AP, Deasy JO. Registering study analysis plans before dissecting your data: updating and standardizing outcome modeling. Front Oncol. 2020;10:978. doi:10.3389/fonc.2020.00978.
 
-Swart E, et al. 2016. A Consensus German Reporting Standard for Secondary Data Analyses, Version 2 (STROSA-2). Gesundheitswesen 78, e145-e160. DOI 10.1055/s-0042-108647
+Rutter CM. Bootstrap estimation of diagnostic accuracy with patient-clustered data. Acad Radiol. 2000;7(6):413-419. doi:10.1016/S1076-6332(00)80381-5.
 
-Swart E, Alibone M, Epping J, Grobe TG, Hoffmann F, Horenkamp-Sonntag D, Ihle P, March S, Rommel A, Stallmann C, Tesch F. 2026. Good Practice Secondary Data Analysis. Guidelines and Recommendations, Version 4. Gesundheitswesen. DOI 10.1055/a-2904-1788. PMID 42705329
+DeLong ER, DeLong DM, Clarke-Pearson DL. Comparing the areas under two or more correlated receiver operating characteristic curves: a nonparametric approach. Biometrics. 1988;44(3):837-845. PMID:3203132.
 
-Benchimol EI, Smeeth L, Guttmann A, et al. 2015. The REporting of studies Conducted using Observational Routinely-collected health Data, the RECORD statement. PLoS Medicine 12, e1001885. DOI 10.1371/journal.pmed.1001885
+Saito T, Rehmsmeier M. The precision-recall plot is more informative than the ROC plot when evaluating binary classifiers on imbalanced datasets. PLoS One. 2015;10(3):e0118432. doi:10.1371/journal.pone.0118432.
 
-Rutter CM. 2000. Bootstrap estimation of diagnostic accuracy with patient-clustered data. Academic Radiology 7, 413-419. DOI 10.1016/S1076-6332(00)80381-5
+Stevens RJ, Poppe KK. Validation of clinical prediction models: what does the calibration slope really measure? J Clin Epidemiol. 2020;122:93-99. doi:10.1016/j.jclinepi.2019.09.016.
 
-Saito T, Rehmsmeier M. 2015. The Precision-Recall Plot Is More Informative than the ROC Plot When Evaluating Binary Classifiers on Imbalanced Datasets. PLoS ONE 10, e0118432. DOI 10.1371/journal.pone.0118432
+SPIRIT 2025. SPIRIT 2025 statement: updated guideline for protocols of randomised trials. BMJ. 2025;389:e081477. doi:10.1136/bmj-2024-081477.
 
-Sandve GK, Nekrutenko A, Taylor J, Hovig E. 2013. Ten Simple Rules for Reproducible Computational Research. PLoS Computational Biology 9, e1003285. DOI 10.1371/journal.pcbi.1003285
+Page MJ, McKenzie JE, Bossuyt PM, Boutron I, Hoffmann TC, Mulrow CD, et al. The PRISMA 2020 statement: an updated guideline for reporting systematic reviews. BMJ. 2021;372:n71. doi:10.1136/bmj.n71.
+
+Rethlefsen ML, Kirtley S, Waffenschmidt S, Ayala AP, Moher D, Page MJ, et al. PRISMA-S: an extension to the PRISMA statement for reporting literature searches in systematic reviews. Syst Rev. 2021;10(1):39. doi:10.1186/s13643-020-01542-z.
+
+Wilkinson MD, Dumontier M, Aalbersberg I, Appleton G, Axton M, Baak A, et al. The FAIR Guiding Principles for scientific data management and stewardship. Sci Data. 2016;3:160018. doi:10.1038/sdata.2016.18.
+
+Sandve GK, Nekrutenko A, Taylor J, Hovig E. Ten simple rules for reproducible computational research. PLoS Comput Biol. 2013;9(10):e1003285. doi:10.1371/journal.pcbi.1003285.
+
+Clark J, Barton B, Albarqouni L, et al. Generative artificial intelligence use in evidence synthesis: a systematic review. Res Synth Methods. 2025;16:601-619. doi:10.1017/rsm.2025.16.
+
+## Citation standards
+
+International Committee of Medical Journal Editors. Recommendations for the conduct, reporting, editing, and publication of scholarly work in medical journals: preparing a manuscript for submission to a medical journal. Available from: https://www.icmje.org/recommendations/browse/manuscript-preparation/preparing-for-submission.html
+
+Patrias K, Wendling DL, technical editor. Citing medicine: the NLM style guide for authors, editors, and publishers. 2nd ed. Bethesda (MD): National Library of Medicine (US); 2007-2015.
