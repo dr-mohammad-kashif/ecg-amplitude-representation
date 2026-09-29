@@ -52,3 +52,8 @@ The largest remaining methodological gap is the model input representation. Logi
 I created methods_literature_review.md to keep the detailed methodological evidence separate from the shorter decision-focused methods_review.md.
 
 I am keeping the research record month-level rather than using exact day stamps. The publication years in the reference list are bibliographic information and are kept separately from the project log.
+The PTB-XL metadata audit is now complete. The uploaded v1.0.3 files reproduce the published superclass counts and show that all patients remain within one stratified fold. The candidate HYP versus NORM and MI versus NORM cohorts are now defined from the actual multilabel structure rather than from assumed mutually exclusive classes.
+
+The audit also showed that likelihood scores materially change cohort size, so I do not want to introduce a hidden certainty threshold. The main candidate uses superclass presence, while a 50 percent likelihood threshold is kept as a possible sensitivity definition. Recent PTB-XL work provides examples of both approaches.
+
+The remaining major design issue is now the waveform itself. I am leaning toward a direct 100 Hz, 12-lead waveform input with a fixed small convolutional model because that keeps the raw versus normalized comparison close to the signal and avoids adding a feature-engineering layer. I will inspect the waveform files before freezing this choice.
