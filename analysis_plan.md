@@ -177,9 +177,9 @@ For each task and representation I will report
 - positive-class prevalence in the held-out test cohort
 - Brier score
 
-I will provide calibration plots using 10 equal-frequency bins when each task has sufficient variation in predicted probabilities.
+I will provide calibration plots using fixed probability bins of width 0.10. Empty bins will be omitted rather than merged after inspecting the results.
 
-AUPRC and Brier-score differences will be evaluated within task. I will not compare raw AUPRC or Brier values across HYP and MI as if they were on a common prevalence scale.
+Within each task, AUPRC and Brier-score differences between raw and normalized representations will also receive 95% patient-bootstrap confidence intervals. I will not compare raw AUPRC or Brier values across HYP and MI as if they were on a common prevalence scale.
 
 ## Error analysis
 
