@@ -1,186 +1,115 @@
 # Methods review
 
-I am using this document to collect methodological guidance that can change the design of the ECG study. It is a working document for the current design phase, not the final protocol.
+I am using this document to collect the methodological decisions that can change the design of the ECG study. It is a synthesis of the evidence, not the full literature record.
 
-## Why I am doing this first
+The detailed evidence is now recorded in [methods_literature_review.md](methods_literature_review.md).
 
-The first literature pass answered questions about PTB-XL, ECG preprocessing, amplitude-related clinical reasoning, and recent preprocessing work.
+## Current methodological position
 
-I now need to examine the study process itself.
+The study is a secondary-data computational study using the PTB-XL research dataset. Secondary-data guidance makes it important to define the data flow, unit of analysis, label construction, exclusions and analysis decisions explicitly before the main result.
 
-The main questions are about protocol structure, prediction-model evaluation, risk of bias, literature searching, reproducibility, preregistration, and AI-assisted research.
+The current methodological evidence also changes how I think about normalization. Normalization is not one operation. Record-local global z-score, record-local per-lead z-score, min-max transformations and population-fitted transformations answer different questions.
 
-## Protocol guidance
+The clearest current candidate for the primary representation comparison is a global record-wise z-score applied across all retained leads and time points within each record. A record-wise per-lead z-score is a useful sensitivity candidate because it removes lead-specific scale as well as overall record scale. I am not freezing either condition until the data audit and model input decision are complete.
 
-SPIRIT 2025 is a protocol reporting framework for randomised trials. My study is not a randomised trial, so I am not claiming SPIRIT compliance. I am using it only as a source for protocol discipline and transparent planning where the ideas transfer to a secondary-data computational study.
+## Secondary-data design
 
-## Prediction-model reporting
+STROSA, STROSA-2 and the 2026 Good Practice Secondary Data Analysis recommendations reinforce the need to document
 
-TRIPOD+AI is directly relevant when reporting studies that develop or evaluate prediction models using regression or machine learning.
+- data source and version
+- data flow and selection
+- unit of analysis
+- variable and label definitions
+- analysis strategy
+- registration and deviations
+- reproducibility information
 
-PROBAST+AI is relevant as a self-audit for risk of bias and applicability. Its domains cover participants and data sources, predictors, outcomes, and analysis.
+I will use these as transferable guidance rather than claim direct compliance with a German secondary-data standard.
 
-I will use relevant items from these frameworks in the final protocol and report without claiming that the whole study is a clinical prediction-model paper if that is not what the final design becomes.
+## Label construction
 
-## Observational-data reporting
+PTB-XL is multilabel. HYP, MI, NORM and other diagnostic superclasses can overlap.
 
-STROBE is designed for observational studies such as cohort, case-control, and cross-sectional studies.
+The data audit therefore has to quantify label combinations before the binary tasks are frozen. I do not want to define the positive and negative groups after seeing model performance.
 
-The PTB-XL data are existing clinical records rather than data collected by me. I will use STROBE as a reporting check where its items fit the data source and study description.
+## Leakage and data splitting
 
-## Machine-learning research quality
+The primary split should remain patient-aware.
 
-The NeurIPS paper checklist is useful as a second machine-learning lens for reproducibility, transparency, ethics, and responsible reporting.
+Any population-fitted preprocessing must be fit on training data and then applied to validation and test data. A record-local transformation needs to be described explicitly because its parameters are derived from the record itself.
 
-I will use it as a checklist for the computational work rather than claiming that this project is a NeurIPS submission.
+The study should distinguish this from preprocessing that shares information across records.
 
-## Literature search reporting
+## Paired evaluation and uncertainty
 
-PRISMA and PRISMA-S are intended for systematic reviews and transparent literature searches.
+The raw and normalized representations use the same underlying held-out records, so the performance comparison is paired.
 
-I am not calling the current literature review systematic.
+DeLong is a candidate method for the correlated AUROC comparison. A patient-level bootstrap is also a strong candidate because PTB-XL can contain multiple records for one patient.
 
-I will borrow the useful search-record ideas first. If the evidence search later becomes a true systematic review, I will follow the appropriate reporting framework.
+The current primary estimand candidate is the difference in AUROC between the raw and normalized representations for a predefined task on the same held-out evaluation population.
 
-## Preregistration
+A final statistical analysis plan should define the interval construction before the result is inspected.
 
-OSF supports preregistration and has a Secondary Data Preregistration template for studies using an existing dataset.
+## Calibration and class imbalance
 
-A preregistration is useful here because the study uses an existing dataset and I want the main label rules, hypotheses, analysis choices, outcomes, exclusions and planned deviations recorded before the primary result is known.
+AUROC and AUPRC should be reported together, with the positive-class prevalence stated for each task. AUPRC is especially useful when the positive class is uncommon, but it should not be interpreted without its prevalence.
 
-I will decide the exact preregistration contents after the protocol and data audit are complete.
-
-## Data and workflow stewardship
-
-The FAIR principles emphasize findability, accessibility, interoperability and reusability. They apply not only to datasets but also to algorithms, tools and workflows.
-
-For this project, that means the repository should make the study plan, provenance, code and derived outputs understandable and traceable without publishing the raw PTB-XL data.
-
-## What the recent normalization literature changes
-
-The recent literature makes it clear that the word normalization is too broad on its own.
-
-Studies on ECG machine learning use several approaches, including min-max scaling, z-score scaling, robust scaling, channel-wise transformations, and global transformations.
-
-A recent 2026 multi-lead ECG study describes a global z-score transformation across leads and time points and notes that per-lead normalization can obscure inter-lead amplitude relationships. I am treating this as a methodological clue, not as a recommendation for my study.
-
-Other recent work uses per-lead min-max normalization or per-segment z-score normalization. That variation is exactly why my protocol needs to define the normalization mathematically and specify whether the transformation is record-local, lead-local, or fitted from training data.
-
-The 2026 PTB-XL architecture study also found that preprocessing effects depended on the model architecture. That means the first comparison should keep the model and evaluation procedure fixed while the representation changes.
-
-## Leakage and preprocessing
-
-The preprocessing literature and machine-learning documentation make an important distinction.
-
-If a transformation learns parameters from data, those parameters should be learned from the training portion and then applied to held-out data.
-
-A normalization rule that uses each record's own values is different from a rule that learns population-level parameters. I need to make that distinction explicit before the primary analysis.
-
-For this reason, the protocol will state exactly where every normalization parameter comes from.
-
-I will also split patients before any transformation that could learn information across records.
-
-## Paired raw versus normalized evaluation
-
-The raw and normalized versions will come from the same underlying ECG records.
-
-That means the predictions on the held-out set are paired.
-
-For AUROC, a comparison method for correlated ROC curves such as the DeLong approach is a candidate. A paired bootstrap is another candidate because it can estimate the distribution of the performance difference directly.
-
-I am not freezing the statistical test yet. I want to check the assumptions and choose the simplest defensible method after the task definition and prediction setup are known.
-
-The important point is that I should compare the two representations as paired evaluations of the same held-out records, not as two unrelated test samples.
-
-## Calibration
-
-TRIPOD+AI treats calibration as agreement between predicted probabilities and observed outcomes and recommends graphical calibration assessment alongside other performance measures.
-
-The Brier score is one overall measure of the squared difference between predicted probabilities and observed outcomes.
-
-I will keep calibration in the plan, but the final implementation will depend on the class balance and the probability outputs of the chosen models.
+Calibration remains a secondary analysis. I am currently planning a calibration plot and Brier score, with calibration slope and intercept considered if the final model and sample size make them informative.
 
 ## Information preservation
 
-The word information is still too broad for the final protocol.
+I am no longer treating information preservation as a single measurable object.
 
-I am separating at least three ideas
+I am separating numerical signal preservation, clinically meaningful waveform structure and task-relevant information available to the model.
 
-- numerical signal preservation
-- preservation of clinically meaningful waveform structure
-- preservation of task-relevant information for the model
+The primary result should therefore be described as a change in predictive behaviour under a defined representation. A performance change by itself is not proof that clinical information was destroyed.
 
-These are not interchangeable.
+## Model input is now the main unresolved design issue
 
-The study may eventually use task performance as the main operational measure while treating direct signal-level measures as secondary evidence if they materially improve interpretation.
+The current analysis plan lists logistic regression and random forest, but it does not yet specify how the multilead waveform enters those models.
 
-I need more literature before freezing this part.
+That decision matters enough that I should not write the formal protocol before resolving it.
 
-## Primary estimand
-
-A possible primary estimand is the difference in AUROC between the raw and normalized representations on the same held-out patient set for a defined diagnostic task.
-
-I am treating this as a candidate until the outcome and statistical plan are frozen.
-
-## Model choice
-
-I am keeping logistic regression and random forest as the first models.
-
-The reason is not that they are universally the best ECG models.
-
-They give me relatively simple baselines that make it easier to interpret a representation comparison before introducing architecture-specific behavior.
-
-The recent literature showing architecture-dependent preprocessing effects makes this control especially important.
+Flattening the waveform, extracting engineered features, reducing dimensionality, or using a direct waveform model all change the experiment. The representation comparison is only clean if the same input construction and learning procedure are used for raw and normalized signals.
 
 ## Robustness
 
-A robustness check should answer a specific methodological concern.
+The most relevant robustness analysis is likely to be a reasoned alternative normalization or label definition rather than a large collection of extra models.
 
-Examples that may be appropriate include
+The recent PTB-XL preprocessing literature also shows that preprocessing effects can depend on architecture. This supports keeping the model fixed when testing the representation effect.
 
-- a second simple classifier
-- a defensible alternative normalization definition
-- a reasonable alternative label rule
-- a paired bootstrap analysis
-- a repeat across a second evaluation configuration
+## Reproducibility
 
-I do not want a large grid of variations that exists only to find a favorable result.
+The repository should record the dataset version, environment, preprocessing definitions, model configuration, random seeds where applicable, analysis commands, output provenance and repository commit associated with a result.
+
+Zaid's independent reproduction should begin from a clean copy of the public repository without being given the expected result.
 
 ## AI-assisted research
 
-Current evidence does not support treating AI as an unrestricted substitute for human scientific judgment.
+AI is being used as a research accelerator, not as the authority for scientific claims.
 
-For this study, AI can help with search-term generation, literature discovery, code drafts, debugging, documentation, and adversarial review.
+It can assist with literature discovery, search-term generation, code drafts, debugging, documentation and adversarial review. Claims and citations still have to be checked against the original sources or the project's own outputs.
 
-Important scientific claims still need verification against the original paper, dataset documentation, or the project's own analysis output.
+The current evidence on AI-assisted evidence synthesis supports keeping human verification in the loop.
 
-The AI workflow will remain documented in ai_notes.md, but I will keep that record factual and short.
+## Reporting guidance I will use
 
-## Reporting standards that may be used
-
-- TRIPOD+AI for prediction-model reporting
+- TRIPOD+AI for relevant prediction-model reporting
 - PROBAST+AI for risk of bias and applicability
-- STROBE for relevant observational-data reporting
-- SPIRIT 2025 for transferable protocol ideas
-- PRISMA-S if the literature search becomes systematic
-- NeurIPS checklist for machine-learning transparency and reproducibility
-- FAIR principles for research objects, provenance and reuse
+- STROBE for relevant observational reporting
+- STROSA and Good Practice Secondary Data Analysis for secondary-data issues
+- SPIRIT 2025 only for transferable protocol discipline
+- PRISMA-S only if the literature search becomes systematic
+- FAIR for research objects and provenance
+- the NeurIPS checklist as a secondary transparency check
 
-## Open questions that still need evidence
+## Remaining work before the formal protocol
 
-- What is the best operational definition of information preservation for this study?
-- Which normalization rule makes the cleanest controlled comparison?
-- Should the first normalization be record-wise, lead-wise, global, or another form?
-- How should overlapping PTB-XL labels be handled?
-- What should the primary estimand be?
-- Which uncertainty procedure is appropriate for the paired raw versus normalized comparison?
-- Which calibration analysis is suitable for the final class distributions?
-- What is the minimum useful robustness analysis?
-- Which reporting checklist items should become mandatory fields in the protocol?
-- What parts of the AI-assisted workflow should be tested or audited rather than simply described?
-
-## Current status
-
-This document is not complete.
-
-I am still gathering the evidence needed to lock the protocol.
+1. Audit PTB-XL labels and overlaps.
+2. Decide the model input representation.
+3. Freeze the normalization definition.
+4. Freeze the task construction and exclusions.
+5. Freeze the primary model and evaluation procedure.
+6. Define the patient-level uncertainty procedure.
+7. Write the formal protocol and statistical analysis plan.
+8. Register the study before the primary result is inspected.
