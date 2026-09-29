@@ -69,7 +69,13 @@ This is an ongoing study. I have not established that normalization improves or 
 
 ## Data
 
-I am not storing the PTB-XL data in this repository. The dataset comes from PhysioNet. The version and source information are recorded in data_provenance.md.
+I am not storing the PTB-XL data in this repository. The study uses PTB-XL version 1.0.3 from PhysioNet.
+
+[Dataset page](https://physionet.org/content/ptb-xl/1.0.3/)
+
+[Download the version 1.0.3 ZIP](https://physionet.org/content/ptb-xl/get-zip/1.0.3/)
+
+The version, source files and provenance details are recorded in data_provenance.md.
 
 ## Reproducibility
 
