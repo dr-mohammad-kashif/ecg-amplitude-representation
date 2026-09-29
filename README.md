@@ -44,6 +44,8 @@ The label rule, normalization, waveform representation, model structure and prim
 [research_question.md](research_question.md) contains the question and the working hypotheses.
 
 [data_audit.md](data_audit.md) records the PTB-XL metadata and label audit performed before the primary analysis.
+[LABEL_SPECIFICATION.md](LABEL_SPECIFICATION.md) contains the frozen binary task definitions.
+
 
 [analysis_plan.md](analysis_plan.md) contains the current experimental plan.
 [PROTOCOL.md](PROTOCOL.md) contains the prespecified study protocol.
