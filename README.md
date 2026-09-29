@@ -30,12 +30,13 @@ That question led me to the current study design.
 
 I will
 
-- compare an original signal representation with one defined amplitude-normalized representation
-- keep the diagnostic task, model, input handling and evaluation setup fixed when comparing the two representations
-- use patient-aware train, validation and test splits
-- look at AUROC, AUPRC and calibration instead of relying on accuracy alone
-- inspect errors and run a small number of reasoned robustness checks
-- have Zaid reproduce the main comparison from the repository
+- compare the native 100 Hz waveform with one global record-wise z-score representation
+- hold the task, model, training setup and held-out evaluation data fixed between representations
+- use the official patient-aware folds
+- estimate the task interaction in AUROC change with a patient-level paired bootstrap
+- report average precision, Brier score and calibration as secondary measures
+- run the prespecified normalization, label-definition and seed sensitivity analyses
+- have Zaid independently reproduce the primary analysis
 
 The label rule, normalization, waveform representation, model structure and primary estimand are now frozen before the primary comparison.
 
