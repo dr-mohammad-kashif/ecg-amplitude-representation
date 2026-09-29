@@ -10,7 +10,7 @@ The study is a secondary-data computational study using the PTB-XL research data
 
 The current methodological evidence also changes how I think about normalization. Normalization is not one operation. Record-local global z-score, record-local per-lead z-score, min-max transformations and population-fitted transformations answer different questions.
 
-The clearest current candidate for the primary representation comparison is a global record-wise z-score applied across all retained leads and time points within each record. A record-wise per-lead z-score is a useful sensitivity candidate because it removes lead-specific scale as well as overall record scale. I am not freezing either condition until the data audit and model input decision are complete.
+The primary representation comparison is now fixed as the original 100 Hz waveform versus a global record-wise z-score applied across all retained leads and time points within each record. A record-wise per-lead z-score is the prespecified sensitivity condition because it removes lead-specific scale as well as overall record scale.
 
 ## Secondary-data design
 
@@ -66,11 +66,15 @@ The primary result should therefore be described as a change in predictive behav
 
 ## Model input
 
-The data audit confirmed that the study can use the official 100 Hz waveform version as a direct 12-lead input.
+The primary input representation is now fixed as the native PTB-XL v1.0.3 records100 waveform.
 
-The current candidate is a small fixed 1D convolutional model operating directly on the 100 Hz waveform. This keeps the representation comparison close to the signal and avoids a feature-engineering stage that could itself alter amplitude information.
+Each record will enter the model as a 12-lead, 1,000-sample waveform at 100 Hz. I selected this because the representation is supplied directly by the dataset, the actual waveform headers and binary files I inspected match that specification, and contemporary PTB-XL work uses the same 100 Hz, 10-second representation.
 
-This is still a candidate until the waveform files are inspected and the computational cost is measured. Logistic regression and random forest remain possible secondary baselines only if a principled compact feature representation is defined.
+No additional resampling will be performed for the primary analysis.
+
+The primary model family remains a small fixed 1D convolutional model. The exact architecture will be frozen during the pilot implementation before the main comparison. The same architecture, input handling and training procedure will be used for the raw and normalized conditions.
+
+I am dropping logistic regression and random forest as planned baselines for now. Applying them directly to the full waveform would require an additional feature or dimensionality-reduction representation that would introduce another transformation into a study specifically about signal representation.
 
 ## Robustness
 
@@ -105,11 +109,8 @@ The current evidence on AI-assisted evidence synthesis supports keeping human ve
 
 ## Remaining work before the formal protocol
 
-1. Inspect the waveform files and signal quality.
-2. Decide the model input representation.
-3. Freeze the normalization definition.
-4. Freeze the task construction and exclusions.
-5. Freeze the primary model and evaluation procedure.
-6. Define the patient-level uncertainty procedure.
-7. Write the formal protocol and statistical analysis plan.
-8. Register the study before the primary result is inspected.
+1. Freeze the exact task construction and exclusions in the primary analysis plan.
+2. Freeze the final CNN architecture and its training configuration in a small pilot without interpreting the primary result.
+3. Define the primary statistical estimand and patient-level uncertainty procedure.
+4. Write the formal protocol and statistical analysis plan.
+5. Register the study before the primary result is inspected.
