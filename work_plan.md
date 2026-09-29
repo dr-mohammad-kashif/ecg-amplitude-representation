@@ -4,7 +4,7 @@
 
 I am using this file as the running map for the study. I want one place that tells me what has already been decided, what is still open, and what I need to do next.
 
-This is not the study protocol. The protocol will be written only after the design questions below have been checked against the literature and the PTB-XL data.
+This is not the study protocol. The protocol is now written in PROTOCOL.md. This file tracks implementation and execution work.
 
 ## Current state
 
@@ -24,11 +24,11 @@ A targeted waveform integrity audit is complete, and the primary waveform repres
 
 ## Current research question
 
-Does ECG amplitude normalization remove or alter information relevant to some diagnostic tasks, and is that effect different across tasks?
+Under a fixed direct-waveform model, does global record-wise z-score standardization change ECG classification performance differently for PTB-XL hypertrophy and myocardial infarction phenotypes?
 
 ## Working hypothesis
 
-The effect of normalization may not be identical across diagnostic tasks.
+The change in AUROC under global record-wise z-score standardization may not be identical for the HYP and MI tasks.
 
 This remains a hypothesis. I will let the data and the planned analysis determine the result.
 
@@ -102,6 +102,9 @@ This remains a hypothesis. I will let the data and the planned analysis determin
 - data_provenance.md
 - research_log.md
 - ai_notes.md
+- PROTOCOL.md
+- STATISTICAL_ANALYSIS_PLAN.md
+- LABEL_SPECIFICATION.md
 - requirements.txt
 - .gitignore
 - src/
@@ -112,12 +115,10 @@ This remains a hypothesis. I will let the data and the planned analysis determin
 
 I expect the research record to grow as real work is completed.
 
-- label specification
 - data dictionary
 - evidence extraction matrix if it becomes useful
 - bias and leakage register if the design becomes complex enough to warrant it
 - replication note
-- tests
 - results
 - report
 - release metadata when there is a meaningful citable version
@@ -158,6 +159,4 @@ No methodological decision from an earlier session should be silently dropped. I
 
 ## Immediate next task
 
-Implement and unit-test the frozen pipeline, then run a train-and-validation smoke test without using test performance for selection.
-
-The formal protocol should be written after those decisions are stable.
+Verify the repository tests and metadata audit script, record the final software environment, and prepare the preregistration before the primary test result is inspected.
