@@ -2,7 +2,7 @@
 
 I am keeping a record of the searches that are feeding the study design. This is not being presented as a systematic review.
 
-## 29 September 2026
+## September 2026
 
 Purpose
 
@@ -93,3 +93,5 @@ The purpose of this search is methodological decision support for one computatio
 The remaining high-impact question is not another general literature search. It is how the PTB-XL waveform will be represented for the primary model and how the final label construction behaves in the actual v1.0.3 data.
 
 Those decisions should be resolved through the data audit and then written into the protocol.
+
+I am using publication years in the reference list for normal citation purposes. The project log itself uses only a month-level heading.
