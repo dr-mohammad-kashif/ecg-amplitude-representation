@@ -88,4 +88,4 @@ Aydın F, Usta S, Kalaycıoğlu E, Aydemir O. Source-only transportability of en
 
 Nayyab R, Waris A, Zaheer I, Khan MJ, Hazzazi F, Ijaz MA, et al. Enhancing ECG disease detection accuracy through deep learning models and P-QRS-T waveform features. PLoS One. 2025;20(6):e0325358. doi:10.1371/journal.pone.0325358.
 
-Zeng L, Pan J, Lu Y, Pan X. Stabilizing extreme few-shot ECG classification via self-supervised contrastive pretraining. Ann Noninvasive Electrocardiol. 2026;31(3):e70188. doi:10.1111/anec.70188.
+Zeng L, Pan J, Lu Y, Pan X. Stabilizing extreme few-shot ECG classification via self-supervised contrastive pretraining. Ann Noninvasive Electrocardiol. 2026;31(3):e70188. doi:10.1111/anec.70188.\n\nTanyel T, Atmaca S, Gökçe K, Balık MY, Güler A, Aslanger E, Öksüz İ. Interpretable ECG analysis for myocardial infarction detection through counterfactuals. Biomed Signal Process Control. 2025;102:107227. doi:10.1016/j.bspc.2024.107227.
