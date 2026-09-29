@@ -119,7 +119,7 @@ This transformation is record-local. No parameters are estimated from other reco
 
 A record-wise per-lead z-score is used as the prespecified normalization-scope sensitivity.
 
-Each lead is centered and scaled using its own 1,000 samples.
+Each lead is centered and scaled using its own 1,000 samples. If any lead has zero standard deviation, the record is excluded from this sensitivity analysis only; this does not alter primary analysis eligibility.
 
 No other normalization, denoising, beat segmentation, filtering, augmentation or amplitude perturbation is part of the primary experiment.
 
