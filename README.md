@@ -2,11 +2,11 @@
 
 I started this study because I became interested in a small assumption that is easy to leave unquestioned in ECG machine learning. Amplitude normalization is often treated as a routine preprocessing step. I want to know whether it is actually neutral.
 
-I am using the PTB-XL dataset and comparing an original ECG representation with a defined amplitude-normalized representation across a small number of diagnostic tasks. I am less interested in which version gives the better score. I want to see whether changing the representation changes the information available to a model, and whether that differs from one task to another.
+I am using the PTB-XL dataset to compare the native ECG representation with a defined record-wise standardized representation across two diagnostic tasks. I am interested in whether the representation change produces a different predictive effect for HYP and MI when the model and evaluation setup are held fixed.
 
 ## Where I am now
 
-I have finished the first scientific literature pass and the main methodological literature reconnaissance. I have not run the data audit or the main analysis yet, so there are no results here.
+I have finished the main scientific and methodological literature passes. The metadata and waveform integrity audits are complete. The primary analysis has not been run, so there are no model results here.
 
 I have completed the PTB-XL metadata and label audit and a targeted waveform integrity audit. The primary input representation, label rule, model structure and statistical estimand are now frozen. The remaining work is implementation verification and formal protocol registration.
 
@@ -18,11 +18,11 @@ Zaid Wani is joining me as a research collaborator and will independently reprod
 
 ## The question
 
-Does ECG amplitude normalization remove or alter information relevant to some diagnostic tasks, and is that effect different across tasks?
+Under a fixed direct-waveform model, does global record-wise z-score standardization change ECG classification performance differently for PTB-XL hypertrophy and myocardial infarction phenotypes?
 
 ## Why I chose it
 
-Normalization may help, do very little, or remove information that matters for a particular task. I want to see which of those possibilities the data support.
+I am testing one specific representation change rather than normalization in general.
 
 That question led me to the current study design.
 
