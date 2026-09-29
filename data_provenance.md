@@ -34,6 +34,10 @@ The PTB-XL documentation reports the following counts for the major diagnostic s
 
 These groups are not mutually exclusive because one record can have more than one diagnostic statement.
 
+## Primary binary labels
+
+The primary binary task rule uses a common SCP likelihood threshold of >=50% for both target and NORM labels. Target-plus-NORM is retained as target-positive and records reaching neither threshold are excluded. The unthresholded superclass-presence rule is retained as a prespecified sensitivity analysis. Full counts are recorded in data_audit.md.
+
 ## Folds
 
 PTB-XL provides a patient-aware fold assignment for machine learning. Records from the same patient remain in the same fold.
@@ -49,7 +53,7 @@ The minimum metadata files needed for the initial data audit are
 - `ptbxl_database.csv`
 - `scp_statements.csv`
 
-The primary waveform analysis will use the corresponding PTB-XL waveform records after the model input representation has been frozen.
+The primary waveform analysis uses the corresponding PTB-XL v1.0.3 records100 WFDB files. Each input record is 12 leads by 1,000 samples at 100 Hz.
 
 ## What I will record as the analysis develops
 
