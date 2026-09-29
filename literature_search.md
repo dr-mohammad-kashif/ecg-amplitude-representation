@@ -62,7 +62,7 @@ PTB-XL diagnostic superclasses overlap, and the dataset includes multiple ECG re
 
 ### Paired uncertainty
 
-Raw and normalized predictions will be paired because they come from the same held-out records. DeLong is a candidate for AUROC comparison. A patient-level bootstrap is also a strong candidate because repeated records can belong to the same patient.
+Raw and normalized predictions will be paired because they come from the same held-out records. The primary inferential procedure is a patient-level paired percentile bootstrap because repeated records can belong to the same patient.
 
 ### Class imbalance
 
