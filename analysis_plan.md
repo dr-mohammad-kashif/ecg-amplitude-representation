@@ -25,16 +25,24 @@ I chose HYP because amplitude has a direct role in traditional ECG criteria for 
 
 I will compare
 
-1. the original ECG signal
-2. one clearly defined amplitude-normalized version
+1. the original native 100 Hz ECG signal
+2. the same signal after a global record-wise z-score
 
-I will write the exact normalization rule down before running the main comparison and implement it once in a shared preprocessing function.
+The primary normalized representation is defined as
 
-I will not keep adding different normalization methods just because one produces a more interesting result.
+z(l,t) = (x(l,t) - mu_r) / sigma_r
+
+where mu_r and sigma_r are calculated from all 12 leads and all 1,000 time points in that record.
+
+No parameters are learned from other records. The transformation is therefore applied independently to each record in every split.
+
+The main sensitivity representation will use a per-lead record-wise z-score, with each lead standardized from its own 1,000 samples.
+
+I will implement each transformation once in a shared preprocessing function and will not add further normalization variants simply because one produces a more interesting result.
 
 ## Evaluation
 
-I will use the patient-aware PTB-XL fold structure if it fits the final label definitions.
+I will use the patient-aware PTB-XL fold structure for the final label definitions unless a prespecified exclusion makes a fold unusable. Any such change will be recorded before primary training.
 
 The dataset documentation recommends folds 1 to 8 for training, fold 9 for validation and fold 10 for testing. The folds were created while keeping records from the same patient together.
 
@@ -42,13 +50,13 @@ I will not use a random row-level split as the primary result.
 
 ## Model
 
-The current model candidate is a small 1D convolutional model applied directly to the 100 Hz, 12-lead waveform.
+The primary model family is a small 1D convolutional model applied directly to the native 100 Hz, 12-lead waveform.
 
-I am considering this because the scientific question is about the signal representation itself. A direct waveform model avoids adding a feature-engineering stage that could change amplitude information before the model sees it.
+The input is 12 leads by 1,000 samples. I will not independently resample the signal or add an engineered-feature stage, because either would introduce another representation choice into the amplitude comparison.
 
-The architecture will be kept identical between the raw and normalized conditions.
+The architecture and all training settings will be identical between the raw and normalized conditions.
 
-I will not freeze the architecture until I inspect the waveform files and measure the computational cost. Logistic regression and random forest remain possible secondary baselines only if I later define a compact feature representation with a clear methodological reason.
+The exact CNN architecture and training configuration will be frozen during a small implementation pilot before the primary result is interpreted.
 
 ## Metrics
 
