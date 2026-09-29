@@ -92,7 +92,7 @@ TRIPOD+AI also emphasises clear reporting of predictors, outcomes, model develop
 
 The raw and normalized conditions use the same underlying ECG records. Predictions on the held-out set are therefore paired.
 
-DeLong's method provides a standard comparison for correlated ROC curves. (17)
+DeLong's method provides a standard comparison for correlated ROC curves. (16)
 
 A patient-level paired bootstrap is also attractive because it can estimate the distribution of the performance difference while respecting the fact that several records may belong to one patient. I currently prefer this as the main uncertainty candidate, with DeLong considered as a complementary AUROC comparison if appropriate for the final design.
 
@@ -102,7 +102,7 @@ The current primary estimand candidate is the difference in AUROC between the ra
 
 AUROC measures discrimination across thresholds but does not directly reflect the prevalence of the positive class.
 
-Precision-recall analysis is particularly informative when the positive class is uncommon because precision depends on prevalence. (16)
+Precision-recall analysis is particularly informative when the positive class is uncommon because precision depends on prevalence. (17)
 
 The primary performance report should therefore include AUROC, AUPRC and the positive-class prevalence for each task, along with uncertainty for the paired raw versus normalized difference.
 
