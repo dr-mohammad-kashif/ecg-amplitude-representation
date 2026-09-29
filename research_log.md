@@ -31,8 +31,6 @@ I am also keeping a running work plan so that the study does not lose earlier de
 
 The public repository should stay focused on the actual study. I do not want to add documents or metadata that exist only to make the project look more advanced. New files should have a real research purpose.
 
-The next stage is methodological literature review. The protocol will come after that review and the data audit.
-
 ## 29 September 2026
 
 The methods review is now taking shape. A few points changed how I want to design the comparison.
@@ -41,8 +39,20 @@ Normalization is not one operation. Recent ECG papers use per-lead, per-record, 
 
 I also checked the leakage question more closely. If a transformation learns parameters from data, those parameters must come from the training portion before the held-out data are transformed. A record-local transformation is different because its parameters are derived from that record itself. I need to make that distinction explicit in the protocol.
 
-Because the raw and normalized inputs come from the same held-out records, the final comparison will be paired. A correlated-ROC method such as DeLong is one candidate for comparing AUROC values, with a paired bootstrap as another option. I have not frozen the statistical test yet.
+Because the raw and normalized inputs come from the same held-out records, the final comparison will be paired. A correlated-ROC method such as DeLong is one candidate for comparing AUROC values, with a patient-level paired bootstrap as another option. I have not frozen the statistical test yet.
 
 I also decided that information preservation needs a more precise definition. I am separating numerical signal preservation, preservation of clinically meaningful waveform structure, and task-relevant information available to the model. The protocol should not use the word information without making clear which of these is meant.
 
-The next step is to finish this methodological pass, then build the formal study protocol from the decisions that survive the literature and data audit.
+## 29 September 2026
+
+The methodological literature reconnaissance is now sufficient to narrow the next design decisions.
+
+Secondary-data guidance reinforced that the protocol needs explicit data flow, unit of analysis, label construction, exclusions and analysis documentation. Because PTB-XL is multilabel, the HYP versus NORM and MI versus NORM tasks cannot be frozen without first quantifying overlaps in the actual v1.0.3 data.
+
+The statistical literature also changed my uncertainty plan. PTB-XL can contain multiple records per patient, so treating every record as independent for confidence intervals would ignore within-patient clustering. A patient-level bootstrap is now the strongest candidate for the paired uncertainty analysis.
+
+The current primary normalization candidate is a global record-wise z-score across retained leads and time points within each record. A per-lead record-wise z-score is the most useful current sensitivity candidate. I have not frozen either one.
+
+The largest remaining methodological gap is the model input representation. Logistic regression and random forest were chosen as simple starting models, but I have not yet specified how the full multilead waveform enters them. That choice changes the experiment enough that it needs to be resolved before the formal protocol.
+
+I created methods_literature_review.md to keep the detailed methodological evidence separate from the shorter decision-focused methods_review.md.
