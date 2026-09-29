@@ -40,16 +40,15 @@ The dataset documentation recommends folds 1 to 8 for training, fold 9 for valid
 
 I will not use a random row-level split as the primary result.
 
-## Models
+## Model
 
-I am starting with
+The current model candidate is a small 1D convolutional model applied directly to the 100 Hz, 12-lead waveform.
 
-- logistic regression
-- random forest
+I am considering this because the scientific question is about the signal representation itself. A direct waveform model avoids adding a feature-engineering stage that could change amplitude information before the model sees it.
 
-I want the first comparison to be simple enough that I can see the representation effect without adding unnecessary model complexity.
+The architecture will be kept identical between the raw and normalized conditions.
 
-I may add one more model later if there is a clear methodological reason to do so. I will not add a more complex model just to improve the headline number.
+I will not freeze the architecture until I inspect the waveform files and measure the computational cost. Logistic regression and random forest remain possible secondary baselines only if I later define a compact feature representation with a clear methodological reason.
 
 ## Metrics
 
