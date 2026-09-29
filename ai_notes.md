@@ -1,20 +1,13 @@
 # AI notes
 
-I am using AI tools during this project, mainly to speed up parts of the work that would otherwise take me longer.
+I use AI tools during this project to speed up parts of the work that would otherwise take longer.
 
-I expect to use them for literature searches, code drafts, debugging, documentation and for challenging my own methodological decisions.
+The main uses are literature discovery, search-term generation, code drafts, debugging, documentation and challenging methodological decisions.
 
-I am keeping this separate from the actual evidence. A suggestion from an AI system is not a source and I do not treat it as one.
+I keep AI assistance separate from the evidence. An AI response is not a scientific source. Scientific claims are checked against the original paper, dataset documentation or the project's own analysis.
 
-When an AI tool contributes something important, I will record
+For code, I rerun and test what I keep.
 
-- the date
-- what I was working on
-- what the tool suggested or produced
-- what I checked myself
-- whether I kept, changed or rejected it
-- why I made that decision
+When an AI suggestion changes the direction of the work, I record the decision in the relevant research log or study document rather than treating the suggestion itself as evidence.
 
-For code, I will rerun and test what I keep. For scientific claims, I will check the original paper, dataset documentation or my own analysis output.
-
-I also want to keep a record of useful mistakes. If an AI suggestion sends me in the wrong direction and I catch it, I would rather record that than make the process look cleaner than it actually was.
+I also keep useful mistakes visible when they materially change the study. I would rather show where a suggestion was rejected than make the research record look cleaner than it actually was.
