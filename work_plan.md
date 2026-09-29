@@ -86,7 +86,7 @@ Only after A-C are complete
 
 - reusable preprocessing functions
 - validation tests
-- primary analysis
+- primary training and evaluation
 - results
 - error analysis
 - reasoned robustness checks
@@ -137,13 +137,14 @@ Only after A-E are complete
 - ai_notes.md
 - requirements.txt
 - .gitignore
+- src/
+- tests/
+- scripts/
 
 ## Future study documents
 
 I expect the research record to grow as real work is completed.
 
-- study protocol
-- statistical analysis plan
 - label specification
 - data dictionary
 - evidence extraction matrix if it becomes useful
