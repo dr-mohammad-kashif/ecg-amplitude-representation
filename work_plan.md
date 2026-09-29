@@ -20,7 +20,7 @@ No model result has been produced.
 
 The metadata and label audit is complete for the uploaded PTB-XL v1.0.3 files.
 
-The next phase is waveform-level inspection and the final model input decision.
+A targeted waveform integrity audit is complete, and the primary waveform representation has been selected.
 
 ## Current research question
 
@@ -81,44 +81,47 @@ This remains a candidate until the waveform files are inspected and the computat
 
 ## Next research phase
 
-### A. Inspect the actual waveform data
+### A. Freeze the primary task construction
 
-- verify waveform readability and channel ordering
-- verify sample counts at 100 Hz and 500 Hz
-- inspect amplitude ranges and signal-quality metadata
-- identify corrupted or unusable waveform records
-- compare the practical computational cost of the two sampling rates
+- confirm the target-present versus NORM-present rule
+- confirm the handling of target plus NORM overlap
+- record exclusions for records with neither label
+- record the final record and patient counts
 
-### B. Audit the actual PTB-XL task structure
+### B. Freeze the CNN implementation
 
-- inspect all label combinations
-- quantify target and NORM overlaps
-- count records and patients under candidate task definitions
-- test the effect of reasonable pre-specified exclusion rules
-- document unusable waveform cases
-- check class balance
-- decide the scientific unit of observation
+- choose the smallest architecture that can learn the direct waveform representation without introducing engineered features
+- fix optimizer, learning-rate schedule, batch size, epochs and early-stopping rule
+- fix random seeds and model-selection rule
+- confirm that the same configuration is used for raw and normalized conditions
 
-### C. Decide the model input representation
+### C. Freeze the statistical target
 
-This is now the main unresolved methodological issue.
+- choose the primary estimand
+- define the AUROC difference precisely
+- define the patient-level paired bootstrap and interval method
+- decide how AUPRC uncertainty will be reported
+- define the calibration summary
+- define what is primary versus secondary versus exploratory
 
-- determine whether the waveform will be used directly or through a defined feature representation
-- check computational feasibility of each option
-- keep the same input construction for raw and normalized conditions
-- avoid adding dimensionality reduction solely to make one representation work better
-- decide whether logistic regression and random forest remain appropriate after the input is defined
-- record the reason for the final choice
+### D. Write the protocol and SAP
 
-### D. Freeze preprocessing
+Only after A-C are complete
 
-- write the exact normalization formula
-- specify record-local versus population-fitted parameters
-- specify whether the transform is applied independently within each split
-- define any handling of missing or unusable signal
-- define the sensitivity normalization before the primary analysis
+- PROTOCOL.md
+- STATISTICAL_ANALYSIS_PLAN.md
+- preregistration record
 
-### E. Freeze the statistical target
+### E. Then code and analyse
+
+- reusable preprocessing functions
+- validation tests
+- primary analysis
+- results
+- error analysis
+- reasoned robustness checks
+- Zaid independent reproduction
+- final report
 
 - choose the primary task
 - choose the primary model
@@ -217,6 +220,6 @@ No methodological decision from an earlier session should be silently dropped. I
 
 ## Immediate next task
 
-Inspect the waveform files and resolve the model input representation.
+Freeze the exact CNN training configuration and statistical estimand.
 
-The formal protocol should be written only after the waveform audit, label rule, normalization definition and statistical target are sufficiently stable.
+The formal protocol should be written after those decisions are stable.
