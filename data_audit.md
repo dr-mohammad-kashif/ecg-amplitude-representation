@@ -1,12 +1,12 @@
 # Data audit
 
-I audited the uploaded PTB-XL version 1.0.3 metadata files and then performed a targeted integrity check of representative `records100` waveform files before freezing the primary waveform representation and task definitions.
+I audited the local PTB-XL version 1.0.3 metadata copies used for this study and then performed a targeted integrity check of representative `records100` waveform files before freezing the primary waveform representation and task definitions.
 
 The metadata audit covered `ptbxl_database.csv` and `scp_statements.csv`. The waveform integrity audit was performed separately on paired WFDB waveform files.
 
 ## Files checked
 
-The uploaded copies contain
+The local audit copies contain
 
 - `ptbxl_database.csv` with 21,799 rows and 28 columns
 - `scp_statements.csv` with 71 SCP statement rows and the expected diagnostic mappings
@@ -15,7 +15,7 @@ Every row in `scp_codes` parsed successfully.
 
 All 71 SCP codes appearing in the database are present in `scp_statements.csv`.
 
-The local SHA-256 values of the uploaded copies are
+The local SHA-256 values of the audited metadata copies are
 
 `ptbxl_database.csv`
 `7600de9c1b27d181d850b3c6038a35d7c3ddb6bb33b702e3a20252a6859d216b`
@@ -27,7 +27,7 @@ These hashes identify the copies audited here. They are not being treated as ind
 
 ## Dataset structure
 
-The uploaded metadata contains the expected 21,799 ECG records and 18,869 unique patients.
+The audited metadata contains the expected 21,799 ECG records and 18,869 unique patients.
 
 There are no duplicate `ecg_id` values and no duplicate waveform paths.
 
@@ -58,7 +58,7 @@ Folds 9 and 10 have `validated_by_human = True` for every record in this copy, w
 
 ## Waveform integrity audit
 
-The metadata audit was followed by a targeted audit of representative waveform files from the uploaded PTB-XL v1.0.3 records100 data. The purpose was to verify that the actual files matched the representation documented by PhysioNet before the model input was selected.
+The metadata audit was followed by a targeted audit of representative waveform files from the locally available PTB-XL v1.0.3 records100 data. The purpose was to verify that the actual files matched the representation documented by PhysioNet before the model input was selected.
 
 The paired WFDB records I inspected had
 
