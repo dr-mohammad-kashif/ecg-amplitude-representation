@@ -64,13 +64,13 @@ I am separating numerical signal preservation, clinically meaningful waveform st
 
 The primary result should therefore be described as a change in predictive behaviour under a defined representation. A performance change by itself is not proof that clinical information was destroyed.
 
-## Model input is now the main unresolved design issue
+## Model input
 
-The current analysis plan lists logistic regression and random forest, but it does not yet specify how the multilead waveform enters those models.
+The data audit confirmed that the study can use the official 100 Hz waveform version as a direct 12-lead input.
 
-That decision matters enough that I should not write the formal protocol before resolving it.
+The current candidate is a small fixed 1D convolutional model operating directly on the 100 Hz waveform. This keeps the representation comparison close to the signal and avoids a feature-engineering stage that could itself alter amplitude information.
 
-Flattening the waveform, extracting engineered features, reducing dimensionality, or using a direct waveform model all change the experiment. The representation comparison is only clean if the same input construction and learning procedure are used for raw and normalized signals.
+This is still a candidate until the waveform files are inspected and the computational cost is measured. Logistic regression and random forest remain possible secondary baselines only if a principled compact feature representation is defined.
 
 ## Robustness
 
@@ -105,7 +105,7 @@ The current evidence on AI-assisted evidence synthesis supports keeping human ve
 
 ## Remaining work before the formal protocol
 
-1. Audit PTB-XL labels and overlaps.
+1. Inspect the waveform files and signal quality.
 2. Decide the model input representation.
 3. Freeze the normalization definition.
 4. Freeze the task construction and exclusions.
