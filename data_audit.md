@@ -176,7 +176,7 @@ Using a common likelihood threshold for both tasks avoids making annotation cert
 
 The values in `scp_codes` are statement likelihoods. The PTB-XL documentation describes the SCP dictionary as statement and likelihood pairs, with zero used when the likelihood is unknown.
 
-I checked the effect of a 50% likelihood threshold as a sensitivity definition.
+The 50% likelihood threshold is the primary annotation rule; the any-statement definition is retained as the prespecified sensitivity.
 
 | Definition | HYP | NORM | MI |
 | --- | ---: | ---: | ---: |
@@ -197,8 +197,8 @@ Among the primary binary task datasets, the number of patients with both positiv
 
 | Task | Patients with conflicting task labels |
 | --- | ---: |
-| HYP vs NORM | 49 |
-| MI vs NORM | 129 |
+| HYP vs NORM | 32 |
+| MI vs NORM | 61 |
 
 These are not automatically errors. A patient can have different ECG findings at different recordings.
 
@@ -220,7 +220,7 @@ I will not exclude records solely from these metadata fields before checking the
 
 The data audit changed three parts of the study design.
 
-First, the candidate binary tasks can now be defined from the actual v1.0.3 label structure instead of from superclass counts alone.
+First, the two binary tasks can now be defined from the actual v1.0.3 label structure instead of from superclass counts alone.
 
 Second, I do not need to invent an elaborate mutually exclusive diagnostic cohort. A target-present versus NORM-present-without-target rule has direct precedent in recent PTB-XL binary work and keeps the study closer to the dataset's native multilabel structure.
 
