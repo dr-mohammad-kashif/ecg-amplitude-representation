@@ -88,6 +88,22 @@ Patient splitting therefore needs to occur before any learned population-level t
 
 TRIPOD+AI also emphasises clear reporting of predictors, outcomes, model development and performance evaluation in prediction-model studies. PROBAST+AI provides a complementary framework for considering bias and applicability across participants or data sources, predictors, outcomes and analysis. (14,15)
 
+## Model input representation
+
+The data audit confirms that PTB-XL provides both 500 Hz and 100 Hz versions of the same 10-second, 12-lead recordings. The official dataset documentation presents the 100 Hz version as a downsampled convenience version and the 500 Hz version as the higher-resolution waveform. Recent PTB-XL studies use both choices, including direct 100 Hz waveform inputs and 500 Hz waveform inputs. (9,10,11)
+
+The representation question in this study is about amplitude normalization. I therefore want the model input to stay as close to the waveform itself as practical. A feature-engineering pipeline would add another layer in which amplitude could be transformed, discarded or summarized before the model sees the data. That would make it harder to attribute a change in performance to the normalization condition alone.
+
+A direct waveform model keeps the comparison cleaner. The same lead order, sample rate, signal length, model architecture, training procedure and evaluation data can be used for the raw and normalized conditions.
+
+The main candidate is the 100 Hz PTB-XL waveform because it reduces each 10-second record to 1,000 samples per lead while retaining the full 12-lead structure. This makes the direct waveform experiment more computationally manageable without introducing a second resampling rule of my own. Recent PTB-XL work has used 100 Hz signals for raw ECG learning, while other studies have used the 500 Hz release. (10,11)
+
+A small 1D convolutional model is therefore the current candidate for the primary model. This is not because convolutional models are universally best for ECGs. It is because they can take the multilead waveform directly and allow the representation comparison to be made without first replacing the waveform with handcrafted features.
+
+The model choice is still a candidate until the waveform files are inspected and the computational cost is measured. Logistic regression and random forest remain possible secondary baselines if I later define a principled compact feature representation, but they should not be forced onto a 12,000-feature flattened waveform simply because they were named earlier in the project.
+
+The important control is unchanged. Whatever model is selected, the architecture and all training settings must be identical between raw and normalized conditions.
+
 ## Paired representation comparison
 
 The raw and normalized conditions use the same underlying ECG records. Predictions on the held-out set are therefore paired.
