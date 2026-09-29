@@ -21,8 +21,6 @@ I now want to see whether the same preprocessing choice can behave differently a
 
 I have not looked at the final model results yet. The next step is the data audit, where I will check the PTB-XL labels and freeze the task definitions before running the main comparison.
 
-## 29 September 2026
-
 I decided not to move straight into model training.
 
 Before I write the formal study protocol, I am checking the study design itself against current research guidance. I want to make sure the label construction, normalization rule, primary outcome, uncertainty method, leakage controls, robustness analysis and reporting plan are decisions I can defend from the literature.
@@ -31,9 +29,7 @@ I am also keeping a running work plan so that the study does not lose earlier de
 
 The public repository should stay focused on the actual study. I do not want to add documents or metadata that exist only to make the project look more advanced. New files should have a real research purpose.
 
-## 29 September 2026
-
-The methods review is now taking shape. A few points changed how I want to design the comparison.
+The methods review then changed several design details.
 
 Normalization is not one operation. Recent ECG papers use per-lead, per-record, global and other scaling choices, and a recent multi-lead study reported that per-lead normalization can obscure inter-lead amplitude relationships. I therefore need to define exactly what the transformation does before I call it a single normalization condition.
 
@@ -42,8 +38,6 @@ I also checked the leakage question more closely. If a transformation learns par
 Because the raw and normalized inputs come from the same held-out records, the final comparison will be paired. A correlated-ROC method such as DeLong is one candidate for comparing AUROC values, with a patient-level paired bootstrap as another option. I have not frozen the statistical test yet.
 
 I also decided that information preservation needs a more precise definition. I am separating numerical signal preservation, preservation of clinically meaningful waveform structure, and task-relevant information available to the model. The protocol should not use the word information without making clear which of these is meant.
-
-## 29 September 2026
 
 The methodological literature reconnaissance is now sufficient to narrow the next design decisions.
 
@@ -56,3 +50,5 @@ The current primary normalization candidate is a global record-wise z-score acro
 The largest remaining methodological gap is the model input representation. Logistic regression and random forest were chosen as simple starting models, but I have not yet specified how the full multilead waveform enters them. That choice changes the experiment enough that it needs to be resolved before the formal protocol.
 
 I created methods_literature_review.md to keep the detailed methodological evidence separate from the shorter decision-focused methods_review.md.
+
+I am keeping the research record month-level rather than using exact day stamps. The publication years in the reference list are bibliographic information and are kept separately from the project log.
