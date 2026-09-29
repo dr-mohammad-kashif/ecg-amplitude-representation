@@ -83,3 +83,9 @@ NeurIPS. Paper Checklist Guidelines. NeurIPS. Available from: https://neurips.cc
 International Committee of Medical Journal Editors. Recommendations for the conduct, reporting, editing, and publication of scholarly work in medical journals: preparing a manuscript for submission to a medical journal. Available from: https://www.icmje.org/recommendations/browse/manuscript-preparation/preparing-for-submission.html
 
 Patrias K, Wendling DL, technical editor. Citing medicine: the NLM style guide for authors, editors, and publishers. 2nd ed. Bethesda (MD): National Library of Medicine (US); 2007-2015.
+
+Aydın F, Usta S, Kalaycıoğlu E, Aydemir O. Source-only transportability of engineered ECG features for healthy-versus-myocardial infarction classification. Diagnostics (Basel). 2026;16(13):2061. doi:10.3390/diagnostics16132061.
+
+Nayyab R, Waris A, Zaheer I, Khan MJ, Hazzazi F, Ijaz MA, et al. Enhancing ECG disease detection accuracy through deep learning models and P-QRS-T waveform features. PLoS One. 2025;20(6):e0325358. doi:10.1371/journal.pone.0325358.
+
+Zeng L, Pan J, Lu Y, Pan X. Stabilizing extreme few-shot ECG classification via self-supervised contrastive pretraining. Ann Noninvasive Electrocardiol. 2026;31(3):e70188. doi:10.1111/anec.70188.
