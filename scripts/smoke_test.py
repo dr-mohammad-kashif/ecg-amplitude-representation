@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import argparse
 from pathlib import Path
 
 import numpy as np
@@ -9,17 +10,27 @@ from src.ecg_pipeline import global_record_zscore, per_lead_record_zscore
 from src.model import CompactECGCNN
 
 
+EXPECTED_VALUES = 12 * 1000
+
+
 def read_ptbxl_int16(path: Path) -> np.ndarray:
+    """Read one records100 binary file using the documented PTB-XL layout."""
     raw = np.fromfile(path, dtype="<i2")
-    expected = 12 * 1000
-    if raw.size != expected:
-        raise ValueError(f"expected {expected} int16 values, got {raw.size}")
+    if raw.size != EXPECTED_VALUES:
+        raise ValueError(
+            f"expected {EXPECTED_VALUES} int16 values, got {raw.size}"
+        )
     return (raw.reshape(1000, 12).T / 1000.0).astype(np.float32)
 
 
 def main() -> None:
-    data_dir = Path("/mnt/data")
-    raw = read_ptbxl_int16(data_dir / "02010_lr.dat")
+    parser = argparse.ArgumentParser(
+        description="Smoke-test one PTB-XL records100 waveform and the frozen CNN."
+    )
+    parser.add_argument("dat_file", type=Path, help="Path to a records100 .dat file")
+    args = parser.parse_args()
+
+    raw = read_ptbxl_int16(args.dat_file)
     normalized = global_record_zscore(raw)
     sensitivity = per_lead_record_zscore(raw)
 
@@ -31,9 +42,11 @@ def main() -> None:
 
     model = CompactECGCNN().eval()
     batch = torch.from_numpy(np.stack([raw, normalized])).float()
+
     with torch.no_grad():
         logits = model(batch)
 
+    print("waveform:", args.dat_file)
     print("raw shape:", raw.shape)
     print("global z-score mean:", float(normalized.mean()))
     print("global z-score sd:", float(normalized.std(ddof=0)))
