@@ -32,53 +32,23 @@ The effect of normalization may not be identical across diagnostic tasks.
 
 This remains a hypothesis. I will let the data and the planned analysis determine the result.
 
-## Decisions already made
+## Frozen design decisions
 
 - Use PTB-XL version 1.0.3 from PhysioNet.
-- Keep patient identity through data preparation.
-- Use patient-aware evaluation.
-- Start with raw versus one clearly defined normalized representation.
-- Keep the model and evaluation procedure fixed when comparing representations.
-- Treat HYP versus NORM and MI versus NORM as candidate tasks until the data audit is complete.
-- Record label construction and exclusion rules before the primary comparison.
-- Evaluate with AUROC, AUPRC and calibration where appropriate.
-- Include error analysis and at least one reasoned robustness check.
-- Do not add models or preprocessing variants just to make the result look stronger.
-- Have Zaid independently reproduce the primary comparison after the first analysis is stable.
-- Keep AI use documented, but do not treat AI output as scientific evidence.
-
-## Evidence-supported candidates
-
-These are not yet frozen protocol decisions.
-
-### Normalization
-
-A global record-wise z-score across retained leads and time points is currently the clearest primary candidate.
-
-A record-wise per-lead z-score is currently the clearest sensitivity candidate.
-
-### Uncertainty
-
-A patient-level paired bootstrap is currently the strongest candidate because multiple ECG records can belong to one patient.
-
-DeLong remains a candidate for the correlated AUROC comparison.
-
-### Calibration
-
-Calibration plot plus Brier score is the current simple secondary plan.
-
-### Binary task construction
-
-The current candidate rule is target-present for the positive class and NORM-present without the target for the negative class. Records with neither label are excluded. Target plus NORM is retained as positive because this follows a recent binary MI PTB-XL precedent and a recent LVH study used the same precedence when labels overlapped.
-
-A likelihood threshold of 50% is a candidate sensitivity definition rather than the primary rule at this stage.
-
-### Model input
-
-The current model-input candidate is a direct 100 Hz 12-lead waveform representation with a fixed small 1D convolutional model. This keeps the normalization comparison close to the waveform itself and avoids adding an engineered-feature pipeline that could change the representation being studied.
-
-This is now fixed as the native 100 Hz representation; the remaining work is implementation verification and resource measurement.
-
+- Preserve patient identity throughout preparation and evaluation.
+- Use patient-aware folds 1 to 8 for training, 9 for validation and 10 for held-out testing.
+- Compare the native 100 Hz waveform with one global record-wise z-score representation.
+- Use HYP versus NORM and MI versus NORM as the two prespecified phenotype tasks.
+- Apply the same >=50% SCP likelihood threshold to target and NORM labels.
+- Retain target-plus-NORM records as target-positive and exclude records reaching neither threshold.
+- Use a compact direct-waveform 1D CNN with no internal normalization layers.
+- Keep architecture, training procedure, input handling and evaluation data fixed between raw and standardized conditions.
+- Use a patient-level paired percentile bootstrap with 5,000 resamples for primary uncertainty.
+- Use the cross-task contrast of AUROC changes as the primary estimand.
+- Keep unthresholded label construction, per-lead normalization and three-seed training stability as prespecified sensitivity analyses.
+- Report AUROC, average precision, prevalence and Brier score, with calibration plots as secondary analysis.
+- Do not add analyses because they produce a more favourable result.
+- Have Zaid independently reproduce the primary analysis from a clean repository state.
 ## Next research phase
 
 ### A. Freeze the primary task construction
