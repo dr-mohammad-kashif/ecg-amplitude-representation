@@ -17,3 +17,21 @@ Zhou Q, Luo X, Du K. 2026. Interpretable detection of left ventricular hypertrop
 Jia Y, Pei H, Liang J, Zhou Y, Yang Y, Cui Y, Xiang M. 2024. Preprocessing and Denoising Techniques for Electrocardiography and Magnetocardiography. A Review. Bioengineering 11, 1109. DOI 10.3390/bioengineering11111109
 
 Salimi A, Kalmady SV, Hindle A, Zaiane O, Kaul P. 2023. Exploring Best Practices for ECG Signal Processing in Machine Learning. Preprint. DOI 10.48550/arXiv.2311.04229
+
+## Methods and reporting references
+
+Collins GS, Moons KGM, Dhiman P, et al. 2024. TRIPOD+AI statement. BMJ 385, e078378. DOI 10.1136/bmj-2023-078378
+
+Moons KGM, Damen JA, Kaul T, et al. 2025. PROBAST+AI. BMJ 388, e082505. DOI 10.1136/bmj-2024-082505
+
+von Elm E, Altman DG, Egger M, et al. 2007. The STROBE Statement. BMJ 335, 806-808. DOI 10.1136/bmj.39335.541782.AD
+
+Page MJ, McKenzie JE, Bossuyt PM, et al. 2021. PRISMA 2020 statement. BMJ 372, n71. DOI 10.1136/bmj.n71
+
+Rethlefsen ML, Kirtley S, Waffenschmidt S, et al. 2021. PRISMA-S. Systematic Reviews 10, 39. DOI 10.1186/s13643-020-01542-z
+
+Wilkinson MD, Dumontier M, Aalbersberg I, et al. 2016. The FAIR Guiding Principles for scientific data management and stewardship. Scientific Data 3, 160018. DOI 10.1038/sdata.2016.18
+
+SPIRIT 2025. 2025. SPIRIT 2025 statement. BMJ 389, e081477. DOI 10.1136/bmj-2024-081477
+
+DeLong ER, DeLong DM, Clarke-Pearson DL. 1988. Comparing the areas under two or more correlated receiver operating characteristic curves. Biometrics 44, 837-845. PMID 3203132
