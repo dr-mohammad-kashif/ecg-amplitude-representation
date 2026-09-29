@@ -14,7 +14,7 @@ The metadata and representative waveform files have been audited before this reg
 
 No primary model has been fit on the held-out test set and no primary test-set performance has been used to choose the model, normalization rule, task definitions, or statistical estimand.
 
-For the OSF existing-data question, this should be described as registration following analysis of the existing data, while making clear that the confirmatory primary model comparison and held-out test analysis have not yet been conducted.
+For the OSF existing-data question, this should be described as registration following data-preparation and exploratory audit work, while making clear that the prespecified primary model comparison and held-out test analysis have not yet been conducted.
 
 ## Research question
 
@@ -206,7 +206,7 @@ No waveform imputation is performed.
 
 ## Confirmatory versus exploratory analysis
 
-The primary cross-task AUROC contrast is confirmatory within the scope of this preregistration.
+The primary cross-task AUROC contrast is the prespecified primary analysis within the scope of this preregistration.
 
 Task-specific AUROC changes, average precision, Brier score, calibration plots and prespecified sensitivity analyses are supporting analyses.
 
