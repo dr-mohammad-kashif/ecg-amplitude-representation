@@ -77,7 +77,7 @@ A likelihood threshold of 50% is a candidate sensitivity definition rather than 
 
 The current model-input candidate is a direct 100 Hz 12-lead waveform representation with a fixed small 1D convolutional model. This keeps the normalization comparison close to the waveform itself and avoids adding an engineered-feature pipeline that could change the representation being studied.
 
-This remains a candidate until the waveform files are inspected and the computational cost is measured.
+This is now fixed as the native 100 Hz representation; the remaining work is implementation verification and resource measurement.
 
 ## Next research phase
 
@@ -220,6 +220,6 @@ No methodological decision from an earlier session should be silently dropped. I
 
 ## Immediate next task
 
-Freeze the exact CNN training configuration and statistical estimand.
+Implement and unit-test the frozen pipeline, then run a train-and-validation smoke test without using test performance for selection.
 
 The formal protocol should be written after those decisions are stable.
