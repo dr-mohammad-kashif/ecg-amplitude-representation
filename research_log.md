@@ -69,3 +69,8 @@ The primary normalized condition is now a global record-wise z-score across all 
 
 
 The frozen design was then implemented as a testable pipeline. The label rule, global and per-lead standardization functions, input-shape checks and compact CNN forward/backward pass were exercised with a synthetic label fixture and a supplied PTB-XL waveform record. The checks confirmed the expected transformations and the 12 by 1,000 model input. No held-out test performance was used.
+
+
+The full design audit found one implementation-level issue in the unthresholded label-definition sensitivity. A numeric threshold of zero would incorrectly treat an absent superclass as present because the helper used zero as the default maximum likelihood. I replaced that shortcut with an explicit superclass-presence mode and added a unit test for the sensitivity rule.
+
+The protocol, statistical analysis plan and preregistration draft are now aligned with the corrected implementation. The next work is environment verification, preregistration submission, full records100 ingestion and the primary analysis.
