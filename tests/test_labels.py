@@ -54,6 +54,29 @@ def test_primary_label_rule(tmp_path):
     assert np.isnan(mi.iloc[6])
 
 
+def test_unthresholded_label_rule(tmp_path):
+    scp_path = tmp_path / "scp_statements.csv"
+    write_scp_fixture(scp_path)
+
+    metadata = pd.DataFrame(
+        {
+            "scp_codes": [
+                "{'LVH': 15}",
+                "{'NORM': 1}",
+                "{'LVH': 0, 'NORM': 1}",
+                "{'LVH': 0}",
+            ]
+        }
+    )
+
+    hyp = build_binary_labels(metadata, scp_path, "HYP", threshold=None)
+
+    assert hyp.iloc[0] == 1.0
+    assert hyp.iloc[1] == 0.0
+    assert hyp.iloc[2] == 1.0
+    assert np.isnan(hyp.iloc[3])
+
+
 def test_records100_validation():
     x = np.zeros((12, 1000), dtype=np.float32)
     names = ["I", "II", "III", "AVR", "AVL", "AVF", "V1", "V2", "V3", "V4", "V5", "V6"]
