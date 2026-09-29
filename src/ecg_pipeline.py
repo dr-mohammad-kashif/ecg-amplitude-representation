@@ -49,13 +49,26 @@ def max_class_likelihood(
     return max(values, default=0.0)
 
 
+def class_present(
+    scp_codes: Mapping[str, float],
+    class_map: Mapping[str, str],
+    diagnostic_class: str,
+) -> bool:
+    """Return whether any mapped SCP statement belongs to the superclass."""
+    return any(class_map.get(code) == diagnostic_class for code in scp_codes)
+
+
 def build_binary_labels(
     metadata: pd.DataFrame,
     scp_statements_path: str | Path,
     target_class: str,
-    threshold: float = 50.0,
+    threshold: float | None = 50.0,
 ) -> pd.Series:
-    """Build the prespecified binary label for one PTB-XL task.
+    """Build a PTB-XL binary label series.
+
+    If threshold is numeric, superclass presence requires the maximum mapped
+    likelihood to meet that threshold. If threshold is None, any mapped
+    superclass statement counts regardless of its likelihood value.
 
     Returns 1 for target-positive, 0 for NORM-negative, and NaN for exclusions.
     Target plus NORM is retained as target-positive.
@@ -67,8 +80,13 @@ def build_binary_labels(
 
     def label_one(value: str) -> float:
         codes = parse_scp_codes(value)
-        target = max_class_likelihood(codes, class_map, target_class) >= threshold
-        norm = max_class_likelihood(codes, class_map, "NORM") >= threshold
+        if threshold is None:
+            target = class_present(codes, class_map, target_class)
+            norm = class_present(codes, class_map, "NORM")
+        else:
+            target = max_class_likelihood(codes, class_map, target_class) >= threshold
+            norm = max_class_likelihood(codes, class_map, "NORM") >= threshold
+
         if target:
             return 1.0
         if norm:
