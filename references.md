@@ -2,6 +2,8 @@
 
 Wagner P, Strodthoff N, Bousseljot R-D, Kreiseler D, Lunze FI, Samek W, Schaeffter T. 2020. PTB-XL, a large publicly available electrocardiography dataset. Scientific Data 7, 154. DOI 10.1038/s41597-020-0495-6
 
+Wagner P, Strodthoff N, Bousseljot R-D, Samek W, Schaeffter T. 2022. PTB-XL, a large publicly available electrocardiography dataset (version 1.0.3). PhysioNet. DOI 10.13026/kfzx-aw45
+
 Strodthoff N, Wagner P, Schaeffter T, Samek W. 2021. Deep Learning for ECG Analysis. Benchmarks and Insights from PTB-XL. IEEE Journal of Biomedical and Health Informatics 25, 1519-1528. DOI 10.1109/JBHI.2020.3022989
 
 Safdar MF, Nowak RM, Pałka P. 2024. Pre-Processing techniques and artificial intelligence algorithms for electrocardiogram signals analysis. A comprehensive review. Computers in Biology and Medicine 170, 107908. DOI 10.1016/j.compbiomed.2023.107908
