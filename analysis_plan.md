@@ -71,11 +71,11 @@ I want to know whether any observed difference comes from a small group of recor
 
 ## Robustness
 
-I will run at least one sensitivity analysis after the primary comparison.
+Before the primary analysis, I will choose at least one sensitivity analysis and record its rationale in the protocol.
 
-The exact check will depend on what I see in the data and the first result. It may involve a second simple classifier or a defensible alternative normalization definition.
+The check may involve a second simple classifier, a defensible alternative normalization definition, or another change that addresses a specific methodological concern identified before the primary result is interpreted.
 
-I will record why I chose the check instead of adding variations without a reason.
+I will not choose a sensitivity analysis because it produces a more favourable result. Any additional analysis that becomes relevant only after seeing the primary result will be labelled exploratory and kept separate from the prespecified robustness analysis.
 
 ## Interpretation
 
