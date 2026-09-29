@@ -111,8 +111,8 @@ The architecture is
 
 The model contains no BatchNorm, LayerNorm or other internal normalization layer. This is deliberate because the study is testing an input representation change.
 
-The same architecture and parameterisation will be used for raw and normalized conditions.
-Within each task and seed, the raw and normalized models will use the same initialization seed, training-record ordering and optimizer settings. Only the input representation will differ.
+The same architecture and parameterisation will be used for raw and normalized conditions. The architecture is a deliberately fixed compact probe rather than an architecture search target.
+Within each task and seed, the raw and normalized models will use the same initialization seed, training-record ordering and optimizer settings. Only the input representation will differ. I will not tune the architecture against held-out test performance.
 
 ## Training
 
