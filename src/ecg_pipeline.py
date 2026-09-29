@@ -119,6 +119,8 @@ def validate_records100_array(
         )
     if int(fs) != EXPECTED_FS:
         raise ValueError(f"expected {EXPECTED_FS} Hz, got {fs}")
+    if not np.isfinite(x).all():
+        raise ValueError("waveform contains non-finite values")
     if lead_names is not None and list(lead_names) != LEAD_ORDER:
         raise ValueError("unexpected lead order")
 
