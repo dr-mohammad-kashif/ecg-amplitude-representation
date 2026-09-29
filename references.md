@@ -12,6 +12,8 @@ Strodthoff N, Wagner P, Schaeffter T, Samek W. Deep learning for ECG analysis: b
 
 Pollard T, Moody BE, Lehman L, Gow B, Fernandes C, Xie C, et al. PhysioNet as a global platform for biomedical research. Nat Health. 2026. doi:10.1038/s44360-026-00096-z.
 
+Knolle MA, Menten MJ, Jungmann F, Meissen F, Glocker B, Rueckert D, Kaissis G. Disparate privacy risks from medical AI. Nature. 2026;656:192-198. doi:10.1038/s41586-026-10688-0.
+
 ## ECG preprocessing and clinical context
 
 Safdar MF, Nowak RM, Pałka P. Pre-processing techniques and artificial intelligence algorithms for electrocardiogram (ECG) signals analysis: a comprehensive review. Comput Biol Med. 2024;170:107908. doi:10.1016/j.compbiomed.2023.107908.
@@ -24,15 +26,17 @@ Liu W, Wu Z, Yuan Z. ACL-ECG: anatomy-aware contrastive learning for multi-lead 
 
 Su H, Wang S, Wang H, Qiu K. An edge-cloud collaborative ECG-assisted diagnostic system leveraging cross-lead knowledge distillation and large language models. Sensors (Basel). 2026;26(12):3753. doi:10.3390/s26123753.
 
+Zeng L, Pan J, Lu Y, Pan X. Stabilizing extreme few-shot ECG classification via self-supervised contrastive pretraining. Ann Noninvasive Electrocardiol. 2026;31(3):e70188. doi:10.1111/anec.70188.
+
 Bacharova L, Chevalier P, Gorenek B, Jons C, Li Y-G, Locati ET, Maanja M, Pérez-Riera AR, Platonov PG, Ribeiro ALP, Schocken D, Soliman EZ, Svehlikova J, Tereshchenko LG, Ugander M, Varma N, Zaklyazminskaya E, Ikeda T. ISE/ISHNE expert consensus statement on ECG diagnosis of left ventricular hypertrophy: the change of the paradigm. J Electrocardiol. 2023;81:85-93. doi:10.1016/j.jelectrocard.2023.08.005.
 
 Zhou Q, Luo X, Du K. Interpretable detection of left ventricular hypertrophy using commercial ECG features and machine learning: a study based on the PTB-XL+ dataset. Front Cardiovasc Med. 2026;13:1825829. doi:10.3389/fcvm.2026.1825829.
 
+## Label construction and phenotype definition
+
+Aydın F, Usta S, Kalaycıoğlu E, Aydemir O. Source-only transportability of engineered ECG features for healthy-versus-myocardial infarction classification. Diagnostics (Basel). 2026;16(13):2061. doi:10.3390/diagnostics16132061.
+
 Jin M, Tang X, Lei Y, et al. Machine-learning classification of myocardial infarction and ST/T-change ECG phenotypes across complementary evaluation settings. Sci Rep. 2026. doi:10.1038/s41598-026-68967-9.
-
-Knolle MA, Menten MJ, Jungmann F, Meissen F, Glocker B, Rueckert D, Kaissis G. Disparate privacy risks from medical AI. Nature. 2026;656:192-198. doi:10.1038/s41586-026-10688-0.
-
-Salimi A, Kalmady SV, Hindle A, Zaiane O, Kaul P. Exploring best practices for ECG signal processing in machine learning. Preprint. 2023. doi:10.48550/arXiv.2311.04229.
 
 ## Methods and reporting
 
@@ -62,17 +66,11 @@ Saito T, Rehmsmeier M. The precision-recall plot is more informative than the RO
 
 Stevens RJ, Poppe KK. Validation of clinical prediction models: what does the calibration slope really measure? J Clin Epidemiol. 2020;118:93-99. doi:10.1016/j.jclinepi.2019.09.016.
 
-SPIRIT 2025. SPIRIT 2025 statement: updated guideline for protocols of randomised trials. BMJ. 2025;389:e081477. doi:10.1136/bmj-2024-081477.
+Sandve GK, Nekrutenko A, Taylor J, Hovig E. Ten simple rules for reproducible computational research. PLoS Comput Biol. 2013;9(10):e1003285. doi:10.1371/journal.pcbi.1003285.
 
-Page MJ, McKenzie JE, Bossuyt PM, Boutron I, Hoffmann TC, Mulrow CD, et al. The PRISMA 2020 statement: an updated guideline for reporting systematic reviews. BMJ. 2021;372:n71. doi:10.1136/bmj.n71.
-
-Rethlefsen ML, Kirtley S, Waffenschmidt S, Ayala AP, Moher D, Page MJ, et al. PRISMA-S: an extension to the PRISMA statement for reporting literature searches in systematic reviews. Syst Rev. 2021;10(1):39. doi:10.1186/s13643-020-01542-z.
-
-Wilkinson MD, Dumontier M, Aalbersberg I, Appleton G, Axton M, Baak A, et al. The FAIR Guiding Principles for scientific data management and stewardship. Sci Data. 2016;3:160018. doi:10.1038/sdata.2016.18.
+Wilkinson MD, Dumontier M, Aalbersberg I, Appleton G, Axton B, et al. The FAIR Guiding Principles for scientific data management and stewardship. Sci Data. 2016;3:160018. doi:10.1038/sdata.2016.18.
 
 Barker M, Chue Hong NP, Katz DS, Lamprecht A-L, Martinez-Ortiz C, Psomopoulos F, et al. Introducing the FAIR Principles for research software. Sci Data. 2022;9:622. doi:10.1038/s41597-022-01710-x.
-
-Sandve GK, Nekrutenko A, Taylor J, Hovig E. Ten simple rules for reproducible computational research. PLoS Comput Biol. 2013;9(10):e1003285. doi:10.1371/journal.pcbi.1003285.
 
 Clark J, Barton B, Albarqouni L, et al. Generative artificial intelligence use in evidence synthesis: a systematic review. Res Synth Methods. 2025;16:601-619. doi:10.1017/rsm.2025.16.
 
@@ -85,9 +83,3 @@ NeurIPS. Paper Checklist Guidelines. NeurIPS. Available from: https://neurips.cc
 International Committee of Medical Journal Editors. Recommendations for the conduct, reporting, editing, and publication of scholarly work in medical journals: preparing a manuscript for submission to a medical journal. Available from: https://www.icmje.org/recommendations/browse/manuscript-preparation/preparing-for-submission.html
 
 Patrias K, Wendling DL, technical editor. Citing medicine: the NLM style guide for authors, editors, and publishers. 2nd ed. Bethesda (MD): National Library of Medicine (US); 2007-2015.
-
-Aydın F, Usta S, Kalaycıoğlu E, Aydemir O. Source-only transportability of engineered ECG features for healthy-versus-myocardial infarction classification. Diagnostics (Basel). 2026;16(13):2061. doi:10.3390/diagnostics16132061.
-
-Nayyab R, Waris A, Zaheer I, Khan MJ, Hazzazi F, Ijaz MA, et al. Enhancing ECG disease detection accuracy through deep learning models and P-QRS-T waveform features. PLoS One. 2025;20(6):e0325358. doi:10.1371/journal.pone.0325358.
-
-Zeng L, Pan J, Lu Y, Pan X. Stabilizing extreme few-shot ECG classification via self-supervised contrastive pretraining. Ann Noninvasive Electrocardiol. 2026;31(3):e70188. doi:10.1111/anec.70188.Tanyel T, Atmaca S, Gökçe K, Balık MY, Güler A, Aslanger E, Öksüz İ. Interpretable ECG analysis for myocardial infarction detection through counterfactuals. Biomed Signal Process Control. 2025;102:107227. doi:10.1016/j.bspc.2024.107227.
