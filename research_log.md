@@ -57,3 +57,12 @@ The PTB-XL metadata audit is now complete. The uploaded v1.0.3 files reproduce t
 The audit also showed that likelihood scores materially change cohort size, so I do not want to introduce a hidden certainty threshold. The main candidate uses superclass presence, while a 50 percent likelihood threshold is kept as a possible sensitivity definition. Recent PTB-XL work provides examples of both approaches.
 
 The remaining major design issue is now the waveform itself. I am leaning toward a direct 100 Hz, 12-lead waveform input with a fixed small convolutional model because that keeps the raw versus normalized comparison close to the signal and avoids adding a feature-engineering layer. I will inspect the waveform files before freezing this choice.
+
+
+The waveform representation question is now substantially resolved. I audited representative PTB-XL v1.0.3 waveform files directly and confirmed that the paired records100 files decode as 12-lead, 1,000-sample, 100 Hz WFDB records with the documented signal scaling and lead structure. The binary dimensions and header checksums were consistent in the paired files checked.
+
+The literature search also showed that version 1.0.3 has already been used in studies using 100 Hz, 10-second, 12-lead inputs, including recent neural-network work. Earlier PTB-XL benchmark implementations should still be read with their dataset version in mind because some used pre-1.0.3 releases.
+
+I therefore selected the native 100 Hz, 12-lead waveform as the primary input representation. I am not adding an independent resampling step and I am no longer treating logistic regression or random forest as necessary baselines for the main representation question.
+
+The primary normalized condition is now a global record-wise z-score across all leads and time points within each record. Per-lead record-wise z-score is the main sensitivity condition. The remaining major design work is the exact CNN training configuration and the statistical estimand, after which I can write the formal protocol and statistical analysis plan.
