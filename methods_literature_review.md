@@ -48,7 +48,7 @@ Rutter describes a bootstrap approach for diagnostic accuracy measures when obse
 
 Normalization is not one operation.
 
-ECG studies use different scopes and transformations, including global, per-lead and record-local transformations. Liu et al. describe a global z-score transformation and discuss the consequences of independently normalizing ECG leads. Su et al. provide another example in which absolute amplitude is deliberately retained in a multilead system. Bickmann et al. also show that preprocessing effects can depend on model architecture. (11-13)
+ECG studies use different scopes and transformations, including global, per-lead and record-local transformations. Liu et al. describe a global z-score transformation and discuss the consequences of independently normalizing ECG leads. Su et al. provide another example in which absolute amplitude is deliberately retained in a multilead system. Bickmann et al. also show that preprocessing effects can depend on model architecture. (13-15)
 
 I therefore use four working categories
 
