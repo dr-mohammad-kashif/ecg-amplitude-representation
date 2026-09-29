@@ -108,3 +108,7 @@ This search changed the practical scope of the local waveform audit. I do not ne
 The version comparison also matters. Several older PTB-XL papers and codebases used earlier releases, so their sample counts should not be used as evidence that they operated on the current 1.0.3 record set without checking the version.
 
 The search therefore supports using the native 100 Hz waveform representation and keeping the local waveform audit focused on implementation integrity rather than duplicating the dataset authors' full technical validation.
+
+### Version caveat from the recent waveform literature
+
+One recent 2026 paper describes its source as PTB-XL version 1.0.3 but reports the older 21,837-record, 18,885-patient cohort. I will therefore use that paper for its preprocessing and 12 x 1000 input description, not as evidence for the current 1.0.3 record count. The official PhysioNet v1.0.3 release and studies that explicitly state their 1.0.3 use remain the sources for version-specific dataset facts.
