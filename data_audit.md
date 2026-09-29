@@ -56,6 +56,27 @@ The patient counts per fold are also reasonably balanced. Most importantly, the 
 
 Folds 9 and 10 have `validated_by_human = True` for every record in this copy, which agrees with the official PTB-XL documentation that these folds contain at least one human evaluation.
 
+## Waveform integrity audit
+
+The metadata audit was followed by a targeted audit of representative waveform files from the uploaded PTB-XL v1.0.3 records100 data. The purpose was to verify that the actual files matched the representation documented by PhysioNet before the model input was selected.
+
+The paired WFDB records I inspected had
+
+- 12 signal channels
+- 100 Hz sampling frequency
+- 1,000 samples per channel for the 10-second recording
+- 16-bit signal storage
+- 1,000 digital units per mV, corresponding to 1 microvolt per least-significant bit
+- the lead order I, II, III, AVR, AVL, AVF, V1, V2, V3, V4, V5, V6
+
+The binary file dimensions matched 12 x 1,000 16-bit samples. The waveform data decoded cleanly into the expected matrix shape, and the header checksum values matched the decoded sample sums for the paired files checked. The observed signal values were in the expected millivolt scale for the sampled records.
+
+No truncation or malformed header structure was found in the paired records inspected.
+
+This was a study-specific integrity check, not a revalidation of every waveform in the PTB-XL release. The PTB-XL authors report technical validation of all records in the released dataset, so the purpose here was to verify that the files I will load locally conform to the documented representation.
+
+An isolated waveform file supplied without its matching header was not used for header-dependent validation.
+
 ## Diagnostic superclass mapping
 
 The 44 diagnostic SCP statements map into the five published diagnostic superclasses
