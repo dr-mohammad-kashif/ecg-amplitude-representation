@@ -110,9 +110,9 @@ The raw and normalized conditions use the same underlying ECG records. Predictio
 
 DeLong's method provides a standard comparison for correlated ROC curves. (18)
 
-A patient-level paired bootstrap is also attractive because it can estimate the distribution of the performance difference while respecting the fact that several records may belong to one patient. I currently prefer this as the main uncertainty candidate, with DeLong considered as a complementary AUROC comparison if appropriate for the final design.
+A patient-level paired percentile bootstrap is the primary inferential procedure because several records can belong to one patient. DeLong is not used as the primary procedure because its standard formulation does not account for repeated records within patients.
 
-The current primary estimand candidate is the difference in AUROC between the raw and normalized representations for the same predefined diagnostic task on the fixed held-out evaluation population.
+The primary estimand is the cross-task contrast between the two task-specific AUROC changes. For task t, Delta_t is AUROC_normalized,t minus AUROC_raw,t, and the primary contrast is Delta_HYP minus Delta_MI.
 
 ## AUROC, AUPRC and class prevalence
 
@@ -244,11 +244,9 @@ The evidence currently supports the following principles
 
 ## Remaining decisions
 
-The largest unresolved methodological issue is still the model input representation.
+The major scientific design is now frozen.
 
-The current plan lists logistic regression and random forest, but the full multilead waveform has not yet been assigned a fixed representation for those models. Flattening the signal, engineering features, reducing dimensionality and using a direct waveform model would create different experiments.
-
-The data audit must therefore come first.
+The remaining work is implementation verification. The frozen label rule, waveform representation, model structure, normalization and primary estimand now need unit tests, a train-and-validation smoke test and resource checks before the formal protocol and statistical analysis plan are written.
 
 ## References
 
