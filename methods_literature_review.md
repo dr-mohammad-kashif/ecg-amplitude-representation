@@ -68,15 +68,15 @@ One set of parameters is calculated from all retained leads and time points with
 
 Parameters are estimated from a training population and then applied to other records. Any such parameters must be estimated from training data only.
 
-The current primary candidate is a global record-wise z-score
+The primary transformation is a global record-wise z-score
 
 x' = (x - mu_record) / sigma_record
 
 where the mean and standard deviation are calculated across the retained leads and time points of that record.
 
-The current sensitivity candidate is a record-wise per-lead z-score.
+The prespecified sensitivity transformation is a record-wise per-lead z-score.
 
-These are candidate conditions rather than final protocol decisions. A z-score changes both location and scale, so the protocol should describe the exact mathematical transformation rather than using the broad word normalization by itself.
+The primary global transformation changes both location and scale while using one scalar mean and standard deviation for all leads within a record. The prespecified per-lead transformation removes lead-specific scale as well and therefore changes inter-lead amplitude relationships. The protocol will describe these operations mathematically rather than using the broad word normalization by itself.
 
 ## Leakage and preprocessing boundaries
 
