@@ -18,7 +18,9 @@ The main analysis has not started.
 
 No model result has been produced.
 
-The next phase is the PTB-XL data audit and the final model input decision.
+The metadata and label audit is complete for the uploaded PTB-XL v1.0.3 files.
+
+The next phase is waveform-level inspection and the final model input decision.
 
 ## Current research question
 
@@ -65,9 +67,29 @@ DeLong remains a candidate for the correlated AUROC comparison.
 
 Calibration plot plus Brier score is the current simple secondary plan.
 
+### Binary task construction
+
+The current candidate rule is target-present for the positive class and NORM-present without the target for the negative class. Records with neither label are excluded. Target plus NORM is retained as positive because this follows a recent binary MI PTB-XL precedent and a recent LVH study used the same precedence when labels overlapped.
+
+A likelihood threshold of 50% is a candidate sensitivity definition rather than the primary rule at this stage.
+
+### Model input
+
+The current model-input candidate is a direct 100 Hz 12-lead waveform representation with a fixed small 1D convolutional model. This keeps the normalization comparison close to the waveform itself and avoids adding an engineered-feature pipeline that could change the representation being studied.
+
+This remains a candidate until the waveform files are inspected and the computational cost is measured.
+
 ## Next research phase
 
-### A. Audit the actual PTB-XL task structure
+### A. Inspect the actual waveform data
+
+- verify waveform readability and channel ordering
+- verify sample counts at 100 Hz and 500 Hz
+- inspect amplitude ranges and signal-quality metadata
+- identify corrupted or unusable waveform records
+- compare the practical computational cost of the two sampling rates
+
+### B. Audit the actual PTB-XL task structure
 
 - inspect all label combinations
 - quantify target and NORM overlaps
@@ -77,7 +99,7 @@ Calibration plot plus Brier score is the current simple secondary plan.
 - check class balance
 - decide the scientific unit of observation
 
-### B. Decide the model input representation
+### C. Decide the model input representation
 
 This is now the main unresolved methodological issue.
 
@@ -88,7 +110,7 @@ This is now the main unresolved methodological issue.
 - decide whether logistic regression and random forest remain appropriate after the input is defined
 - record the reason for the final choice
 
-### C. Freeze preprocessing
+### D. Freeze preprocessing
 
 - write the exact normalization formula
 - specify record-local versus population-fitted parameters
@@ -96,7 +118,7 @@ This is now the main unresolved methodological issue.
 - define any handling of missing or unusable signal
 - define the sensitivity normalization before the primary analysis
 
-### D. Freeze the statistical target
+### E. Freeze the statistical target
 
 - choose the primary task
 - choose the primary model
@@ -107,7 +129,7 @@ This is now the main unresolved methodological issue.
 - define the calibration summary
 - define what is primary versus secondary versus exploratory
 
-### E. Write the protocol and SAP
+### F. Write the protocol and SAP
 
 Only after A-D are complete
 
@@ -115,7 +137,7 @@ Only after A-D are complete
 - STATISTICAL_ANALYSIS_PLAN.md
 - preregistration record
 
-### F. Then code and analyse
+### G. Then code and analyse
 
 - reusable preprocessing functions
 - validation tests
@@ -129,6 +151,7 @@ Only after A-D are complete
 ## Current documents
 
 - README.md
+- data_audit.md
 - research_question.md
 - analysis_plan.md
 - literature_review.md
