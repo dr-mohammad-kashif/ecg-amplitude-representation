@@ -446,7 +446,7 @@ The decision was based on the completed sample-size simulation in [SAMPLE SIZE S
 
 The simulation used three configurations as the minimum eligible set, W1 completion probabilities of 0.35, 0.50, and 0.65, a 25 percentage-point W2 minus W1 planning effect, configuration-specific effect heterogeneity of plus or minus 0.05, and within-block dependence of 0 and 0.25.
 
-With 20 blocks per configuration, minimum simulated power across the alternative grid was 0.708.
+With 20 blocks per configuration, minimum simulated power across the alternative grid was 0.713.
 
 With 25 blocks per configuration, minimum simulated power was 0.820, while the maximum simulated type I error across the evaluated null grid was 0.040.
 
