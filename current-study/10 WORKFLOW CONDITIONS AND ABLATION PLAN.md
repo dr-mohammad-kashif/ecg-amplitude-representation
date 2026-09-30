@@ -7,7 +7,7 @@ Study phase: Preprotocol
 
 ## 1. Purpose
 
-This document defines the workflow conditions and the planned contrasts used to isolate specific components of the active LLM workflow study.
+The workflow conditions and planned contrasts isolate specific components of the active LLM workflow study.
 
 The conditions operate on the same locked biomedical machine learning specification. The Reference Biomedical Analysis Protocol defines the scientific target, while the LLM Workflow Experimental Protocol defines the general rules for execution.[1,2]
 
