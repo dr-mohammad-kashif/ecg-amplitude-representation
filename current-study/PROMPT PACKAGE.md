@@ -38,7 +38,7 @@ The maximum primary interaction envelope is 32 LLM response turns per run.
 
 ## 3. W0 prompt
 
-**Prompt ID:** W0-INITIAL-1.0
+### W0-INITIAL-1.0
 
 ~~~text
 Perform the complete analysis specified in the supplied study package.
@@ -56,7 +56,7 @@ W0 intentionally does not enumerate an analytical workflow in the initial instru
 
 ## 4. W1 prompt
 
-**Prompt ID:** W1-INITIAL-1.0
+### W1-INITIAL-1.0
 
 ~~~text
 Perform the complete biomedical machine learning analysis specified in the supplied study package.
@@ -82,7 +82,7 @@ Complete the analysis within the permitted interaction and resource envelope.
 
 ## 5. W2 Stage 1 prompt
 
-**Prompt ID:** W2-STAGE1-1.0
+### W2-STAGE1-1.0
 
 ~~~text
 You are responsible for Stage 1 of the assigned biomedical analysis workflow: data and provenance audit.
@@ -111,7 +111,7 @@ Return the completed Stage 1 artifact and a concise handoff record for Stage 2.
 
 ## 6. W2 Stage 2 prompt
 
-**Prompt ID:** W2-STAGE2-1.0
+### W2-STAGE2-1.0
 
 ~~~text
 You are responsible for Stage 2 of the assigned biomedical analysis workflow: cohort and label construction.
@@ -141,7 +141,7 @@ Return the completed Stage 2 artifacts and a structured handoff for Stage 3.
 
 ## 7. W2 Stage 3 prompt
 
-**Prompt ID:** W2-STAGE3-1.0
+### W2-STAGE3-1.0
 
 ~~~text
 You are responsible for Stage 3 of the assigned biomedical analysis workflow: analysis implementation.
@@ -171,7 +171,7 @@ Return the completed implementation artifacts and a structured handoff for Stage
 
 ## 8. W2 Stage 4 prompt
 
-**Prompt ID:** W2-STAGE4-1.0
+### W2-STAGE4-1.0
 
 ~~~text
 You are responsible for Stage 4 of the assigned biomedical analysis workflow: execution and evaluation.
@@ -208,7 +208,7 @@ Return the complete Stage 4 evidence package and a structured handoff for Stage 
 
 ## 9. W2 Stage 5 prompt
 
-**Prompt ID:** W2-STAGE5-1.0
+### W2-STAGE5-1.0
 
 ~~~text
 You are responsible for Stage 5 of the assigned biomedical analysis workflow: interpretation and scientific reporting.
@@ -239,7 +239,7 @@ Return the final scientific report and terminal workflow status.
 
 ## 10. W3 self-audit prompt
 
-**Prompt ID:** W3-AUDIT-1.0
+### W3-AUDIT-1.0
 
 ~~~text
 Act as the self-audit stage for the completed W2 workflow.
@@ -278,7 +278,7 @@ Return the audit record and terminal status.
 
 ## 11. W4 validation response prompt
 
-**Prompt ID:** W4-VALIDATION-1.0
+### W4-VALIDATION-1.0
 
 ~~~text
 Review the deterministic validation findings supplied for the completed W2 workflow.
@@ -305,7 +305,7 @@ One bounded repair cycle is permitted.
 
 ## 12. W5 independent audit prompt
 
-**Prompt ID:** W5-AUDIT-1.0
+### W5-AUDIT-1.0
 
 ~~~text
 Act as an independent audit context for the completed W2 workflow.
@@ -339,7 +339,7 @@ Return the independent audit record and terminal status.
 
 ## 13. Repair instruction
 
-**Prompt ID:** REPAIR-1.0
+### REPAIR-1.0
 
 ~~~text
 Address only the finding identified in the supplied audit or validation record.
