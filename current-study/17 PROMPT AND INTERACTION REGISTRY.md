@@ -195,7 +195,7 @@ The registry distinguishes the following prompt classes.
 
 The exact canonical wording will be frozen in the integrated protocol and prompt package.
 
-This document deliberately does not invent final prompt text before the prompt-freeze stage.
+Final prompt text is not specified here before the prompt-freeze stage.
 
 ## 9. Study-package version
 
