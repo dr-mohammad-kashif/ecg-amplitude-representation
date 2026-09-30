@@ -9,7 +9,7 @@ Study phase: Preprotocol
 
 This review examines the methodological literature relevant to the fixed biomedical machine learning analysis used as the reference task for the active workflow study.
 
-The purpose is not to select a competitive state of the art ECG architecture. The reference model is deliberately fixed so that workflow architecture, rather than model selection, remains the experimental object.
+The purpose is not to select a competitive ECG architecture. The reference model is deliberately fixed so that workflow architecture, rather than model selection, remains the experimental object.
 
 The review therefore focuses on direct waveform modelling, patient-level separation, preprocessing control, model specification, optimization, discrimination, precision-recall performance, calibration, uncertainty estimation, repeated patient structure, reproducibility, and sensitivity analysis.
 
