@@ -378,13 +378,13 @@ The auditor is independent in context and trajectory, not a different model popu
 
 ## 13. Interaction and resource ceiling
 
-The primary workflow uses one common interaction ceiling.
+The study uses one common interaction ceiling for all workflow conditions.
 
 A run may contain at most **32 LLM response turns** across all contexts associated with that run.
 
 A model response counts as one LLM response event regardless of its length.
 
-The ceiling applies equally to W1 and W2 and is retained for W0 and W3-W5 unless a secondary condition requires a documented condition-specific extension.
+The same 32-response ceiling applies to W0, W1, W2, W3, W4, and W5. No workflow condition receives a condition-specific extension after the protocol is frozen.
 
 The ceiling is an investigator-defined operational boundary. It is intended to permit ordinary code generation, execution feedback, stage handoffs, verification, and bounded recovery without allowing indefinite interaction.
 
@@ -998,7 +998,7 @@ At least three configurations pass the full eligibility audit and primary-run fe
 
 ### Gate D. Workflow pilot
 
-The 32-response interaction ceiling, handoff mechanism, standardized execution substrate, validators, and recording system pass feasibility testing.
+The common 32-response interaction ceiling, handoff mechanism, standardized execution substrate, validators, and recording system pass feasibility testing for each workflow condition that is piloted.
 
 ### Gate E. Primary package freeze
 
