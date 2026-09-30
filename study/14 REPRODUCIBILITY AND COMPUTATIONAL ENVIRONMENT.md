@@ -570,12 +570,12 @@ The exact environment fields, run schema, artifact-hash policy, execution-substr
 
 3. Sandve GK, Nekrutenko A, Taylor J, Hovig E. Ten Simple Rules for Reproducible Computational Research. PLoS Comput Biol. 2013;9(10):e1003285. doi:10.1371/journal.pcbi.1003285.
 
-4. Reference Biomedical Analysis Protocol. current-study/08 REFERENCE BIOMEDICAL ANALYSIS PROTOCOL.md. Study repository; 2026.
+4. Reference Biomedical Analysis Protocol. study/08 REFERENCE BIOMEDICAL ANALYSIS PROTOCOL.md. Study repository.
 
-5. LLM Workflow Experimental Protocol. current-study/09 LLM WORKFLOW EXPERIMENTAL PROTOCOL.md. Study repository; 2026.
+5. LLM Workflow Experimental Protocol. study/09 LLM WORKFLOW EXPERIMENTAL PROTOCOL.md. Study repository.
 
-6. Scientific Fidelity Evaluation Framework. current-study/11 SCIENTIFIC FIDELITY EVALUATION FRAMEWORK.md. Study repository; 2026.
+6. Scientific Fidelity Evaluation Framework. study/11 SCIENTIFIC FIDELITY EVALUATION FRAMEWORK.md. Study repository.
 
 7. Wagner P, Strodthoff N, Bärs R, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154. doi:10.1038/s41597-020-0495-6.
 
-8. Consumer LLM Eligibility Specification. current-study/07 CONSUMER LLM ELIGIBILITY SPECIFICATION.md. Study repository; 2026.
+8. Consumer LLM Eligibility Specification. study/07 CONSUMER LLM ELIGIBILITY SPECIFICATION.md. Study repository.
