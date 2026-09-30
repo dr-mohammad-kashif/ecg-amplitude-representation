@@ -225,7 +225,7 @@ The experimental question concerns the second layer while holding the first laye
 
 This separation is the main reason the study can be interpreted as a workflow experiment rather than as another open-ended LLM benchmark.
 
-## 16. Biomedical evidence status
+## 16. Evidence and investigator-defined components
 
 The core biomedical facts in this review come from the PTB XL dataset publication, official PhysioNet documentation, the AHA/ACC/HRS ECG standardization statements, and established PTB XL benchmark literature.[1-7]
 
