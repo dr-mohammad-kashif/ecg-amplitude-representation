@@ -160,6 +160,11 @@ The following are pre-primary execution gates:
 
 ## 14. Current operational documents
 
+The active study also retains two carried-forward records from the archived research phase:
+
+- [REFERENCE DATA AUDIT.md](REFERENCE%20DATA%20AUDIT.md)
+- [AI USE.md](AI%20USE.md)
+
 The reproducibility, provenance, and failure-audit layers are recorded in:
 
 - [12 STATISTICAL ANALYSIS PLAN.md](12%20STATISTICAL%20ANALYSIS%20PLAN.md)
