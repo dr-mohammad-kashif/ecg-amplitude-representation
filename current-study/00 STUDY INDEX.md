@@ -26,7 +26,7 @@ This wording is frozen for the current protocol. The remaining pre-primary gates
 
 ## 3. Literature review
 
-The first integrated literature review is recorded in [01 LITERATURE REVIEW.md](01%20LITERATURE%20REVIEW.md). It is a working review rather than a completed systematic review. The search record and later topic specific reviews will remain separate.
+The integrated literature review is recorded in [01 LITERATURE REVIEW.md](01%20LITERATURE%20REVIEW.md). The search record and topic specific reviews are maintained separately.
 
 ## 4. Prior art and gap analysis
 
@@ -102,11 +102,11 @@ Free tier usage limits do not disqualify a system. Zero cost is the criterion; u
 
 A configuration is excluded if an essential experimental capability requires a paid product, paid agent, paid subscription, API access, or special entitlement even when the underlying model is also available through a nominal free interface.
 
-## 8. Primary outcome candidate
+## 8. Primary outcome
 
-The current primary outcome candidate is end to end reference faithful completion.
+The primary outcome is end to end reference faithful completion.
 
-A run is successful only when all prespecified critical scientific requirements are satisfied, the required analysis executes, the primary numerical outputs fall within the frozen reference equivalence criteria, and the final interpretation passes the prespecified interpretation audit.
+A run is successful only when all prespecified critical scientific requirements are satisfied, the required analysis executes, the primary numerical outputs satisfy the frozen reference-agreement criteria, and the final interpretation passes the prespecified interpretation audit.
 
 Numerical agreement alone does not define success.
 
@@ -137,11 +137,11 @@ The following must be completed before primary LLM collection:
 3. Execute the reference analysis.
 4. Independently reimplement the same locked analysis.
 5. Compare the two implementations.
-6. Establish the empirical reference equivalence envelope.
+6. Establish the empirical reference-agreement envelope.
 7. Freeze numerical agreement criteria.
 8. Begin primary LLM collection only after these criteria are fixed.
 
-No primary result may be used to define the equivalence envelope.
+No primary result may be used to define the reference-agreement envelope.
 
 ## 12. Statistical gate
 
@@ -155,7 +155,7 @@ With only a small prespecified set of eligible LLM configurations, model or prov
 
 The following are pre-primary execution gates:
 
-* reference execution and empirical numerical-equivalence envelope;
+* reference execution and empirical reference-agreement envelope;
 * direct consumer access and primary-run feasibility audit;
 * prompt-package implementation check;
 * workflow-harness pilot and recording-system validation.
