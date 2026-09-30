@@ -1,9 +1,6 @@
 # Consumer LLM Eligibility Specification
 
-Status: Final eligibility criteria
-Version: 1.0
-Month: September 2026
-Study phase: Pre-primary execution
+Version 1.0, 30 September 2026.
 
 ## Scope
 
@@ -534,11 +531,3 @@ Primary collection must not begin for a configuration whose eligibility remains 
 6. Mistral AI. Pricing [Internet]. Paris: Mistral AI; 2026 [cited 2026 Sep 30]. Available from: https://mistral.ai/pricing/
 
 7. Gallifant J, Afshar M, Ameen S, Aphinyanaphongs Y, Chen S, Cacciamani G, et al. The TRIPOD-LLM reporting guideline for studies using large language models. Nat Med. 2025;31(1):60-69. doi:10.1038/s41591-024-03425-5.
-
-## Evidence status
-
-References 1 through 7 were checked against current official provider documentation or the publisher record during the 30 September 2026 access audit.
-
-The candidate provider table is not a final model selection. Direct testing and primary-run feasibility remain required before any configuration is entered into the experimental model pool.
-
-The eligibility specification is intentionally strict. Its purpose is to prevent a nominally free model, paid agent wrapper, research allocation, or partially free workflow from being counted as ordinary zero-cost consumer access.
