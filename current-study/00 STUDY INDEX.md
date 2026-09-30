@@ -143,13 +143,13 @@ No primary result may be used to define the equivalence envelope.
 
 The primary allocation is fixed at 25 randomized W1/W2 blocks per eligible configuration.
 
-A simulation study will examine operating characteristics across plausible baseline completion rates and workflow effects before the primary sample size is set.
+The completed sample-size simulation is recorded in SAMPLE SIZE SIMULATION.md and fixes the primary allocation at 25 randomized W1/W2 blocks per eligible configuration.
 
 With only a small prespecified set of eligible LLM configurations, model or provider will be treated as a fixed replication stratum rather than as a random sample of all possible models.
 
 ## 13. Pre-primary execution gates
 
-The following remain open:
+The following are pre-primary execution gates:
 
 * reference execution and empirical numerical-equivalence envelope;
 * direct consumer access and primary-run feasibility audit;
@@ -168,6 +168,9 @@ The reproducibility, provenance, and failure-audit layers are recorded in:
 - [15 DATA PROVENANCE AND DATA DICTIONARY.md](15%20DATA%20PROVENANCE%20AND%20DATA%20DICTIONARY.md)
 - [16 FAILURE TAXONOMY AND ERROR AUDIT.md](16%20FAILURE%20TAXONOMY%20AND%20ERROR%20AUDIT.md)
 - [17 PROMPT AND INTERACTION REGISTRY.md](17%20PROMPT%20AND%20INTERACTION%20REGISTRY.md)
+- [PROMPT PACKAGE.md](PROMPT%20PACKAGE.md)
+- [SAMPLE SIZE SIMULATION.md](SAMPLE%20SIZE%20SIMULATION.md)
+- [STUDY PROTOCOL.md](STUDY%20PROTOCOL.md)
 
 ## 15. Evidence classification
 
