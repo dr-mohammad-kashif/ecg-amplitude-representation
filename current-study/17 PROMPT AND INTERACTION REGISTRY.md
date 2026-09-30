@@ -1,10 +1,5 @@
 # Prompt, Context and Interaction Registry
 
-Status: Draft interaction-registry specification
-Version: 0.1
-Month: September 2026
-Study phase: Preprotocol
-
 ## 1. Purpose
 
 The interaction registry records how each eligible LLM configuration actually received, processed and returned the experimental workflow.
@@ -477,7 +472,7 @@ At the end of every run, the registry records:
 | Terminal state | Clean success, recovered success, scientific failure, execution failure, resource-limited noncompletion, unauthorized intervention or indeterminate |
 | Primary success | Yes or no |
 | Fidelity status | Passing or specified failure state |
-| Numerical equivalence status | Passing, failing or not applicable |
+| Numerical reference-agreement status | Passing, failing or not applicable |
 | Interpretation status | Passing or failing |
 | Reproducibility evidence | Complete or incomplete |
 | Scientific intervention | Yes or no |
@@ -658,11 +653,3 @@ No primary experiment results are included.
 9. Failure Taxonomy and Error Audit. current-study/16 FAILURE TAXONOMY AND ERROR AUDIT.md. Study repository; 2026.
 10. Statistical Analysis Plan. current-study/12 STATISTICAL ANALYSIS PLAN.md. Study repository; 2026.
 11. Chen Z, Chen S, Ning Y, et al. ScienceAgentBench: Toward Rigorous Assessment of Language Agents for Data-Driven Scientific Discovery. International Conference on Learning Representations; 2025.
-
-## Evidence status
-
-Published evidence supports treating prompt specification, model identity, interaction structure, human oversight and execution as reportable experimental features in LLM data-analysis studies.[1,2,11]
-
-The exact registry schema, run identifiers, event vocabulary, month-level temporal convention and version-control rules are investigator-defined operational choices designed to make those evidence requirements executable in this study.
-
-No primary execution results are included.
