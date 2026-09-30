@@ -13,7 +13,7 @@ The reference analysis is not a clinical ground truth and is not treated as a su
 
 The purpose of the reference analysis is to provide a reproducible scientific object against which LLM workflow conditions can be evaluated.
 
-Primary LLM collection cannot begin until the reference implementation has been executed, independently reproduced, compared, and used to establish the reference-equivalence envelope.
+Primary LLM collection cannot begin until the reference implementation has been executed, independently reproduced, compared, and used to establish the reference-agreement envelope.
 
 ## 2. Scientific question of the reference analysis
 
@@ -435,7 +435,7 @@ AUROC, average precision, Brier score, calibration outputs, task-specific delta 
 
 No arbitrary fixed tolerance is imposed. The numerical agreement criteria are derived from compliant R1-R2 repeatability and R1-R3 independent-agreement observations and frozen at R6 before primary LLM outcomes are available.
 
-### Interpretive equivalence
+### Interpretive agreement
 
 The scientific report must correctly describe:
 
@@ -445,7 +445,7 @@ The scientific report must correctly describe:
 - the distinction between numerical results and protocol fidelity;
 - the limits of inference.
 
-Agreement of confidence-interval overlap is not itself an equivalence criterion.
+Agreement of confidence-interval overlap is not itself a reference-agreement criterion.
 
 ## 21. Reference artifact manifest
 
@@ -464,7 +464,7 @@ The reference execution package must contain, at minimum:
 | Bootstrap outputs | Resampling results and percentile intervals |
 | Execution logs | Runtime and failure information |
 | Independent reproduction record | Independent implementation and comparison |
-| Equivalence record | Structural and numerical reference comparison |
+| Reference-agreement record | Structural and numerical reference comparison |
 
 The exact filenames may change when the repository implementation is built, but the artifact classes must be preserved.
 
@@ -503,7 +503,7 @@ The following are investigator-defined components:
 6. The training hyperparameters and seed set.
 7. The primary cross-task estimand.
 8. The patient-level paired percentile bootstrap with 5,000 resamples.
-9. The reference-equivalence procedure.
+9. The reference-agreement procedure.
 10. The interpretation boundaries.
 
 The operational details are frozen only when this draft is converted into the final reference protocol after the reference implementation audit. Any change after that point must be recorded in the protocol change log.
@@ -526,4 +526,4 @@ The operational details are frozen only when this draft is converted into the fi
 
 References 1 through 5 were checked against the journal or official dataset record during the current protocol update. Reference 6 provides general computational reproducibility guidance.
 
-This protocol deliberately contains no primary performance results. Reference values become eligible for use in the LLM experiment only after the reference execution checks and equivalence procedure described above have passed.
+This protocol deliberately contains no primary performance results. Reference values become eligible for use in the LLM experiment only after the reference execution checks and reference-agreement procedure described above have passed.
