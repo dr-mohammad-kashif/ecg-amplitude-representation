@@ -9,7 +9,7 @@ Study phase: Preprotocol
 
 The failure record separates scientific errors from execution problems, resource limitations and unauthorized human assistance.
 
-The aim is to make a completed-looking LLM analysis auditable at the level of what actually happened. A terminal response, successful process exit or plausible numerical result is not by itself evidence that the prescribed scientific task was completed correctly.
+The aim is to make a completed-looking LLM analysis auditable at the level of what actually happened in the fixed PTB-XL reference task. A terminal response, successful process exit or plausible numerical result is not by itself evidence that the prescribed scientific task was completed correctly.
 
 The taxonomy is designed around the fixed reference analysis, the workflow conditions, the fidelity framework and the reproducibility requirements.[1-4]
 
