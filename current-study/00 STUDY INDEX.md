@@ -1,16 +1,12 @@
 # Study Index
 
-**Status:** Final study design; pre-primary execution  
-**Revision:** 1.0  
-**Month:** September 2026
-
 ## 1. Study object
 
 The active study examines a fixed biomedical machine learning analysis conducted through general purpose LLM systems that are accessible to an ordinary user through a zero cost consumer interface.
 
 The scientific object is the analytical workflow. The LLM is treated as the analytical operator. The underlying biomedical prediction task, dataset, task definitions, model specification, training procedure, evaluation metrics, statistical estimand, and interpretation boundaries are held constant across workflow conditions.
 
-The working comparison is between a fully specified monolithic workflow and a structured fresh context workflow. Additional conditions examine specific verification mechanisms.
+The primary comparison is between a fully specified monolithic workflow and a structured fresh-context workflow. Additional conditions examine specific verification mechanisms.
 
 The study is not framed as a general test of whether LLMs can perform data science, as a comparison of commercial models, or as a benchmark of autonomous research agents.
 
@@ -34,7 +30,7 @@ The current prior art analysis is recorded in [02 PRIOR ART AND GAP ANALYSIS.md]
 
 ## 5. Biomedical machine learning testbed
 
-The first candidate testbed is the archived PTB XL ECG analysis.
+The fixed biomedical testbed is derived from the archived PTB XL ECG analysis.
 
 The reference study uses two phenotype tasks, HYP versus NORM and MI versus NORM, a fixed direct waveform representation, a fixed one dimensional convolutional model, patient aware train, validation, and test folds, AUROC, average precision, Brier score, calibration assessment, a prespecified contrast between phenotype specific normalization effects, and patient level bootstrap uncertainty.
 
