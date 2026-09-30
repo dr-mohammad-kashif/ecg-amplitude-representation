@@ -126,8 +126,7 @@ The simulation uses deterministic random-number seeds defined in the source code
 
 1. Statistical Analysis Plan. current-study/12 STATISTICAL ANALYSIS PLAN.md. Study repository; 2026.
 2. LLM Workflow Experimental Protocol. current-study/09 LLM WORKFLOW EXPERIMENTAL PROTOCOL.md. Study repository; 2026.
-3. Hwang S, Park S, Lee H, et al. Sample size considerations for studies with binary outcomes and clustered designs. Methods relevant to the present design are treated as methodological background rather than as a source of a copied formula.
-4. ScienceAgentBench: Toward Rigorous Assessment of Language Agents for Data-Driven Scientific Discovery. ICLR; 2025.
+3. Scientific Workflow and Statistical Analysis documents. current-study/09 LLM WORKFLOW EXPERIMENTAL PROTOCOL.md and current-study/12 STATISTICAL ANALYSIS PLAN.md. Study repository; 2026.
 
 ## Evidence status
 
