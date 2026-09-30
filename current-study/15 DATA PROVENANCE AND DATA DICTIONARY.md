@@ -1,10 +1,5 @@
 # Data Provenance and Data Dictionary
 
-Status: Draft provenance and data-definition plan
-Version: 0.1
-Month: September 2026
-Study phase: Preprotocol
-
 ## 1. Purpose
 
 The data provenance record identifies where each analytical input comes from, how it is transformed, which version is used, and which derived objects are created during the study.
@@ -482,7 +477,7 @@ Only the version-specific execution manifest is treated as the operative count f
 
 No count is copied between versions without an explicit derivation.
 
-## 22. Evidence status
+## 22. Evidence basis
 
 The source-data identity, file structure, field descriptions, sampling representations, fold assignment and licensing information are derived from the PTB-XL publication and official PhysioNet v1.0.3 documentation.[1,2]
 
