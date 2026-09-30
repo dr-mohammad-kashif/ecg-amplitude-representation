@@ -1,14 +1,14 @@
 # Prompt Package
 
-Version 1.0, 30 September 2026.
+Current candidate prompt package for pilot validation and subsequent primary freeze.
 
 ## 1. Purpose
 
-This package contains the canonical prompt text for workflow conditions W0 through W5.
+This package contains the current candidate prompt text for workflow conditions W0 through W5.
 
 The scientific target, information-exposure boundary, execution environment, human role, interaction ceiling, repair rules, and terminal states are defined in the integrated Study Protocol and companion documents.[1-4]
 
-The package fixes the wording used for primary collection. Pilot wording is not reused under a primary version.
+The package records the wording proposed for primary collection. Pilot findings may require revision before Gate E, after which the primary wording is frozen and the resulting package version is used for primary collection.
 
 Prompt formulation is treated as part of the experimental configuration because prior healthcare data-analysis work has shown that changes in prompt specification can alter analytical performance.[5] TRIPOD-LLM also requires transparent reporting of prompting and evaluation settings.[6]
 
