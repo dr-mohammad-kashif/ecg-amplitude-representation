@@ -144,7 +144,7 @@ The exact experimental eligibility of each provider remains a separate access au
 
 ## 10. PTB XL does not provide novelty by itself
 
-PTB XL is an established public ECG dataset with 12 lead recordings, diagnostic annotations, and patient level metadata suitable for machine learning evaluation. [20]
+PTB XL is an established public ECG dataset with 12 lead recordings, diagnostic annotations, and patient level metadata suitable for machine learning evaluation. [19]
 
 The ECG analysis is therefore not proposed as a new biomedical discovery.
 
