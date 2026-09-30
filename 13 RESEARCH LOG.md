@@ -142,3 +142,16 @@ While checking the archived code after the repository move, I found that one uni
 I changed that test fixture to use an unrelated diagnostic statement that is actually absent from the HYP and NORM classes. I also added a small pytest configuration so the preserved tests can run directly from the archive directory.
 
 I reran the archived unit tests after the correction. All six tests passed. This maintenance change does not alter the study protocol, model architecture, analysis plan or any result because the primary analysis was never run.
+
+
+## Phase 10. The first formal workspace for the new study
+
+After the final integrated prior art and methods audit, I opened a separate current study workspace rather than adding provisional study documents to the archived ECG folder.
+
+The working design now separates the fixed biomedical machine learning reference task from the LLM workflow being evaluated. The primary comparison is currently defined as a fully specified monolithic workflow versus a structured fresh context workflow. Minimal instruction, self audit, deterministic validation, and independent audit remain secondary conditions.
+
+The zero cost consumer access criterion is part of the study population rather than a casual implementation detail. A configuration must be available to an ordinary user through a public consumer interface at no monetary cost, without an API, subscription, institutional or researcher entitlement, paid agent product, promotional credit, local deployment, or specialized small language model. The required capabilities must also be available within that zero cost route.
+
+The reference analysis has not yet been executed. Numerical agreement criteria and the primary run count therefore remain open.
+
+The current study documents are being built from the evidence and decision record accumulated during the earlier literature passes. The literature record will retain sources that support the design as well as sources that closed earlier candidate questions.

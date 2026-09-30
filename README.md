@@ -10,6 +10,10 @@ The original study is preserved in [archive/ecg-amplitude-normalization](archive
 
 The transition and the decisions that led to it are recorded in [13 RESEARCH LOG.md](13%20RESEARCH%20LOG.md). This file is the project-level history. The archived research log remains with the original study files and records the earlier phase as it existed before the question was changed.
 
+## Current study workspace
+
+The active research phase is being developed under [current-study](current-study/). The study is still in design and evidence assembly; it does not yet contain primary LLM results.
+
 ## Current status
 
 This repository is between research phases.
