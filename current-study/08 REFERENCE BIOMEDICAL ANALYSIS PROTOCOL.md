@@ -1,10 +1,5 @@
 # Reference Biomedical Analysis Protocol
 
-Status: Draft for reference execution
-Version: 0.1
-Month: September 2026
-Study phase: Preprotocol
-
 ## 1. Purpose
 
 This document specifies the biomedical machine learning analysis that will serve as the reference computational target for the active LLM workflow study.
@@ -506,7 +501,7 @@ The following are investigator-defined components:
 9. The reference-agreement procedure.
 10. The interpretation boundaries.
 
-The operational details are frozen only when this draft is converted into the final reference protocol after the reference implementation audit. Any change after that point must be recorded in the protocol change log.
+The operational details remain subject to the R0 through R6 reference execution gate. Any change after R6 must be recorded in the protocol change log.
 
 ## References
 
@@ -521,9 +516,3 @@ The operational details are frozen only when this draft is converted into the fi
 5. Collins GS, Moons KGM, Dhiman P, Riley RD, Beam AL, Van Calster B, et al. TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods. BMJ. 2024;385:e078378. doi:10.1136/bmj-2023-078378.
 
 6. Papin JA, Mac Gabhann F, Sauro HM, Nickerson D, Rampadarath A. Improving reproducibility in computational biology research. PLoS Comput Biol. 2020;16(5):e1007881. doi:10.1371/journal.pcbi.1007881.
-
-## Evidence status
-
-References 1 through 5 were checked against the journal or official dataset record during the current protocol update. Reference 6 provides general computational reproducibility guidance.
-
-This protocol deliberately contains no primary performance results. Reference values become eligible for use in the LLM experiment only after the reference execution checks and reference-agreement procedure described above have passed.
