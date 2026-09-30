@@ -1,12 +1,12 @@
-# Biomedical ML Workflow Fidelity
+# Biomedical ML Workflow Fidelity in Free Consumer General-Purpose LLMs
 
-This repository contains a research program that moved from an initial ECG representation study to a controlled investigation of biomedical machine-learning workflows executed by general-purpose LLMs.
+This repository contains a research program that moved from an initial ECG representation study to a controlled investigation of biomedical machine-learning workflows executed by free consumer-facing general-purpose LLMs.
 
 The active research object is workflow fidelity. The biomedical analysis is fixed while the analyst-facing workflow is varied and evaluated against an independently checked reference analysis.
 
 The primary research question is:
 
-> Under a locked biomedical machine-learning analysis, does changing the analyst-facing workflow from a fully specified monolithic workflow to a structured fresh-context workflow change end-to-end reference-faithful completion under the same zero-cost consumer access envelope?
+> Under a locked biomedical machine-learning analysis, does changing the analyst-facing workflow from a fully specified monolithic workflow to a structured fresh-context workflow change end-to-end reference-faithful completion among completely free consumer-facing general-purpose LLM configurations?
 
 ## Active study
 
