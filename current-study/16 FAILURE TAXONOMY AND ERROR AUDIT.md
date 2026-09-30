@@ -73,7 +73,7 @@ The run must:
 3. preserve the required dataset, cohort, label and split definitions;
 4. execute the required analysis;
 5. satisfy the structural fidelity gates;
-6. satisfy the frozen numerical equivalence criteria;
+6. satisfy the frozen numerical reference-agreement criteria;
 7. satisfy the interpretation requirements;
 8. provide the required reproducibility evidence;
 9. remain within the defined workflow and resource rules;
