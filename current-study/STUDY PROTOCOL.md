@@ -174,17 +174,17 @@ A second implementation is written from the scientific specification without rec
 
 R1, R2, and R3 are compared structurally and numerically.
 
-### R5. Equivalence envelope
+### R5. Reference-agreement envelope
 
 For each numerical outcome subject to reference comparison, an empirical reference-agreement envelope is calculated around the locked R1 reference. R2 measures repeat execution variability and R3 measures independent implementation agreement. For a scalar outcome, the envelope width is the larger of the absolute R1-R2 and R1-R3 discrepancies. The R2-R3 discrepancy is recorded but does not widen the envelope because neither execution is the locked reference.
 
-No arbitrary numerical tolerance is introduced.
+No arbitrary fixed numerical tolerance is introduced. The envelope is an empirical reproducibility criterion for this locked study setting, not a general statistical equivalence margin.
 
 ### R6. Criterion freeze
 
-The resulting numerical equivalence criteria are frozen in the primary study record before any primary LLM outcome is observed.
+The resulting numerical agreement criteria are frozen in the primary study record before any primary LLM outcome is observed.
 
-The primary reference estimate remains the result of the locked original reference implementation from R1. R2 and R3 establish the empirical variability envelope.
+The primary reference estimate remains the result of the locked original reference implementation from R1. R2 establishes repeatability of the locked implementation and R3 establishes agreement with the independent implementation. Only compliant R1, R2 and R3 executions contribute to the frozen envelope.
 
 If any reference execution fails a critical structural requirement, the equivalence envelope is not frozen until the reference implementation is corrected and the reference comparison is repeated.
 
@@ -536,7 +536,7 @@ $$
 
 The primary reference value is the R1 locked reference execution.
 
-The numerical equivalence criterion is the empirical reference envelope established at R5.
+The numerical agreement criterion is the empirical reference-agreement envelope established at R5.
 
 A numerically evaluable LLM run passes the primary numerical gate when:
 
@@ -546,9 +546,9 @@ E_{\Delta}
 T_{\Delta}
 $$
 
-where $T_{\Delta}$ is the maximum pairwise absolute discrepancy observed among the compliant R1-R3 reference executions for the same estimand.
+where $T_{\Delta}$ is the larger of the absolute R1-R2 and R1-R3 discrepancies for the primary estimand among compliant reference executions. The R1-R2 discrepancy represents repeatability of the locked implementation, while R1-R3 represents agreement with the independent implementation. The R2-R3 discrepancy is recorded but does not widen the envelope.
 
-No arbitrary fixed numerical tolerance is introduced.
+The criterion is specific to the prespecified task, data version, implementation environment and evaluation procedure and is not generalized to other datasets or implementations.
 
 Secondary numerical discrepancies for AUROC, average precision, Brier score and calibration are reported continuously and are not converted into an aggregate numerical fidelity score.
 
