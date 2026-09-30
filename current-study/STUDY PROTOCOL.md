@@ -986,7 +986,7 @@ At least three configurations pass the full eligibility audit and primary-run fe
 
 ### Gate C. Prompt freeze
 
-The canonical W0-W5 prompt package is frozen and integrity-identified.
+[Prompt Package v1.0](PROMPT%20PACKAGE.md) is frozen and integrity-identified.
 
 ### Gate D. Workflow pilot
 
@@ -1017,7 +1017,7 @@ The final study package consists of the following companion records:
 - Failure Taxonomy and Error Audit
 - Prompt, Context and Interaction Registry
 - Sample Size Simulation
-- final prompt package
+- [PROMPT PACKAGE.md](PROMPT%20PACKAGE.md)
 - final reference implementation and environment records
 - primary run manifests and execution logs
 
