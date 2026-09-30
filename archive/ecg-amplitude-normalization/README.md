@@ -15,3 +15,5 @@ The original study citation metadata are preserved in [CITATION.cff](CITATION.cf
 Start with [01 STUDY PROTOCOL.md](01%20STUDY%20PROTOCOL.md), then read the numbered documents in order. [13 RESEARCH LOG.md](13%20RESEARCH%20LOG.md) contains the original study history.
 
 The project-level transition is recorded in the root [13 RESEARCH LOG.md](../../13%20RESEARCH%20LOG.md).
+
+The preserved tests can be run from this directory with `pytest -q`.

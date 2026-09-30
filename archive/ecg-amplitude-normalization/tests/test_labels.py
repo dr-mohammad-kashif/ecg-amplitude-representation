@@ -64,7 +64,7 @@ def test_unthresholded_label_rule(tmp_path):
                 "{'LVH': 15}",
                 "{'NORM': 1}",
                 "{'LVH': 0, 'NORM': 1}",
-                "{'LVH': 0}",
+                "{'STTC': 100}",
             ]
         }
     )
