@@ -306,7 +306,7 @@ No contrast is interpreted as evidence that an individual mechanism is universal
 
 ## 12. Interaction and resource fairness
 
-The final numeric interaction budget remains open until feasibility work and sample-size planning are completed.
+The final numeric The complete run has a fixed ceiling of 32 LLM response turns across contexts. The same ceiling applies to the primary W1 and W2 conditions.
 
 The fairness rule is already fixed.
 
@@ -330,7 +330,7 @@ Observable resource outcomes include:
 - human mechanical time;
 - human scientific intervention.
 
-Any exact allocation must be frozen before primary data collection.
+The primary W1 and W2 allocation is fixed at 25 randomized blocks per eligible configuration. Secondary conditions use the fixed descriptive budget defined in the integrated Study Protocol.
 
 ## 13. Human intervention fairness
 
