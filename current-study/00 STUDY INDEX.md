@@ -141,7 +141,7 @@ No primary result may be used to define the equivalence envelope.
 
 ## 12. Statistical gate
 
-The primary run count is not yet frozen.
+The primary allocation is fixed at 25 randomized W1/W2 blocks per eligible configuration.
 
 A simulation study will examine operating characteristics across plausible baseline completion rates and workflow effects before the primary sample size is set.
 
