@@ -778,6 +778,8 @@ The remaining workflow contrasts and numerical metrics are secondary.
 
 No unplanned secondary analysis can be promoted to confirmatory status.
 
+The binary primary endpoint is intentionally a stringent end-to-end terminal criterion. It is not treated as a substitute for the underlying fidelity profile. Component-level scientific fidelity, numerical fidelity, failure class, recovery status, and resource outcomes are reported separately so that a single binary result cannot conceal the mechanism of success or failure.
+
 ## 22. Secondary outcomes
 
 Secondary outcomes include:
@@ -1019,7 +1021,11 @@ The reference-blind LLM study package is frozen, including all permitted files a
 
 The Prompt, Context and Interaction Registry passes its own implementation checks.
 
-No primary outcome can be used to determine any of Gates A-F.
+### Gate G. Evidence and access refresh
+
+The targeted literature and provider-access evidence are refreshed before primary collection. Any newly identified direct precedent, material change in qualifying free access, or other evidence that changes interpretation of the study boundary is recorded before the primary package is released. A newly identified precedent does not silently alter the frozen scientific estimand; any substantive redesign requires a documented protocol amendment.
+
+No primary outcome can be used to determine any of Gates A-G.
 
 ## 32. Principal analysis package
 
