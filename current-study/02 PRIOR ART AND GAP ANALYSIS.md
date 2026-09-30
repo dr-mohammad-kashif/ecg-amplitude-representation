@@ -130,8 +130,6 @@ The zero cost population is a defining boundary of the proposed study, but it is
 
 Dinç and colleagues evaluated GPT 5.3 mini, Gemini 3 Flash, and Claude Sonnet 4.6 through free public web interfaces for parent education in pediatric immune thrombocytopenia. Their methods explicitly excluded paid subscriptions, enterprise versions, developer console access, APIs, retrieval augmented tools, plugins, browsing, uploaded documents, and customized clinical configurations. Model access date and configuration were recorded. [14]
 
-A separate September 2026 preprint evaluated ChatGPT, Claude, and Gemini under free tier and paid tier conditions using standardized clinical vignettes. [15]
-
 These studies establish that genuinely free consumer LLMs can be treated as a distinct experimental population.
 
 The study boundary therefore needs to be stated precisely:
@@ -140,7 +138,7 @@ The study boundary therefore needs to be stated precisely:
 
 This excludes a common source of ambiguity in the literature. A free underlying model accessed through a paid agent product is not a free consumer workflow.
 
-Current provider documentation confirms the practical distinction. ChatGPT Free provides data analysis and file uploads with separate tool limits. [16] Gemini provides file upload and analysis without an AI plan, with lower usage limits than paid plans. [17] Claude provides a Free consumer plan with code execution and file creation, while Claude Code, Claude Cowork, Claude Science, and Research are associated with paid plans. [18] Mistral provides a Free consumer plan with limited messages and coding access while separately offering paid plans and API services. [19]
+Current provider documentation confirms the practical distinction. ChatGPT Free provides data analysis and file uploads with separate tool limits. [15] Gemini provides file upload and analysis without an AI plan, with lower usage limits than paid plans. [16] Claude provides a Free consumer plan with code execution and file creation, while Claude Code, Claude Cowork, Claude Science, and Research are associated with paid plans. [17] Mistral provides a Free consumer plan with limited messages and coding access while separately offering paid plans and API services. [18]
 
 The exact experimental eligibility of each provider remains a separate access audit.
 
