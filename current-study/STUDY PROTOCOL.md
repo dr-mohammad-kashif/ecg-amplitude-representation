@@ -276,7 +276,7 @@ Provider-side inference hardware and hidden token-level computation are not infe
 
 ## 11. Human operator boundary
 
-The human operator is a mechanical interface between the consumer LLM and the standardized execution substrate described in the [Reproducibility and Computational Environment](14%20REPRODUCIBILITY%20AND%20COMPUTATIONAL%20ENVIRONMENT.md) and [Data Provenance and Data Dictionary](15%20DATA%20PROVENANCE%20AND%20DATA%20DICTIONARY.md).[18,19]
+The human operator is a mechanical interface between the consumer LLM and the standardized execution substrate described in the [Reproducibility and Computational Environment](14%20REPRODUCIBILITY%20AND%20COMPUTATIONAL%20ENVIRONMENT.md) and [Data Provenance and Data Dictionary](15%20DATA%20PROVENANCE%20AND%20DATA%20DICTIONARY.md).
 
 Permitted actions include:
 
@@ -1082,7 +1082,7 @@ TRIPOD-LLM supports configuration-specific reporting, prompt transparency, human
 
 The PTB-XL scientific target and its fixed biomedical analysis specification are retained from the archived and current reference protocol.
 
-The standardized computational provenance, data lineage, resource measurement, failure taxonomy, and interaction registry are defined in the companion study documents.[18-21]
+The standardized computational provenance, data lineage, resource measurement, failure taxonomy, and interaction registry are defined in the companion study documents.
 
 The primary sample-size allocation is a computed result from the study's investigator-defined simulation scenarios and is documented in the [SAMPLE SIZE SIMULATION.md](SAMPLE%20SIZE%20SIMULATION.md).
 
