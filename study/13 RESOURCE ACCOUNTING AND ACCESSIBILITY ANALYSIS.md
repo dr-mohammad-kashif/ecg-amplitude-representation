@@ -493,9 +493,9 @@ The exact resource variables, classifications, aggregation choices, and separati
 
 ## References
 
-1. Consumer LLM Eligibility Specification. current-study/07 CONSUMER LLM ELIGIBILITY SPECIFICATION.md. Study repository; 2026.
+1. Consumer LLM Eligibility Specification. study/07 CONSUMER LLM ELIGIBILITY SPECIFICATION.md. Study repository.
 
-2. LLM Workflow Experimental Protocol. current-study/09 LLM WORKFLOW EXPERIMENTAL PROTOCOL.md. Study repository; 2026.
+2. LLM Workflow Experimental Protocol. study/09 LLM WORKFLOW EXPERIMENTAL PROTOCOL.md. Study repository.
 
 3. Gallifant J, et al. The TRIPOD-LLM reporting guideline for studies using large language models. Nat Med. 2025;31(1):60-69. doi:10.1038/s41591-024-03425-5.
 
