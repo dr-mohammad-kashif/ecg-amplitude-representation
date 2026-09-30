@@ -2,13 +2,13 @@
 
 **Status:** Design and evidence assembly  
 **Revision:** 0.1  
-**Date:** 30 September 2026
+**Month:** September 2026
 
 This directory contains the active research phase that followed the archived ECG amplitude representation study.
 
 The study is being developed as a controlled biomedical machine learning experiment using a fixed analytical task, a verified reference analysis, and general purpose LLM systems that meet a strict ordinary user free access criterion.
 
-The scientific question is not yet recorded as a final protocol. The present workspace therefore separates established decisions, supporting evidence, unresolved design choices, and work that must be completed before primary data collection.
+The scientific question remains in working form until the remaining design gates are resolved. The present workspace therefore separates established decisions, supporting evidence, unresolved design choices, and work that must be completed before primary data collection.
 
 ## Research materials
 
@@ -17,10 +17,6 @@ The scientific question is not yet recorded as a final protocol. The present wor
 [01 LITERATURE REVIEW.md](01%20LITERATURE%20REVIEW.md) records the current integrated scientific literature review.
 
 [02 PRIOR ART AND GAP ANALYSIS.md](02%20PRIOR%20ART%20AND%20GAP%20ANALYSIS.md) compares the closest existing work with the proposed experimental design and records the current evidence boundary.
-
-[evidence](evidence/) contains the literature and decision records that support the design.
-
-[quality](quality/) contains the editorial and research quality controls used for active documents.
 
 [archive/ecg-amplitude-normalization](../archive/ecg-amplitude-normalization/) contains the original ECG research phase.
 
