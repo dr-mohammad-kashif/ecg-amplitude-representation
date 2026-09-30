@@ -1,7 +1,7 @@
 # Study Index
 
-**Status:** Preprotocol study design  
-**Revision:** 0.1  
+**Status:** Final study design; pre-primary execution  
+**Revision:** 1.0  
 **Month:** September 2026
 
 ## 1. Study object
@@ -147,17 +147,14 @@ A simulation study will examine operating characteristics across plausible basel
 
 With only a small prespecified set of eligible LLM configurations, model or provider will be treated as a fixed replication stratum rather than as a random sample of all possible models.
 
-## 13. Current open decisions
+## 13. Pre-primary execution gates
 
 The following remain open:
 
-* final wording of the research question;
-* final eligible LLM set;
-* final reference execution;
-* numerical equivalence tolerances;
-* final primary run count;
-* exact information exposure experiment;
-* final statistical test implementation.
+* reference execution and empirical numerical-equivalence envelope;
+* direct consumer access and primary-run feasibility audit;
+* prompt-package implementation check;
+* workflow-harness pilot and recording-system validation.
 
 
 
