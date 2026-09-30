@@ -133,3 +133,12 @@ The key comparison is therefore not simply LLM versus conventional software. It 
 I have not found an exact study in this targeted search that uses the same biomedical ML task and directly randomizes or ablates information-access and verification regimes while holding the underlying analysis target fixed. That is not enough to call the question novel yet. The search is targeted rather than systematic, and nearby work on multi-turn medical reasoning, constrained scientific agents and workflow verification means the remaining gap needs to be defined very carefully.
 
 For now, I am keeping the direction open and will not freeze the protocol until the workflow factor can be specified as an actual experimental variable rather than a collection of convenient prompt tricks.
+
+
+## Archival maintenance
+
+While checking the archived code after the repository move, I found that one unit test for the unthresholded label sensitivity did not match the implemented rule. The code treats any mapped diagnostic-superclass statement as present when the threshold is set to None, but the test used a zero-likelihood HYP statement and expected it to be absent.
+
+I changed that test fixture to use an unrelated diagnostic statement that is actually absent from the HYP and NORM classes. I also added a small pytest configuration so the preserved tests can run directly from the archive directory.
+
+I reran the archived unit tests after the correction. All six tests passed. This maintenance change does not alter the study protocol, model architecture, analysis plan or any result because the primary analysis was never run.

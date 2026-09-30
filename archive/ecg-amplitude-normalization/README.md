@@ -8,7 +8,9 @@ The study was developed through a protocol, data and waveform audits, methods li
 
 A deeper literature review later showed substantial overlap between the central question and recent ECG work. Several narrower extensions were checked as well, but the additional literature did not leave a sufficiently clean standalone research question. The project was therefore superseded rather than extended indefinitely.
 
-The files in this archive are preserved as they existed at the end of that phase. They are not the current research protocol.
+The research documents and core study code are preserved from the end of that phase. They are not the current research protocol.
+
+During archival maintenance, one unit-test fixture was corrected so that it matched the implemented unthresholded superclass-presence rule, and a small pytest configuration was added so the tests run directly from this directory. No study protocol, model architecture, analysis plan or result was changed.
 
 The original study citation metadata are preserved in [CITATION.cff](CITATION.cff).
 
