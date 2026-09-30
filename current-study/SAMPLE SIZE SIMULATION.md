@@ -1,10 +1,5 @@
 # Sample Size Simulation
 
-Status: Completed design-support simulation
-Version: 0.1
-Month: September 2026
-Study phase: Preprotocol
-
 ## 1. Purpose
 
 The primary endpoint is a binary run-level reference-faithful completion outcome. The primary comparison is W1 versus W2, with one scheduled W1 attempt and one scheduled W2 attempt per randomized block within each eligible LLM configuration.
@@ -127,11 +122,3 @@ The simulation uses deterministic random-number seeds defined in the source code
 1. Statistical Analysis Plan. current-study/12 STATISTICAL ANALYSIS PLAN.md. Study repository; 2026.
 2. LLM Workflow Experimental Protocol. current-study/09 LLM WORKFLOW EXPERIMENTAL PROTOCOL.md. Study repository; 2026.
 3. Scientific Workflow and Statistical Analysis documents. current-study/09 LLM WORKFLOW EXPERIMENTAL PROTOCOL.md and current-study/12 STATISTICAL ANALYSIS PLAN.md. Study repository; 2026.
-
-## Evidence status
-
-The block-based simulation strategy follows the prespecified statistical architecture already established for the study.[1,2]
-
-The baseline completion probabilities, target workflow effect, heterogeneity range, within-block dependence values, candidate block counts and selection criterion are investigator-defined simulation scenarios.
-
-The simulated values are computed results from the supplied code.
