@@ -361,7 +361,6 @@ Do not introduce unrelated changes.
 
 ## 14. Freeze and change control
 
-Version 1.0 is the canonical prompt package for primary collection.
 
 Any change to prompt text requires:
 
