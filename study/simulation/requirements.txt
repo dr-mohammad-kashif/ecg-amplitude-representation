@@ -1,0 +1,4 @@
+# Runtime dependencies for sample_size_simulation.py
+numpy
+pandas
+scipy
