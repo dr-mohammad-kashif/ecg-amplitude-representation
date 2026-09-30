@@ -477,7 +477,7 @@ The simulation used three configurations as the minimum eligible set, W1 complet
 
 With 20 blocks per configuration, minimum simulated power across the alternative grid was 0.713.
 
-With 25 blocks per configuration, minimum simulated power was 0.820, while the maximum simulated type I error across the evaluated null grid was 0.040.
+With 25 blocks per configuration, minimum simulated power was 0.820, while the maximum simulated type I error across the evaluated null grid was 0.033.
 
 The planning effect and scenario grid are investigator-defined. They are not predictions of the observed LLM effect.
 
