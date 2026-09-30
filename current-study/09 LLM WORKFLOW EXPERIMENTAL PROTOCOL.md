@@ -1,10 +1,5 @@
 # LLM Workflow Experimental Protocol
 
-Status: Draft protocol for experimental implementation
-Version: 0.1
-Month: September 2026
-Study phase: Preprotocol
-
 ## 1. Purpose
 
 This protocol specifies the experimental use of general purpose consumer-accessible LLM systems as analytical operators for a fixed biomedical machine learning task.
@@ -96,7 +91,7 @@ The package does not expose:
 
 - reference numerical results;
 - reference predictions;
-- reference-equivalence tolerances that have not yet been frozen;
+- reference-agreement criteria that have not yet been frozen;
 - previous LLM trajectories;
 - previous audit findings;
 - results from other primary runs.
@@ -481,7 +476,7 @@ A run is classified as successful only when all critical conditions are satisfie
 
 1. no critical protocol violation;
 2. required analysis executes to completion;
-3. primary numerical outputs satisfy the frozen reference-equivalence criteria;
+3. primary numerical outputs satisfy the frozen reference-agreement criteria;
 4. the interpretation passes the prespecified interpretation audit;
 5. the final state contains the required reproducibility evidence;
 6. no unauthorized human scientific intervention occurred.
@@ -715,11 +710,3 @@ The specific W0-W5 architecture, gate sequence, resource envelope, and endpoint 
 7. Wu et al. Performance, Failures, and Oversight of a Large Language Model Agent for Clinical Data Analysis: Evaluation Study. J Med Internet Res. 2026;28:e99597. doi:10.2196/99597.
 
 8. Bu et al. Empowering AI data scientists using a multi-agent LLM framework with self-evolving capabilities for autonomous, tool-aware biomedical data analyses. Nat Biomed Eng. 2026. doi:10.1038/s41551-026-01634-6.
-
-## Evidence status
-
-The workflow literature cited here supports process-level evaluation, executable scientific tasks, model and prompt reporting, and separation of planning from execution and verification.
-
-The exact W0-W5 manipulations, gate sequence, bounded repair rules, and primary W1 versus W2 comparison are investigator-defined components of this protocol.
-
-No primary experimental results are included.
