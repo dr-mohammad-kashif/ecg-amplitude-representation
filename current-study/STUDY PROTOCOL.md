@@ -10,7 +10,7 @@ The protocol contains the primary scientific question, objectives, design, eligi
 
 ## 1. Study title
 
-Biomedical ML Workflow Fidelity: Controlled Evaluation of General-Purpose LLMs on a Fixed Biomedical Analysis
+Biomedical ML Workflow Fidelity: Controlled Evaluation of Free Consumer General-Purpose LLMs on a Fixed Biomedical Machine-Learning Analysis
 
 ## 2. Study rationale
 
