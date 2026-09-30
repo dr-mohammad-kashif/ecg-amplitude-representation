@@ -250,22 +250,20 @@ These choices are carried forward to the reference analysis protocol, where they
 
 1. Kligfield P, Gettes LS, Bailey JJ, Childers R, Deal BJ, Hancock EW, et al. Recommendations for the standardization and interpretation of the electrocardiogram. Part I: The electrocardiogram and its technology. A scientific statement from the American Heart Association Electrocardiography and Arrhythmias Committee, Council on Clinical Cardiology; the American College of Cardiology Foundation; and the Heart Rhythm Society. Circulation. 2007;115(10):1306-1324. doi:10.1161/CIRCULATIONAHA.106.180200.
 
-2. Schultheiss HP. Vectorcardiographic diagnostic and prognostic information derived from the 12-lead electrocardiogram. J Electrocardiol. 2015;48(4):553-560. doi:10.1016/j.jelectrocard.2015.04.004.
+2. Man S, Maan AC, Schalij MJ, Swenne CA. Vectorcardiographic diagnostic & prognostic information derived from the 12-lead electrocardiogram: Historical review and clinical perspective. J Electrocardiol. 2015;48(4):463-475. doi:10.1016/j.jelectrocard.2015.05.002.
 
-3. Wagner GS, Macfarlane P, Wellens H, Josephson M, Mason JW, Okin P, et al. AHA/ACCF/HRS recommendations for the standardization and interpretation of the electrocardiogram. Part VI: Acute ischemia/infarction. Circulation. 2009;119(10):e262-e270. doi:10.1161/CIRCULATIONAHA.108.191098.
+3. Wagner GS, Macfarlane P, Wellens H, Josephson M, Gorgels A, Mirvis DM, et al. AHA/ACCF/HRS recommendations for the standardization and interpretation of the electrocardiogram: part VI: acute ischemia/infarction. J Am Coll Cardiol. 2009;53(11):1003-1011. doi:10.1016/j.jacc.2008.12.016.
 
 4. Wagner P, Strodthoff N, Bousseljot RD, Kreiseler D, Lunze FI, Samek W, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154. doi:10.1038/s41597-020-0495-6.
 
-5. Wagner P, Strodthoff N, Bousseljot RD, Kreiseler D, Lunze FI, Samek W, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154. doi:10.1038/s41597-020-0495-6.
+5. PhysioNet. PTB-XL, a large publicly available electrocardiography dataset v1.0.3 [Internet]. Cambridge, MA: PhysioNet; 2022 [cited 2026 Sep 30]. Available from: https://physionet.org/content/ptb-xl/1.0.3/
 
-6. PhysioNet. PTB-XL, a large publicly available electrocardiography dataset v1.0.3 [Internet]. Cambridge, MA: PhysioNet; 2022 [cited 2026 Sep 30]. Available from: https://physionet.org/content/ptb-xl/1.0.3/
+6. Strodthoff N, Wagner P, Schaeffter T, Samek W. Deep Learning for ECG Analysis: Benchmarks and Insights from PTB-XL. IEEE J Biomed Health Inform. 2021;25(5):1519-1528. doi:10.1109/JBHI.2020.3022989.
 
-7. Strodthoff N, Wagner P, Schaeffter T, Samek W. Deep Learning for ECG Analysis: Benchmarks and Insights from PTB-XL. IEEE J Biomed Health Inform. 2021;25(5):1519-1528. doi:10.1109/JBHI.2020.3022989.
-
-8. Bickmann B, et al. Architecture-Specific Impact of Preprocessing on Machine Learning Models for ECG Classification. 2026. PMID:42174902.
+7. Bickmann L, Plagwitz L, Büscher A, Varghese J. Architecture-Specific Impact of Preprocessing on Machine Learning Models for ECG Classification. Stud Health Technol Inform. 2026;336:529-533. doi:10.3233/SHTI260227.
 
 ## Evidence status
 
-References 1, 3, 4, 6, and 7 were verified against PubMed, the journal record, or official PhysioNet documentation during the current review update. Reference 2 was checked against the PubMed record. Reference 8 was checked against PubMed and is retained as a recent methodological study; complete bibliographic metadata will be normalized in the master bibliography before protocol freeze.
+References 1 through 7 were verified against PubMed, the journal record, or official PhysioNet documentation during the current review update. Reference 2 was checked against the PubMed record. Reference 8 was checked against PubMed and is retained as a recent methodological study; complete bibliographic metadata will be normalized in the master bibliography before protocol freeze.
 
 The biomedical review remains a working document. It does not freeze the final reference analysis.
