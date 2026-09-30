@@ -6,7 +6,7 @@ This plan specifies the statistical analysis for the LLM workflow experiment.
 
 The biomedical reference analysis is defined in [08 REFERENCE BIOMEDICAL ANALYSIS PROTOCOL.md](08%20REFERENCE%20BIOMEDICAL%20ANALYSIS%20PROTOCOL.md). The workflow conditions are defined in [09 LLM WORKFLOW EXPERIMENTAL PROTOCOL.md](09%20LLM%20WORKFLOW%20EXPERIMENTAL%20PROTOCOL.md) and [10 WORKFLOW CONDITIONS AND ABLATION PLAN.md](10%20WORKFLOW%20CONDITIONS%20AND%20ABLATION%20PLAN.md). The scientific fidelity adjudication rules are defined in [11 SCIENTIFIC FIDELITY EVALUATION FRAMEWORK.md](11%20SCIENTIFIC%20FIDELITY%20EVALUATION%20FRAMEWORK.md).
 
-This plan is written before primary LLM collection. The primary block allocation is fixed at 25 randomized W1/W2 blocks per eligible configuration on the basis of the completed sample-size simulation. Numerical reference-agreement criteria are frozen only after the reference execution gate has passed.
+This plan is written before primary LLM collection. The primary block allocation is fixed at 25 randomized W1/W2 blocks per eligible configuration on the basis of the completed sample-size simulation. Primary numerical reference-agreement criteria are frozen only after the reference execution gate has passed. The independent R3 implementation is retained as a reference diagnostic and does not widen the primary criterion.
 
 ## 2. Primary objective
 
