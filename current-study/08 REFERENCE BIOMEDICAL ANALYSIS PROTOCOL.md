@@ -405,15 +405,15 @@ The natural numerical variation among compliant reference executions is characte
 
 ### Check R6. Numerical agreement criteria freeze
 
-Numerical equivalence criteria are frozen before primary LLM results are collected.
+Numerical agreement criteria are frozen before primary LLM results are collected. They are operational reproducibility criteria for this fixed task, data version, implementation environment, and evaluation procedure. They are not a formal statistical equivalence margin and are not generalized beyond the prespecified study setting.
 
 Until Check R6 is complete, the reference numerical outputs are provisional and cannot be used as the final primary LLM acceptance threshold.
 
-## 20. Reference equivalence hierarchy
+## 20. Reference agreement hierarchy
 
 The reference comparison uses three levels.
 
-### Structural equivalence
+### Structural agreement
 
 Exact agreement is expected for properties such as:
 
@@ -429,11 +429,11 @@ Exact agreement is expected for properties such as:
 - bootstrap unit;
 - number of bootstrap resamples.
 
-### Numerical equivalence
+### Numerical agreement
 
-AUROC, average precision, Brier score, calibration outputs, task-specific delta values, and the cross-task contrast are compared using criteria established from the reference-equivalence work.
+AUROC, average precision, Brier score, calibration outputs, task-specific delta values, and the cross-task contrast are compared using the prespecified reference-agreement criteria. Scalar outcomes use an envelope anchored to R1. Vector-valued calibration outputs are evaluated component-wise using the corresponding R1-R2 and R1-R3 empirical discrepancies.
 
-No arbitrary tolerance is frozen in this document before the reference comparison is completed.
+No arbitrary fixed tolerance is imposed. The numerical agreement criteria are derived from compliant R1-R2 repeatability and R1-R3 independent-agreement observations and frozen at R6 before primary LLM outcomes are available.
 
 ### Interpretive equivalence
 
