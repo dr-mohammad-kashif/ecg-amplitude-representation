@@ -5,6 +5,14 @@ Version: 1.0
 Month: September 2026
 Study phase: Pre-primary
 
+## Protocol scope and companion records
+
+This document is the authoritative integrated statement of the study design. It is intended to be understandable on its own without requiring a reader to reconstruct the study from the repository.
+
+Detailed operational records are maintained in companion documents for reproducibility and version control. These include the reference analysis specification, workflow protocol, statistical analysis plan, resource plan, reproducibility record, provenance dictionary, failure taxonomy, interaction registry, prompt package, and sample-size simulation. They are linked by name where relevant. They are not treated as bibliographic sources and therefore are not numbered as Vancouver references.
+
+The protocol contains the primary scientific question, objectives, design, eligibility rules, experimental conditions, endpoints, estimands, sample-size decision, execution controls, analysis framework, interpretation boundaries, and pre-primary gates. A companion document may contain greater implementation detail, but it does not silently change a protocol decision.
+
 ## 1. Study title
 
 Workflow architecture and reference-faithful completion of biomedical machine learning analyses by zero-cost consumer-accessible general-purpose LLMs
@@ -121,7 +129,7 @@ The primary population excludes:
 
 ## 7. Biomedical reference analysis
 
-The fixed biomedical target is the PTB-XL v1.0.3 analysis defined in the Reference Biomedical Analysis Protocol.[17]
+The fixed biomedical target is the PTB-XL v1.0.3 analysis defined in the [Reference Biomedical Analysis Protocol](08%20REFERENCE%20BIOMEDICAL%20ANALYSIS%20PROTOCOL.md).
 
 The reference task contains:
 
@@ -138,7 +146,7 @@ The reference task contains:
 - patient-level paired bootstrap uncertainty;
 - prespecified sensitivity analyses.
 
-The reference analysis is a scientific testbed, not clinical ground truth.[17]
+The reference analysis is a scientific testbed, not clinical ground truth.
 
 The reference study does not establish clinical utility, clinical benefit, causal biological information loss, prospective deployment performance, or general performance across other ECG datasets.
 
@@ -240,7 +248,7 @@ The public availability of the archived ECG repository creates a residual possib
 
 ## 10. Standardized execution environment
 
-All workflow conditions use the same logical computational substrate.[18]
+All workflow conditions use the same logical computational substrate described in the [Reproducibility and Computational Environment](14%20REPRODUCIBILITY%20AND%20COMPUTATIONAL%20ENVIRONMENT.md).
 
 The substrate provides a controlled workspace for:
 
@@ -268,7 +276,7 @@ Provider-side inference hardware and hidden token-level computation are not infe
 
 ## 11. Human operator boundary
 
-The human operator is a mechanical interface between the consumer LLM and the standardized execution substrate.[18,19]
+The human operator is a mechanical interface between the consumer LLM and the standardized execution substrate described in the [Reproducibility and Computational Environment](14%20REPRODUCIBILITY%20AND%20COMPUTATIONAL%20ENVIRONMENT.md) and [Data Provenance and Data Dictionary](15%20DATA%20PROVENANCE%20AND%20DATA%20DICTIONARY.md).[18,19]
 
 Permitted actions include:
 
@@ -417,7 +425,7 @@ Pilot prompt versions are never relabeled as primary versions.
 
 A change to a primary prompt after collection begins constitutes a protocol amendment or deviation and does not silently replace the earlier prompt version.
 
-The prompt, context, handoff and interaction records follow the registry defined in the Prompt, Context and Interaction Registry.[19]
+The prompt, context, handoff and interaction records follow the registry defined in the [Prompt, Context and Interaction Registry](17%20PROMPT%20AND%20INTERACTION%20REGISTRY.md).
 
 ## 15. Randomization and blocking
 
@@ -442,7 +450,7 @@ The primary allocation is:
 
 > **25 randomized W1/W2 blocks per eligible LLM configuration.**
 
-The decision was based on the completed sample-size simulation in [SAMPLE SIZE SIMULATION.md](SAMPLE%20SIZE%20SIMULATION.md).[20]
+The decision was based on the completed sample-size simulation in [SAMPLE SIZE SIMULATION.md](SAMPLE%20SIZE%20SIMULATION.md).
 
 The simulation used three configurations as the minimum eligible set, W1 completion probabilities of 0.35, 0.50, and 0.65, a 25 percentage-point W2 minus W1 planning effect, configuration-specific effect heterogeneity of plus or minus 0.05, and within-block dependence of 0 and 0.25.
 
@@ -563,7 +571,7 @@ The critical audit sequence is:
 11. interpretation;
 12. reproducibility evidence.
 
-Failure severity follows the Failure Taxonomy and Error Audit.[21]
+Failure severity follows the Failure Taxonomy and Error Audit.
 
 Clean success and recovered success remain distinct.
 
@@ -743,7 +751,7 @@ No composite 0 to 100 numerical fidelity score is created.
 
 ### 21.8 Biomedical reference uncertainty
 
-The reference analysis uses the patient-level paired percentile bootstrap with 5,000 resamples specified in the biomedical protocol.[17]
+The reference analysis uses the patient-level paired percentile bootstrap with 5,000 resamples specified in the [Reference Biomedical Analysis Protocol](08%20REFERENCE%20BIOMEDICAL%20ANALYSIS%20PROTOCOL.md).
 
 The same patient resampling structure is used for HYP and MI.
 
@@ -876,15 +884,15 @@ Each run is linked to:
 - resource records;
 - terminal state.
 
-The reproducibility record follows the computational-environment plan.[18]
+The reproducibility record follows the computational-environment plan.
 
-The data-provenance record follows the data dictionary and provenance plan.[19]
+The data-provenance record follows the [Data Provenance and Data Dictionary](15%20DATA%20PROVENANCE%20AND%20DATA%20DICTIONARY.md).
 
-The interaction registry records prompt, context and event history.[20]
+The interaction registry records prompt, context and event history in the [Prompt, Context and Interaction Registry](17%20PROMPT%20AND%20INTERACTION%20REGISTRY.md).
 
 ## 26. Failure and recovery
 
-The Failure Taxonomy and Error Audit defines:
+The [Failure Taxonomy and Error Audit](16%20FAILURE%20TAXONOMY%20AND%20ERROR%20AUDIT.md) defines:
 
 - terminal run states;
 - critical, major and minor errors;
@@ -896,7 +904,7 @@ The Failure Taxonomy and Error Audit defines:
 - human scientific intervention;
 - context and state failures;
 - false completion;
-- reproducibility failures.[21]
+- reproducibility failures.
 
 A W3, W4 or W5 repair does not erase the initiating error.
 
@@ -952,7 +960,7 @@ The study uses a publicly available secondary research dataset and does not recr
 
 Raw PTB-XL files are not redistributed in the repository.
 
-Dataset access, provenance, licensing and version-specific file structure follow the provider documentation and the Data Provenance and Data Dictionary.[19]
+Dataset access, provenance, licensing and version-specific file structure follow the provider documentation and the Data Provenance and Data Dictionary.
 
 Any release of generated artifacts is reviewed for licensing, privacy, provider terms, and redistribution restrictions.
 
@@ -1006,17 +1014,17 @@ No primary outcome can be used to determine any of Gates A-F.
 
 The final study package consists of the following companion records:
 
-- Reference Biomedical Analysis Protocol
+- [Reference Biomedical Analysis Protocol](08%20REFERENCE%20BIOMEDICAL%20ANALYSIS%20PROTOCOL.md)
 - LLM Workflow Experimental Protocol
 - Workflow Conditions and Ablation Plan
 - Scientific Fidelity Evaluation Framework
 - Statistical Analysis Plan
 - Resource Accounting and Accessibility Analysis
-- Reproducibility and Computational Environment
-- Data Provenance and Data Dictionary
-- Failure Taxonomy and Error Audit
-- Prompt, Context and Interaction Registry
-- Sample Size Simulation
+- [Reproducibility and Computational Environment](14%20REPRODUCIBILITY%20AND%20COMPUTATIONAL%20ENVIRONMENT.md)
+- [Data Provenance and Data Dictionary](15%20DATA%20PROVENANCE%20AND%20DATA%20DICTIONARY.md)
+- [Failure Taxonomy and Error Audit](16%20FAILURE%20TAXONOMY%20AND%20ERROR%20AUDIT.md)
+- [Prompt, Context and Interaction Registry](17%20PROMPT%20AND%20INTERACTION%20REGISTRY.md)
+- [SAMPLE SIZE SIMULATION.md](SAMPLE%20SIZE%20SIMULATION.md)
 - [PROMPT PACKAGE.md](PROMPT%20PACKAGE.md)
 - final reference implementation and environment records
 - primary run manifests and execution logs
@@ -1065,11 +1073,6 @@ No computed result is written into the protocol as a study outcome.
 14. Anthropic. Create and edit files with Claude. Official help documentation. Accessed September 2026.
 15. Mistral AI. Pricing. Official product documentation. Accessed September 2026.
 16. Mistral AI. Code Interpreter. Official documentation. Accessed September 2026.
-17. Reference Biomedical Analysis Protocol. current-study/08 REFERENCE BIOMEDICAL ANALYSIS PROTOCOL.md. Study repository; 2026.
-18. Reproducibility and Computational Environment. current-study/14 REPRODUCIBILITY AND COMPUTATIONAL ENVIRONMENT.md. Study repository; 2026.
-19. Data Provenance and Data Dictionary. current-study/15 DATA PROVENANCE AND DATA DICTIONARY.md. Study repository; 2026.
-20. Prompt, Context and Interaction Registry. current-study/17 PROMPT AND INTERACTION REGISTRY.md. Study repository; 2026.
-21. Failure Taxonomy and Error Audit. current-study/16 FAILURE TAXONOMY AND ERROR AUDIT.md. Study repository; 2026.
 
 ## Evidence status
 
@@ -1077,10 +1080,10 @@ The workflow decomposition, process-level evaluation, and attention to silent an
 
 TRIPOD-LLM supports configuration-specific reporting, prompt transparency, human oversight, quality-control documentation, and reproducibility.[5]
 
-The PTB-XL scientific target and its fixed biomedical analysis specification are retained from the archived and current reference protocol.[17]
+The PTB-XL scientific target and its fixed biomedical analysis specification are retained from the archived and current reference protocol.
 
 The standardized computational provenance, data lineage, resource measurement, failure taxonomy, and interaction registry are defined in the companion study documents.[18-21]
 
-The primary sample-size allocation is a computed result from the study's investigator-defined simulation scenarios and is documented separately.[20]
+The primary sample-size allocation is a computed result from the study's investigator-defined simulation scenarios and is documented in the [SAMPLE SIZE SIMULATION.md](SAMPLE%20SIZE%20SIMULATION.md).
 
 The exact W0-W5 prompt wording, eligible configuration list, reference numerical envelope, and primary execution logs are execution-stage artifacts and are not represented as completed study results in this protocol.
