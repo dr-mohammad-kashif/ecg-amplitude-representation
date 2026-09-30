@@ -24,6 +24,14 @@ The use of zero-cost consumer access defines the study population and accessibil
 
 TRIPOD-LLM provides the principal reporting basis for the LLM component, with additional reproducibility, software, data-provenance, and biomedical prediction-model guidance applied according to the roles defined in the companion documents.[5-9]
 
+## 2.1 Relationship to prior methodological work
+
+The study is deliberately narrower than several established lines of work. Scientific data-analysis benchmarks already evaluate executable data-science tasks.[1] Biomedical and clinical LLM studies already evaluate multi-stage analysis, reference agreement, repeated runs, and human oversight.[2,3] Prompt-specificity studies already show that changing analytical instructions can alter performance.[4] These precedents motivate the controls used here but do not make any individual W0-W5 mechanism a new contribution.
+
+The present experiment differs in its controlled combination. One biomedical machine-learning target remains fixed across workflow conditions. The same scientific package, execution substrate, primary estimand, and interpretation boundaries are held constant. The primary intervention is the transition from a fully specified monolithic workflow to a structured fresh-context workflow. Verification mechanisms are then examined as secondary interventions. All configurations are drawn from a prespecified population of completely free consumer-facing general-purpose LLM access, and protocol fidelity is evaluated separately from biomedical numerical fidelity.
+
+The study therefore does not ask whether LLMs can perform biomedical ML in general. It asks what happens to end-to-end scientific fidelity when the way an eligible consumer LLM is organized to execute one fixed biomedical ML analysis is deliberately changed. The targeted prior-art analysis records this distinction in greater detail and does not treat the combination as an established novelty claim.
+
 ## 3. Research question
 
 The overarching research question is:
