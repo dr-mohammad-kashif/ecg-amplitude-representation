@@ -1,9 +1,5 @@
 # Literature Review
 
-**Status:** Working review  
-**Version:** 0.1  
-**Month:** September 2026
-
 ## Scope
 
 This review defines the scientific background and prior art for the active study. It covers the biomedical machine learning testbed, LLM based scientific analysis, biomedical research agents, workflow architecture, reproducibility, accessibility, and reporting standards.
