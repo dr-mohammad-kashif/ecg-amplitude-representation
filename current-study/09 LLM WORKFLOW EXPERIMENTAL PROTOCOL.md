@@ -15,11 +15,11 @@ The primary comparison is:
 
 W0 is a secondary instructional baseline. W3, W4, and W5 are secondary verification conditions.
 
-The primary scientific question is:
+The primary causal question is:
 
 > Under a locked biomedical machine learning protocol, does moving from a fully specified monolithic LLM workflow to a structured fresh-context workflow change end-to-end reference-faithful completion when both operate under the same zero cost consumer access constraints?
 
-The wording is frozen in the integrated Study Protocol.
+The overarching research question and the confirmatory primary causal question are stated separately in the integrated Study Protocol.
 
 ## 2. Experimental unit
 
