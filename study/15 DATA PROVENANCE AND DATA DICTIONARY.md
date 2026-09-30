@@ -491,9 +491,9 @@ The task-specific data dictionary, label derivation schema, leakage controls, in
 
 1. Wagner P, Strodthoff N, Bärs R, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154. doi:10.1038/s41597-020-0495-6.
 2. PhysioNet. PTB-XL, a large publicly available electrocardiography dataset v1.0.3. Version 1.0.3. PhysioNet; 2022. doi:10.13026/kfzx-aw45.
-3. Reference Biomedical Analysis Protocol. current-study/08 REFERENCE BIOMEDICAL ANALYSIS PROTOCOL.md. Study repository; 2026.
-4. LLM Workflow Experimental Protocol. current-study/09 LLM WORKFLOW EXPERIMENTAL PROTOCOL.md. Study repository; 2026.
-5. Workflow Conditions and Ablation Plan. current-study/10 WORKFLOW CONDITIONS AND ABLATION PLAN.md. Study repository; 2026.
-6. Reproducibility and Computational Environment. current-study/14 REPRODUCIBILITY AND COMPUTATIONAL ENVIRONMENT.md. Study repository; 2026.
+3. Reference Biomedical Analysis Protocol. study/08 REFERENCE BIOMEDICAL ANALYSIS PROTOCOL.md. Study repository.
+4. LLM Workflow Experimental Protocol. study/09 LLM WORKFLOW EXPERIMENTAL PROTOCOL.md. Study repository.
+5. Workflow Conditions and Ablation Plan. study/10 WORKFLOW CONDITIONS AND ABLATION PLAN.md. Study repository.
+6. Reproducibility and Computational Environment. study/14 REPRODUCIBILITY AND COMPUTATIONAL ENVIRONMENT.md. Study repository.
 7. Wilkinson MD, Dumontier M, Aalbersberg IJJ, et al. The FAIR Guiding Principles for scientific data management and stewardship. Sci Data. 2016;3:160018. doi:10.1038/sdata.2016.18.
 8. Benchimol EI, Smeeth L, Guttmann A, et al. The REporting of studies Conducted using Observational Routinely-collected health Data (RECORD) statement. PLoS Med. 2015;12(10):e1001885. doi:10.1371/journal.pmed.1001885.
