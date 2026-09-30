@@ -374,9 +374,9 @@ The original prompt version remains archived.
 
 ## References
 
-1. Study Protocol. current-study/STUDY PROTOCOL.md. Study repository; 2026.
-2. LLM Workflow Experimental Protocol. current-study/09 LLM WORKFLOW EXPERIMENTAL PROTOCOL.md. Study repository; 2026.
-3. Workflow Conditions and Ablation Plan. current-study/10 WORKFLOW CONDITIONS AND ABLATION PLAN.md. Study repository; 2026.
-4. Prompt, Context and Interaction Registry. current-study/17 PROMPT AND INTERACTION REGISTRY.md. Study repository; 2026.
+1. Study Protocol. study/STUDY PROTOCOL.md. Study repository.
+2. LLM Workflow Experimental Protocol. study/09 LLM WORKFLOW EXPERIMENTAL PROTOCOL.md. Study repository.
+3. Workflow Conditions and Ablation Plan. study/10 WORKFLOW CONDITIONS AND ABLATION PLAN.md. Study repository.
+4. Prompt, Context and Interaction Registry. study/17 PROMPT AND INTERACTION REGISTRY.md. Study repository.
 5. Ruta MR, Gaidici T, Irwin C, Lifshitz J. ChatGPT for Univariate Statistics: Validation of AI-Assisted Data Analysis in Healthcare Research. J Med Internet Res. 2025;27:e63550. doi:10.2196/63550.
 6. Gallifant J, Afshar M, Ameen S, et al. The TRIPOD-LLM reporting guideline for studies using large language models. Nat Med. 2025;31(1):60-69. doi:10.1038/s41591-024-03425-5.
