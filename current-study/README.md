@@ -8,7 +8,7 @@ This directory contains the active research phase that followed the archived ECG
 
 The study examines a fixed biomedical machine learning task through general purpose LLM systems that meet a defined zero cost consumer access criterion. The biomedical analysis is held constant while workflow architecture is varied and evaluated against an independently checked reference analysis.
 
-The study design is finalized and recorded in [STUDY PROTOCOL.md](STUDY%20PROTOCOL.md). No primary LLM experiment has been run.
+The study design is finalized and recorded in [STUDY PROTOCOL.md](STUDY%20PROTOCOL.md). Primary data collection has not begun.
 
 ## Start here
 
@@ -41,7 +41,7 @@ The main design documents are:
 
 ## Current pre-primary state
 
-No primary LLM result is reported. The study design is locked; empirical readiness gates remain before primary collection begins.
+The study design is locked. Empirical readiness gates remain before primary collection begins.
 
 The numerical reference-agreement criteria will be frozen after the reference execution and independent reproduction gates pass.
 
