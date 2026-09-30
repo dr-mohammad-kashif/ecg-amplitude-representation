@@ -1,10 +1,5 @@
 # Biomedical Literature Review
 
-Status: Working review
-Version: 0.1
-Month: September 2026
-Study phase: Preprotocol
-
 ## Scope
 
 This review describes the biomedical object that will serve as the experimental testbed for the active study. It is separate from the LLM and workflow literature.
@@ -261,9 +256,3 @@ These choices are carried forward to the reference analysis protocol, where they
 6. Strodthoff N, Wagner P, Schaeffter T, Samek W. Deep Learning for ECG Analysis: Benchmarks and Insights from PTB-XL. IEEE J Biomed Health Inform. 2021;25(5):1519-1528. doi:10.1109/JBHI.2020.3022989.
 
 7. Bickmann L, Plagwitz L, Büscher A, Varghese J. Architecture-Specific Impact of Preprocessing on Machine Learning Models for ECG Classification. Stud Health Technol Inform. 2026;336:529-533. doi:10.3233/SHTI260227.
-
-## Evidence status
-
-References 1 through 7 were verified against PubMed, the journal record, or official PhysioNet documentation during the current review update. Reference 2 was checked against the PubMed record. Reference 8 was checked against PubMed and is retained as a recent methodological study; complete bibliographic metadata will be normalized in the master bibliography before protocol freeze.
-
-The biomedical review remains a working document. It does not freeze the final reference analysis.
