@@ -427,7 +427,7 @@ The scenario values will be classified as either:
 - investigator-defined sensitivity scenarios;
 - computed quantities from the simulation.
 
-The simulation will report operating characteristics such as type I error, power across plausible workflow effects, interval precision, and sensitivity to unequal configuration-specific completion probabilities.
+The simulation reports rejection rates under the null and alternative scenarios across the prespecified baseline completion probabilities, within-block correlation values, configuration-specific effect heterogeneity, and candidate block counts. It is used to compare the operating characteristics of the 20-block and 25-block designs under the stated planning scenarios.
 
 The simulation record, source code, scenario grid, seeds, and decision rule are retained with the study. The previous 12 to 15 block proposal and earlier six-block heuristic are retired.
 
