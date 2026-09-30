@@ -16,11 +16,17 @@ The study is not framed as a general test of whether LLMs can perform data scien
 
 The authoritative integrated study design is [STUDY PROTOCOL.md](STUDY%20PROTOCOL.md).
 
-The primary research question is:
+The overarching research question is:
 
-> Under a locked biomedical machine learning analysis, does moving from a fully specified monolithic workflow to a structured fresh-context workflow change end-to-end reference-faithful completion when both operate through completely free consumer-facing general purpose LLM configurations?
+> Among completely free, personally accessible, consumer-facing general-purpose online LLM configurations, how does workflow architecture and verification affect the ability to execute a locked biomedical machine-learning analysis with end-to-end scientific fidelity, and what failure and resource burdens accompany those effects?
 
-This wording is frozen for the current protocol. The remaining pre-primary gates concern empirical execution readiness rather than further conceptual reformulation of the study question.
+The practical motivation is whether genuinely free, personally accessible systems can make a nontrivial biomedical ML analysis executable for a resource-constrained researcher without paid model access, paid software, or substantial institutional infrastructure. The study does not equate zero monetary cost with zero expertise, zero computation, or zero human judgment.
+
+The confirmatory primary causal question is:
+
+> Under a locked biomedical machine learning analysis, does moving from a fully specified monolithic workflow to a structured fresh-context workflow change end-to-end reference-faithful completion when both operate under the same zero-cost consumer access envelope?
+
+The W1 versus W2 question is the primary estimand. W0, W3, W4, and W5 address secondary questions about instruction specificity and verification mechanisms. W2A and W2B remain extensions rather than part of the confirmatory primary comparison.
 
 ## 3. Literature review
 
