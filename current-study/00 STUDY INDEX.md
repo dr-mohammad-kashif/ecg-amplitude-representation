@@ -14,11 +14,15 @@ The working comparison is between a fully specified monolithic workflow and a st
 
 The study is not framed as a general test of whether LLMs can perform data science, as a comparison of commercial models, or as a benchmark of autonomous research agents.
 
-## 2. Working scientific question
+## 2. Study protocol
 
-> Under a locked biomedical machine learning protocol, does moving from a fully specified monolithic LLM workflow to a structured fresh context workflow change end to end reference faithful completion when both operate under the same zero cost consumer access constraints?
+The authoritative integrated study design is [STUDY PROTOCOL.md](STUDY%20PROTOCOL.md).
 
-This wording is a working formulation. It is not frozen as the final protocol wording until the remaining design checks are complete.
+The primary research question is:
+
+> Under a locked biomedical machine learning analysis, does moving from a fully specified monolithic LLM workflow to a structured fresh-context workflow change end-to-end reference-faithful completion when both operate under the same zero-cost consumer access envelope?
+
+This wording is frozen for the current protocol. The remaining pre-primary gates concern empirical execution readiness rather than further conceptual reformulation of the study question.
 
 ## 3. Literature review
 
