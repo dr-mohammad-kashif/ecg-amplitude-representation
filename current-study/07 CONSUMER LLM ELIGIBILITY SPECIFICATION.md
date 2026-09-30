@@ -38,7 +38,7 @@ $$
 +
 \text{region}
 +
-\text{access date}
+\text{access month}
 $$
 
 A provider can expose the same model through several routes with different tools, limits, or payment requirements. Those routes cannot be treated as interchangeable.
@@ -192,12 +192,12 @@ This criterion protects the distinction between personal accessibility and publi
 
 ### E11. Region and date
 
-Availability must be documented for the actual study region and access date.
+Availability must be documented for the actual study region and access month.
 
 Each access record must include:
 
 - country or region;
-- verification date;
+- verification month;
 - consumer product URL;
 - account type;
 - plan;
@@ -222,7 +222,7 @@ The access record must therefore retain:
 - model family if visible;
 - model or system version if visible;
 - access tier;
-- access date;
+- access month;
 - relevant configuration settings.
 
 A provider or configuration change that alters model identity, tool availability, context capacity, or another feature relevant to the primary experiment creates a new access epoch unless equivalence can be justified before pooling runs.
@@ -344,7 +344,7 @@ The minimum record is:
 | Consumer product | Web or mobile product |
 | Interface | Exact interface used |
 | Region | Country or region |
-| Access date | Date and time of verification |
+| Access month | Date and time of verification |
 | Account type | Ordinary consumer account |
 | Plan | Free configuration name |
 | Displayed model | Exact name shown by interface |
@@ -502,7 +502,7 @@ Before any primary LLM run is counted, the study must have:
 2. provider documentation supporting the free configuration;
 3. direct interface verification;
 4. confirmation of every essential free capability;
-5. confirmation of region and access date;
+5. confirmation of region and access month;
 6. confirmation that no payment instrument or special entitlement is required;
 7. a recorded model identity or dynamic-configuration designation;
 8. controlled memory, personalization, retrieval, and connector state;
