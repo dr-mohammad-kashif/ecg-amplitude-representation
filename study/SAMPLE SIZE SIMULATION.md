@@ -65,11 +65,11 @@ The planned primary study analysis will use the corresponding block-randomizatio
 | Blocks per configuration | Minimum simulated power across alternative scenarios | Maximum simulated type I error across null scenarios |
 |---:|---:|---:|
 | 20 | 0.713 | Not evaluated in the null grid |
-| 25 | 0.820 | 0.040 |
+| 25 | 0.820 | 0.033 |
 
 At 20 blocks per configuration, the minimum simulated power was below the prespecified 0.80 criterion.
 
-At 25 blocks per configuration, the minimum simulated power was 0.820 across the evaluated alternative scenarios. The maximum simulated null rejection rate was 0.040 across the evaluated null scenarios.
+At 25 blocks per configuration, the minimum simulated power was 0.820 across the evaluated alternative scenarios. The maximum simulated null rejection rate was 0.033 across the evaluated null scenarios using the committed simulation code and seeds.
 
 The 25-block design therefore satisfies the prespecified selection rule in the evaluated scenario grid.
 
