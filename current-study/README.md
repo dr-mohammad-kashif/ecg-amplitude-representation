@@ -1,9 +1,5 @@
 # Current Study Workspace
 
-**Status:** Final study design; pre-primary execution  
-**Revision:** 0.1  
-**Month:** September 2026
-
 This directory contains the active research phase that followed the archived ECG amplitude representation study.
 
 The study examines a fixed biomedical machine learning task through general purpose LLM systems that meet a defined zero cost consumer access criterion. The biomedical analysis is held constant while workflow architecture is varied and evaluated against an independently checked reference analysis.
