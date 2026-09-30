@@ -6,36 +6,54 @@
 
 This directory contains the active research phase that followed the archived ECG amplitude representation study.
 
-The study is being developed as a controlled biomedical machine learning experiment using a fixed analytical task, a verified reference analysis, and general purpose LLM systems that meet a strict ordinary user free access criterion.
+The study examines a fixed biomedical machine learning task through general purpose LLM systems that meet a defined zero cost consumer access criterion. The biomedical analysis is held constant while workflow architecture is varied and evaluated against an independently checked reference analysis.
 
-The scientific question remains in working form until the remaining design gates are resolved. The present workspace therefore separates established decisions, supporting evidence, unresolved design choices, and work that must be completed before primary data collection.
+The study is still in preprotocol development. No primary LLM experiment has been run.
 
-## Research materials
+## Start here
 
-[00 STUDY INDEX.md](00%20STUDY%20INDEX.md) records the current study structure and open gates.
+[00 STUDY INDEX.md](00%20STUDY%20INDEX.md) gives the current study map, open decisions, and execution gates.
 
-[01 LITERATURE REVIEW.md](01%20LITERATURE%20REVIEW.md) records the current integrated scientific literature review.
+The main design documents are:
 
-[02 PRIOR ART AND GAP ANALYSIS.md](02%20PRIOR%20ART%20AND%20GAP%20ANALYSIS.md) compares the closest existing work with the proposed experimental design and records the current evidence boundary.
+- [01 LITERATURE REVIEW.md](01%20LITERATURE%20REVIEW.md)
+- [02 PRIOR ART AND GAP ANALYSIS.md](02%20PRIOR%20ART%20AND%20GAP%20ANALYSIS.md)
+- [03 LITERATURE SEARCH AND EVIDENCE METHODS.md](03%20LITERATURE%20SEARCH%20AND%20EVIDENCE%20METHODS.md)
+- [04 BIOMEDICAL LITERATURE REVIEW.md](04%20BIOMEDICAL%20LITERATURE%20REVIEW.md)
+- [05 MACHINE LEARNING METHODS REVIEW.md](05%20MACHINE%20LEARNING%20METHODS%20REVIEW.md)
+- [06 LLM WORKFLOW METHODS REVIEW.md](06%20LLM%20WORKFLOW%20METHODS%20REVIEW.md)
+- [07 CONSUMER LLM ELIGIBILITY SPECIFICATION.md](07%20CONSUMER%20LLM%20ELIGIBILITY%20SPECIFICATION.md)
+- [08 REFERENCE BIOMEDICAL ANALYSIS PROTOCOL.md](08%20REFERENCE%20BIOMEDICAL%20ANALYSIS%20PROTOCOL.md)
+- [09 LLM WORKFLOW EXPERIMENTAL PROTOCOL.md](09%20LLM%20WORKFLOW%20EXPERIMENTAL%20PROTOCOL.md)
+- [10 WORKFLOW CONDITIONS AND ABLATION PLAN.md](10%20WORKFLOW%20CONDITIONS%20AND%20ABLATION%20PLAN.md)
+- [11 SCIENTIFIC FIDELITY EVALUATION FRAMEWORK.md](11%20SCIENTIFIC%20FIDELITY%20EVALUATION%20FRAMEWORK.md)
 
-[archive/ecg-amplitude-normalization](../archive/ecg-amplitude-normalization/) contains the original ECG research phase.
+The final integrated study protocol will be added only after the remaining design and execution gates have been resolved. It will act as a concise synthesis of these companion documents rather than duplicating them.
 
-## Evidence status
-
-No primary LLM experiment has been run.
+## Current evidence boundary
 
 No primary LLM result is reported.
 
-No final numerical equivalence threshold has been set.
+No final numerical reference-equivalence threshold has been set.
 
-No final sample size has been set.
+No final primary run count has been set.
 
 The reference analysis must be executed and independently reproduced before numerical fidelity criteria are frozen.
 
 The eligible LLM set must be established from current provider documentation and direct access checks before primary runs begin.
 
-## Documentation principle
+## Archived research phase
 
-The project records the distinction between published evidence, evidence supported inference, investigator defined protocol choices, and computed results. A design choice is not presented as literature established merely because it is sensible.
+The original ECG amplitude representation study remains available in [../archive/ecg-amplitude-normalization/](../archive/ecg-amplitude-normalization/).
 
-Primary experimental instructions, model access conditions, execution records, validation outputs, and deviations will be retained as research artifacts when the study reaches the execution stage.
+Its protocol, analysis plan, statistical plan, data audit, research log, and other working materials are preserved as historical research records. The current study uses the archived work as a source for the biomedical reference analysis rather than presenting the old scientific question as the active one.
+
+## Documentation principles
+
+The repository distinguishes published evidence, evidence-supported inference, investigator-defined choices, and computed results.
+
+A design choice is not presented as literature-established merely because it is sensible.
+
+Primary experimental instructions, model access records, execution logs, validation outputs, and deviations will be retained as research artifacts when the study reaches the execution stage.
+
+Only files with a substantive research purpose are added to the repository. Supporting code, data, tests, and result directories will be added when the corresponding work actually exists.
