@@ -1,7 +1,5 @@
 # Study Protocol
 
-Version 1.0, 30 September 2026.
-
 ## Protocol scope and companion records
 
 This document is the authoritative integrated statement of the study design. It is intended to be understandable on its own without requiring a reader to reconstruct the study from the repository.
@@ -12,7 +10,7 @@ The protocol contains the primary scientific question, objectives, design, eligi
 
 ## 1. Study title
 
-Workflow architecture and reference-faithful completion of biomedical machine learning analyses by zero-cost consumer-accessible general-purpose LLMs
+Biomedical ML Workflow Fidelity: Controlled Evaluation of General-Purpose LLMs on a Fixed Biomedical Analysis
 
 ## 2. Study rationale
 
