@@ -4,9 +4,13 @@ This repository contains a research program that moved from an initial ECG repre
 
 The active research object is workflow fidelity. The biomedical analysis is fixed while the analyst-facing workflow is varied and evaluated against an independently checked reference analysis.
 
-The primary research question is:
+The overarching research question is:
 
-> Under a locked biomedical machine-learning analysis, does changing the analyst-facing workflow from a fully specified monolithic workflow to a structured fresh-context workflow change end-to-end reference-faithful completion among completely free consumer-facing general-purpose LLM configurations?
+> Among completely free, personally accessible, consumer-facing general-purpose online LLM configurations, how does workflow architecture and verification affect the ability to execute a locked biomedical machine-learning analysis with end-to-end scientific fidelity, and what failure and resource burdens accompany those effects?
+
+The confirmatory primary comparison is narrower:
+
+> Under a locked biomedical machine-learning analysis, does moving from a fully specified monolithic workflow to a structured fresh-context workflow change end-to-end reference-faithful completion under the same zero-cost consumer access envelope?
 
 ## Active study
 
