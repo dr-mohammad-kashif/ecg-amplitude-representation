@@ -397,7 +397,7 @@ An independently written implementation reconstructs the same scientific protoco
 
 ### Check R4. Reference comparison
 
-The original and independent implementations are compared at the structural and numerical levels.
+The original and independent implementations are compared at the structural and numerical levels. R3 contributes to the reference-agreement envelope only after the comparison confirms that its protocol-critical choices are compliant and that any observed numerical differences are attributable to documented implementation-level variation rather than a scientific or protocol mismatch. An unexplained protocol mismatch invalidates R3 for envelope construction and requires correction and a new independent reproduction before R6.
 
 ### Check R5. Reference-agreement envelope
 
