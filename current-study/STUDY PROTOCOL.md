@@ -186,7 +186,7 @@ The resulting numerical agreement criteria are frozen in the primary study recor
 
 The primary reference estimate remains the result of the locked original reference implementation from R1. R2 establishes repeatability of the locked implementation and R3 establishes agreement with the independent implementation. Only compliant R1, R2 and R3 executions contribute to the frozen envelope.
 
-If any reference execution fails a critical structural requirement, the equivalence envelope is not frozen until the reference implementation is corrected and the reference comparison is repeated.
+If any reference execution fails a critical structural requirement, the reference-agreement envelope is not frozen until the reference implementation is corrected and the reference comparison is repeated.
 
 ## 9. Information-exposure boundary
 
@@ -577,7 +577,7 @@ Clean success and recovered success remain distinct.
 
 A numerical match cannot override a protocol violation.
 
-Protocol fidelity cannot override failed primary numerical equivalence.
+Protocol fidelity cannot override failed primary numerical agreement.
 
 A plausible final narrative cannot override missing execution evidence.
 
@@ -986,7 +986,7 @@ Primary collection remains blocked until the following empirical gates pass:
 
 ### Gate A. Reference execution
 
-R0 through R6 are complete and the numerical equivalence envelope is frozen.
+R0 through R6 are complete and the numerical reference-agreement envelope is frozen.
 
 ### Gate B. Consumer access
 
