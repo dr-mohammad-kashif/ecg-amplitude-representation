@@ -518,16 +518,16 @@ Primary collection must not begin for a configuration whose eligibility remains 
 
 ## References
 
-1. OpenAI. ChatGPT Free Tier FAQ [Internet]. San Francisco: OpenAI; 2026 [cited 2026 Sep 30]. Available from: https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq
+1. OpenAI. ChatGPT Free Tier FAQ [Internet]. San Francisco: OpenAI; 2026. Available from: https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq
 
-2. Google. Gemini Apps limits & upgrades for Google AI subscribers [Internet]. Mountain View: Google; 2026 [cited 2026 Sep 30]. Available from: https://support.google.com/gemini/answer/16275805
+2. Google. Gemini Apps limits & upgrades for Google AI subscribers [Internet]. Mountain View: Google; 2026. Available from: https://support.google.com/gemini/answer/16275805
 
-3. Google. Upload and analyse files in Gemini Apps [Internet]. Mountain View: Google; 2026 [cited 2026 Sep 30]. Available from: https://support.google.com/gemini/answer/14903178
+3. Google. Upload and analyse files in Gemini Apps [Internet]. Mountain View: Google; 2026. Available from: https://support.google.com/gemini/answer/14903178
 
-4. Anthropic. Plans & pricing: Claude [Internet]. San Francisco: Anthropic; 2026 [cited 2026 Sep 30]. Available from: https://claude.com/pricing
+4. Anthropic. Plans & pricing: Claude [Internet]. San Francisco: Anthropic; 2026. Available from: https://claude.com/pricing
 
-5. Anthropic. Create and edit files with Claude [Internet]. San Francisco: Anthropic; 2026 [cited 2026 Sep 30]. Available from: https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude
+5. Anthropic. Create and edit files with Claude [Internet]. San Francisco: Anthropic; 2026. Available from: https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude
 
-6. Mistral AI. Pricing [Internet]. Paris: Mistral AI; 2026 [cited 2026 Sep 30]. Available from: https://mistral.ai/pricing/
+6. Mistral AI. Pricing [Internet]. Paris: Mistral AI; 2026. Available from: https://mistral.ai/pricing/
 
 7. Gallifant J, Afshar M, Ameen S, Aphinyanaphongs Y, Chen S, Cacciamani G, et al. The TRIPOD-LLM reporting guideline for studies using large language models. Nat Med. 2025;31(1):60-69. doi:10.1038/s41591-024-03425-5.
