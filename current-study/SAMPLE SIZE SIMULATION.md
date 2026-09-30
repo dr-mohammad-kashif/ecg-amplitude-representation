@@ -116,9 +116,3 @@ The simulation is reproduced by:
 The simulation writes a machine-readable CSV containing the scenario grid and simulated operating characteristics.
 
 The simulation uses deterministic random-number seeds defined in the source code.
-
-## References
-
-1. Statistical Analysis Plan. current-study/12 STATISTICAL ANALYSIS PLAN.md. Study repository; 2026.
-2. LLM Workflow Experimental Protocol. current-study/09 LLM WORKFLOW EXPERIMENTAL PROTOCOL.md. Study repository; 2026.
-3. Scientific Workflow and Statistical Analysis documents. current-study/09 LLM WORKFLOW EXPERIMENTAL PROTOCOL.md and current-study/12 STATISTICAL ANALYSIS PLAN.md. Study repository; 2026.
