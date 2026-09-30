@@ -78,7 +78,7 @@ The third stage is the formalization of the evidence record and source inventory
 
 The fourth stage is the current update performed on 30 September 2026, including targeted searches for methodological standards and recent work published or posted during September 2026.
 
-The literature search remains open until the reference analysis, eligibility specification, workflow protocol, and statistical plan have been frozen. A final update will be performed immediately before protocol freeze.
+The evidence record remains open for targeted updates until primary collection begins. A final update should be performed immediately before primary collection, focused on new evidence and any material prior-art developments. Any finding that materially changes the study design or prior-art position must be handled as a protocol amendment before primary collection.
 
 Provider access is treated differently from scientific literature because the relevant information can change without a new publication. Current access claims therefore use an access epoch consisting of provider, interface, configuration, region, and access date.
 
