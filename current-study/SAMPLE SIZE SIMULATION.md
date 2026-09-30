@@ -69,7 +69,7 @@ The planned primary study analysis will use the corresponding block-randomizatio
 
 | Blocks per configuration | Minimum simulated power across alternative scenarios | Maximum simulated type I error across null scenarios |
 |---:|---:|---:|
-| 20 | 0.708 | Not evaluated in the null grid |
+| 20 | 0.713 | Not evaluated in the null grid |
 | 25 | 0.820 | 0.040 |
 
 At 20 blocks per configuration, the minimum simulated power was below the prespecified 0.80 criterion.
