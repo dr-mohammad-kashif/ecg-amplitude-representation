@@ -1,11 +1,5 @@
 # Literature Search and Evidence Methods
 
-Status: Working search record
-Version: 0.1
-Month: September 2026
-Study phase: Preprotocol
-Review status: Targeted and iterative, not yet a completed systematic review
-
 ## 1. Aim and scope
 
 This document records how literature and supporting evidence have been located, screened, verified, and retained for the active study.
@@ -380,15 +374,9 @@ This document instead answers a narrower methodological question.
 
 It records how the evidence boundary was constructed and how future searches must be performed so that the prior-art statement remains auditable.
 
-## 20. Planned final update
+## 20. Search maintenance
 
-Before the study protocol is frozen, the search will be updated across the same major axes.
-
-The update will prioritize work published or posted after the last substantive search, direct searches for the final W1 versus W2 wording and close synonyms, exact searches combining biomedical ML and workflow architecture, and any new evidence concerning free consumer access.
-
-The final update will then be used to regenerate the prior-art matrix and the candidate gap statement.
-
-No numerical experimental result will be used to define the search conclusion.
+The search record should be updated once more immediately before primary collection. The update should target new work since the last substantive search, the final W1 versus W2 wording and close synonyms, combinations of biomedical machine learning with workflow architecture, and current evidence on free consumer access. Any evidence that materially changes the study design or its prior-art position must be handled as a protocol amendment before primary collection.
 
 ## 21. Limitations
 
@@ -419,11 +407,3 @@ For these reasons, the current record supports a transparent targeted evidence s
 4. Gallifant J, Afshar M, Ameen S, Aphinyanaphongs Y, Chen S, Cacciamani G, et al. The TRIPOD-LLM reporting guideline for studies using large language models. Nat Med. 2025;31(1):60-69. doi:10.1038/s41591-024-03425-5.
 
 5. Papin JA, Mac Gabhann F, Sauro HM, Nickerson D, Rampadarath A. Improving reproducibility in computational biology research. PLoS Comput Biol. 2020;16(5):e1007881. doi:10.1371/journal.pcbi.1007881.
-
-## Evidence status
-
-References 1 through 5 were checked against publisher, PubMed, or journal records during the current methods update.
-
-The scientific source inventory and prior-art references are maintained in the linked study documents rather than duplicated here.
-
-The search remains open until the final protocol freeze.
