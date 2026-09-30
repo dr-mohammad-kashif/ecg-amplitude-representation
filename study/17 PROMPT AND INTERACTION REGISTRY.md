@@ -644,12 +644,12 @@ No primary experiment results are included.
 
 1. Ruta MR, Gaidici T, Irwin C, Lifshitz J. ChatGPT for Univariate Statistics: Validation of AI-Assisted Data Analysis in Healthcare Research. J Med Internet Res. 2025;27:e63550. doi:10.2196/63550.
 2. Gallifant J, Afshar M, Ameen S, et al. The TRIPOD-LLM reporting guideline for studies using large language models. Nat Med. 2025;31(1):60-69. doi:10.1038/s41591-024-03425-5.
-3. Consumer LLM Eligibility Specification. current-study/07 CONSUMER LLM ELIGIBILITY SPECIFICATION.md. Study repository; 2026.
-4. LLM Workflow Experimental Protocol. current-study/09 LLM WORKFLOW EXPERIMENTAL PROTOCOL.md. Study repository; 2026.
-5. Workflow Conditions and Ablation Plan. current-study/10 WORKFLOW CONDITIONS AND ABLATION PLAN.md. Study repository; 2026.
-6. Resource Accounting and Accessibility Analysis. current-study/13 RESOURCE ACCOUNTING AND ACCESSIBILITY ANALYSIS.md. Study repository; 2026.
-7. Reproducibility and Computational Environment. current-study/14 REPRODUCIBILITY AND COMPUTATIONAL ENVIRONMENT.md. Study repository; 2026.
-8. Data Provenance and Data Dictionary. current-study/15 DATA PROVENANCE AND DATA DICTIONARY.md. Study repository; 2026.
-9. Failure Taxonomy and Error Audit. current-study/16 FAILURE TAXONOMY AND ERROR AUDIT.md. Study repository; 2026.
-10. Statistical Analysis Plan. current-study/12 STATISTICAL ANALYSIS PLAN.md. Study repository; 2026.
+3. Consumer LLM Eligibility Specification. study/07 CONSUMER LLM ELIGIBILITY SPECIFICATION.md. Study repository.
+4. LLM Workflow Experimental Protocol. study/09 LLM WORKFLOW EXPERIMENTAL PROTOCOL.md. Study repository.
+5. Workflow Conditions and Ablation Plan. study/10 WORKFLOW CONDITIONS AND ABLATION PLAN.md. Study repository.
+6. Resource Accounting and Accessibility Analysis. study/13 RESOURCE ACCOUNTING AND ACCESSIBILITY ANALYSIS.md. Study repository.
+7. Reproducibility and Computational Environment. study/14 REPRODUCIBILITY AND COMPUTATIONAL ENVIRONMENT.md. Study repository.
+8. Data Provenance and Data Dictionary. study/15 DATA PROVENANCE AND DATA DICTIONARY.md. Study repository.
+9. Failure Taxonomy and Error Audit. study/16 FAILURE TAXONOMY AND ERROR AUDIT.md. Study repository.
+10. Statistical Analysis Plan. study/12 STATISTICAL ANALYSIS PLAN.md. Study repository.
 11. Chen Z, Chen S, Ning Y, et al. ScienceAgentBench: Toward Rigorous Assessment of Language Agents for Data-Driven Scientific Discovery. International Conference on Learning Representations; 2025.
