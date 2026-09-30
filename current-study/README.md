@@ -1,8 +1,8 @@
-# Biomedical ML Workflow Fidelity
+# Biomedical ML Workflow Fidelity in Free Consumer General-Purpose LLMs
 
-This is the active research workspace for a controlled study of general-purpose online LLMs executing a fixed biomedical machine-learning analysis.
+This is the active research workspace for a controlled study of completely free consumer-facing general-purpose online LLM configurations executing a fixed biomedical machine-learning analysis.
 
-The study asks whether changing the analyst-facing workflow changes end-to-end reference-faithful completion when the biomedical task, execution environment, access envelope and evaluation criteria are held constant.
+The study asks whether changing the analyst-facing workflow changes end-to-end reference-faithful completion when the biomedical task, execution environment, zero-cost consumer access envelope and evaluation criteria are held constant.
 
 The authoritative design is [STUDY PROTOCOL.md](STUDY%20PROTOCOL.md).
 
