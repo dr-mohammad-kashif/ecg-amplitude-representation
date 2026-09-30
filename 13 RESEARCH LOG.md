@@ -87,3 +87,36 @@ I do not present the later LLM direction as if it existed from the beginning.
 I do not describe literature discovery as if a separate system performed the scientific reasoning. The research record is written from the decisions and checks that actually shaped the project.
 
 The archive remains available so that the original ECG study can be inspected without rewriting its earlier reasoning.
+
+
+## Phase 7a. Initial prior-art audit of the new direction
+
+I started the next literature pass by checking the proposed LLM study against work on data-science agents, scientific reproduction, biomedical research agents, and clinical data analysis.
+
+The first result is that the broad question is already occupied.
+
+DataSciBench and DSBench evaluate LLMs or agents on realistic data-science tasks, including data analysis and end-to-end data modelling. ScienceAgentBench evaluates language agents on data-driven scientific tasks using executable programs and explicit scientific-task validation. PaperBench and the newer RECLAIM benchmark evaluate whether agents can reproduce published machine-learning research. These studies make a simple question about whether an LLM can perform data science or reproduce an analysis too broad to stand alone. [DataSciBench](https://aclanthology.org/2026.findings-acl.181/) [DSBench](https://proceedings.iclr.cc/paper_files/paper/2025/hash/50e9ad960ae78b741a6b4fea533f2eaf-Abstract-Conference.html) [ScienceAgentBench](https://github.com/OSU-NLP-Group/ScienceAgentBench) [PaperBench](https://proceedings.mlr.press/v267/starace25a.html) [RECLAIM](https://arxiv.org/abs/2609.28850)
+
+Biomedical research is also no longer an open category. Biomni and BioMedAgent demonstrate general or multi-agent systems that carry out biomedical analysis workflows. BiomniBench evaluates biomedical agents at the process level rather than scoring only final answers. Open-Rosalind, R-LAM and related work study constrained, auditable or reproducibility-oriented scientific workflows. These papers mean that a claim such as "workflow constraints make biomedical LLM analysis more reliable" is also too broad. [Biomni](https://pubmed.ncbi.nlm.nih.gov/42424436/) [BioMedAgent](https://www.nature.com/articles/s41551-026-01634-6) [BiomniBench](https://www.biorxiv.org/content/10.64898/2026.05.12.724604v2) [Open-Rosalind](https://www.biorxiv.org/content/10.64898/2026.05.06.722404v1)
+
+The closest study I have found so far is a September 2026 JMIR evaluation of an LLM agent for clinical data analysis. It used a public clinical dataset and reference code, tested five stages of the analysis workflow, compared Chat, Code and Cowork interaction modes, repeated conditions independently, and evaluated research questions, statistical analysis plans, execution against reference values, result-to-log fidelity and reporting errors. The Chat condition was run on a free tier. This directly overlaps with the parts of my proposed design that involve a fixed clinical analysis, ordinary LLM interaction, repeated runs and scientific fidelity. [Wu et al., 2026](https://pmc.ncbi.nlm.nih.gov/articles/PMC13552643/)
+
+That paper changes what I think the useful gap might be.
+
+I do not think the study should be framed as another benchmark of general LLM data-analysis ability. I also do not think it should be framed as another comparison of autonomous agent architectures.
+
+The potentially useful question is narrower. I am interested in whether the way information and analytical responsibility are exposed to an ordinary online general-purpose LLM changes the fidelity of a fixed biomedical machine-learning analysis.
+
+The experimental factor would therefore be the workflow, not merely the model. A single frozen biomedical analysis would be supplied under controlled conditions such as unrestricted dataset access, staged data exposure, fresh-context execution, explicit verification gates, and independent audit. The same target analysis and evaluation criteria would be used across conditions.
+
+This distinction matters because several existing papers study stronger agent scaffolding, tool libraries, or domain-specific agent systems. My proposed setting is deliberately less engineered. The unit being evaluated would be a browser-accessible general-purpose LLM used as an analyst, not a bespoke autonomous research agent.
+
+Even this narrower question is not yet established as novel. Multi-turn medical benchmarks already show that changing when evidence is released can alter model behaviour, and recent scientific-agent work shows that constrained execution and intermediate verification can affect reliability. Those studies are not the same task, but they close off the easy claim that staged context or gating is itself a new idea. [MINT](https://arxiv.org/abs/2604.04325) [ESFlow](https://egusphere.copernicus.org/preprints/2026/egusphere-2026-2237/) [R-LAM](https://arxiv.org/abs/2601.09749)
+
+I therefore regard the new direction as promising enough to investigate further but not yet sufficiently differentiated to freeze as a research question.
+
+The next literature pass needs to answer a more specific question.
+
+Has anyone already performed a controlled within-task experiment in which the same biomedical machine-learning protocol and data are given to ordinary online general-purpose LLMs under different information-access and verification regimes, with scientific fidelity measured against a deterministic reference analysis?
+
+Until that question is answered cleanly, I will not write the final protocol or treat the workflow-factor idea as a novelty claim.
