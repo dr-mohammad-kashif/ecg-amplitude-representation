@@ -1,10 +1,5 @@
 # Resource Accounting and Accessibility Analysis
 
-Status: Draft analysis plan
-Version: 0.1
-Month: September 2026
-Study phase: Preprotocol
-
 ## 1. Purpose
 
 This plan defines how accessibility and resource use will be recorded during the LLM workflow experiment.
@@ -229,9 +224,7 @@ This distinction follows the experimental design in which the zero cost envelope
 
 The workflow protocol requires the same study-wide resource principle across W0 through W5.[2]
 
-The final numerical interaction ceiling is not yet frozen.
-
-Once established, it will apply to the complete run rather than granting a larger total budget to conditions with more workflow components.
+The study-wide interaction ceiling is 32 LLM response turns per run across W0 through W5. It applies to the complete run rather than granting a larger total budget to conditions with more workflow components.
 
 The resource allocation may differ within that common ceiling because W3 through W5 deliberately contain audit or repair stages.
 
@@ -507,11 +500,3 @@ The exact resource variables, classifications, aggregation choices, and separati
 4. Wilkinson MD, Dumontier M, Aalbersberg I, Appleton G, Axton B, et al. The FAIR Guiding Principles for scientific data management and stewardship. Sci Data. 2016;3:160018. doi:10.1038/sdata.2016.18.
 
 5. Barker M, Chue Hong NP, Katz DS, Lamprecht A-L, Martinez-Ortiz C, Psomopoulos F, et al. Introducing the FAIR Principles for research software. Sci Data. 2022;9:622. doi:10.1038/s41597-022-01710-x.
-
-## Evidence status
-
-The current resource framework is consistent with the study-wide consumer eligibility and workflow specifications.
-
-The specific resource variables, month-level public records, failure classifications, aggregation summaries, and separation of monetary eligibility from operational burden are investigator-defined study components.
-
-No primary resource measurements are included.
