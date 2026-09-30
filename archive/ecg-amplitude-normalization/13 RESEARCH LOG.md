@@ -9,7 +9,7 @@ A useful entry for me answers four questions
 3. What did I learn?
 4. What did I change?
 
-## September 2026
+
 
 I created the repository and wrote the first version of the study question and analysis plan.
 
