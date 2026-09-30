@@ -1,41 +1,41 @@
-# Research workspace
+# Biomedical ML Workflow Fidelity
 
-This repository began with a focused study of ECG amplitude representation in PTB-XL.
+This repository contains a research program that moved from an initial ECG representation study to a controlled investigation of biomedical machine-learning workflows executed by general-purpose LLMs.
 
-The first research phase compared the native ECG representation with a defined record-wise standardized representation and was developed through a full protocol, data audit, methods review, implementation checks and a preregistration draft. The primary held-out analysis was not run.
+The active research object is workflow fidelity. The biomedical analysis is fixed while the analyst-facing workflow is varied and evaluated against an independently checked reference analysis.
 
-As I reviewed the literature more deeply, I found that the central question had substantial overlap with work that was already available. A narrower set of extensions was also checked, but the additional literature did not leave a sufficiently clean standalone question. I therefore decided to preserve the ECG study as an archived research phase rather than continue adding analyses to the same object.
+The primary research question is:
 
-The original study is preserved in [archive/ecg-amplitude-normalization](archive/ecg-amplitude-normalization/).
+> Under a locked biomedical machine-learning analysis, does changing the analyst-facing workflow from a fully specified monolithic workflow to a structured fresh-context workflow change end-to-end reference-faithful completion under the same zero-cost consumer access envelope?
 
-The transition and the decisions that led to it are recorded in [13 RESEARCH LOG.md](13%20RESEARCH%20LOG.md). This file is the project-level history. The archived research log remains with the original study files and records the earlier phase as it existed before the question was changed.
+## Active study
 
-## Current study workspace
+The current study is organized under [current-study](current-study/).
 
-The active research phase is being developed under [current-study](current-study/). The study is still in design and evidence assembly; it does not yet contain primary LLM results.
+[STUDY PROTOCOL.md](current-study/STUDY%20PROTOCOL.md) is the authoritative integrated design.
 
-## Current status
+The current workspace contains the literature and prior-art record, the fixed biomedical reference analysis, the LLM workflow protocol, the fidelity and statistical frameworks, the consumer eligibility specification, the interaction and resource records, and the frozen prompt package.
 
-This repository is between research phases.
+Primary LLM data collection has not begun.
 
-The next study has not been presented here as a finished protocol. The direction emerged only after the original ECG question and several candidate extensions were checked against the literature. I will add the new study documents only after the research question has survived another prior-art review and the protocol is genuinely specified.
+## Research history
 
-There are currently no results for the new research direction and no claim that it is novel.
+The original ECG amplitude representation study is preserved under [archive/ecg-amplitude-normalization](archive/ecg-amplitude-normalization/).
 
-## Research record
+That study investigated whether record-wise ECG amplitude normalization changed classification performance differently across PTB-XL phenotype tasks. A deeper literature review found substantial overlap with existing ECG and preprocessing work, so it was archived rather than extended by successive marginal variations.
 
-The project history should be read in order.
+The archive remains part of the research record and supplies provenance for the biomedical testbed, data audit, preprocessing functions, model definition and several design decisions carried forward into the active study.
 
-[13 RESEARCH LOG.md](13%20RESEARCH%20LOG.md) records the transition from the original ECG study to the next research object.
+[RESEARCH LOG.md](RESEARCH%20LOG.md) records the transition between research phases.
 
-[CURRENT DIRECTION AUDIT.md](CURRENT%20DIRECTION%20AUDIT.md) records the literature checks that are currently shaping the next research question.
+## Research principles
 
-[archive/ecg-amplitude-normalization/README.md](archive/ecg-amplitude-normalization/README.md) explains the archived phase.
+Published evidence, evidence-supported inference, investigator-defined choices and computed results are kept distinct.
 
-[archive/ecg-amplitude-normalization/13 RESEARCH LOG.md](archive/ecg-amplitude-normalization/13%20RESEARCH%20LOG.md) is the original ECG study log.
+The active study does not claim novelty for LLM data analysis, biomedical agents, workflow verification, research reproduction, or individual workflow mechanisms. The research question concerns their controlled combination within one fixed biomedical machine-learning task and a defined consumer-access population.
 
-## Evidence boundary
+The repository does not contain the PTB-XL data themselves.
 
-The archive contains planned analyses, implementation checks and literature reviews from the first study. It does not contain primary model results because that analysis was never run.
+## Citation
 
-The new research phase will have its own protocol, data provenance record, analysis plan, literature record and results only after those parts of the work exist.
+The repository includes [CITATION.cff](CITATION.cff) for citation metadata.
