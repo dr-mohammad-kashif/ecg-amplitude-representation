@@ -2,7 +2,9 @@
 
 This is the active research workspace for a controlled study of completely free consumer-facing general-purpose online LLM configurations executing a fixed biomedical machine-learning analysis.
 
-The study asks whether changing the analyst-facing workflow changes end-to-end reference-faithful completion when the biomedical task, execution environment, zero-cost consumer access envelope and evaluation criteria are held constant.
+The study examines whether completely free, personally accessible, consumer-facing general-purpose LLM configurations can execute a fixed biomedical machine-learning analysis with end-to-end scientific fidelity, and how workflow architecture and verification affect that fidelity under the same zero-cost consumer access envelope.
+
+The confirmatory comparison is W1 versus W2, asking whether structured fresh-context execution changes reference-faithful completion relative to a fully specified monolithic workflow.
 
 The authoritative design is [STUDY PROTOCOL.md](STUDY%20PROTOCOL.md).
 
