@@ -2,7 +2,7 @@
 
 Status: Draft experimental design
 Version: 0.1
-Date: 30 September 2026
+Month: September 2026
 Study phase: Preprotocol
 
 ## 1. Purpose
