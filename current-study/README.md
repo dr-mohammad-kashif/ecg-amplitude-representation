@@ -32,6 +32,7 @@ The main design documents are:
 - [14 REPRODUCIBILITY AND COMPUTATIONAL ENVIRONMENT.md](14%20REPRODUCIBILITY%20AND%20COMPUTATIONAL%20ENVIRONMENT.md)
 - [15 DATA PROVENANCE AND DATA DICTIONARY.md](15%20DATA%20PROVENANCE%20AND%20DATA%20DICTIONARY.md)
 - [16 FAILURE TAXONOMY AND ERROR AUDIT.md](16%20FAILURE%20TAXONOMY%20AND%20ERROR%20AUDIT.md)
+- [17 PROMPT AND INTERACTION REGISTRY.md](17%20PROMPT%20AND%20INTERACTION%20REGISTRY.md)
 
 The final integrated study protocol will be added only after the remaining design and execution gates have been resolved. It will act as a concise synthesis of these companion documents rather than duplicating them.
 
