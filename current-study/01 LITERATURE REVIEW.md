@@ -240,7 +240,7 @@ Tenth, rejected candidate questions and the literature that closed them remain p
 
 14. Wei Z, Qi C, Wang W, et al. Artificial intelligence agents for biological research: a survey. Brief Bioinform. 2026;27(1):bbag075. doi:10.1093/bib/bbag075.
 
-15. Large language model agents for biological intelligence across genomics, proteomics, spatial biology, and biomedicine. Brief Bioinform. 2026;27(2):bbag110. doi:10.1093/bib/bbag110.
+15. Dip SA, Mallick D, Shuvo UA, Soumma SB, Rafsani F, Paul BK, et al. Large language model agents for biological intelligence across genomics, proteomics, spatial biology, and biomedicine. Brief Bioinform. 2026;27(2):bbag110. doi:10.1093/bib/bbag110.
 
 16. Kurjan A, Cribbs AP. FlowBench: separating planning, fault recovery and interpretation in agentic bioinformatics. bioRxiv [Preprint]. 2026. doi:10.64898/2026.06.12.731844.
 
