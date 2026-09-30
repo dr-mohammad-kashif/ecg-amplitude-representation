@@ -392,11 +392,11 @@ An independently written implementation reconstructs the same scientific protoco
 
 ### Check R4. Reference comparison
 
-The original and independent implementations are compared at the structural and numerical levels. R3 contributes to the reference-agreement envelope only after the comparison confirms that its protocol-critical choices are compliant and that any observed numerical differences are attributable to documented implementation-level variation rather than a scientific or protocol mismatch. An unexplained protocol mismatch invalidates R3 for envelope construction and requires correction and a new independent reproduction before R6.
+The original and independent implementations are compared at the structural and numerical levels. R3 is an independent implementation diagnostic and does not widen the primary numerical tolerance. A compliant R3 result outside the primary R1-R2 repeatability envelope triggers investigation of implementation-level variation, reference instability, or protocol mismatch. An unexplained protocol mismatch invalidates R3 as a valid independent diagnostic until corrected and repeated before R6.
 
 ### Check R5. Reference-agreement envelope
 
-The natural numerical variation among compliant reference executions is characterized. For each scalar numerical outcome, the envelope is anchored to R1 and uses the larger absolute discrepancy between R1-R2 and R1-R3. R1-R2 represents repeatability of the locked implementation. R1-R3 represents agreement with the independent implementation. The R2-R3 discrepancy is recorded but does not widen the operational envelope because R1 is the locked reference.
+The natural numerical variation among compliant reference executions is characterized. For each scalar numerical outcome, the primary envelope is anchored to R1 and uses the absolute R1-R2 discrepancy. R1-R2 represents repeatability of the locked implementation. R1-R3 and R2-R3 are recorded as independent implementation diagnostics and do not widen the primary operational envelope. If R1-R2 is exactly zero, the primary tolerance remains zero and no post hoc numerical allowance may be introduced after primary LLM outcomes are observed.
 
 ### Check R6. Numerical agreement criteria freeze
 
@@ -426,9 +426,9 @@ Exact agreement is expected for properties such as:
 
 ### Numerical agreement
 
-AUROC, average precision, Brier score, calibration outputs, task-specific delta values, and the cross-task contrast are compared using the prespecified reference-agreement criteria. Scalar outcomes use an envelope anchored to R1. Vector-valued calibration outputs are evaluated component-wise using the corresponding R1-R2 and R1-R3 empirical discrepancies.
+AUROC, average precision, Brier score, calibration outputs, task-specific delta values, and the cross-task contrast are compared using the prespecified reference-agreement criteria. Scalar outcomes use the primary envelope anchored to R1 from R1-R2 repeatability. Vector-valued calibration outputs are evaluated component-wise using the corresponding R1-R2 empirical discrepancies, with R3 retained as an independent diagnostic.
 
-No arbitrary fixed tolerance is imposed. The numerical agreement criteria are derived from compliant R1-R2 repeatability and R1-R3 independent-agreement observations and frozen at R6 before primary LLM outcomes are available.
+No arbitrary fixed tolerance is imposed. The primary numerical agreement criteria are derived from compliant R1-R2 repeatability and frozen at R6 before primary LLM outcomes are available. R3 independent-agreement observations remain secondary reference diagnostics.
 
 ### Interpretive agreement
 
