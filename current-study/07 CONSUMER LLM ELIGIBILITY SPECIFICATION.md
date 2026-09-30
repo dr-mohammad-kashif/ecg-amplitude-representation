@@ -1,9 +1,9 @@
 # Consumer LLM Eligibility Specification
 
-Status: Working specification
-Version: 0.1
+Status: Final eligibility criteria
+Version: 1.0
 Month: September 2026
-Study phase: Preprotocol
+Study phase: Pre-primary execution
 
 ## Scope
 
@@ -331,9 +331,13 @@ This prevents model selection from being driven by early performance observation
 
 No performance comparison may be used as an eligibility criterion.
 
-## 5. Access registry
+## 5. Empirical access-record schema
 
-Every included configuration must receive an access record before primary data collection.
+This section defines the evidence record required for each candidate configuration. It does not constitute the empirical access registry itself.
+
+The eligibility criteria in this document are frozen. The actual configuration-level access records are populated separately during the pre-primary access audit, using the study region, access month, exact consumer interface, and final workflow configuration in force at that time.
+
+Every included configuration must receive a complete access record before primary data collection.
 
 The minimum record is:
 
@@ -344,7 +348,7 @@ The minimum record is:
 | Consumer product | Web or mobile product |
 | Interface | Exact interface used |
 | Region | Country or region |
-| Access month | Date and time of verification |
+| Access month | Month of verification |
 | Account type | Ordinary consumer account |
 | Plan | Free configuration name |
 | Displayed model | Exact name shown by interface |
@@ -370,6 +374,8 @@ The minimum record is:
 | Configuration notes | Relevant observations |
 
 An access record is incomplete when an essential field remains unknown.
+
+Exact day-level timestamps are not required for the study record. The access month and the recorded verification sequence are sufficient for temporal ordering unless a provider-specific event requires a more precise operational record to interpret a configuration change.
 
 Unknown should not be silently converted to "no."
 
@@ -455,9 +461,9 @@ from:
 
 This prevents the paper from claiming that free LLM evaluation has never been studied while preserving the accessibility question as a real methodological constraint.
 
-## 10. Provider status at the current audit
+## 10. Candidate providers for the empirical access audit
 
-Current official documentation identifies several plausible candidates for direct eligibility testing.
+Current official documentation identifies several plausible candidates for direct eligibility testing. These entries are screening candidates only and do not constitute the empirical access registry.
 
 | Provider | Current official evidence | Initial status |
 |---|---|---|
@@ -466,9 +472,9 @@ Current official documentation identifies several plausible candidates for direc
 | Anthropic | Claude Free at $0; current documentation lists code execution and file creation for Free users[4,5] | Candidate |
 | Mistral | Free consumer plan with limited messages, web searches, coding sessions, and document upload[6] | Candidate |
 
-These are candidate configurations, not a frozen inclusion list.
+These are candidate providers, not a frozen inclusion list.
 
-The final status requires direct access testing in the study region and under the exact workflow configuration.
+The final configuration status requires direct access testing in the study region and under the exact workflow configuration. The resulting configuration records belong to the pre-primary access audit, not to this criteria document.
 
 No provider is included or excluded on performance grounds.
 
