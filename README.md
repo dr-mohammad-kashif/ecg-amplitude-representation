@@ -18,7 +18,7 @@ The current study is organized under [study](study/).
 
 [STUDY PROTOCOL.md](study/STUDY%20PROTOCOL.md) is the authoritative integrated design.
 
-The current workspace contains the literature and prior-art record, the fixed biomedical reference analysis, the LLM workflow protocol, the fidelity and statistical frameworks, the consumer eligibility specification, the interaction and resource records, and the frozen prompt package.
+The current workspace contains the literature and prior-art record, the fixed biomedical reference analysis, the LLM workflow protocol, the fidelity and statistical frameworks, the consumer eligibility specification, the interaction and resource records, and the prompt package prepared for pilot validation.
 
 Primary LLM data collection has not begun.
 
