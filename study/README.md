@@ -27,7 +27,7 @@ The authoritative design is [STUDY PROTOCOL.md](STUDY%20PROTOCOL.md).
 [06 LLM WORKFLOW METHODS REVIEW.md](06%20LLM%20WORKFLOW%20METHODS%20REVIEW.md) covers prior methodological evidence.  
 [07 CONSUMER LLM ELIGIBILITY SPECIFICATION.md](07%20CONSUMER%20LLM%20ELIGIBILITY%20SPECIFICATION.md) defines the access population.  
 [09 LLM WORKFLOW EXPERIMENTAL PROTOCOL.md](09%20LLM%20WORKFLOW%20EXPERIMENTAL%20PROTOCOL.md) and [10 WORKFLOW CONDITIONS AND ABLATION PLAN.md](10%20WORKFLOW%20CONDITIONS%20AND%20ABLATION%20PLAN.md) define the conditions.  
-[PROMPT PACKAGE.md](PROMPT%20PACKAGE.md) contains the frozen W0-W5 prompt text.
+[PROMPT PACKAGE.md](PROMPT%20PACKAGE.md) contains the current W0-W5 prompt text prepared for pilot validation and later primary freeze.
 
 **Evaluation and execution records**  
 [11 SCIENTIFIC FIDELITY EVALUATION FRAMEWORK.md](11%20SCIENTIFIC%20FIDELITY%20EVALUATION%20FRAMEWORK.md) defines scientific adjudication.  
@@ -42,7 +42,7 @@ The authoritative design is [STUDY PROTOCOL.md](STUDY%20PROTOCOL.md).
 
 Primary LLM data collection has not begun.
 
-The reference analysis has not yet completed the R0 through R6 execution gate, so the numerical reference-agreement criteria are not yet frozen.
+The reference analysis has not yet completed the R0 through R6 execution gate, so the numerical reference-agreement criteria are not yet frozen. The prompt package is also in pre-freeze pilot status until Gate E.
 
 The eligible configuration set will be established from the frozen consumer-eligibility criteria and direct access audit before primary collection.
 
