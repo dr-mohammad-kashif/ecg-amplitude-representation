@@ -118,7 +118,7 @@ Searches cover free-tier LLM studies, public web interfaces, ordinary user acces
 
 ### Axis G. Reporting and reproducibility
 
-Searches cover TRIPOD-LLM, TRIPOD+AI, PROBAST+AI, MINIMAR, PRISMA-S, FAIR, FAIR4RS, and reproducible computational biology.
+Searches cover TRIPOD-LLM, TRIPOD+AI, PROBAST+AI, MINIMAR, PRISMA-S, FAIR, FAIR4RS, and reproducible computational biology.[4,5]
 
 ## 6. Search terms and query construction
 
@@ -308,7 +308,7 @@ Search strategy quality is guided by PRISMA-S and, where a database-style strate
 
 ## 16. Reconstructed source inventory
 
-The exported research record contains a raw inventory of 222 unique non-chat URLs. The inventory includes approximately 175 scholarly or research sources plus datasets, repository pages, provider documentation, and other supporting material.
+The exported research record contains a raw inventory of 222 unique non-chat URLs. The inventory includes 175 scholarly or research sources plus datasets, repository pages, provider documentation, and other supporting material.
 
 This count is a provenance record from the exported research history. It is not a PRISMA study count, not a final bibliography count, and not an estimate of the number of eligible papers.
 
