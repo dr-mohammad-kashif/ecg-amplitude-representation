@@ -193,7 +193,7 @@ The registry distinguishes the following prompt classes.
 | Repair instruction | Bounded repair allowed by the assigned condition |
 | Terminal reporting instruction | Final interpretation/report stage where specified |
 
-The exact canonical wording will be frozen in the integrated protocol and prompt package.
+The exact canonical wording is frozen in [PROMPT PACKAGE.md](PROMPT%20PACKAGE.md), version 1.0.
 
 Final prompt text is not specified here before the prompt-freeze stage.
 
