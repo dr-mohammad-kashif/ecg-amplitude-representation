@@ -398,9 +398,3 @@ The gap remains provisional until the dedicated search methods record, final lit
 18. Mistral AI. Pricing [Internet]. Paris: Mistral AI; 2026 [cited 2026 Sep 30]. Available from: https://mistral.ai/pricing/
 
 19. Wagner P, Strodthoff N, Bousseljot RD, Kreiseler D, Lunze FI, Samek W, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154. doi:10.1038/s41597-020-0495-6.
-
-## Evidence status
-
-References 1 through 14 and 19 were checked against conference proceedings, journal pages, PubMed, or official publisher pages during the present review. References 15 through 18 are official provider sources and are used only for current access and capability claims.
-
-The final novelty conclusion remains open until the dedicated search methods record is completed and the remaining literature axes are screened against the exact experimental design.
