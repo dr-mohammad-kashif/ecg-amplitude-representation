@@ -11,7 +11,7 @@ The workflow conditions and planned contrasts isolate specific components of the
 
 The conditions operate on the same locked biomedical machine learning specification. The Reference Biomedical Analysis Protocol defines the scientific target, while the LLM Workflow Experimental Protocol defines the general rules for execution.[1,2]
 
-The purpose of this document is to make the experimental manipulation explicit before primary data collection.
+The experimental manipulation is specified before primary data collection.
 
 The study does not assume that additional workflow structure improves scientific fidelity. Improvement, no effect, resource burden, new error, and failure to complete are all admissible outcomes.
 
