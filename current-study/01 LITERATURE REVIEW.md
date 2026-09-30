@@ -2,7 +2,7 @@
 
 **Status:** Working review  
 **Version:** 0.1  
-**Date:** 30 September 2026
+**Month:** September 2026
 
 ## Scope
 
