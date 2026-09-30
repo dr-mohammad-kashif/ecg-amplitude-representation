@@ -1,10 +1,5 @@
 # Workflow Conditions and Ablation Plan
 
-Status: Draft experimental design
-Version: 0.1
-Month: September 2026
-Study phase: Preprotocol
-
 ## 1. Purpose
 
 The workflow conditions and planned contrasts isolate specific components of the active LLM workflow study.
@@ -463,7 +458,7 @@ Before the first primary run, the following must be frozen:
 12. deviation taxonomy;
 13. definition of eligible access configurations;
 14. information-isolation settings;
-15. final primary endpoint and numerical equivalence criteria.
+15. final primary endpoint and reference-agreement criteria.
 
 Pilot runs may identify operational defects before this freeze.
 
@@ -486,11 +481,3 @@ Pilot observations may not be used to redefine a primary endpoint or condition i
 7. Ma et al. LongHorizon-Harness: Advancing Long-Horizon Agents for Real-World Tasks. arXiv. 2026. arXiv:2608.01964.
 
 8. Kurjan A, Cribbs AP. FlowBench: separating planning, fault recovery and interpretation in agentic bioinformatics. bioRxiv. 2026. doi:10.64898/2026.06.12.731844.
-
-## Evidence status
-
-The cited literature supports the use of executable task evaluation, process-level assessment, explicit verification mechanisms, and separation of execution from auditing. It does not establish the exact W0 through W5 architecture used here.
-
-The condition definitions, ablation contrasts, bounded repair rules, deferred W2A/W2B design, and protocol-freeze requirements are investigator-defined choices for this study.
-
-No primary experimental results are included.
