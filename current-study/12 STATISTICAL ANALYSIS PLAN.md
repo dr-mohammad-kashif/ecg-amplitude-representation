@@ -11,7 +11,7 @@ This plan specifies the statistical analysis for the LLM workflow experiment.
 
 The biomedical reference analysis is defined in [08 REFERENCE BIOMEDICAL ANALYSIS PROTOCOL.md](08%20REFERENCE%20BIOMEDICAL%20ANALYSIS%20PROTOCOL.md). The workflow conditions are defined in [09 LLM WORKFLOW EXPERIMENTAL PROTOCOL.md](09%20LLM%20WORKFLOW%20EXPERIMENTAL%20PROTOCOL.md) and [10 WORKFLOW CONDITIONS AND ABLATION PLAN.md](10%20WORKFLOW%20CONDITIONS%20AND%20ABLATION%20PLAN.md). The scientific fidelity adjudication rules are defined in [11 SCIENTIFIC FIDELITY EVALUATION FRAMEWORK.md](11%20SCIENTIFIC%20FIDELITY%20EVALUATION%20FRAMEWORK.md).
 
-This plan is written before primary LLM collection. The primary block allocation is fixed at 25 randomized W1/W2 blocks per eligible configuration on the basis of the completed sample-size simulation. Numerical reference-equivalence criteria are frozen only after the reference execution gate has passed.
+This plan is written before primary LLM collection. The primary block allocation is fixed at 25 randomized W1/W2 blocks per eligible configuration on the basis of the completed sample-size simulation. Numerical reference-agreement criteria are frozen only after the reference execution gate has passed.
 
 ## 2. Primary objective
 
@@ -63,7 +63,7 @@ A run is successful only when all required primary conditions are satisfied:
 
 1. all critical fidelity gates PASS;
 2. the required biomedical analysis executes to terminal state;
-3. the primary numerical outputs satisfy the frozen reference-equivalence criteria;
+3. the primary numerical outputs satisfy the frozen reference-agreement criteria;
 4. the interpretation gate PASSes;
 5. required reproducibility evidence is present;
 6. no unauthorized human scientific intervention occurred.
@@ -189,7 +189,7 @@ E_{\Delta} =
 \right|.
 $$
 
-The reference values and numerical equivalence criteria are not available for primary LLM collection until the reference execution chain has passed its required gates.
+The reference values and numerical agreement criteria are not available for primary LLM collection until the reference execution chain has passed its required gates.
 
 The distribution of $E_{\Delta}$ will be summarized by median, interquartile range, and prespecified quantiles.
 
@@ -456,7 +456,7 @@ Analyses not listed in this plan are exploratory.
 
 Exploratory analyses may include detailed error subgrouping, alternative prompt analyses, new workflow combinations, post hoc numerical thresholds, or additional biomedical subgroup analyses.
 
-Exploratory analyses are reported separately and cannot alter the primary endpoint, primary estimand, sample-size decision, or reference-equivalence criteria retrospectively.
+Exploratory analyses are reported separately and cannot alter the primary endpoint, primary estimand, sample-size decision, or reference-agreement criteria retrospectively.
 
 ## 27. Reporting
 
@@ -534,4 +534,4 @@ The archived ECG analysis supplies the patient-level paired bootstrap structure,
 
 The primary LLM estimand, randomized block structure, fixed-configuration aggregation, missing-run rules, resource-failure handling, and sample-size simulation plan are investigator-defined choices for the active workflow experiment.
 
-No primary LLM results, final block count, or final numerical reference-equivalence tolerance are included in this draft.
+No primary LLM results are included before the reference execution chain has passed and the numerical reference-agreement criteria have been frozen.
