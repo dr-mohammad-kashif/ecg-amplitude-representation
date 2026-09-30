@@ -176,7 +176,7 @@ R1, R2, and R3 are compared structurally and numerically.
 
 ### R5. Equivalence envelope
 
-For each numerical outcome subject to reference comparison, the empirical reference variability is calculated from the maximum pairwise absolute discrepancy among compliant R1-R3 executions.
+For each numerical outcome subject to reference comparison, an empirical reference-agreement envelope is calculated around the locked R1 reference. R2 measures repeat execution variability and R3 measures independent implementation agreement. For a scalar outcome, the envelope width is the larger of the absolute R1-R2 and R1-R3 discrepancies. The R2-R3 discrepancy is recorded but does not widen the envelope because neither execution is the locked reference.
 
 No arbitrary numerical tolerance is introduced.
 
