@@ -92,7 +92,7 @@ Eligibility requires:
 10. No small language model selected for local execution.
 11. General purpose rather than task specific biomedical specialization.
 12. Every capability essential to the study must be available in the zero cost consumer route.
-13. The exact interface, model presentation, region, access date, limits, and relevant tool capabilities must be recorded.
+13. The exact interface, model presentation, region, access month, limits, and relevant tool capabilities must be recorded.
 
 Free tier usage limits do not disqualify a system. Zero cost is the criterion; unlimited use is not.
 
@@ -159,7 +159,19 @@ The following remain open:
 * exact information exposure experiment;
 * final statistical test implementation.
 
-## 14. Evidence classification
+
+
+## 14. Current operational documents
+
+The reproducibility, provenance, and failure-audit layers are recorded in:
+
+- [12 STATISTICAL ANALYSIS PLAN.md](12%20STATISTICAL%20ANALYSIS%20PLAN.md)
+- [13 RESOURCE ACCOUNTING AND ACCESSIBILITY ANALYSIS.md](13%20RESOURCE%20ACCOUNTING%20AND%20ACCESSIBILITY%20ANALYSIS.md)
+- [14 REPRODUCIBILITY AND COMPUTATIONAL ENVIRONMENT.md](14%20REPRODUCIBILITY%20AND%20COMPUTATIONAL%20ENVIRONMENT.md)
+- [15 DATA PROVENANCE AND DATA DICTIONARY.md](15%20DATA%20PROVENANCE%20AND%20DATA%20DICTIONARY.md)
+- [16 FAILURE TAXONOMY AND ERROR AUDIT.md](16%20FAILURE%20TAXONOMY%20AND%20ERROR%20AUDIT.md)
+
+## 15. Evidence classification
 
 Each substantive decision is assigned one class.
 
