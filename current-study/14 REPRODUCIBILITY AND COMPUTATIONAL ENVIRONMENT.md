@@ -363,7 +363,7 @@ Hashing is an integrity mechanism, not a substitute for semantic versioning or p
 
 ## 12. LLM interaction provenance
 
-The prompt and interaction registry will hold the detailed conversational provenance.[8]
+The prompt and interaction registry will hold the detailed conversational provenance.
 
 This reproducibility document should therefore link to, rather than duplicate, the following:
 
@@ -544,7 +544,7 @@ At minimum, the release should include:
 
 Where raw data, transcripts or provider outputs cannot be redistributed, the release should provide the strongest permitted provenance record and explain the access restriction.
 
-## 21. What this document does not claim
+## 21. Scope of claims
 
 This reproducibility plan does not claim that:
 
@@ -582,8 +582,6 @@ The exact environment fields, run schema, artifact-hash policy, execution-substr
 6. Scientific Fidelity Evaluation Framework. current-study/11 SCIENTIFIC FIDELITY EVALUATION FRAMEWORK.md. Study repository; 2026.
 
 7. Wagner P, Strodthoff N, Bärs R, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154. doi:10.1038/s41597-020-0495-6.
-
-8. Prompt and Interaction Registry. current-study/17 PROMPT AND INTERACTION REGISTRY.md. Planned study artifact.
 
 9. Consumer LLM Eligibility Specification. current-study/07 CONSUMER LLM ELIGIBILITY SPECIFICATION.md. Study repository; 2026.
 
