@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "Please cite this research repository when it is used or discussed."
-title: "Biomedical ML Workflow Fidelity"
+title: "Biomedical ML Workflow Fidelity in Free Consumer General-Purpose LLMs"
 authors:
   - family-names: Kashif
     given-names: Mohammad
