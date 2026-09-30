@@ -1,6 +1,6 @@
 # Current Study Workspace
 
-**Status:** Design and evidence assembly  
+**Status:** Final study design; pre-primary execution  
 **Revision:** 0.1  
 **Month:** September 2026
 
@@ -8,7 +8,7 @@ This directory contains the active research phase that followed the archived ECG
 
 The study examines a fixed biomedical machine learning task through general purpose LLM systems that meet a defined zero cost consumer access criterion. The biomedical analysis is held constant while workflow architecture is varied and evaluated against an independently checked reference analysis.
 
-The study is still in preprotocol development. No primary LLM experiment has been run.
+The study design is finalized. No primary LLM experiment has been run.
 
 ## Start here
 
@@ -33,8 +33,11 @@ The main design documents are:
 - [15 DATA PROVENANCE AND DATA DICTIONARY.md](15%20DATA%20PROVENANCE%20AND%20DATA%20DICTIONARY.md)
 - [16 FAILURE TAXONOMY AND ERROR AUDIT.md](16%20FAILURE%20TAXONOMY%20AND%20ERROR%20AUDIT.md)
 - [17 PROMPT AND INTERACTION REGISTRY.md](17%20PROMPT%20AND%20INTERACTION%20REGISTRY.md)
+- [PROMPT PACKAGE.md](PROMPT%20PACKAGE.md)
+- [SAMPLE SIZE SIMULATION.md](SAMPLE%20SIZE%20SIMULATION.md)
+- [STUDY PROTOCOL.md](STUDY%20PROTOCOL.md)
 
-The final integrated study protocol will be added only after the remaining design and execution gates have been resolved. It will act as a concise synthesis of these companion documents rather than duplicating them.
+[STUDY PROTOCOL.md](STUDY%20PROTOCOL.md) is the final integrated study protocol. It synthesizes the companion documents without replacing their detailed operational definitions.
 
 ## Current evidence boundary
 
