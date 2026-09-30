@@ -205,7 +205,7 @@ The access record must capture any provider limitation that prevents a complete 
 
 All workflow conditions operate under the same study-wide resource principle.
 
-The final numeric per-run Each run has a common ceiling of 32 LLM response turns. The ceiling is fixed before primary collection and applies equally to W1 and W2.
+Each run has a common ceiling of 32 LLM response turns. The ceiling is fixed before primary collection and applies equally to W0 through W5.
 
 The budget applies to the complete run rather than granting a larger total allowance to more structured conditions.
 
@@ -239,7 +239,7 @@ The workflow does not impose predefined analytical stages, explicit gate prompts
 
 All reasoning and interaction occur within one context.
 
-The model may respond to execution errors and continue within the same permitted interaction envelope.
+The model may respond to execution errors and continue within the same 32-response interaction envelope.
 
 W0 isolates the effect of adding explicit workflow specification when compared with W1.
 
