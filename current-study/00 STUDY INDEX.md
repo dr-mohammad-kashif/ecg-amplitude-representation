@@ -1,8 +1,10 @@
 # Study Index
 
+Biomedical ML Workflow Fidelity in Free Consumer General-Purpose LLMs
+
 ## 1. Study object
 
-The active study examines a fixed biomedical machine learning analysis conducted through general purpose LLM systems that are accessible to an ordinary user through a zero cost consumer interface.
+The active study examines a fixed biomedical machine learning analysis conducted through completely free consumer-facing general purpose LLM configurations that are accessible to an ordinary user without payment, paid infrastructure, institutional entitlement, or special research access.
 
 The scientific object is the analytical workflow. The LLM is treated as the analytical operator. The underlying biomedical prediction task, dataset, task definitions, model specification, training procedure, evaluation metrics, statistical estimand, and interpretation boundaries are held constant across workflow conditions.
 
@@ -16,7 +18,7 @@ The authoritative integrated study design is [STUDY PROTOCOL.md](STUDY%20PROTOCO
 
 The primary research question is:
 
-> Under a locked biomedical machine learning analysis, does moving from a fully specified monolithic LLM workflow to a structured fresh-context workflow change end-to-end reference-faithful completion when both operate under the same zero-cost consumer access envelope?
+> Under a locked biomedical machine learning analysis, does moving from a fully specified monolithic workflow to a structured fresh-context workflow change end-to-end reference-faithful completion when both operate through completely free consumer-facing general purpose LLM configurations?
 
 This wording is frozen for the current protocol. The remaining pre-primary gates concern empirical execution readiness rather than further conceptual reformulation of the study question.
 
