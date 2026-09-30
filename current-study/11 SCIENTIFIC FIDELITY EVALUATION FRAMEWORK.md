@@ -323,7 +323,7 @@ The final account of the result is scientifically consistent with the executed a
 
 The three layers are not collapsed into a single score.
 
-There is no overall 0 to 100 fidelity score.
+There is no single composite fidelity score.
 
 ## 8. Reference result is not clinical truth
 
