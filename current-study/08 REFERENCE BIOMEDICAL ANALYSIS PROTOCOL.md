@@ -401,7 +401,7 @@ The original and independent implementations are compared at the structural and 
 
 ### Check R5. Reference-agreement envelope
 
-The natural numerical variation among compliant reference executions is characterized.
+The natural numerical variation among compliant reference executions is characterized. For each scalar numerical outcome, the envelope is anchored to R1 and uses the larger absolute discrepancy between R1-R2 and R1-R3. R1-R2 represents repeatability of the locked implementation. R1-R3 represents agreement with the independent implementation. The R2-R3 discrepancy is recorded but does not widen the operational envelope because R1 is the locked reference.
 
 ### Check R6. Numerical agreement criteria freeze
 
