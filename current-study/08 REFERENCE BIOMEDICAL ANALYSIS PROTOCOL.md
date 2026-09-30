@@ -399,11 +399,11 @@ An independently written implementation reconstructs the same scientific protoco
 
 The original and independent implementations are compared at the structural and numerical levels.
 
-### Check R5. Reference equivalence envelope
+### Check R5. Reference-agreement envelope
 
 The natural numerical variation among compliant reference executions is characterized.
 
-### Check R6. Numerical criteria freeze
+### Check R6. Numerical agreement criteria freeze
 
 Numerical equivalence criteria are frozen before primary LLM results are collected.
 
