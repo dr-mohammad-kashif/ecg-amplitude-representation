@@ -16,6 +16,8 @@ The scientific question is not yet recorded as a final protocol. The present wor
 
 [01 LITERATURE REVIEW.md](01%20LITERATURE%20REVIEW.md) records the current integrated scientific literature review.
 
+[02 PRIOR ART AND GAP ANALYSIS.md](02%20PRIOR%20ART%20AND%20GAP%20ANALYSIS.md) compares the closest existing work with the proposed experimental design and records the current evidence boundary.
+
 [evidence](evidence/) contains the literature and decision records that support the design.
 
 [quality](quality/) contains the editorial and research quality controls used for active documents.
