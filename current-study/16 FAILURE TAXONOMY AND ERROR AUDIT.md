@@ -1,10 +1,5 @@
 # Failure Taxonomy and Error Audit
 
-Status: Draft failure and adjudication plan
-Version: 0.1
-Month: September 2026
-Study phase: Preprotocol
-
 ## 1. Purpose
 
 The failure record separates scientific errors from execution problems, resource limitations and unauthorized human assistance.
@@ -111,7 +106,7 @@ Examples include:
 - fabricating, inventing or selectively reporting numerical results;
 - interpreting a non-completed analysis as completed;
 - use of information that was prohibited by the workflow condition;
-- unresolved reference-equivalence failure.
+- unresolved reference-agreement failure.
 
 A terminal critical error prevents primary success unless the error is corrected through the explicitly permitted workflow mechanism before the terminal state is reached.
 
@@ -490,7 +485,7 @@ The failure taxonomy supplies error codes for the fidelity domains already defin
 | Data fidelity | D1-D8 |
 | Protocol and method fidelity | M1-M4 |
 | Statistical fidelity | M5-M6 |
-| Numerical fidelity | Evaluation and reference-equivalence failures |
+| Numerical fidelity | Evaluation and reference-agreement failures |
 | Interpretive fidelity | M7 and interpretation audit failures |
 | Reproducibility | Evidence-capture and reproducibility failures |
 | Workflow integrity | C1-C5 |
@@ -532,7 +527,7 @@ The following rules apply:
 - insufficient evidence prevents a clean-success classification;
 - a permitted repair can convert an initial failure into recovered success only when the repair itself is documented and the affected analysis is successfully re-executed;
 - a numerical match does not override a protocol failure;
-- protocol fidelity does not override failed numerical equivalence where numerical equivalence is required;
+- protocol fidelity does not override failed numerical agreement where numerical agreement is required;
 - a plausible final report does not override missing execution evidence.
 
 The final handling of ambiguous cases and any requirement for independent second adjudication will be frozen in the integrated study protocol before primary collection.
@@ -581,9 +576,3 @@ No primary experiment results are included.
 11. Resource Accounting and Accessibility Analysis. current-study/13 RESOURCE ACCOUNTING AND ACCESSIBILITY ANALYSIS.md. Study repository; 2026.
 12. Study Protocol. archive/ecg-amplitude-normalization/01 STUDY PROTOCOL.md. Study repository archive; 2026.
 13. Research Log. archive/ecg-amplitude-normalization/13 RESEARCH LOG.md. Study repository archive; 2026.
-
-## Evidence status
-
-The taxonomy and its evidence hierarchy are informed by published evaluations of scientific and clinical data-analysis agents and by the study's existing fidelity, reproducibility, resource and workflow specifications.[1-11]
-
-The specific error codes, severity thresholds, terminal-state definitions and adjudication rules are investigator-defined experimental components. Historical examples from the archived ECG study are used only as development evidence for the audit architecture and are not presented as current-study results.[12,13]
