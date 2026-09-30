@@ -40,6 +40,8 @@ The study therefore records observable differences in:
 
 The resource analysis describes these dimensions separately rather than reducing them to a cost-efficiency score.
 
+Zero monetary cost is therefore an access criterion, not a claim that the overall research activity is costless. The study does not establish that an ordinary user can conduct biomedical research with no expertise, no computing device, no internet access, no time burden, or no human scientific judgment. These practical requirements are outside the free-LLM population definition unless explicitly measured elsewhere in the protocol.
+
 ## 3. Resource domains
 
 ### 3.1 LLM interaction burden
