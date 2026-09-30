@@ -1,10 +1,5 @@
 # Reproducibility and Computational Environment
 
-Status: Draft reproducibility plan
-Version: 0.1
-Month: September 2026
-Study phase: Preprotocol
-
 ## 1. Purpose
 
 The reproducibility record defines the computational and provenance information that must be preserved for the biomedical reference analysis and for every LLM workflow run.
@@ -398,7 +393,7 @@ For primary runs, record the state of:
 - external connectors;
 - other persistent study-relevant state.
 
-A configuration that cannot provide the required isolation should be excluded or separately defined before pooling, consistent with the consumer eligibility specification.[9]
+A configuration that cannot provide the required isolation should be excluded or separately defined before pooling, consistent with the consumer eligibility specification.[8]
 
 This record is essential because an identical prompt does not imply an identical information environment.
 
@@ -469,9 +464,9 @@ The validation should establish that:
 8. the execution log captures the required provenance;
 9. rerunning the reference workflow under the same environment produces results within the empirically established reference variability.
 
-The final numerical equivalence criteria are intentionally not frozen in this draft. They are determined only after the reference execution and independent reimplementation sequence described in the reference protocol.[4]
+The final numerical reference-agreement criteria are determined only after the reference execution and independent reimplementation sequence described in the reference protocol.[4]
 
-## 17. Reproducibility and reference equivalence
+## 17. Reproducibility and reference agreement
 
 Reproducibility should not be confused with numerical identity.
 
@@ -583,14 +578,4 @@ The exact environment fields, run schema, artifact-hash policy, execution-substr
 
 7. Wagner P, Strodthoff N, Bärs R, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154. doi:10.1038/s41597-020-0495-6.
 
-9. Consumer LLM Eligibility Specification. current-study/07 CONSUMER LLM ELIGIBILITY SPECIFICATION.md. Study repository; 2026.
-
-## Evidence status
-
-The reproducibility principles and reporting requirements are supported by published computational-research and LLM-reporting guidance.[1-3]
-
-The PTB-XL provenance requirement is derived from the dataset's published primary documentation.[7]
-
-The exact environment schema, standardized execution interface, artifact-integrity procedure, access-epoch implementation and run-level reproducibility record are investigator-defined design components.
-
-No primary execution results are included.
+8. Consumer LLM Eligibility Specification. current-study/07 CONSUMER LLM ELIGIBILITY SPECIFICATION.md. Study repository; 2026.
