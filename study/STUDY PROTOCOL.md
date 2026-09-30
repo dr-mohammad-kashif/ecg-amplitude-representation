@@ -185,7 +185,7 @@ A second implementation is written from the scientific specification without rec
 
 ### R4. Independent comparison
 
-R1, R2, and R3 are compared structurally and numerically. R3 contributes to the reference-agreement envelope only after the comparison confirms that its protocol-critical choices are compliant and that any observed numerical differences are attributable to documented implementation-level variation rather than a scientific or protocol mismatch. An unexplained protocol mismatch invalidates R3 for envelope construction and requires correction and a new independent reproduction before R6.
+R1, R2, and R3 are compared structurally and numerically. R3 is an independent implementation diagnostic and does not widen the primary numerical tolerance. A compliant R3 result outside the primary R1-R2 repeatability envelope triggers investigation of implementation-level variation, reference instability, or protocol mismatch. An unexplained protocol mismatch invalidates R3 as a valid independent diagnostic until corrected and repeated before R6.
 
 ### R5. Reference-agreement envelope
 
@@ -193,9 +193,11 @@ For each numerical outcome subject to reference comparison, the primary empirica
 
 For a scalar outcome, the primary envelope width is the absolute R1-R2 discrepancy. R2 therefore establishes the observed repeat-execution variability of the locked reference implementation.
 
-R3 is an independent implementation check, not a source for widening the primary tolerance. After protocol-critical compliance has been established, R3 is evaluated against the primary R1-R2 envelope. A compliant R3 result outside that envelope triggers investigation of implementation-level variation, reference instability, or protocol mismatch. It does not automatically enlarge the primary envelope.
+R3 is an independent implementation diagnostic. After protocol-critical compliance has been established, R3 is evaluated against the primary R1-R2 envelope. A compliant R3 result outside that envelope triggers investigation of implementation-level variation, reference instability, or protocol mismatch. It does not automatically enlarge the primary envelope.
 
 The R1-R3 and R2-R3 discrepancies are retained as secondary reference diagnostics and may be used in a prespecified sensitivity analysis. No sensitivity analysis may replace the primary R1-R2 criterion after primary outcomes are observed.
+
+If the R1-R2 discrepancy for a scalar outcome is exactly zero, the primary tolerance for that outcome remains zero. No post hoc numerical allowance may be introduced after primary LLM outcomes are observed. The comparison precision and stored representation used for R1 through R3 must therefore be fixed before R6.
 
 No arbitrary fixed numerical tolerance is introduced. The primary envelope is an empirical repeatability criterion for this locked study setting, not a general statistical equivalence margin.
 
@@ -203,7 +205,7 @@ No arbitrary fixed numerical tolerance is introduced. The primary envelope is an
 
 The resulting numerical agreement criteria are frozen in the primary study record before any primary LLM outcome is observed.
 
-The primary reference estimate remains the result of the locked original reference implementation from R1. R2 establishes repeatability of the locked implementation and R3 establishes agreement with the independent implementation. Only compliant R1, R2 and R3 executions contribute to the frozen envelope.
+The primary reference estimate remains the result of the locked original reference implementation from R1. R2 establishes repeatability of the locked implementation and R3 establishes agreement with the independent implementation. Only compliant R1 and R2 executions determine the frozen primary envelope. R3 contributes to the independent reference diagnostic record.
 
 If any reference execution fails a critical structural requirement, the reference-agreement envelope is not frozen until the reference implementation is corrected and the reference comparison is repeated.
 
@@ -565,7 +567,7 @@ E_{\Delta}
 T_{\Delta}
 $$
 
-where $T_{\Delta}$ is the larger of the absolute R1-R2 and R1-R3 discrepancies for the primary estimand among compliant reference executions. The R1-R2 discrepancy represents repeatability of the locked implementation, while R1-R3 represents agreement with the independent implementation. The R2-R3 discrepancy is recorded but does not widen the envelope.
+where $T_{\Delta}$ is the absolute R1-R2 discrepancy for the primary estimand when both R1 and R2 are compliant. R1-R2 represents repeatability of the locked implementation. R1-R3 and R2-R3 are retained as independent implementation diagnostics and do not widen the primary tolerance.
 
 The criterion is specific to the prespecified task, data version, implementation environment and evaluation procedure and is not generalized to other datasets or implementations.
 
