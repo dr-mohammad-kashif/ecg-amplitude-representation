@@ -1,4 +1,4 @@
-# Resource Accounting and Accessibility Analysis
+# Resource Accounting and Accessibility Plan
 
 ## 1. Purpose
 
