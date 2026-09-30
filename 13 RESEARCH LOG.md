@@ -78,18 +78,8 @@ For the first implementation, the candidate models must be general-purpose model
 
 This is still a research direction, not a frozen protocol. The next step is another literature and benchmark review to identify exactly what has already been tested, then define the experimental object, comparison conditions, fidelity measures, cost measures and failure criteria.
 
-## Writing standard for the research history
 
-I record what I was investigating, what I found, and why that changed the next decision.
-
-I do not present the later LLM direction as if it existed from the beginning.
-
-I do not describe literature discovery as if a separate system performed the scientific reasoning. The research record is written from the decisions and checks that actually shaped the project.
-
-The archive remains available so that the original ECG study can be inspected without rewriting its earlier reasoning.
-
-
-## Phase 7a. Initial prior-art audit of the new direction
+## Phase 8. I checked the new direction against the literature
 
 I started the next literature pass by checking the proposed LLM study against work on data-science agents, scientific reproduction, biomedical research agents, and clinical data analysis.
 
@@ -122,7 +112,7 @@ Has anyone already performed a controlled within-task experiment in which the sa
 Until that question is answered cleanly, I will not write the final protocol or treat the workflow-factor idea as a novelty claim.
 
 
-## Phase 7b. A second search found closer precedents
+## Phase 9. A second search found closer precedents
 
 I then searched more narrowly for studies in which an LLM was asked to carry out a fixed or partially fixed analysis rather than simply answer a data-science benchmark.
 
