@@ -7,7 +7,7 @@ Study phase: Preprotocol
 
 ## 1. Purpose
 
-This document defines the computational and provenance information that must be preserved for the biomedical reference analysis and for every LLM workflow run.
+The reproducibility record defines the computational and provenance information that must be preserved for the biomedical reference analysis and for every LLM workflow run.
 
 The study separates three objects.
 
