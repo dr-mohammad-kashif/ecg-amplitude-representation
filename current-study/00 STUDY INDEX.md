@@ -2,7 +2,7 @@
 
 **Status:** Preprotocol study design  
 **Revision:** 0.1  
-**Date:** 30 September 2026
+**Month:** September 2026
 
 ## 1. Study object
 
