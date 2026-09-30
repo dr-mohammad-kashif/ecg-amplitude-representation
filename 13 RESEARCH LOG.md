@@ -120,3 +120,26 @@ The next literature pass needs to answer a more specific question.
 Has anyone already performed a controlled within-task experiment in which the same biomedical machine-learning protocol and data are given to ordinary online general-purpose LLMs under different information-access and verification regimes, with scientific fidelity measured against a deterministic reference analysis?
 
 Until that question is answered cleanly, I will not write the final protocol or treat the workflow-factor idea as a novelty claim.
+
+
+## Phase 7b. A second search found closer precedents
+
+I then searched more narrowly for studies in which an LLM was asked to carry out a fixed or partially fixed analysis rather than simply answer a data-science benchmark.
+
+A 2024 Nature Communications study had already used ChatGPT Advanced Data Analysis on real clinical datasets from published studies. ChatGPT was given the study information and data and was allowed to develop machine-learning models; the resulting models were compared with manually developed models. The authors also repeated the analyses in separate chat sessions to assess consistency. That closes off a simple comparison of an LLM-built biomedical ML pipeline against a conventional model as a research gap. [Nature Communications, 2024](https://www.nature.com/articles/s41467-024-45879-8)
+
+A 2026 Nature Communications study on cell-free RNA diagnostic biomarker discovery goes even closer to the intended setting. The LLM constructed binary classifiers, requested held-out test data only after model construction, produced CSV predictions and feature rankings, and the protocol was repeated 50 times per clinical cohort under two prompt conditions. Fresh sessions were used to avoid cross-conversation memory, with identical random seeds maintained across comparative analyses. [Nature Communications, 2026](https://www.nature.com/articles/s41467-026-74077-x)
+
+A separate 2026 study compared a predefined statistical workflow executed in SPSS with ChatGPT's Data Analyst environment using the same clinical dataset. The investigators refined the natural-language specification, locked the prompt, repeated it across independent sessions and measured numerical concordance and execution time. That means reproducibility of a predefined natural-language analysis is already being studied directly, although the task was diagnostic statistics rather than a full biomedical machine-learning pipeline. [Investigative and Clinical Urology, 2026](https://doi.org/10.4111/icu.20250642)
+
+These papers change the boundary again. The new study cannot claim that it is the first to compare an LLM with conventional biomedical analysis, the first to reproduce a predefined analysis, or the first to use repeated fresh sessions or held-out data.
+
+The remaining question I am interested in is more specific.
+
+I want to test whether controlled information-access and verification regimes change the scientific fidelity of a fixed biomedical machine-learning workflow when the same general-purpose online LLM is used as the analyst. The reference analysis would be deterministic and frozen. The scientific task, data, target outputs and scoring rules would remain fixed while the analyst-facing workflow changes.
+
+The key comparison is therefore not simply LLM versus conventional software. It is the effect of the workflow regime on the fidelity of the LLM-led analysis.
+
+I have not found an exact study in this targeted search that uses the same biomedical ML task and directly randomizes or ablates information-access and verification regimes while holding the underlying analysis target fixed. That is not enough to call the question novel yet. The search is targeted rather than systematic, and nearby work on multi-turn medical reasoning, constrained scientific agents and workflow verification means the remaining gap needs to be defined very carefully.
+
+For now, I am keeping the direction open and will not freeze the protocol until the workflow factor can be specified as an actual experimental variable rather than a collection of convenient prompt tricks.
