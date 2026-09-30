@@ -43,7 +43,7 @@ The main design documents are:
 
 No primary LLM result is reported. The study design is locked; empirical readiness gates remain before primary collection begins.
 
-No final numerical reference-equivalence threshold has been set.
+The numerical reference-agreement criteria will be frozen after the reference execution and independent reproduction gates pass.
 
 The primary allocation is fixed at 25 randomized W1/W2 blocks per eligible configuration.
 
@@ -65,4 +65,3 @@ A design choice is not presented as literature-established merely because it is 
 
 Primary experimental instructions, model access records, execution logs, validation outputs, and deviations will be retained as research artifacts when the study reaches the execution stage.
 
-Only files with a substantive research purpose are added to the repository. Supporting code, data, tests, and result directories will be added when the corresponding work actually exists.
