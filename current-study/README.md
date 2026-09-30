@@ -12,7 +12,7 @@ The study design is finalized. No primary LLM experiment has been run.
 
 ## Start here
 
-[00 STUDY INDEX.md](00%20STUDY%20INDEX.md) gives the current study map, open decisions, and execution gates.
+[00 STUDY INDEX.md](00%20STUDY%20INDEX.md) gives the current study map and pre-primary execution gates.
 
 The main design documents are:
 
@@ -45,7 +45,7 @@ No primary LLM result is reported.
 
 No final numerical reference-equivalence threshold has been set.
 
-No final primary run count has been set.
+The primary allocation is fixed at 25 randomized W1/W2 blocks per eligible configuration.
 
 The reference analysis must be executed and independently reproduced before numerical fidelity criteria are frozen.
 
