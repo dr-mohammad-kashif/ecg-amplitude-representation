@@ -26,7 +26,17 @@ TRIPOD-LLM provides the principal reporting basis for the LLM component, with ad
 
 ## 3. Research question
 
-Under a locked biomedical machine learning analysis, does moving from a fully specified monolithic LLM workflow to a structured fresh-context workflow change end-to-end reference-faithful completion when both operate under the same zero-cost consumer access envelope?
+The overarching research question is:
+
+> Among completely free, personally accessible, consumer-facing general-purpose online LLM configurations, how does workflow architecture and verification affect the ability to execute a locked biomedical machine-learning analysis with end-to-end scientific fidelity, and what failure and resource burdens accompany those effects?
+
+The practical motivation is whether genuinely free, personally accessible LLM systems can enable a resource-constrained researcher to carry out a scientifically faithful biomedical ML analysis without paid model access, paid software, or substantial institutional infrastructure. The study does not assume that zero monetary cost removes the need for scientific expertise, computing resources, internet access, time, or human judgment. Those constraints are bounded or measured where the protocol permits.
+
+The confirmatory primary causal question is:
+
+> Under a locked biomedical machine-learning analysis, does moving from a fully specified monolithic LLM workflow to a structured fresh-context workflow change end-to-end reference-faithful completion when both operate under the same zero-cost consumer access envelope?
+
+The W1 versus W2 question is the primary estimand. W0, W3, W4, and W5 address secondary questions about instruction specificity and verification mechanisms. W2A and W2B remain extensions rather than part of the confirmatory primary comparison.
 
 ## 4. Objectives
 
@@ -171,9 +181,15 @@ R1, R2, and R3 are compared structurally and numerically. R3 contributes to the 
 
 ### R5. Reference-agreement envelope
 
-For each numerical outcome subject to reference comparison, an empirical reference-agreement envelope is calculated around the locked R1 reference. R2 measures repeat execution variability and R3 measures independent implementation agreement. For a scalar outcome, the envelope width is the larger of the absolute R1-R2 and R1-R3 discrepancies. The R2-R3 discrepancy is recorded but does not widen the envelope because neither execution is the locked reference.
+For each numerical outcome subject to reference comparison, the primary empirical reference-agreement envelope is calculated around the locked R1 reference from the repeatability of the locked implementation.
 
-No arbitrary fixed numerical tolerance is introduced. The envelope is an empirical reproducibility criterion for this locked study setting, not a general statistical equivalence margin.
+For a scalar outcome, the primary envelope width is the absolute R1-R2 discrepancy. R2 therefore establishes the observed repeat-execution variability of the locked reference implementation.
+
+R3 is an independent implementation check, not a source for widening the primary tolerance. After protocol-critical compliance has been established, R3 is evaluated against the primary R1-R2 envelope. A compliant R3 result outside that envelope triggers investigation of implementation-level variation, reference instability, or protocol mismatch. It does not automatically enlarge the primary envelope.
+
+The R1-R3 and R2-R3 discrepancies are retained as secondary reference diagnostics and may be used in a prespecified sensitivity analysis. No sensitivity analysis may replace the primary R1-R2 criterion after primary outcomes are observed.
+
+No arbitrary fixed numerical tolerance is introduced. The primary envelope is an empirical repeatability criterion for this locked study setting, not a general statistical equivalence margin.
 
 ### R6. Criterion freeze
 
@@ -989,7 +1005,7 @@ At least three configurations pass the full eligibility audit and primary-run fe
 
 ### Gate C. Prompt freeze
 
-[Prompt Package v1.0](PROMPT%20PACKAGE.md) is frozen and integrity-identified.
+[PROMPT PACKAGE.md](PROMPT%20PACKAGE.md) is frozen and integrity-identified.
 
 ### Gate D. Workflow pilot
 
