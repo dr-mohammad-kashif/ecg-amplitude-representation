@@ -1,10 +1,5 @@
 # Machine Learning Methods Review
 
-Status: Working review
-Version: 0.1
-Month: September 2026
-Study phase: Preprotocol
-
 ## Scope
 
 This review examines the methodological literature relevant to the fixed biomedical machine learning analysis used as the reference task for the active workflow study.
@@ -418,7 +413,7 @@ The intended experimental factor is the analytical workflow through which the sa
 
 This is why the compact CNN, the patient-aware split, the normalization definition, the diagnostic label rule, and the statistical estimand must be frozen before primary LLM runs.
 
-## 19. Evidence status
+## 19. Evidence and investigator-defined choices
 
 The literature directly supports the following points.
 
@@ -464,9 +459,3 @@ These choices are carried into the reference analysis protocol for operational f
 8. Rutter CM. Bootstrap estimation of diagnostic accuracy with patient-clustered data. Acad Radiol. 2000;7(6):413-419. doi:10.1016/S1076-6332(00)80381-5.
 
 9. Field CA, Welsh AH. Bootstrapping clustered data. J R Stat Soc Series B Stat Methodol. 2007;69(3):369-390. doi:10.1111/j.1467-9868.2007.00593.x.
-
-## Evidence status
-
-References 1 through 8 were verified against PubMed, publisher, or journal records during the current methods review. Reference 9 was added as supporting statistical methodology for clustered bootstrap reasoning and should be checked against the journal record during final bibliography normalization.
-
-The review remains a methods evidence document. It does not freeze the final reference implementation or statistical analysis plan. Those documents will define the operational protocol after the reference-analysis audit and equivalence work are complete.
