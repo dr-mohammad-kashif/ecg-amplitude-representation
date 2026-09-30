@@ -184,7 +184,7 @@ This combination should remain a candidate contribution rather than a novelty cl
 
 The most important implication from the literature is that the study should not ask whether additional scaffolding is generally good. Existing evidence is already sufficient to show that planning, reflection, context management, validation, and recovery can influence workflow outcomes in some settings. [13,16] The scientific question is instead whether a particular workflow intervention changes the reliability of a fixed biomedical ML analysis under a precisely defined access envelope.
 
-The reference analysis must therefore be established before the workflow experiment. The numerical equivalence envelope must be derived before primary LLM results are available. The primary workflow comparison must be specified before model selection is influenced by performance. Free access eligibility must be decided independently of model performance.
+The reference analysis must therefore be established before the workflow experiment. The empirical reference-agreement envelope must be derived before primary LLM results are available. The primary workflow comparison must be specified before model selection is influenced by performance. Free access eligibility must be decided independently of model performance.
 
 ## 11. Design implications from the literature
 
@@ -261,9 +261,3 @@ Tenth, rejected candidate questions and the literature that closed them remain p
 24. Gallifant J, Afshar M, Ameen S, et al. The TRIPOD LLM reporting guideline for studies using large language models. Nat Med. 2025;31:60-69. doi:10.1038/s41591-024-03425-5.
 
 25. Rethlefsen ML, Kirtley S, Waffenschmidt S, Ayala AP, Moher D, Page MJ, Koffel JB; PRISMA-S Group. PRISMA-S: an extension to the PRISMA statement for reporting literature searches in systematic reviews. Syst Rev. 2021;10:39. doi:10.1186/s13643-020-01542-z.
-
-## Source verification notes
-
-References 1 through 25 were checked against publisher, PubMed, conference, preprint, or official provider pages during the current review pass. Preprints and provider documentation are identified as such and are not treated as peer reviewed evidence.
-
-The review is not yet the final literature synthesis. Additional records from the reconstructed research inventory remain to be normalized, particularly the ECG specific prior art, prompt sensitivity literature, context and information exposure literature, deterministic validation studies, and studies addressing repeatability and model drift.
