@@ -249,7 +249,7 @@ Examples of scientific intervention include changing a cohort definition, correc
 
 An unrecorded scientific repair would convert an LLM failure into an apparent success and would compromise the comparison.
 
-The exact human-intervention rules will be frozen in the LLM workflow experimental protocol.
+The human-intervention rules are defined in the LLM workflow experimental protocol.
 
 ## 13. LLM reproducibility and model identity
 
@@ -340,7 +340,7 @@ This requirement follows from the experimental question rather than from a claim
 
 The objective is to keep the information available to the workflow stable across conditions.
 
-## 17. What the literature establishes and what remains open
+## 17. What the literature establishes and what is study-defined
 
 The current evidence establishes that:
 
@@ -354,7 +354,7 @@ The current evidence establishes that:
 8. Workflow components can have heterogeneous effects and may introduce new failure modes.[16]
 9. LLM study reporting should document model identity, prompting, evaluation settings, oversight, and reproducibility information.[17]
 
-The following remain investigator-defined:
+The following study components are investigator-defined:
 
 1. W0 to W5 as the specific experimental condition set.
 2. W1 versus W2 as the primary workflow comparison.
@@ -367,7 +367,7 @@ The following remain investigator-defined:
 9. The resource accounting variables available in the consumer interfaces.
 10. The separation of workflow effects from model identity through fixed configuration strata.
 
-These decisions are carried into the workflow experimental protocol rather than treated as already validated by the literature.
+These decisions are specified in the workflow experimental protocol and are not presented as literature-established findings.
 
 ## References
 
