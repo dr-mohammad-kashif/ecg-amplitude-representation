@@ -11,7 +11,7 @@ This plan specifies the statistical analysis for the LLM workflow experiment.
 
 The biomedical reference analysis is defined in [08 REFERENCE BIOMEDICAL ANALYSIS PROTOCOL.md](08%20REFERENCE%20BIOMEDICAL%20ANALYSIS%20PROTOCOL.md). The workflow conditions are defined in [09 LLM WORKFLOW EXPERIMENTAL PROTOCOL.md](09%20LLM%20WORKFLOW%20EXPERIMENTAL%20PROTOCOL.md) and [10 WORKFLOW CONDITIONS AND ABLATION PLAN.md](10%20WORKFLOW%20CONDITIONS%20AND%20ABLATION%20PLAN.md). The scientific fidelity adjudication rules are defined in [11 SCIENTIFIC FIDELITY EVALUATION FRAMEWORK.md](11%20SCIENTIFIC%20FIDELITY%20EVALUATION%20FRAMEWORK.md).
 
-This plan is written before primary LLM collection. The primary number of runs and the final numerical reference-equivalence criteria are deliberately not frozen here until the corresponding simulation and reference-analysis gates have passed.
+This plan is written before primary LLM collection. The primary block allocation is fixed at 25 randomized W1/W2 blocks per eligible configuration on the basis of the completed sample-size simulation. Numerical reference-equivalence criteria are frozen only after the reference execution gate has passed.
 
 ## 2. Primary objective
 
@@ -156,7 +156,7 @@ The test statistic is the same equally weighted across-configuration contrast us
 
 The primary p-value is two-sided and is calculated from the randomization distribution.
 
-The exact number of randomization replicates or an exact enumeration rule will be frozen after the feasibility and simulation pass.
+The primary randomization test uses 100,000 within-block randomization draws and a fixed random-number seed of 314159. The two-sided p-value uses a plus-one correction.
 
 The primary analysis uses an alpha level of 0.05.
 
@@ -412,9 +412,7 @@ No sensitivity analysis will replace the primary analysis.
 
 ## 24. Sample-size simulation
 
-The number of primary W1/W2 blocks per eligible configuration is not yet frozen.
-
-A simulation will be completed before primary collection.
+The number of primary W1/W2 blocks per eligible configuration is fixed at 25 by the completed simulation recorded in [SAMPLE SIZE SIMULATION.md](SAMPLE%20SIZE%20SIMULATION.md).
 
 The simulation will model:
 
@@ -436,9 +434,7 @@ The scenario values will be classified as either:
 
 The simulation will report operating characteristics such as type I error, power across plausible workflow effects, interval precision, and sensitivity to unequal configuration-specific completion probabilities.
 
-The final block count will be chosen before primary collection and recorded together with the simulation seed, code, scenario grid, and decision rule.
-
-The previously discussed 12 to 15 blocks per workflow and the earlier six-block heuristic are not sample-size commitments.
+The simulation record, source code, scenario grid, seeds, and decision rule are retained with the study. The previous 12 to 15 block proposal and earlier six-block heuristic are retired.
 
 ## 25. Stopping rules
 
