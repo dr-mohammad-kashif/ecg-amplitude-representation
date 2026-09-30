@@ -1,9 +1,6 @@
 # Prompt Package
 
-Status: Frozen experimental prompt specification
-Version: 1.0
-Month: September 2026
-Study phase: Pre-primary
+Version 1.0, 30 September 2026.
 
 ## 1. Purpose
 
@@ -384,11 +381,3 @@ The original prompt version remains archived.
 4. Prompt, Context and Interaction Registry. current-study/17 PROMPT AND INTERACTION REGISTRY.md. Study repository; 2026.
 5. Ruta MR, Gaidici T, Irwin C, Lifshitz J. ChatGPT for Univariate Statistics: Validation of AI-Assisted Data Analysis in Healthcare Research. J Med Internet Res. 2025;27:e63550. doi:10.2196/63550.
 6. Gallifant J, Afshar M, Ameen S, et al. The TRIPOD-LLM reporting guideline for studies using large language models. Nat Med. 2025;31(1):60-69. doi:10.1038/s41591-024-03425-5.
-
-## Evidence status
-
-The effect of prompt specificity is supported by published healthcare data-analysis evidence.[5]
-
-The reporting requirements for model identity, prompts, evaluation settings, human oversight, and reproducibility are supported by TRIPOD-LLM.[6]
-
-The exact wording of the experimental prompts is an investigator-defined operational component intended to isolate the workflow comparison.
