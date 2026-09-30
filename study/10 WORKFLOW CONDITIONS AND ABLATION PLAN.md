@@ -466,9 +466,9 @@ Pilot observations may not be used to redefine a primary endpoint or condition i
 
 ## References
 
-1. Reference Biomedical Analysis Protocol. current-study/08 REFERENCE BIOMEDICAL ANALYSIS PROTOCOL.md. Study repository; 2026.
+1. Reference Biomedical Analysis Protocol. study/08 REFERENCE BIOMEDICAL ANALYSIS PROTOCOL.md. Study repository.
 
-2. LLM Workflow Experimental Protocol. current-study/09 LLM WORKFLOW EXPERIMENTAL PROTOCOL.md. Study repository; 2026.
+2. LLM Workflow Experimental Protocol. study/09 LLM WORKFLOW EXPERIMENTAL PROTOCOL.md. Study repository.
 
 3. Chen X, et al. ScienceAgentBench: Toward Rigorous Assessment of Language Agents for Data-Driven Scientific Discovery. ICLR. 2025.
 
