@@ -34,7 +34,7 @@ The prompts do not authorize scientific intervention by the human operator.
 
 The human may perform only the mechanical actions defined in the Study Protocol.[2]
 
-The maximum primary interaction envelope is 32 LLM response turns per run.
+The maximum interaction envelope is 32 LLM response turns per run for every workflow condition W0 through W5.
 
 ## 3. W0 prompt
 
