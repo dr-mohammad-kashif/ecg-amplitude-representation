@@ -1,4 +1,4 @@
-# Failure Taxonomy and Error Audit
+# Failure Taxonomy and Adjudication Framework
 
 ## 1. Purpose
 
