@@ -1,10 +1,5 @@
 # Scientific Fidelity Evaluation Framework
 
-Status: Draft evaluation framework
-Version: 0.1
-Month: September 2026
-Study phase: Preprotocol
-
 ## 1. Purpose
 
 This framework defines how the active study determines whether an LLM-run biomedical analysis is scientifically faithful to the locked reference specification.
@@ -173,9 +168,9 @@ The comparison has two components.
 
 The first is structural. Required numerical outputs must be generated from the correct inputs, model, evaluation set, and procedure.
 
-The second is numerical. The resulting values must fall within the reference-equivalence criteria established before primary LLM collection.
+The second is numerical. The resulting values must fall within the reference-agreement criteria established before primary LLM collection.
 
-No final numerical tolerance is specified in this framework before the reference-equivalence work is complete.
+No final numerical tolerance is specified in this framework before the reference-agreement work is complete.
 
 Numerical fidelity is therefore not evaluated using an arbitrary threshold such as a fixed AUROC difference selected in advance for convenience.
 
@@ -292,7 +287,7 @@ A run is eligible for a successful primary endpoint only if:
 
 1. all critical gates PASS;
 2. the required analysis reaches terminal execution;
-3. the primary numerical outputs satisfy the frozen reference-equivalence criteria;
+3. the primary numerical outputs satisfy the frozen reference-agreement criteria;
 4. the final interpretation passes the interpretation gate;
 5. the required reproducibility evidence is present;
 6. no unauthorized human scientific intervention occurred.
@@ -313,7 +308,7 @@ This includes data, labels, representation, model, training, split, metrics, sta
 
 ### Numerical agreement
 
-The resulting primary outputs fall within the frozen reference-equivalence criteria.
+The resulting primary outputs fall within the frozen reference-agreement criteria.
 
 The criteria will be established from compliant reference executions rather than from LLM outcomes.
 
@@ -469,7 +464,7 @@ For each primary run, the fidelity record will eventually contain:
 | Critical findings | Findings that affect primary completion |
 | Major findings | Findings that materially affect secondary outcomes or interpretation |
 | Minor findings | Limited noncritical defects |
-| Numerical status | Primary reference-equivalence status |
+| Numerical status | Primary reference-agreement status |
 | Interpretation status | Interpretation gate status |
 | Intervention status | Human scientific intervention status |
 | Resource status | Access or resource event status |
@@ -493,11 +488,3 @@ This record will be implemented only after the numerical reference criteria, run
 6. Zhang Y, et al. DataSciBench: Benchmarking Large Language Models for Data Science Tasks. Findings of the Association for Computational Linguistics. 2026:3685-3728. doi:10.18653/v1/2026.findings-acl.181.
 
 7. Wu et al. Performance, Failures, and Oversight of a Large Language Model Agent for Clinical Data Analysis: Evaluation Study. J Med Internet Res. 2026;28:e99597. doi:10.2196/99597.
-
-## Evidence status
-
-The external literature supports process-aware, execution-based and configuration-specific evaluation of machine learning and LLM analytical systems.
-
-The fidelity dimensions, gate adjudication rules, severity categories, primary completion rule, and repair accounting are investigator-defined components of this study.
-
-No primary experimental results are included.
