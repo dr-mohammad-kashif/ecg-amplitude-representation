@@ -201,11 +201,7 @@ Calibration is concerned with agreement between predicted probabilities and obse
 
 The archived ECG analysis uses fixed 0.10 probability bins for its calibration display. That rule is an investigator-defined descriptive choice.
 
-This creates a methodological point that should remain open for the formal reference protocol. Grouped calibration plots can be affected by the number and definition of bins. Current prediction-model guidance recommends flexible calibration curves and quantitative measures such as calibration-in-the-large and calibration slope rather than relying on a grouped plot alone.[6]
-
-The existing 0.10-bin output should therefore not be silently treated as the complete calibration assessment. Before the reference protocol is frozen, the study should decide whether to retain the fixed-bin display as the prespecified output, supplement it with calibration-in-the-large and slope, or both.
-
-Any such change must occur before LLM results are inspected.
+Grouped calibration plots can be affected by the number and definition of bins. The active reference protocol therefore retains the fixed 0.10-bin display as a descriptive calibration output rather than treating it as the only accepted calibration method.[6] Additional measures such as calibration-in-the-large or calibration slope are outside the primary protocol unless they are added through a pre-primary protocol amendment before primary LLM results are available.
 
 ## 11. Patient-level uncertainty estimation
 
