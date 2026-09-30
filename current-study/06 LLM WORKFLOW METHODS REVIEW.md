@@ -1,10 +1,5 @@
 # LLM Workflow Methods Review
 
-Status: Working review
-Version: 0.1
-Month: September 2026
-Study phase: Preprotocol
-
 ## Scope
 
 This review examines methodological evidence relevant to the use of general purpose large language models for scientific and biomedical data analysis.
@@ -409,11 +404,3 @@ These decisions are carried into the workflow experimental protocol rather than 
 16. Kurjan A, Cribbs AP. FlowBench: separating planning, fault recovery and interpretation in agentic bioinformatics. bioRxiv [Preprint]. 2026. doi:10.64898/2026.06.12.731844.
 
 17. Gallifant J, Afshar M, Ameen S, Aphinyanaphongs Y, Chen S, Cacciamani G, et al. The TRIPOD-LLM reporting guideline for studies using large language models. Nat Med. 2025;31(1):60-69. doi:10.1038/s41591-024-03425-5.
-
-## Evidence status
-
-References 1 through 17 were checked against conference proceedings, journal pages, PubMed or official publisher records, and the original preprint records where applicable during the current literature update.
-
-Preprint status is retained explicitly for references that have not been verified as peer reviewed publications.
-
-The review does not claim that any individual workflow mechanism is novel. Its purpose is to establish which workflow components already have empirical or methodological precedent and which aspects of the active experimental design remain investigator-defined.
