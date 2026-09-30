@@ -1,9 +1,5 @@
 # Prior Art and Gap Analysis
 
-**Status:** Working analysis  
-**Version:** 0.1  
-**Month:** September 2026
-
 ## 1. Purpose and evidence boundary
 
 The proposed study sits at the intersection of biomedical machine learning, LLM based scientific analysis, research reproducibility, workflow design, and resource accessibility. The prior art therefore needs to be examined at several levels.
