@@ -225,7 +225,7 @@ One-class bootstrap draws are rejected because AUROC is undefined when a resampl
 
 The workflow evaluation must distinguish a correct patient-level bootstrap from an ordinary record-level bootstrap even if both produce numerically similar intervals in a particular run.
 
-## 12. Reference equivalence and numerical tolerances
+## 12. Reference agreement and numerical criteria
 
 The LLM experiment requires numerical agreement criteria, but the review does not support choosing an arbitrary universal tolerance.
 
@@ -246,7 +246,7 @@ The planned sequence is:
 
 The reference envelope should characterize differences in implementation outputs arising without changing the scientific protocol. Its construction is defined in the reference protocol and frozen after R0 through R6.
 
-Confidence-interval overlap is not proposed as an equivalence rule. Agreement should instead be judged using prespecified structural and numerical criteria defined before the primary LLM results are seen.
+Confidence-interval overlap is not a reference-agreement criterion. Agreement is judged using the prespecified structural and numerical criteria defined in the reference protocol.
 
 ## 13. Structural versus numerical correctness
 
