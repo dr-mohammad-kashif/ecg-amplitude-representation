@@ -236,7 +236,7 @@ No BatchNorm, LayerNorm, or other internal normalization layer is included.
 
 The architecture is identical across raw and normalized representations and across the two primary phenotype tasks.
 
-The architecture is an investigator-defined fixed component of the reference experiment. It is not selected through architecture search and is not presented as a state of the art classifier.
+The architecture is an investigator-defined fixed component of the reference experiment. It is not selected through architecture search and is not presented as a competitive benchmark architecture.
 
 ## 12. Training configuration
 
