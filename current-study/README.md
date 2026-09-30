@@ -14,6 +14,8 @@ The scientific question is not yet recorded as a final protocol. The present wor
 
 [00 STUDY INDEX.md](00%20STUDY%20INDEX.md) records the current study structure and open gates.
 
+[01 LITERATURE REVIEW.md](01%20LITERATURE%20REVIEW.md) records the current integrated scientific literature review.
+
 [evidence](evidence/) contains the literature and decision records that support the design.
 
 [quality](quality/) contains the editorial and research quality controls used for active documents.

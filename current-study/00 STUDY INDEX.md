@@ -20,7 +20,11 @@ The study is not framed as a general test of whether LLMs can perform data scien
 
 This wording is a working formulation. It is not frozen as the final protocol wording until the remaining design checks are complete.
 
-## 3. Biomedical machine learning testbed
+## 3. Literature review
+
+The first integrated literature review is recorded in [01 LITERATURE REVIEW.md](01%20LITERATURE%20REVIEW.md). It is a working review rather than a completed systematic review. The search record and later topic specific reviews will remain separate.
+
+## 4. Biomedical machine learning testbed
 
 The first candidate testbed is the archived PTB XL ECG analysis.
 
@@ -30,7 +34,7 @@ The archived study is not being revived as its original scientific question. It 
 
 The reference analysis must be executed and independently reproduced before it is used as the numerical reference.
 
-## 4. Experimental workflow conditions
+## 5. Experimental workflow conditions
 
 ### W0. Minimal monolithic
 
@@ -66,7 +70,7 @@ W5 follows W2 and adds an independently initiated audit context that evaluates t
 
 These conditions are derived from recurring control structures developed in PHLOME and Asclepius. Their inclusion is an experimental use of established design principles and is not itself a novelty claim.
 
-## 5. Study wide access envelope
+## 6. Study wide access envelope
 
 The resource boundary applies to every eligible LLM configuration.
 
@@ -90,7 +94,7 @@ Free tier usage limits do not disqualify a system. Zero cost is the criterion; u
 
 A configuration is excluded if an essential experimental capability requires a paid product, paid agent, paid subscription, API access, or special entitlement even when the underlying model is also available through a nominal free interface.
 
-## 6. Primary outcome candidate
+## 7. Primary outcome candidate
 
 The current primary outcome candidate is end to end reference faithful completion.
 
@@ -98,13 +102,13 @@ A run is successful only when all prespecified critical scientific requirements 
 
 Numerical agreement alone does not define success.
 
-## 7. Biomedical outputs
+## 8. Biomedical outputs
 
 AUROC, average precision, Brier score, calibration, the primary phenotype contrast, and bootstrap uncertainty remain central outputs of the reference task.
 
 Secondary workflow outcomes will include protocol violation severity, execution failure, resource or access failure, unauthorized human scientific intervention, wall clock time, interaction count, repair attempts, repair success, regression after repair, and reproducibility across repeated runs.
 
-## 8. Reference hierarchy
+## 9. Reference hierarchy
 
 The evidence hierarchy is:
 
@@ -116,7 +120,7 @@ The evidence hierarchy is:
 
 The study distinguishes reference analysis from clinical ground truth.
 
-## 9. Reference analysis gate
+## 10. Reference analysis gate
 
 The following must be completed before primary LLM collection:
 
@@ -131,7 +135,7 @@ The following must be completed before primary LLM collection:
 
 No primary result may be used to define the equivalence envelope.
 
-## 10. Statistical gate
+## 11. Statistical gate
 
 The primary run count is not yet frozen.
 
@@ -139,7 +143,7 @@ A simulation study will examine operating characteristics across plausible basel
 
 With only a small prespecified set of eligible LLM configurations, model or provider will be treated as a fixed replication stratum rather than as a random sample of all possible models.
 
-## 11. Current open decisions
+## 12. Current open decisions
 
 The following remain open:
 
@@ -151,7 +155,7 @@ The following remain open:
 * exact information exposure experiment;
 * final statistical test implementation.
 
-## 12. Evidence classification
+## 13. Evidence classification
 
 Each substantive decision is assigned one class.
 
