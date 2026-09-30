@@ -1,98 +1,89 @@
 # Research log
 
-I am using this file to keep track of why I made decisions, not just what files I changed.
+I am using this file to keep the project history visible across research phases. The important record here is why the scientific object changed.
 
-A useful entry for me answers four questions
+## Phase 1. The ECG question
 
-1. What was I trying to figure out?
-2. What did I do?
-3. What did I learn?
-4. What did I change?
+I began with a focused question about amplitude normalization in ECG machine learning.
 
-## September 2026
+The original study used PTB-XL version 1.0.3 and compared the native 100 Hz, 12-lead waveform with a global record-wise z-score representation. I chose HYP versus NORM and MI versus NORM as two prespecified phenotype tasks and fixed the model and evaluation procedure so that the representation change was the intended difference.
 
-I created the repository and wrote the first version of the study question and analysis plan.
+I spent substantial time on the data and methods before any primary model result was generated. The PTB-XL metadata were audited, the label rules were made explicit, representative waveform files were checked, the model input and architecture were fixed, and the uncertainty analysis was specified at the patient level because patients can contribute more than one ECG record.
 
-I then did the first literature pass. The main thing that changed was the question itself.
+The implementation was also tested. A real issue was found in the unthresholded label sensitivity and corrected before any primary test result was interpreted.
 
-I had originally been thinking more generally about whether normalization changes ECG model performance. The recent PTB-XL preprocessing work made that too broad. Preprocessing can already behave differently across model architectures, so I narrowed the study to a question I can test more cleanly.
+At that stage I was still treating the study as a live ECG research question.
 
-I now want to see whether the same preprocessing choice can behave differently across diagnostic tasks while keeping the model and evaluation setup fixed.
+## Phase 2. A deeper literature review changed the question
 
-I have not looked at the final model results yet. The next step is the data audit, where I will check the PTB-XL labels and freeze the task definitions before running the main comparison.
+I then went back to the literature more deeply to check whether the central contrast was actually open.
 
-I decided not to move straight into model training.
+That review found recent work that was much closer to my question than the earlier literature pass had suggested. XAND-ECG reports PTB-XL experiments using HYP and MI, a global z-score across all leads and time points within each ECG, and direct comparisons of normalization choices. Its findings also report different normalization behaviour across disease families. The project documents use PTB-XL version 1.0.3 and a 100 Hz, 12-lead representation.
 
-Before I write the formal study protocol, I am checking the study design itself against current research guidance. I want to make sure the label construction, normalization rule, primary outcome, uncertainty method, leakage controls, robustness analysis and reporting plan are decisions I can defend from the literature.
+A separate 2026 study by Bickmann et al. examined 24 preprocessing combinations across six ECG architectures on PTB-XL and found architecture-dependent effects of preprocessing. That made it difficult to defend a broad representation question as new.
 
-I am also keeping a running work plan so that the study does not lose earlier decisions as the repository grows.
+ACL-ECG also uses a global normalization calculated across all leads and time points and explicitly contrasts that with per-lead normalization in a PTB-XL setting.
 
-The public repository should stay focused on the actual study. I do not want to add documents or metadata that exist only to make the project look more advanced. New files should have a real research purpose.
+The result of this review was not a new analysis. It was a change in my understanding of the gap. The question I had frozen was no longer cleanly distinct from work that already existed.
 
-The methods review then changed several design details.
+## Phase 3. I tested whether the question could be made more specific
 
-Normalization is not one operation. Recent ECG papers use per-lead, per-record, global and other scaling choices, and a recent multi-lead study reported that per-lead normalization can obscure inter-lead amplitude relationships. I therefore need to define exactly what the transformation does before I call it a single normalization condition.
+I did not want to abandon the project after finding overlap, so I tested whether the scientific question could be narrowed without simply adding more arbitrary ablations.
 
-I also checked the leakage question more closely. If a transformation learns parameters from data, those parameters must come from the training portion before the held-out data are transformed. A record-local transformation is different because its parameters are derived from that record itself. I need to make that distinction explicit in the protocol.
+I examined several possibilities, including separating centering from scaling, comparing input normalization with internal normalization, using external validation, reinjecting normalization statistics, and asking a broader question about which signal invariances a biomedical representation should preserve.
 
-Because the raw and normalized inputs come from the same held-out records, the final comparison will be paired. A correlated-ROC method such as DeLong is one candidate for comparing AUROC values, with a patient-level paired bootstrap as another option. I have not frozen the statistical test yet.
+I then checked those ideas against the literature.
 
-I also decided that information preservation needs a more precise definition. I am separating numerical signal preservation, preservation of clinically meaningful waveform structure, and task-relevant information available to the model. The protocol should not use the word information without making clear which of these is meant.
+That second pass also showed substantial precedent. Work on normalization and representation learning already covers normalization decomposition, internal and reversible normalization, restoration or reinjection of normalization statistics, and related representation-invariance questions.
 
-The methodological literature reconnaissance is now sufficient to narrow the next design decisions.
+I therefore did not turn any of those ideas into a standalone novelty claim.
 
-Secondary-data guidance reinforced that the protocol needs explicit data flow, unit of analysis, label construction, exclusions and analysis documentation. Because PTB-XL is multilabel, the HYP versus NORM and MI versus NORM tasks cannot be frozen without first quantifying overlaps in the actual v1.0.3 data.
+## Phase 4. I went back to the earlier projects
 
-The statistical literature also changed my uncertainty plan. PTB-XL can contain multiple records per patient, so treating every record as independent for confidence intervals would ignore within-patient clustering. A patient-level bootstrap is now the strongest candidate for the paired uncertainty analysis.
+At that point I returned to PHLOME and Asclepius, not to reuse them as finished methods but to understand which research problems had actually changed how those systems were built.
 
-The current primary normalization candidate is a global record-wise z-score across retained leads and time points within each record. A per-lead record-wise z-score is the most useful current sensitivity candidate. I have not frozen either one.
+The recurring ideas were explicit state and context, provenance, uncertainty, validation before handoff, controlled model context, deterministic checks, reconciliation, explicit unresolved states and separate evidence for completion.
 
-The largest remaining methodological gap is the model input representation. Logistic regression and random forest were chosen as simple starting models, but I have not yet specified how the full multilead waveform enters them. That choice changes the experiment enough that it needs to be resolved before the formal protocol.
+I treated these as candidate research questions rather than assuming that a design principle was automatically a scientific contribution.
 
-I created 05 METHODS LITERATURE REVIEW.md to keep the detailed methodological evidence separate from the shorter decision-focused 06 METHODS REVIEW.md.
+## Phase 5. I checked those ideas against current ECG research
 
-I am keeping the research record month-level rather than using exact day stamps. The publication years in the reference list are bibliographic information and are kept separately from the project log.
-The PTB-XL metadata audit is now complete. The uploaded v1.0.3 files reproduce the published superclass counts and show that all patients remain within one stratified fold. The candidate HYP versus NORM and MI versus NORM cohorts are now defined from the actual multilabel structure rather than from assumed mutually exclusive classes.
+The same literature test was then applied to the ideas coming from PHLOME and Asclepius.
 
-The audit also showed that likelihood scores materially change cohort size, so I do not want to introduce a hidden certainty threshold. The main candidate uses superclass presence, while a 50 percent likelihood threshold is kept as a possible sensitivity definition. Recent PTB-XL work provides examples of both approaches.
+I considered combinations such as signal quality with model uncertainty, label provenance with model behaviour, clinically grounded metamorphic tests, deterministic ECG validators, evidence-grounded failure analysis, and the interaction between preprocessing and label quality.
 
-The major scientific design is now frozen. I selected the native 100 Hz, 12-lead waveform after the targeted waveform integrity audit. The remaining work is implementation verification and formal protocol writing.
+Again, the deeper literature showed that most of these areas already had substantial precedent. Recent ECG work addresses label certainty, signal quality, preprocessing effects, and validation or perturbation-based analysis. Broader machine-learning literature also covers several of the proposed methodological patterns.
 
+The useful outcome was not to force a paper out of a weakly differentiated idea. The outcome was a clearer boundary around what I could no longer claim as a new scientific object.
 
-The waveform representation question is now substantially resolved. I audited representative PTB-XL v1.0.3 waveform files directly and confirmed that the paired records100 files decode as 12-lead, 1,000-sample, 100 Hz WFDB records with the documented signal scaling and lead structure. The binary dimensions and header checksums were consistent in the paired files checked.
+## Phase 6. The research object itself needed to change
 
-The literature search also showed that version 1.0.3 has already been used in studies using 100 Hz, 10-second, 12-lead inputs, including recent neural-network work. Earlier PTB-XL benchmark implementations should still be read with their dataset version in mind because some used pre-1.0.3 releases.
+After the second round of literature checking, I stopped trying to rescue the original ECG question by adding another comparison.
 
-I therefore selected the native 100 Hz, 12-lead waveform as the primary input representation. I am not adding an independent resampling step and I am no longer treating logistic regression or random forest as necessary baselines for the main representation question.
+The important change was conceptual. I was no longer asking how one ECG preprocessing operation behaves. I was asking a different kind of question about how a scientific analysis can be carried out under constrained resources and how the reliability of that workflow can be evaluated.
 
-The primary normalized condition is now a global record-wise z-score across all leads and time points within each record. Per-lead record-wise z-score is the main sensitivity condition. The remaining major design work is the exact CNN training configuration and the statistical estimand, after which I can write the formal protocol and statistical analysis plan.
+That meant the unit of research would need to move from an ECG preprocessing intervention to the analysis workflow itself.
 
+## Phase 7. The new direction
 
-The frozen design was then implemented as a testable pipeline. The label rule, global and per-lead standardization functions, input-shape checks and compact CNN forward/backward pass were exercised with a synthetic label fixture and a supplied PTB-XL waveform record. The checks confirmed the expected transformations and the 12 by 1,000 model input. No held-out test performance was used.
+The direction that emerged is a controlled study of whether a general-purpose online LLM can reproduce a conventional biomedical machine-learning analysis under constrained, explicitly specified workflow conditions.
 
+The idea is not to ask the broad question of whether an LLM can do data science. That literature is already crowded.
 
-The full design audit found one implementation-level issue in the unthresholded label-definition sensitivity. A numeric threshold of zero would incorrectly treat an absent superclass as present because the helper used zero as the default maximum likelihood. I replaced that shortcut with an explicit superclass-presence mode and added a unit test for the sensitivity rule.
+The more specific question is whether workflow constraints such as staged data access, smaller data chunks, fresh context, multi-gate checking and independent audit change the scientific fidelity of an LLM-assisted analysis relative to a conventional reference analysis.
 
-The protocol, statistical analysis plan and preregistration draft are now aligned with the corrected implementation. The next work is environment verification, preregistration submission, full records100 ingestion and the primary analysis.
+The intended comparison is also important. The LLM is not being treated as a replacement for the ECG classifier. It would be compared with the analyst or workflow that assembles and executes the analysis, while the raw data, frozen protocol and evaluation target are held constant.
 
-The final design decisions need to be recorded explicitly because several of them changed during the audit rather than being present from the beginning.
+For the first implementation, the candidate models must be general-purpose models that an ordinary user can access directly online for free. Local models and small language models are outside the scope of this study.
 
-I first treated the HYP and MI tasks, the normalization rule and the simple model choice as candidates. The PTB-XL audit showed that the label likelihood values materially change the cohort definitions, and the current PTB-XL literature showed that preprocessing effects can depend on model architecture. I therefore narrowed the question before the primary analysis rather than carrying the earlier broad framing forward.
+This is still a research direction, not a frozen protocol. The next step is another literature and benchmark review to identify exactly what has already been tested, then define the experimental object, comparison conditions, fidelity measures, cost measures and failure criteria.
 
-I froze the two phenotype tasks as HYP versus NORM-labelled records and MI versus NORM-labelled records. I use the same 50% SCP likelihood threshold for both the target and NORM labels. Target-plus-NORM is retained as target-positive. The unthresholded superclass-presence definition is now the sensitivity analysis. I kept the earlier research-log entry that described the opposite ordering because it records what I was considering at the time. This entry is the subsequent correction.
+## Writing standard for the research history
 
-I also changed the model plan. I had initially considered logistic regression and random forest because I wanted simple baselines. Once I defined the input as the full 12-lead waveform, those models would require flattening or feature engineering and would introduce another representation choice into a study that is specifically about representation. I therefore selected a compact direct-waveform 1D CNN and froze its architecture before the primary comparison. I am keeping the model fixed between raw and normalized inputs so that the representation is the intended difference.
+I record what I was investigating, what I found, and why that changed the next decision.
 
-The waveform audit then gave me enough evidence to select the native 100 Hz, 12-lead records100 representation. I am not adding an independent resampling step. The audit checked paired waveform files directly, while the full ingestion pass will still verify every file actually used in the analysis.
+I do not present the later LLM direction as if it existed from the beginning.
 
-The uncertainty method also moved from a candidate list to a fixed procedure. Because the raw and normalized conditions use the same held-out records and some patients contribute more than one ECG, I selected a patient-level paired percentile bootstrap with 5,000 resamples. The same patient resample will be used for the HYP and MI calculations because the two held-out task populations share patients. I did not keep DeLong as the primary procedure because the standard formulation does not account for the repeated-record structure.
+I do not describe literature discovery as if a separate system performed the scientific reasoning. The research record is written from the decisions and checks that actually shaped the project.
 
-The primary estimand is now fixed as the difference between the normalized-versus-raw AUROC change for HYP and the corresponding change for MI. I am treating this as a descriptive representation-effect contrast within PTB-XL, not as a causal effect.
-
-I also fixed the sensitivity conditions before looking at the primary test result. These are per-lead record-wise z-scoring, the unthresholded label definition, and training stability across seeds 1, 2 and 3. The per-lead sensitivity has its own zero-variance exclusion rule and does not change the primary cohort.
-
-The preregistration timing is also part of the study record. The existing PTB-XL data have already been accessed and audited, so I will describe the registration honestly as occurring after data-preparation and exploratory audit work but before the primary held-out test analysis is interpreted. I will not rewrite the history to imply that the dataset had not been inspected.
-
-One implementation audit then found a real error in the unthresholded label sensitivity. Using a numeric threshold of zero would treat an absent superclass as present because the helper's default maximum likelihood was zero. I replaced that shortcut with an explicit superclass-presence mode and added a unit test for the case. This correction did not change the primary >=50% label rule, but it did matter for the prespecified sensitivity analysis.
-
-At this point the protocol, statistical analysis plan, label specification and preregistration draft are intended to describe the same frozen design. The remaining work is implementation verification, environment capture, registration, full records100 ingestion and the primary analysis.
+The archive remains available so that the original ECG study can be inspected without rewriting its earlier reasoning.
