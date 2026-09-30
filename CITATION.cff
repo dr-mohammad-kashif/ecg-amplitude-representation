@@ -4,4 +4,4 @@ title: "Biomedical ML Workflow Fidelity in Free Consumer General-Purpose LLMs"
 authors:
   - family-names: Kashif
     given-names: Mohammad
-repository-code: "https://github.com/dr-mohammad-kashif/ecg-amplitude-representation"
+repository-code: "https://github.com/dr-mohammad-kashif/free-consumer-llm-workflow-fidelity"
