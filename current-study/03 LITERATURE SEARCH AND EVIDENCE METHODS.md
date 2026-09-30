@@ -2,7 +2,7 @@
 
 Status: Working search record
 Version: 0.1
-Date: 30 September 2026
+Month: September 2026
 Study phase: Preprotocol
 Review status: Targeted and iterative, not yet a completed systematic review
 
