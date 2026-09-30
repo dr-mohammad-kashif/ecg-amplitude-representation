@@ -487,8 +487,6 @@ RECORD and STROBE principles are relevant to transparent description of secondar
 
 The task-specific data dictionary, label derivation schema, leakage controls, information-exposure boundary, artifact manifest and version-reconciliation rules are investigator-defined components of the present study, aligned with the frozen biomedical reference protocol and reproducibility plan.[3,6]
 
-No primary execution results are included.
-
 ## References
 
 1. Wagner P, Strodthoff N, Bärs R, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154. doi:10.1038/s41597-020-0495-6.
