@@ -149,7 +149,7 @@ Seed sensitivity has a narrower purpose. It shows how much the reference output 
 
 This distinction becomes important when interpreting LLM runs. A change across LLM workflows should not be attributed to workflow architecture if the underlying reference analysis itself has large computational variability.
 
-The reference-equivalence work must therefore be completed before the numerical tolerance used for the LLM experiment is frozen.
+The reference-agreement work must therefore be completed before the numerical criterion used for the LLM experiment is frozen.
 
 Seed values, software versions, hardware information where relevant, and training configuration should be recorded with the run outputs. Reproducible computational research guidance similarly emphasizes preservation of software, parameters, input data, and execution context rather than reporting only the final numerical result.[5]
 
@@ -240,11 +240,11 @@ The planned sequence is:
 3. execute the reference analysis;
 4. independently reimplement the locked analysis;
 5. compare the implementations;
-6. establish the empirical reference equivalence envelope;
+6. establish the empirical reference-agreement envelope;
 7. freeze the numerical agreement criteria;
 8. begin primary LLM collection.
 
-The reference envelope should characterize differences in implementation outputs arising without changing the scientific protocol. The exact tolerance construction remains an open statistical decision.
+The reference envelope should characterize differences in implementation outputs arising without changing the scientific protocol. Its construction is defined in the reference protocol and frozen after R0 through R6.
 
 Confidence-interval overlap is not proposed as an equivalence rule. Agreement should instead be judged using prespecified structural and numerical criteria defined before the primary LLM results are seen.
 
