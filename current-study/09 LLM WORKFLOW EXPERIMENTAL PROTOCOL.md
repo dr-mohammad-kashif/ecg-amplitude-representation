@@ -24,7 +24,7 @@ The primary scientific question is:
 
 > Under a locked biomedical machine learning protocol, does moving from a fully specified monolithic LLM workflow to a structured fresh-context workflow change end-to-end reference-faithful completion when both operate under the same zero cost consumer access constraints?
 
-The wording remains subject to final protocol freeze.
+The wording is frozen in the integrated Study Protocol.
 
 ## 2. Experimental unit
 
@@ -205,7 +205,7 @@ The access record must capture any provider limitation that prevents a complete 
 
 All workflow conditions operate under the same study-wide resource principle.
 
-The final numeric per-run interaction budget remains open pending feasibility work and sample-size planning. It must be frozen before primary data collection.
+The final numeric per-run Each run has a common ceiling of 32 LLM response turns. The ceiling is fixed before primary collection and applies equally to W1 and W2.
 
 The budget applies to the complete run rather than granting a larger total allowance to more structured conditions.
 
