@@ -256,7 +256,7 @@ The primary workflow cannot depend on a paid agent product, paid orchestration s
 
 A free model wrapped inside a paid agent system does not qualify.
 
-The consumer LLM may interact with the study's standardized execution substrate because that substrate is part of the experimental design rather than a provider-specific paid agent product.
+The consumer LLM may interact with the study's standardized execution substrate because that substrate is part of the experimental design rather than a provider-specific paid agent product. The execution substrate itself must not introduce a paid cloud service, paid software requirement, or paid agent dependency. Ordinary already-available computing hardware and freely available software may be used when specified by the protocol.
 
 The distinction is:
 
