@@ -1,9 +1,6 @@
 # Study Protocol
 
-Status: Final protocol for pre-primary execution
-Version: 1.0
-Month: September 2026
-Study phase: Pre-primary
+Version 1.0, 30 September 2026.
 
 ## Protocol scope and companion records
 
@@ -1074,7 +1071,7 @@ No computed result is written into the protocol as a study outcome.
 15. Mistral AI. Pricing. Official product documentation. Accessed September 2026.
 16. Mistral AI. Code Interpreter. Official documentation. Accessed September 2026.
 
-## Evidence status
+## Evidence and provenance
 
 The workflow decomposition, process-level evaluation, and attention to silent analytical failure are supported by recent scientific and clinical LLM workflow evaluations.[1-4]
 
