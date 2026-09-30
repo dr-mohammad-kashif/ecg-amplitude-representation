@@ -563,16 +563,16 @@ No primary experiment results are included.
 
 ## References
 
-1. Scientific Fidelity Evaluation Framework. current-study/11 SCIENTIFIC FIDELITY EVALUATION FRAMEWORK.md. Study repository; 2026.
+1. Scientific Fidelity Evaluation Framework. study/11 SCIENTIFIC FIDELITY EVALUATION FRAMEWORK.md. Study repository.
 2. Gallifant J, Afshar M, Ameen S, et al. The TRIPOD-LLM reporting guideline for studies using large language models. Nat Med. 2025;31(1):60-69. doi:10.1038/s41591-024-03425-5.
-3. Reproducibility and Computational Environment. current-study/14 REPRODUCIBILITY AND COMPUTATIONAL ENVIRONMENT.md. Study repository; 2026.
-4. LLM Workflow Experimental Protocol. current-study/09 LLM WORKFLOW EXPERIMENTAL PROTOCOL.md. Study repository; 2026.
+3. Reproducibility and Computational Environment. study/14 REPRODUCIBILITY AND COMPUTATIONAL ENVIRONMENT.md. Study repository.
+4. LLM Workflow Experimental Protocol. study/09 LLM WORKFLOW EXPERIMENTAL PROTOCOL.md. Study repository.
 5. Chen Z, Chen S, Ning Y, et al. ScienceAgentBench: Toward Rigorous Assessment of Language Agents for Data-Driven Scientific Discovery. International Conference on Learning Representations; 2025.
 6. Kurjan A, Cribbs AP. FlowBench: separating planning, fault recovery and interpretation in agentic bioinformatics. bioRxiv. 2026. doi:10.64898/2026.06.12.731844.
 7. Wu Y, Fu DJ, Zhou Y, et al. Performance, Failures, and Oversight of a Large Language Model Agent for Clinical Data Analysis: Evaluation Study. J Med Internet Res. 2026;28:e99597. doi:10.2196/99597.
-8. Data Provenance and Data Dictionary. current-study/15 DATA PROVENANCE AND DATA DICTIONARY.md. Study repository; 2026.
-9. Consumer LLM Eligibility Specification. current-study/07 CONSUMER LLM ELIGIBILITY SPECIFICATION.md. Study repository; 2026.
-10. Workflow Conditions and Ablation Plan. current-study/10 WORKFLOW CONDITIONS AND ABLATION PLAN.md. Study repository; 2026.
-11. Resource Accounting and Accessibility Analysis. current-study/13 RESOURCE ACCOUNTING AND ACCESSIBILITY ANALYSIS.md. Study repository; 2026.
+8. Data Provenance and Data Dictionary. study/15 DATA PROVENANCE AND DATA DICTIONARY.md. Study repository.
+9. Consumer LLM Eligibility Specification. study/07 CONSUMER LLM ELIGIBILITY SPECIFICATION.md. Study repository.
+10. Workflow Conditions and Ablation Plan. study/10 WORKFLOW CONDITIONS AND ABLATION PLAN.md. Study repository.
+11. Resource Accounting and Accessibility Analysis. study/13 RESOURCE ACCOUNTING AND ACCESSIBILITY ANALYSIS.md. Study repository.
 12. Study Protocol. archive/ecg-amplitude-normalization/01 STUDY PROTOCOL.md. Study repository archive; 2026.
 13. Research Log. archive/ecg-amplitude-normalization/13 RESEARCH LOG.md. Study repository archive; 2026.
