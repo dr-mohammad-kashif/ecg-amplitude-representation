@@ -1,6 +1,4 @@
-# Consumer LLM Eligibility Specification
-
-Version 1.0, 30 September 2026.
+# Free Consumer General-Purpose LLM Eligibility Specification
 
 ## Scope
 
