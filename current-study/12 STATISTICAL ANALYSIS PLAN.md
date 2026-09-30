@@ -1,10 +1,5 @@
 # Statistical Analysis Plan
 
-Status: Draft statistical analysis plan
-Version: 0.1
-Month: September 2026
-Study phase: Preprotocol
-
 ## 1. Purpose
 
 This plan specifies the statistical analysis for the LLM workflow experiment.
@@ -527,11 +522,3 @@ The protocol change record will distinguish amendments made before primary outco
 5. Collins GS, Moons KGM, Dhiman P, Riley RD, Beam AL, Van Calster B, et al. TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods. BMJ. 2024;385:e078378. doi:10.1136/bmj-2023-078378.
 
 6. Gallifant J, et al. The TRIPOD-LLM reporting guideline for studies using large language models. Nat Med. 2025;31(1):60-69. doi:10.1038/s41591-024-03425-5.
-
-## Evidence status
-
-The archived ECG analysis supplies the patient-level paired bootstrap structure, primary cross-task biomedical estimand, secondary metric definitions, calibration approach, and prespecified sensitivity framework that remain relevant to the reference analysis.[1,2]
-
-The primary LLM estimand, randomized block structure, fixed-configuration aggregation, missing-run rules, resource-failure handling, and sample-size simulation plan are investigator-defined choices for the active workflow experiment.
-
-No primary LLM results are included before the reference execution chain has passed and the numerical reference-agreement criteria have been frozen.
