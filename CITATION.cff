@@ -1,9 +1,7 @@
 cff-version: 1.2.0
 message: "Please cite this research repository when it is used or discussed."
-title: "ECG amplitude representation"
+title: "Biomedical ML Workflow Fidelity"
 authors:
   - family-names: Kashif
     given-names: Mohammad
 repository-code: "https://github.com/dr-mohammad-kashif/ecg-amplitude-representation"
-url: "https://github.com/dr-mohammad-kashif/ecg-amplitude-representation"
-version: "0.1.0"
