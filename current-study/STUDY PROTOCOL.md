@@ -172,7 +172,7 @@ A second implementation is written from the scientific specification without rec
 
 ### R4. Independent comparison
 
-R1, R2, and R3 are compared structurally and numerically.
+R1, R2, and R3 are compared structurally and numerically. R3 contributes to the reference-agreement envelope only after the comparison confirms that its protocol-critical choices are compliant and that any observed numerical differences are attributable to documented implementation-level variation rather than a scientific or protocol mismatch. An unexplained protocol mismatch invalidates R3 for envelope construction and requires correction and a new independent reproduction before R6.
 
 ### R5. Reference-agreement envelope
 
