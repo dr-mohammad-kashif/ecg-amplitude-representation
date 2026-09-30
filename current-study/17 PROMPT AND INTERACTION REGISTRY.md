@@ -1,4 +1,4 @@
-# Prompt, Context and Interaction Registry
+# Prompt, Context and Interaction Registry Specification
 
 ## 1. Purpose
 
