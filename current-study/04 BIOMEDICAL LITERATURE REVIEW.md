@@ -155,7 +155,7 @@ The reference model should be interpreted as a deterministic part of the biomedi
 
 The distinction between biomedical signal and numerical representation is also relevant to preprocessing.
 
-Recent work on PTB XL has shown that signal cleaning, trend removal, and normalization can affect different ECG model architectures differently. A 2026 study evaluating 24 preprocessing combinations across six architectures reported architecture-dependent changes in performance and found that convolutional models in that study performed best with raw, unnormalized ECG inputs.[8]
+Recent work on PTB XL has shown that signal cleaning, trend removal, and normalization can affect different ECG model architectures differently. A 2026 study evaluating 24 preprocessing combinations across six architectures reported architecture-dependent changes in performance and found that convolutional models in that study performed best with raw, unnormalized ECG inputs.[7]
 
 The finding is relevant to the current project even though preprocessing is not the primary scientific question.
 
@@ -234,7 +234,7 @@ This separation is the main reason the study can be interpreted as a workflow ex
 
 The core biomedical facts in this review come from the PTB XL dataset publication, official PhysioNet documentation, the AHA/ACC/HRS ECG standardization statements, and established PTB XL benchmark literature.[1-7]
 
-The 2026 preprocessing study is used only to establish that representation and preprocessing can have architecture-dependent effects.[8]
+The 2026 preprocessing study is used only to establish that representation and preprocessing can have architecture-dependent effects.[7]
 
 The following statements are investigator-defined rather than directly prescribed by the biomedical literature.
 
