@@ -306,7 +306,7 @@ No contrast is interpreted as evidence that an individual mechanism is universal
 
 ## 12. Interaction and resource fairness
 
-The final numeric The complete run has a fixed ceiling of 32 LLM response turns across contexts. The same ceiling applies to the primary W1 and W2 conditions.
+The complete run has a fixed ceiling of 32 LLM response turns across contexts. The same ceiling applies to W0 through W5.
 
 The fairness rule is already fixed.
 
